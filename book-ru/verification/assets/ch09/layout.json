@@ -1,0 +1,707 @@
+{
+  "figure-9-1-organization.svg:0000": {
+    "y": 30.6
+  },
+  "figure-9-1-organization.svg:0001": {
+    "font_size": 11,
+    "max_width": 350,
+    "line_height": 12
+  },
+  "figure-9-2-state.svg:0003": {
+    "font_size": 8.6
+  },
+  "figure-9-8-handoff.svg:0000": {
+    "font_size": 15.2
+  },
+  "figure-9-8-handoff.svg:0001": {
+    "font_size": 15.2
+  },
+  "figure-9-8-handoff.svg:0002": {
+    "font_size": 15.2
+  },
+  "figure-9-8-handoff.svg:0003": {
+    "align": "start",
+    "x": 535,
+    "font_size": 15.2
+  },
+  "figure-9-8-handoff.svg:0004": {
+    "align": "start",
+    "x": 535,
+    "font_size": 15.2
+  },
+  "figure-9-8-handoff.svg": {
+    "move_groups": {
+      "line2d_33": {"dx": -135, "dy": 0},
+      "line2d_34": {"dx": -135, "dy": 0}
+    }
+  },
+  "figure-9-10-experts.svg:0002": {
+    "align": "start",
+    "x": 125,
+    "font_size": 10
+  },
+  "figure-9-10-experts.svg:0003": {
+    "align": "start",
+    "x": 125,
+    "font_size": 10
+  },
+  "figure-9-11-overlap.svg:0001": {
+    "align": "end",
+    "x": 93
+  },
+  "figure-9-11-overlap.svg:0002": {
+    "align": "end",
+    "x": 93,
+    "font_size": 10,
+    "max_width": 90,
+    "line_height": 10.5
+  },
+  "figure-9-11-overlap.svg:0003": {
+    "align": "end",
+    "x": 93,
+    "font_size": 10,
+    "max_width": 90,
+    "line_height": 10.5
+  },
+  "figure-9-13-route.svg:0001": {
+    "align": "end",
+    "x": 70,
+    "y": 169
+  },
+  "figure-9-14-migration.svg:0002": {
+    "align": "start",
+    "x": 280,
+    "font_size": 9.5,
+    "max_width": 130,
+    "line_height": 11
+  },
+  "figure-9-14-migration.svg:0003": {
+    "align": "start",
+    "x": 280,
+    "font_size": 9.5,
+    "max_width": 130,
+    "line_height": 11
+  },
+  "figure-9-14-migration.svg:0004": {
+    "align": "start",
+    "x": 280,
+    "font_size": 9.5,
+    "max_width": 130,
+    "line_height": 11
+  },
+  "figure-9-15-recovery.svg:0004": {
+    "x": 100,
+    "y": 142,
+    "font_size": 12,
+    "max_width": 170,
+    "line_height": 13
+  },
+  "figure-9-15-recovery.svg:0000": {
+    "y": 51
+  },
+  "figure-9-15-recovery.svg:0007": {
+    "y": 224.5,
+    "font_size": 9,
+    "max_width": 85,
+    "line_height": 9.5
+  },
+  "figure-9-15-recovery.svg:0006": {
+    "x": 280,
+    "y": 143,
+    "font_size": 10,
+    "max_width": 220,
+    "line_height": 11
+  },
+  "figure-9-17-service.svg:0002": {
+    "align": "start",
+    "x": 160,
+    "y": 278,
+    "font_size": 9,
+    "max_width": 250,
+    "line_height": 10.5
+  },
+  "figure-9-17-service.svg:0003": {
+    "align": "start",
+    "x": 160,
+    "y": 298,
+    "font_size": 9,
+    "max_width": 250,
+    "line_height": 10.5
+  },
+  "figure-9-17-service.svg:0004": {
+    "align": "start",
+    "x": 160,
+    "y": 322,
+    "font_size": 9,
+    "max_width": 250,
+    "line_height": 10.5
+  },
+  "figure-9-2-state.svg:0000": {
+    "font_size": 9,
+    "max_width": 65,
+    "line_height": 10.5
+  },
+  "figure-9-2-state.svg:0001": {
+    "font_size": 9,
+    "max_width": 65,
+    "line_height": 10.5
+  },
+  "figure-9-5-local.svg:0000": {
+    "font_size": 10,
+    "max_width": 120,
+    "line_height": 11
+  },
+  "figure-9-5-local.svg:0001": {
+    "font_size": 10,
+    "max_width": 120,
+    "line_height": 11
+  },
+  "figure-9-5-local.svg:0002": {
+    "font_size": 10,
+    "max_width": 120,
+    "line_height": 11
+  },
+  "figure-9-6-reuse.svg:0002": {
+    "align": "start",
+    "x": 110
+  },
+  "figure-9-9-balance.svg:0001": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-9-balance.svg:0002": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-9-balance.svg:0003": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-9-balance.svg:0004": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-9-balance.svg:0005": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-9-balance.svg:0006": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-9-balance.svg:0007": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-9-balance.svg:0008": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-balance-hotspot.svg:0001": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-balance-hotspot.svg:0002": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-balance-hotspot.svg:0003": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-balance-hotspot.svg:0004": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-balance-hotspot.svg:0005": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-balance-hotspot.svg:0006": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-balance-hotspot.svg:0007": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-balance-hotspot.svg:0008": {
+    "align": "end",
+    "x": 64
+  },
+  "figure-9-cache-directory.svg:0000": {
+    "y": 90,
+    "font_size": 9.5,
+    "max_width": 130
+  },
+  "figure-9-cache-directory.svg:0001": {
+    "y": 119,
+    "font_size": 9.5,
+    "max_width": 130,
+    "line_height": 10.5
+  },
+  "figure-9-cache-directory.svg:0002": {
+    "y": 90,
+    "font_size": 9.5,
+    "max_width": 130
+  },
+  "figure-9-cache-directory.svg:0003": {
+    "y": 119,
+    "font_size": 9.5,
+    "max_width": 130,
+    "line_height": 10.5
+  },
+  "figure-9-af-pingpong.svg:0000": {
+    "align": "end",
+    "x": 83
+  },
+  "figure-9-af-pingpong.svg:0001": {
+    "align": "end",
+    "x": 83
+  },
+  "figure-9-af-pingpong.svg:0004": {
+    "align": "end",
+    "x": 83
+  },
+  "figure-9-af-pingpong.svg:0005": {
+    "align": "end",
+    "x": 83
+  },
+  "figure-9-cpu-bottleneck.svg:0004": {
+    "align": "start",
+    "x": 270,
+    "y": 226,
+    "font_size": 9,
+    "max_width": 145,
+    "line_height": 9.5
+  },
+  "figure-9-cpu-bottleneck.svg:0000": {
+    "align": "end",
+    "x": 66,
+    "y": 51,
+    "font_size": 9,
+    "max_width": 45,
+    "line_height": 9.5
+  },
+  "figure-9-cpu-bottleneck.svg:0001": {
+    "align": "end",
+    "x": 66,
+    "y": 118,
+    "font_size": 9,
+    "max_width": 45,
+    "line_height": 9.5
+  },
+  "figure-9-cpu-bottleneck.svg:0003": {
+    "align": "start",
+    "x": 140,
+    "y": 226,
+    "font_size": 9,
+    "max_width": 85,
+    "line_height": 9.5
+  },
+  "figure-9-ep-layer.svg:0000": {
+    "x": 50,
+    "y": 60,
+    "font_size": 10,
+    "max_width": 90,
+    "line_height": 10.5
+  },
+  "figure-9-ep-layer.svg:0001": {
+    "y": 86
+  },
+  "figure-9-ep-layer.svg:0002": {
+    "x": 45,
+    "y": 192,
+    "font_size": 10,
+    "max_width": 85,
+    "line_height": 10.5
+  },
+  "figure-9-ep-layer.svg:0003": {
+    "y": 218
+  },
+  "figure-9-ep-layer.svg:0004": {
+    "x": 45,
+    "y": 324,
+    "font_size": 10,
+    "max_width": 85,
+    "line_height": 10.5
+  },
+  "figure-9-ep-layer.svg:0005": {
+    "y": 350
+  },
+  "figure-9-ep-layer.svg:0006": {
+    "y": 21
+  },
+  "figure-9-ep-layer.svg:0007": {
+    "y": 407
+  },
+  "figure-9-ep-scale-cards.svg:0001": {
+    "y": 50,
+    "font_size": 10,
+    "max_width": 105,
+    "line_height": 10.5
+  },
+  "figure-9-ep-scale-cards.svg:0002": {
+    "y": 50,
+    "font_size": 10,
+    "max_width": 105,
+    "line_height": 10.5
+  },
+  "figure-9-ep-scale-cards.svg:0003": {
+    "x": 360,
+    "y": 176,
+    "font_size": 10,
+    "max_width": 100,
+    "line_height": 10.5
+  },
+  "figure-9-ep-scale-cards.svg:0004": {
+    "y": 50,
+    "font_size": 10,
+    "max_width": 105,
+    "line_height": 10.5
+  },
+  "figure-9-ep-scale-sweep.svg": {
+    "move_groups": {
+      "text_1": {"dx": 0, "dy": -3},
+      "text_2": {"dx": 0, "dy": -3},
+      "text_3": {"dx": 0, "dy": -3},
+      "text_4": {"dx": 0, "dy": -3},
+      "text_5": {"dx": 0, "dy": -3},
+      "text_6": {"dx": 0, "dy": -3},
+      "text_13": {"dx": 20, "dy": -12}
+    }
+  },
+  "figure-9-ep-scale-sweep.svg:0001": {
+    "x": 32,
+    "y": 126
+  },
+  "figure-9-ep-scale-sweep.svg:0002": {
+    "align": "start",
+    "x": 150,
+    "y": 30,
+    "font_size": 10.5
+  },
+  "figure-9-ep-scale-sweep.svg:0003": {
+    "align": "start",
+    "x": 150,
+    "y": 50,
+    "font_size": 10.5,
+    "max_width": 260,
+    "line_height": 11
+  },
+  "figure-9-ep-skew.svg:0005": {
+    "align": "start",
+    "x": 245,
+    "font_size": 10.5
+  },
+  "figure-9-ep-skew.svg:0006": {
+    "align": "start",
+    "x": 370,
+    "font_size": 10.5,
+    "max_width": 65,
+    "line_height": 11
+  },
+  "figure-9-ep-skew.svg:0004": {
+    "x": 30
+  },
+  "figure-9-ep-skew.svg": {
+    "move_groups": {
+      "patch_13": {"dx": -45, "dy": 0}
+    }
+  },
+  "figure-9-ep-tail.svg": {
+    "move_groups": {
+      "text_13": {"dx": -20, "dy": 0}
+    }
+  },
+  "figure-9-ep-tail.svg:0001": {
+    "align": "end",
+    "x": 87
+  },
+  "figure-9-ep-tail.svg:0002": {
+    "align": "end",
+    "x": 87
+  },
+  "figure-9-ep-tail.svg:0003": {
+    "x": 174,
+    "y": 14,
+    "font_size": 9.5
+  },
+  "figure-9-ep-tail.svg:0004": {
+    "x": 223,
+    "y": 48,
+    "font_size": 9.5
+  },
+  "figure-9-ep-tail.svg:0005": {
+    "x": 272,
+    "y": 14,
+    "font_size": 9.5
+  },
+  "figure-9-ep-tail.svg:0006": {
+    "x": 321,
+    "y": 48,
+    "font_size": 9.5
+  },
+  "figure-9-kv-capacity.svg": {
+    "move_groups": {
+      "text_1": {"dx": 0, "dy": -4},
+      "text_2": {"dx": 0, "dy": -4},
+      "text_3": {"dx": 0, "dy": -4},
+      "text_4": {"dx": 0, "dy": -4},
+      "text_5": {"dx": 0, "dy": -4}
+    }
+  },
+  "figure-9-kv-capacity.svg:0002": {
+    "align": "start",
+    "x": 90
+  },
+  "figure-9-kv-capacity.svg:0003": {
+    "align": "start",
+    "x": 90
+  },
+  "figure-9-kv-hit.svg:0002": {
+    "align": "start",
+    "x": 85,
+    "y": 45,
+    "font_size": 10,
+    "max_width": 180,
+    "line_height": 10.5
+  },
+  "figure-9-kv-load-preload.svg:0002": {
+    "align": "end",
+    "x": 88
+  },
+  "figure-9-kv-load-preload.svg:0003": {
+    "align": "center",
+    "x": 210,
+    "y": 10,
+    "font_size": 9
+  },
+  "figure-9-kv-prefetch.svg:0000": {
+    "align": "end",
+    "x": 85,
+    "y": 75,
+    "font_size": 10,
+    "max_width": 80,
+    "line_height": 11
+  },
+  "figure-9-kv-prefetch.svg:0001": {
+    "x": 114,
+    "y": 108,
+    "font_size": 9.5
+  },
+  "figure-9-kv-prefetch.svg:0004": {
+    "font_size": 9.5
+  },
+  "figure-9-kv-prefetch.svg:0006": {
+    "font_size": 9.5
+  },
+  "figure-9-kv-prefetch.svg:0007": {
+    "align": "end",
+    "x": 232,
+    "y": 202,
+    "font_size": 10
+  },
+  "figure-9-kv-prefetch.svg:0008": {
+    "align": "start",
+    "x": 330,
+    "y": 220,
+    "font_size": 10
+  },
+  "figure-9-kv-residency.svg:0004": {
+    "font_size": 9.5,
+    "max_width": 60,
+    "line_height": 10
+  },
+  "figure-9-kv-residency.svg:0005": {
+    "font_size": 9.5,
+    "max_width": 60,
+    "line_height": 10
+  },
+  "figure-9-kv-tiers.svg:0001": {
+    "align": "start",
+    "x": 270,
+    "font_size": 9.5
+  },
+  "figure-9-kv-tiers.svg:0002": {
+    "align": "start",
+    "x": 270,
+    "font_size": 9.5
+  },
+  "figure-9-kv-tiers.svg:0004": {
+    "align": "start",
+    "x": 270,
+    "font_size": 9.5
+  },
+  "figure-9-kv-tiers.svg:0006": {
+    "align": "start",
+    "x": 270,
+    "y": 185,
+    "font_size": 9.5,
+    "max_width": 140,
+    "line_height": 10
+  },
+  "figure-9-kv-tiers.svg:0007": {
+    "align": "start",
+    "x": 270,
+    "y": 213,
+    "font_size": 9.5
+  },
+  "figure-9-kv-tiers.svg:0010": {
+    "align": "start",
+    "x": 270,
+    "y": 247,
+    "font_size": 9.5,
+    "max_width": 140,
+    "line_height": 10
+  },
+  "figure-9-kv-tiers.svg:0011": {
+    "align": "start",
+    "x": 270,
+    "y": 275,
+    "font_size": 9.5
+  },
+  "figure-9-local-cpu.svg:0000": {
+    "y": 75,
+    "font_size": 10,
+    "max_width": 125,
+    "line_height": 11
+  },
+  "figure-9-local-cpu.svg:0001": {
+    "y": 75,
+    "font_size": 10,
+    "max_width": 125,
+    "line_height": 11
+  },
+  "figure-9-local-cpu.svg:0002": {
+    "y": 181,
+    "font_size": 10,
+    "max_width": 125,
+    "line_height": 11
+  },
+  "figure-9-local-cpu.svg:0003": {
+    "y": 181,
+    "font_size": 10,
+    "max_width": 125,
+    "line_height": 11
+  },
+  "figure-9-mla-handoff.svg:0001": {
+    "y": 137
+  },
+  "figure-9-mla-handoff.svg:0002": {
+    "align": "start",
+    "x": 120
+  },
+  "figure-9-mla-handoff.svg:0003": {
+    "align": "start",
+    "x": 120
+  },
+  "figure-9-mla-handoff.svg:0004": {
+    "align": "start",
+    "x": 120
+  },
+  "figure-9-organization-2.svg:0002": {
+    "font_size": 10,
+    "max_width": 120,
+    "line_height": 11
+  },
+  "figure-9-organization-3.svg:0000": {
+    "y": 30.6
+  },
+  "figure-9-overlap-pipeline.svg:0001": {
+    "align": "end",
+    "x": 93
+  },
+  "figure-9-overlap-pipeline.svg:0002": {
+    "align": "end",
+    "x": 93,
+    "font_size": 10,
+    "max_width": 90,
+    "line_height": 10.5
+  },
+  "figure-9-overlap-pipeline.svg:0003": {
+    "align": "end",
+    "x": 93,
+    "font_size": 10,
+    "max_width": 90,
+    "line_height": 10.5
+  },
+  "figure-9-pd-layout.svg:0001": {
+    "font_size": 9.5,
+    "max_width": 72,
+    "line_height": 10
+  },
+  "figure-9-pd-layout.svg:0002": {
+    "font_size": 9.5,
+    "max_width": 72,
+    "line_height": 10
+  },
+  "figure-9-pd-layout.svg:0003": {
+    "font_size": 9.5,
+    "max_width": 72,
+    "line_height": 10
+  },
+  "figure-9-pd-layout.svg:0004": {
+    "font_size": 9.5,
+    "max_width": 72,
+    "line_height": 10
+  },
+  "figure-9-pd-layout.svg:0007": {
+    "font_size": 9.5,
+    "max_width": 72,
+    "line_height": 10
+  },
+  "figure-9-pd-layout.svg:0008": {
+    "font_size": 9.5,
+    "max_width": 72,
+    "line_height": 10
+  },
+  "figure-9-pd-layout.svg:0009": {
+    "font_size": 9.5,
+    "max_width": 72,
+    "line_height": 10
+  },
+  "figure-9-pd-layout.svg:0010": {
+    "font_size": 9.5,
+    "max_width": 72,
+    "line_height": 10
+  },
+  "figure-9-route-1.svg:0001": {
+    "align": "end",
+    "x": 65
+  },
+  "figure-9-route-2.svg:0001": {
+    "align": "end",
+    "x": 65
+  },
+  "figure-9-route-3.svg:0001": {
+    "align": "end",
+    "x": 65
+  },
+  "figure-9-v41-routing.svg:0001": {
+    "align": "end",
+    "x": 98
+  },
+  "figure-9-v41-routing.svg:0002": {
+    "align": "end",
+    "x": 98,
+    "font_size": 9.5,
+    "max_width": 90,
+    "line_height": 10
+  },
+  "figure-9-v41-routing.svg:0003": {
+    "align": "end",
+    "x": 98
+  },
+  "figure-9-v41-routing.svg:0004": {
+    "x": 131,
+    "font_size": 9
+  },
+  "figure-9-v41-routing.svg:0005": {
+    "x": 203,
+    "y": 160,
+    "font_size": 9.5,
+    "max_width": 160,
+    "line_height": 10
+  }
+}

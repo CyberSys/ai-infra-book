@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "pass": "translation",
+  "model_id": "gpt-5.6-sol",
+  "source_directory": ".tmp/ch06-source",
+  "file_pattern": "(?:figure-6-1-placement\\.svg|figure-6-10-tp-time\\.svg|figure-6-11-collectives\\.svg|figure-6-12-resources\\.svg|figure-6-13-ports\\.svg|figure-6-14-topology\\.svg|figure-6-15-torus\\.svg|figure-6-16-systems\\.svg|figure-6-17-pool-placement\\.svg|figure-6-18-read-window\\.svg|figure-6-19-memory-pool\\.svg|figure-6-2-capacity\\.svg|figure-6-21-scale-cost\\.svg|figure-6-3-tp\\.svg|figure-6-4-pipeline\\.svg|figure-6-5-dispatch\\.svg|figure-6-6-ep-layout\\.svg|figure-6-7-reuse\\.svg|figure-6-8-expert-load\\.svg|figure-6-9-ring-rounds\\.svg|figure-6-context-dependency\\.svg|figure-6-cp\\.svg|figure-6-dense-moe\\.svg|figure-6-dp\\.svg|figure-6-engram-placement\\.svg|figure-6-ep-reduction\\.svg|figure-6-ep\\.svg|figure-6-expert-load-1\\.svg)",
+  "record_count": 206,
+  "metadata_only": false,
+  "source_records_sha256": "8966035fbc89a1f140a94e9432dabdb60bd41cfc57c7351ca4812c2d32ce1712",
+  "mapping_sha256": "a4bf8b50df782598f1ee5d191c68108a17a54a8c41c8e317d64c533db4c6ef2c",
+  "runtime": {
+    "requested_model": "gpt-5.6-sol",
+    "reported_model": "gpt-5.6-sol",
+    "provider": "openai",
+    "thread_id": "01a0e4e5-62be-7422-9740-c56b3a8d4df8",
+    "turn_id": "01a0e4e5-6329-73b2-9ead-fa32c4141aff",
+    "ephemeral": true,
+    "fallback_allowed": false,
+    "sandbox_type": "readOnly",
+    "completion_observed": true,
+    "usage_observed": true,
+    "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+    "prompt_sha256": "60ebb5b87229a01bd551567654a064167b43cc783976b33abdb334f6049e0341",
+    "response_sha256": "a4bf8b50df782598f1ee5d191c68108a17a54a8c41c8e317d64c533db4c6ef2c",
+    "stdout_sha256": "b5e867fee353fbe26d1edd44dae6b22e6f091825c6541a7e8ad46844e3421e1c",
+    "stderr_sha256": "aac691e9d3b13876991ee116549d2bec53b15a2934cf7e42daf5dfe9889f9128"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "pdf_path": "dist/AI-Infra-in-Depth-RU.pdf",
+  "pdf_sha256": "ae34114fe3f2ca7d2cb6d869a8eac82780d15a355ca46b046bdecddb7e545cc6",
+  "page_count": 961,
+  "body_font": "PT Serif",
+  "pages_reviewed": [
+    1,
+    13,
+    14,
+    15,
+    16,
+    18,
+    147,
+    719,
+    787,
+    819,
+    905,
+    955,
+    961
+  ],
+  "formula_pages": [
+    719,
+    819
+  ],
+  "greek_symbol_pages": [
+    147,
+    787
+  ],
+  "exercise_star_page": 955,
+  "result": "pass",
+  "method": "Fresh full-page PNG inspection at 100-110 dpi of cover, complete table of contents, body samples, previously wrapped formulas, mathematical symbols, exercise star and final page.",
+  "limitations": [
+    "Targeted page review, not a visual inspection of every page.",
+    "All tables covered separately in pdf-tables-1-4.json, pdf-tables-5-8.json and pdf-tables-9-12.json."
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "repository": "https://github.com/bojieli/ai-infra-book",
+  "commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "files": [
+    {
+      "path": "manuscripts/ch12/figure-12-1-raw.svg",
+      "sha256": "af7bbba0d8bcd8be0db014052eb227b8da6f3e4090f927fbff42a0f79d11b4e0"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-10-transport.svg",
+      "sha256": "6de3f63bf133646a4df400783d7d5eb0b8e2d6e9d0f593f954f1308ba9d3699a"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-11-wireless.svg",
+      "sha256": "4c2d78a9f7495f13911ab190db8379cdbe440cd84bd8721441ef7fa0e38bd3cb"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-12-multipath.svg",
+      "sha256": "f0f933c6541573c3f239b973354a3959f44d2c6ae5f1e65e5b08cb232e599e0d"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-13-queqiao.svg",
+      "sha256": "c0f34bcab3c2e44dc83c8f39c30b6a4859a94694c7c592cd1359fa699553fb36"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-14-budgets.svg",
+      "sha256": "1d235ceb4a503788cbeb98a89caa183152fd8221cf6c97a7c108cf036b4ec316"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-15-deployment.svg",
+      "sha256": "11c2fea022e3f42305f1c75ad6e991dd10c2d447725651a762f531614f104d09"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-16-recovery.svg",
+      "sha256": "7a5075a32655a55bc6bffac8b45fc08279d228ee724548bbcd3661501cc0fe91"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-2-overlap.svg",
+      "sha256": "a1ced39492f11c0d739d404442c73149cf1909130d5956127931807b7c17f77f"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-3-paths.svg",
+      "sha256": "f6528f702e3e778304b4449438e903b4b88415fa100963eea2de91350e96e204"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-4-buffer.svg",
+      "sha256": "41c683efaaa6d504af220e797864b98a2288cf0c3063b58ed572b1c29b6d762e"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-5-agent.svg",
+      "sha256": "4af9eb2666afae02d21476d5d33b81400f35065cfc8e2ea8b9d8c723f733f4d0"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-6-placement.svg",
+      "sha256": "bde37255aae7f794977900d126e5d64377fbbe9610f68e5ca96f26efe78c181f"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-7-migration.svg",
+      "sha256": "a4b4453f750df0ef72d7a61b8eab3a03f3ca15a4161f90f2511ddb7587c12f0d"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-8-sync.svg",
+      "sha256": "0249d2af31596779bb6ce5f967d37d04bad3de8533d4231e7d8446a05f73c6ac"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-9-window.svg",
+      "sha256": "8b7778acb631364b0408ebba15829e8311da98d25c8eb85dc3f7c276577085f4"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-audio-clocks.svg",
+      "sha256": "93bc4619798398de10768cf565dda31a085804cd7b91acf808e55e33cbb3c77c"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-budgets-1.svg",
+      "sha256": "8b892f7b7ddc6fefb66ad3397e933adc7d9afb0301b4b1d59d8f26910f0b36b4"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-budgets-2.svg",
+      "sha256": "ed7e8bb60af3ab800626becb776790803d13f403dd5ec2410860d0b007e39337"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-cache-restart.svg",
+      "sha256": "3702d6ecbbb0b8e11b4aa9c10d9c2f106dc8ed6f93949b71f90f182f1d92f94b"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-cancel-paths.svg",
+      "sha256": "c6a0650edcef062a7a61ce3c83e4acdcbf90e15710bd177e4f76e48845452337"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-encoder-local.svg",
+      "sha256": "55b07079598858ed8b9426d44c3abc765816c923e36971e2bf087f44793d4cf3"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-encoder-remote.svg",
+      "sha256": "be43572f35375807d316dd6b2836fc0b96ac90217fd03bff5703916e300f6529"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-experiment-design.svg",
+      "sha256": "44c00465a27b5831adffa2848ed74abdefb3e7b35d1b88aa8ebd917779f7e83f"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-image-path.svg",
+      "sha256": "6620aed49ea675e1731c54de2ac1065e257f8adf3bb2a5c0aecf449f853efa35"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-local-tiers.svg",
+      "sha256": "7b2b758cf1122b0129c8d771dcca13aaf818e3ddd720d3d08813ee85088bdeec"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-loss-repair.svg",
+      "sha256": "adfec4ee06dad846da03fd0676f5eee9e8e79bb6e3ec6d3076b591b68026a302"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-multipath-independent.svg",
+      "sha256": "378797d23381510b8df39f632e4d16e12baf236606b87d86cb3c85374152183e"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-overlap-chunks.svg",
+      "sha256": "b11370dce35bf1900ed7d24eb89a6ef5fc19437ec259843667ae7d0e5a923ac7"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-queqiao-tuned.svg",
+      "sha256": "ea1a780f8251cc55740579c886eb934f60409a0a65d76d6de5814f1a09ca6705"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-recovery-all.svg",
+      "sha256": "7ef08f92c58cf66ea6efb43e6f368f8056fc553f6275f0e4ab8481d37826165a"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-sync-ffn.svg",
+      "sha256": "732d39b83ab08817b783b14165f1ae38ac7e2f3551c51807e0876352a91ed569"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-task-counterfactual.svg",
+      "sha256": "669225e930b256509a91b6d96312949a3ddac22317e104e046c91b11857fc0da"
+    },
+    {
+      "path": "manuscripts/ch12/figure-12-transport-per-stream.svg",
+      "sha256": "10eace4c0e02b53321fecfa4081eea7da68b6618e5f51c686726776aa6b8f8b7"
+    }
+  ]
+}

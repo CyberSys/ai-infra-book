@@ -1,0 +1,194 @@
+{
+  "repository": "https://github.com/bojieli/ai-infra-book",
+  "commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "files": [
+    {
+      "path": "manuscripts/ch10/figure-10-1-state.svg",
+      "sha256": "97468438c2a220ec2bf478a139d1498cba39c18f754e814e23386365549c852d"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-10-input-queue.svg",
+      "sha256": "14266e28d089c58c18eb69d04985019a3f7404712efd76ca8f15cd84e9a30366"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-11-resharding.svg",
+      "sha256": "a46ee38597e23759576e3a114cf6284d92371001e500c56e595a3980faec7c57"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-12-recovery.svg",
+      "sha256": "a471da579ad680a9da768cd1a58f24f5b8999c7dcf6a210daf9663c8674f7c42"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-13-save-interval.svg",
+      "sha256": "5aa1790b3d74a809c8891d8877e828b07e8ae97cc7a006213e601a35fb31b48a"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-14-rl-flow.svg",
+      "sha256": "ee7ab7d298ef20715562303bf9709931e7bb8467c32809ba733ca4a21a73064b"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-15-rl.svg",
+      "sha256": "3475e29f4c26abe009d667a86785c15dd152cdd27dd5eaca76714beb53d25241"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-16-async-cycle.svg",
+      "sha256": "79c644b3f2d874234bed4dc9df6c544dec8fde15fddc8e2810bc66e646629db2"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-17-replay.svg",
+      "sha256": "eb330e575b4018904fdd989c6d66ae51368f288294ef089013209863318b7931"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-18-deadline.svg",
+      "sha256": "53f64d19b00d121816dbfab093b852ca5b518645e910fef0cf9617914640a1f3"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-19-hardware.svg",
+      "sha256": "d0c3999017c7bb1e7a898bfbc76e7e7ba608f9822fe61eee9d04d60a0345ad54"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-2-budget.svg",
+      "sha256": "e379c1d1df9dd51f5e303c68549ff912e553b97275e7674d02593d575581dbc2"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-20-scale.svg",
+      "sha256": "16870c82bbc29281824cafcb267cceca888c0b56d5920e357bf4e206e05cdee2"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-3-sharding.svg",
+      "sha256": "a47acdfcc72daa742f5c11b1f98c10d7737aac06b89538d358605e4020575d84"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-4-recompute.svg",
+      "sha256": "a5a5969e4881aecb83366bcdf874c27f8385cedb6347d0d3ba34d1558041de61"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-5-casting.svg",
+      "sha256": "fa61225efc3d185935200bd23eef7830143ded1d32d0b9b26085d9ec5e48e855"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-6-candidates.svg",
+      "sha256": "84e3caf8a16089faf4d0d6c16ed26f363da4990330a34fb09f6565e87a09a357"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-7-pipeline.svg",
+      "sha256": "f6fcc605a9df79375482dc02c6b93ee16f63f806ab18d6c26baa0c09ee53d43d"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-8-overlap.svg",
+      "sha256": "a4b39337ebd4bb0ac1c33405d7a3befb38eb2df2b006ee1c06eb2e062e9d5073"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-9-attention-area.svg",
+      "sha256": "295607d8ab468c086824c27cf6ca12d65b3428cd40c1ea211b7395afcab243e9"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-async-overlap.svg",
+      "sha256": "8a0025ab25926aa83daa4b386d1da12f4d4a1be51462071cf729feaba0a386d1"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-attention-unequal.svg",
+      "sha256": "9d6c2c85728804c5c904bfe6790561613b6c27dffb8e2f29ae78bc129a3bdc1d"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-budget-1.svg",
+      "sha256": "45318c36f1feca089dfbd5106ee34792228f8d082b48812b1865663e905e3747"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-budget-2.svg",
+      "sha256": "52862b683e3ededf3692bbd326799a4c47cd3c19e173e67a8e3a6671a763da33"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-casting-gpu.svg",
+      "sha256": "b0172a2bc70fbf71c627fbefe4889b5bd0ddf6bf34c2e0e5fda5deddee929d09"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-checkpoint-commit.svg",
+      "sha256": "fe14d858db2021b5e249732a44e09348fd42a618c17d1f250479a223e7c36e95"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-gradient-branches.svg",
+      "sha256": "246091c8ca8ae441979c096f9a40b19b5eaaf95a39be9df330f5f82861ebd3cd"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-mimo-interruptions.svg",
+      "sha256": "48156ee6d7aefa566b1f7f4195ce211648052ea84235d27cb0147fa1c02b6f4a"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-moe-capacity.svg",
+      "sha256": "9cfbb0bd9795adfe09604f5f95770efcb429d66de59cd1ae9ca75d1117d9ff6b"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-overlap-busy.svg",
+      "sha256": "6b4b6d783ea5ba1a85ed16aeebd4e5770064e115ee6234711d0679d4d4785d1e"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-pipeline-1f1b.svg",
+      "sha256": "7187da3c7aa185f90d6de90528b571e953c37b3475f6718e73bc228f9e20fcd7"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-pipeline-dualpipe.svg",
+      "sha256": "706a77a55b141c70fd74badad715176f0c435833cd96770f4b5dba3f2015e117"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-pipeline-gap.svg",
+      "sha256": "d68cd75c4d63811f6e69ed99f8096b22c97656c339dcb4771ea20d2da18dcb17"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-pipeline-interleaved.svg",
+      "sha256": "526ed9e399b2a437f95f17c0a642e01f51cf748adab543b89c1eabf34ef86e0a"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-pipeline-memory.svg",
+      "sha256": "159680ecd155d17fdc5716140cb2d4318c6d6289d925b585e32ee6bc61d83634"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-pipeline-schedules.svg",
+      "sha256": "3275471e0c3e4be3d2a6325195b0fee32fe939b78e88fed604c16627f733ca17"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-pipeline-zero-bubble.svg",
+      "sha256": "02f39341991699fa4ee0c8dc71a6a79e47ed18e7a48a9b6720f548126e16beea"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-policy-versions.svg",
+      "sha256": "fd958d4a4f0bb62cbb407e2dcecca66062474a37e610c9ab70bbb5a6dfe38ec3"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-recompute-rebuild.svg",
+      "sha256": "3602e6547fa4d891150bbfd91c12b9a864e8468b9decc7174b6d2b424edfc9b5"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-recovery-fast.svg",
+      "sha256": "5e79ea4aff24c5fece7afb83fa4baa8e6a3a59978c40d432b150f887e9180b70"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-rl-staged.svg",
+      "sha256": "069b965d2f95944c5262a6e41ce06e1ad268afc7a923eb565d81a3d115204297"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-update-cycle.svg",
+      "sha256": "396b773aa2391dadc08dd023676a5166a5092d5345657ce71e8f01d71b612384"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-weight-update.svg",
+      "sha256": "58285aec9de822eb3707fc39425c656465857e460ee475831c679a1eec9e4d70"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-zero-0.svg",
+      "sha256": "396a8760c4be74963609319d2ab29779b67d8cc57e6b6ad1942e72359de71d16"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-zero-1.svg",
+      "sha256": "4370b95a92559d870ab5bfd7371ca2f918db8517d587d98faff49948adc2c0c3"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-zero-2.svg",
+      "sha256": "bb065130b0206d2d7a4cfb502eaf56d88302f8a1213cad67e84306c7f1824c6d"
+    },
+    {
+      "path": "manuscripts/ch10/figure-10-zero-3.svg",
+      "sha256": "07fe5a402fbfedb8e283589fa4a57f53a32931ce0ffc54ea69e7c9947ddef930"
+    }
+  ]
+}

@@ -1,0 +1,1105 @@
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+import re
+import sys
+import tempfile
+from collections.abc import Mapping, Sequence
+from concurrent.futures import ThreadPoolExecutor
+from dataclasses import dataclass
+from pathlib import Path
+from typing import cast
+
+from jsonschema import Draft202012Validator, SchemaError, ValidationError
+
+if __package__:
+    from scripts.check_links import github_anchor
+    from scripts.check_translation import (
+        TRANSLATION_NOTICE,
+        GlossaryTerm,
+        load_glossary,
+        parse_markdown,
+        validate_translation,
+    )
+    from scripts.markdown_chunks import (
+        MarkdownChunk,
+        restore_missing_newline_boundaries,
+        split_markdown,
+    )
+    from scripts.model_runner import EXACT_MODEL, run_model
+    from scripts.translate_file import runtime_record
+else:
+    from check_links import github_anchor  # pyright: ignore[reportImplicitRelativeImport]
+    from check_translation import (  # pyright: ignore[reportImplicitRelativeImport]
+        TRANSLATION_NOTICE,
+        GlossaryTerm,
+        load_glossary,
+        parse_markdown,
+        validate_translation,
+    )
+    from markdown_chunks import (  # pyright: ignore[reportImplicitRelativeImport]
+        MarkdownChunk,
+        restore_missing_newline_boundaries,
+        split_markdown,
+    )
+    from model_runner import (  # pyright: ignore[reportImplicitRelativeImport]
+        EXACT_MODEL,
+        run_model,
+    )
+    from translate_file import (  # pyright: ignore[reportImplicitRelativeImport]
+        runtime_record,
+    )
+
+type JsonObject = dict[str, object]
+
+HASH_RE = re.compile(r"^[0-9a-f]{64}$")
+OUTER_FENCE_RE = re.compile(r"(```|~~~)(?:markdown|md)?", re.IGNORECASE)
+RUNTIME_KEYS = {
+    "requested_model",
+    "reported_model",
+    "provider",
+    "thread_id",
+    "turn_id",
+    "ephemeral",
+    "fallback_allowed",
+    "sandbox_type",
+    "completion_observed",
+    "usage_observed",
+    "command_sha256",
+    "prompt_sha256",
+    "response_sha256",
+    "stdout_sha256",
+    "stderr_sha256",
+}
+
+
+@dataclass(frozen=True)
+class TranslationChunkEvidence:
+    source: MarkdownChunk
+    draft_text: str
+    draft_sha256: str
+    runtime: JsonObject
+
+
+@dataclass(frozen=True)
+class VerifiedChunk:
+    index: str
+    start_line: int
+    end_line: int
+    source_start: int
+    source_end: int
+    final_start: int
+    final_end: int
+    source_sha256: str
+    draft_sha256: str
+    final_sha256: str
+    translation_runtime: JsonObject
+    verification_runtime: JsonObject
+
+
+@dataclass(frozen=True)
+class ReusedChunk:
+    response: str
+    corrected: str
+    runtime: JsonObject
+
+
+@dataclass(frozen=True)
+class VerificationManifest:
+    source_path: Path
+    draft_path: Path
+    output_path: Path
+    evidence_path: Path
+    manifest_fragment_path: Path
+    source_sha256: str
+    draft_sha256: str
+    final_sha256: str
+    chunks: tuple[VerifiedChunk, ...]
+
+
+class VerificationError(RuntimeError):
+    """GPT-сверка или её provenance нарушили fail-closed контракт."""
+
+
+def _sha256(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def _git_blob_sha1(data: bytes) -> str:
+    header = f"blob {len(data)}\0".encode()
+    return hashlib.sha1(header + data).hexdigest()  # noqa: S324 - Git object identity
+
+
+def _mapping(value: object, context: str) -> JsonObject:
+    if not isinstance(value, dict):
+        raise VerificationError(f"{context} должен быть JSON object")
+    return cast(JsonObject, value)
+
+
+def _string(document: Mapping[str, object], key: str, context: str) -> str:
+    value = document.get(key)
+    if not isinstance(value, str) or not value:
+        raise VerificationError(f"{context}: поле {key} должно быть непустой строкой")
+    return value
+
+
+def _hash(document: Mapping[str, object], key: str, context: str) -> str:
+    value = _string(document, key, context)
+    if HASH_RE.fullmatch(value) is None:
+        raise VerificationError(f"{context}: поле {key} не является SHA-256")
+    return value
+
+
+def _load_json(path: Path, context: str) -> JsonObject:
+    try:
+        raw: object = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as error:
+        raise VerificationError(f"{context}: некорректный JSON") from error
+    return _mapping(raw, context)
+
+
+def _inside(path: Path, root: Path, context: str) -> Path:
+    resolved = path.resolve()
+    expected_root = root.resolve()
+    if resolved == expected_root or not resolved.is_relative_to(expected_root):
+        raise VerificationError(f"{context} должен находиться внутри {expected_root}")
+    return resolved
+
+
+def _validate_paths(
+    repo_root: Path,
+    source_path: Path,
+    draft_path: Path,
+    translation_evidence_path: Path,
+    output_path: Path,
+    evidence_path: Path,
+    manifest_fragment_path: Path,
+    resume: bool = False,
+) -> tuple[Path, Path, Path, Path, Path, Path, Path]:
+    root = repo_root.resolve()
+    source = _inside(source_path, root / ".tmp/upstream/book", "Source")
+    draft = _inside(draft_path, root / ".tmp/drafts", "Draft")
+    translation_evidence = _inside(
+        translation_evidence_path,
+        root / ".tmp/evidence",
+        "Translation evidence",
+    )
+    output = _inside(output_path, root / ".tmp/verified", "Output")
+    evidence = _inside(evidence_path, root / ".tmp/evidence", "Verification evidence")
+    fragment = _inside(
+        manifest_fragment_path,
+        root / ".tmp/evidence",
+        "Manifest fragment",
+    )
+    for required in (source, draft, translation_evidence):
+        if not required.is_file():
+            raise VerificationError(f"Обязательный input отсутствует: {required}")
+    for new_artifact in (output, evidence, fragment):
+        if new_artifact.exists() and not resume:
+            raise VerificationError(f"Partial artifact уже существует: {new_artifact}")
+    return root, source, draft, translation_evidence, output, evidence, fragment
+
+
+def _validate_runtime(record: object, context: str, response_sha256: str) -> JsonObject:
+    runtime = _mapping(record, context)
+    if set(runtime) != RUNTIME_KEYS:
+        raise VerificationError(f"{context}: runtime fields не совпали с contract")
+    if (
+        runtime.get("requested_model") != EXACT_MODEL
+        or runtime.get("reported_model") != EXACT_MODEL
+    ):
+        raise VerificationError(f"{context}: exact model identity не подтверждена")
+    if runtime.get("provider") != "openai":
+        raise VerificationError(f"{context}: provider должен быть openai")
+    if runtime.get("ephemeral") is not True or runtime.get("fallback_allowed") is not False:
+        raise VerificationError(f"{context}: ephemeral/fallback evidence противоречива")
+    if runtime.get("sandbox_type") != "readOnly":
+        raise VerificationError(f"{context}: sandbox должен быть readOnly")
+    if runtime.get("completion_observed") is not True or runtime.get("usage_observed") is not True:
+        raise VerificationError(f"{context}: completion/usage evidence отсутствует")
+    _string(runtime, "thread_id", context)
+    _string(runtime, "turn_id", context)
+    for key in (
+        "command_sha256",
+        "prompt_sha256",
+        "response_sha256",
+        "stdout_sha256",
+        "stderr_sha256",
+    ):
+        _hash(runtime, key, context)
+    if runtime.get("response_sha256") != response_sha256:
+        raise VerificationError(f"{context}: response_sha256 не совпал с artifact")
+    return runtime
+
+
+def _load_translation_chunks(
+    root: Path,
+    source: Path,
+    draft: Path,
+    evidence_path: Path,
+) -> tuple[TranslationChunkEvidence, ...]:
+    document = _load_json(evidence_path, "translation evidence")
+    expected_keys = {
+        "schema_version",
+        "pass",
+        "model_id",
+        "source_path",
+        "draft_path",
+        "source_sha256",
+        "draft_sha256",
+        "max_chars",
+        "chunks",
+    }
+    if set(document) not in (expected_keys, expected_keys | {"baseline_source_paths"}):
+        raise VerificationError("translation evidence fields не совпали с contract")
+    baseline_paths = document.get("baseline_source_paths", [])
+    if not isinstance(baseline_paths, list) or any(
+        not isinstance(path, str) or Path(path).name != path or not path.endswith(".md")
+        for path in cast(list[object], baseline_paths)
+    ):
+        raise VerificationError("translation evidence baseline_source_paths некорректны")
+    if (
+        document.get("schema_version") != 1
+        or document.get("pass") != "translation"
+        or document.get("model_id") != EXACT_MODEL
+    ):
+        raise VerificationError("translation evidence header противоречив")
+    if document.get("source_path") != source.relative_to(root).as_posix():
+        raise VerificationError("translation evidence source_path не совпал")
+    if document.get("draft_path") != draft.relative_to(root).as_posix():
+        raise VerificationError("translation evidence draft_path не совпал")
+
+    source_text = source.read_text(encoding="utf-8")
+    draft_text = draft.read_text(encoding="utf-8")
+    if document.get("source_sha256") != _sha256(source_text):
+        raise VerificationError("translation evidence source hash не совпал")
+    if document.get("draft_sha256") != _sha256(draft_text):
+        raise VerificationError("translation evidence draft hash не совпал")
+    max_chars = document.get("max_chars")
+    if not isinstance(max_chars, int) or isinstance(max_chars, bool) or max_chars <= 0:
+        raise VerificationError("translation evidence max_chars некорректен")
+
+    source_chunks = split_markdown(source_text, max_chars=max_chars)
+    raw_chunks = document.get("chunks")
+    if not isinstance(raw_chunks, list):
+        raise VerificationError("translation evidence chunk count не совпал")
+    raw_chunk_items = cast(list[object], raw_chunks)
+    if len(raw_chunk_items) != len(source_chunks):
+        raise VerificationError("translation evidence chunk count не совпал")
+
+    result: list[TranslationChunkEvidence] = []
+    draft_parts: list[str] = []
+    response_root = (draft.parent / ".chunks" / draft.stem).resolve()
+    for ordinal, (source_chunk, raw_chunk) in enumerate(
+        zip(source_chunks, raw_chunk_items, strict=True)
+    ):
+        context = f"translation evidence chunks[{ordinal}]"
+        chunk = _mapping(raw_chunk, context)
+        if set(chunk) != {
+            "index",
+            "start_line",
+            "end_line",
+            "source_sha256",
+            "draft_sha256",
+            "response_path",
+            "runtime",
+        }:
+            raise VerificationError(f"{context}: fields не совпали с contract")
+        expected_identity = (
+            source_chunk.index,
+            source_chunk.start_line,
+            source_chunk.end_line,
+            source_chunk.sha256,
+        )
+        actual_identity = (
+            chunk.get("index"),
+            chunk.get("start_line"),
+            chunk.get("end_line"),
+            chunk.get("source_sha256"),
+        )
+        if actual_identity != expected_identity:
+            raise VerificationError(f"{context}: source identity не совпала")
+        response_relative = _string(chunk, "response_path", context)
+        response_path = (root / response_relative).resolve()
+        if not response_path.is_relative_to(response_root) or not response_path.is_file():
+            raise VerificationError(f"{context}: response_path вне chunk-каталога данного draft")
+        draft_chunk = response_path.read_text(encoding="utf-8")
+        draft_sha256 = _sha256(draft_chunk)
+        if chunk.get("draft_sha256") != draft_sha256:
+            raise VerificationError(f"{context}: draft_sha256 не совпал")
+        runtime = _validate_runtime(chunk.get("runtime"), f"{context} runtime", draft_sha256)
+        result.append(
+            TranslationChunkEvidence(
+                source=source_chunk,
+                draft_text=draft_chunk,
+                draft_sha256=draft_sha256,
+                runtime=runtime,
+            )
+        )
+        draft_parts.append(draft_chunk)
+
+    restored_draft_parts = restore_missing_newline_boundaries(source_chunks, draft_parts)
+    assembled_draft = f"{TRANSLATION_NOTICE}\n\n{''.join(restored_draft_parts)}"
+    if assembled_draft != draft_text:
+        raise VerificationError("translation evidence draft chunks не собирают exact draft")
+    return tuple(result)
+
+
+def _render_glossary(terms: tuple[GlossaryTerm, ...]) -> str:
+    lines: list[str] = []
+    for term in terms:
+        if term.status != "accepted":
+            continue
+        lines.extend(
+            [
+                f"- id: {term.id}",
+                f"  source: {', '.join(term.source)}",
+                f"  preferred: {term.preferred}",
+                f"  rule: {term.rule}",
+                f"  forbidden: {', '.join(term.forbidden) or '(none)'}",
+            ]
+        )
+    return "\n".join(lines) if lines else "(accepted entries отсутствуют)"
+
+
+def heading_context(source: str, draft: str) -> str:
+    """Give every verification chunk the same cross-chunk heading targets."""
+    source_shape, draft_shape = parse_markdown(source), parse_markdown(draft)
+    if source_shape.heading_levels != draft_shape.heading_levels:
+        return ""
+    occurrences: dict[str, int] = {}
+    records: list[dict[str, str]] = []
+    for original, translated in zip(source_shape.headings, draft_shape.headings, strict=True):
+        title = re.sub(r"\s+\{[^{}]*\}\s*$", "", translated)
+        base = github_anchor(translated, 0)
+        occurrence = occurrences.get(base, 0)
+        occurrences[base] = occurrence + 1
+        records.append(
+            {
+                "source_heading": original,
+                "russian_heading": title,
+                "target": "#" + github_anchor(translated, occurrence),
+            }
+        )
+    return (
+        "\n\nЗаголовки всей главы, включая части вне текущего chunk:\n"
+        "Для внутренних ссылок используй точные target из этой таблицы, а не свой вариант "
+        "перевода заголовка. Сохраняй корректные русские заголовки таблицы дословно; "
+        "если заголовок действительно ошибочен по source, явно укажи исправление в issues.\n"
+        + json.dumps(records, ensure_ascii=False)
+    )
+
+
+def _render_prompt(
+    template: str,
+    source_relative: str,
+    chunk: TranslationChunkEvidence,
+    glossary: str,
+) -> str:
+    replacements = {
+        "{{SOURCE_PATH}}": source_relative,
+        "{{START_LINE}}": str(chunk.source.start_line),
+        "{{END_LINE}}": str(chunk.source.end_line),
+        "{{SOURCE_SHA256}}": chunk.source.sha256,
+        "{{DRAFT_SHA256}}": chunk.draft_sha256,
+        "{{GLOSSARY}}": glossary,
+        "{{SOURCE}}": chunk.source.text,
+        "{{DRAFT}}": chunk.draft_text,
+    }
+    missing = tuple(marker for marker in replacements if marker not in template)
+    if missing:
+        raise VerificationError(f"Verification prompt не содержит markers: {', '.join(missing)}")
+    rendered = template
+    for marker, value in replacements.items():
+        rendered = rendered.replace(marker, value)
+    return rendered
+
+
+def _load_schema(path: Path) -> JsonObject:
+    schema = _load_json(path, "verification schema")
+    try:
+        Draft202012Validator.check_schema(schema)
+    except SchemaError as error:
+        raise VerificationError(f"Verification JSON Schema некорректна: {error.message}") from error
+    return schema
+
+
+def _parse_response(
+    response: str,
+    schema: JsonObject,
+    chunk: TranslationChunkEvidence,
+) -> str:
+    try:
+        raw: object = json.loads(response)
+    except json.JSONDecodeError as error:
+        raise VerificationError("GPT-сверка вернула некорректный JSON") from error
+    try:
+        Draft202012Validator(schema).validate(raw)  # pyright: ignore[reportUnknownMemberType]
+    except ValidationError as error:
+        raise VerificationError(
+            f"GPT-сверка нарушила JSON Schema at {error.json_path}: {error.message}"
+        ) from error
+    document = _mapping(raw, "GPT-сверка result")
+    if document.get("source_sha256") != chunk.source.sha256:
+        raise VerificationError("GPT-сверка source_sha256 не совпал")
+    if document.get("draft_sha256") != chunk.draft_sha256:
+        raise VerificationError("GPT-сверка draft_sha256 не совпал")
+    if document.get("model_id") != EXACT_MODEL:
+        raise VerificationError("GPT-сверка model_id не совпал")
+    corrected = _string(document, "corrected_translation", "GPT-сверка result")
+    issues = document.get("issues")
+    lines = tuple(line for line in corrected.strip().splitlines() if line.strip())
+    if (
+        len(lines) >= 2
+        and OUTER_FENCE_RE.fullmatch(lines[0].strip()) is not None
+        and lines[-1].strip() == lines[0].strip()[:3]
+    ):
+        raise VerificationError("GPT-сверка добавила лишний внешний Markdown fence")
+    source_boundaries = (
+        len(chunk.source.text) - len(chunk.source.text.lstrip("\n")),
+        len(chunk.source.text) - len(chunk.source.text.rstrip("\n")),
+    )
+    corrected_boundaries = (
+        len(corrected) - len(corrected.lstrip("\n")),
+        len(corrected) - len(corrected.rstrip("\n")),
+    )
+    if any(
+        corrected_count > source_count
+        for corrected_count, source_count in zip(
+            corrected_boundaries,
+            source_boundaries,
+            strict=True,
+        )
+    ):
+        raise VerificationError("GPT-сверка изменила newline boundary chunk")
+    restored_draft, restored_corrected = restore_missing_newline_boundaries(
+        (chunk.source, chunk.source),
+        (chunk.draft_text.strip("\n"), corrected.strip("\n")),
+    )
+    if restored_corrected != restored_draft and isinstance(issues, list) and not issues:
+        raise VerificationError("GPT-сверка изменила draft без связанной issue")
+    return corrected
+
+
+def _source_identity(
+    root: Path, source: Path, upstream_manifest: Path | None = None
+) -> tuple[str, str]:
+    source_relative = source.relative_to(root / ".tmp/upstream").as_posix()
+    data = source.read_bytes()
+    blob_sha1 = _git_blob_sha1(data)
+    upstream = _load_json(upstream_manifest or root / "upstream.json", "upstream manifest")
+    raw_markdown = upstream.get("markdown")
+    if not isinstance(raw_markdown, list):
+        raise VerificationError("upstream manifest markdown должен быть list")
+    expected_blob = ""
+    for raw_entry in cast(list[object], raw_markdown):
+        entry = _mapping(raw_entry, "upstream markdown entry")
+        if entry.get("path") == source_relative:
+            expected_blob = _string(entry, "blob_sha1", "upstream markdown entry")
+            break
+    if not expected_blob or expected_blob != blob_sha1:
+        raise VerificationError("Pinned source blob не совпал с upstream manifest")
+    return source_relative, blob_sha1
+
+
+def _write_json(path: Path, document: Mapping[str, object]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        with path.open("x", encoding="utf-8", newline="") as output_file:
+            json.dump(dict(document), output_file, ensure_ascii=False, indent=2)
+            output_file.write("\n")
+    except FileExistsError as error:
+        raise VerificationError(f"Partial artifact уже существует: {path}") from error
+
+
+def _write_response(path: Path, response: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        with path.open("x", encoding="utf-8", newline="") as response_file:
+            response_file.write(response)
+    except FileExistsError as error:
+        raise VerificationError(f"Partial artifact уже существует: {path}") from error
+
+
+def _write_checkpoint(path: Path, document: Mapping[str, object]) -> None:
+    """Publish a complete checkpoint atomically, without replacing existing evidence."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    pending: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w", encoding="utf-8", dir=path.parent, prefix=".pending-", delete=False
+        ) as handle:
+            pending = Path(handle.name)
+            json.dump(dict(document), handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.link(pending, path)
+    except FileExistsError as error:
+        raise VerificationError(f"Checkpoint уже существует: {path}") from error
+    finally:
+        if pending is not None:
+            pending.unlink(missing_ok=True)
+
+
+def _load_reused_chunks(
+    root: Path,
+    reuse_run_path: Path,
+    source: Path,
+    draft: Path,
+    output: Path,
+    chunks: tuple[TranslationChunkEvidence, ...],
+    schema: JsonObject,
+) -> dict[str, ReusedChunk]:
+    reuse_run = _inside(reuse_run_path, root / ".tmp/failed", "Reuse run")
+    if not reuse_run.is_dir():
+        raise VerificationError(f"Reuse run не является каталогом: {reuse_run}")
+    evidence_path = reuse_run / "evidence" / f"{output.stem}.verification.json"
+    response_root = (reuse_run / "responses" / output.stem).resolve()
+    final_path = reuse_run / output.name
+    if not evidence_path.is_file() or not response_root.is_dir() or not final_path.is_file():
+        raise VerificationError("Reuse run не содержит полный verification artifact set")
+
+    document = _load_json(evidence_path, "reuse verification evidence")
+    if set(document) != {
+        "schema_version",
+        "pass",
+        "model_id",
+        "source_path",
+        "draft_path",
+        "output_path",
+        "source_sha256",
+        "draft_sha256",
+        "final_sha256",
+        "chunks",
+    }:
+        raise VerificationError("Reuse verification evidence fields не совпали")
+    source_text = source.read_text(encoding="utf-8")
+    draft_text = draft.read_text(encoding="utf-8")
+    if (
+        document.get("schema_version") != 1
+        or document.get("pass") != "source_verification"
+        or document.get("model_id") != EXACT_MODEL
+        or document.get("source_path") != source.relative_to(root).as_posix()
+        or document.get("draft_path") != draft.relative_to(root).as_posix()
+        or document.get("output_path") != output.relative_to(root).as_posix()
+        or document.get("source_sha256") != _sha256(source_text)
+        or document.get("draft_sha256") != _sha256(draft_text)
+        or document.get("final_sha256") != _sha256(final_path.read_text(encoding="utf-8"))
+    ):
+        raise VerificationError("Reuse verification evidence identity не совпала")
+
+    raw_chunks = document.get("chunks")
+    if not isinstance(raw_chunks, list):
+        raise VerificationError("Reuse verification chunk count не совпал")
+    raw_chunk_items = cast(list[object], raw_chunks)
+    if len(raw_chunk_items) != len(chunks):
+        raise VerificationError("Reuse verification chunk count не совпал")
+    reused: dict[str, ReusedChunk] = {}
+    source_offset = 0
+    final_offset = 0
+    for ordinal, (chunk, raw_chunk) in enumerate(zip(chunks, raw_chunk_items, strict=True)):
+        context = f"reuse verification chunks[{ordinal}]"
+        item = _mapping(raw_chunk, context)
+        if set(item) != {
+            "index",
+            "start_line",
+            "end_line",
+            "source_start",
+            "source_end",
+            "final_start",
+            "final_end",
+            "source_sha256",
+            "draft_sha256",
+            "final_sha256",
+            "runtime",
+        }:
+            raise VerificationError(f"{context}: fields не совпали")
+        response_path = response_root / f"{chunk.source.index}.json"
+        if (
+            response_path.is_symlink()
+            or not response_path.is_file()
+            or not response_path.resolve().is_relative_to(response_root)
+        ):
+            raise VerificationError(f"{context}: response artifact отсутствует")
+        response = response_path.read_text(encoding="utf-8")
+        runtime = _validate_runtime(item.get("runtime"), f"{context} runtime", _sha256(response))
+        corrected = _parse_response(response, schema, chunk)
+        restored_corrected = restore_missing_newline_boundaries(
+            (chunk.source,),
+            (corrected,),
+        )[0]
+        source_end = source_offset + len(chunk.source.text)
+        final_end = final_offset + len(restored_corrected)
+        expected_identity = (
+            chunk.source.index,
+            chunk.source.start_line,
+            chunk.source.end_line,
+            source_offset,
+            source_end,
+            final_offset,
+            final_end,
+            chunk.source.sha256,
+            chunk.draft_sha256,
+            _sha256(restored_corrected),
+        )
+        actual_identity = (
+            item.get("index"),
+            item.get("start_line"),
+            item.get("end_line"),
+            item.get("source_start"),
+            item.get("source_end"),
+            item.get("final_start"),
+            item.get("final_end"),
+            item.get("source_sha256"),
+            item.get("draft_sha256"),
+            item.get("final_sha256"),
+        )
+        if actual_identity != expected_identity:
+            raise VerificationError(f"{context}: identity/ranges не совпали")
+        reused[chunk.source.index] = ReusedChunk(response, corrected, runtime)
+        source_offset = source_end
+        final_offset = final_end
+    return reused
+
+
+def verify_file(
+    source_path: Path,
+    draft_path: Path,
+    translation_evidence_path: Path,
+    output_path: Path,
+    evidence_path: Path,
+    manifest_fragment_path: Path,
+    glossary_path: Path,
+    repo_root: Path,
+    timeout_seconds: int = 3_600,
+    jobs: int = 1,
+    reuse_run: Path | None = None,
+    rerun_chunks: frozenset[str] = frozenset(),
+    review_notes: Mapping[str, str] | None = None,
+    upstream_manifest: Path | None = None,
+    resume: bool = False,
+) -> VerificationManifest:
+    if timeout_seconds <= 0:
+        raise ValueError("timeout_seconds должен быть положительным")
+    if jobs <= 0:
+        raise ValueError("jobs должен быть положительным")
+    if resume and reuse_run is not None:
+        raise VerificationError("resume нельзя совмещать с reuse_run")
+    if reuse_run is None and rerun_chunks:
+        raise VerificationError("rerun_chunks требует reuse_run")
+    if reuse_run is not None and not rerun_chunks:
+        raise VerificationError("reuse_run требует хотя бы один rerun chunk")
+    notes = dict(review_notes or {})
+    if notes and reuse_run is None:
+        raise VerificationError("review_notes требует reuse_run")
+    unknown_notes = notes.keys() - rerun_chunks
+    if unknown_notes:
+        raise VerificationError(
+            f"Review notes заданы не для rerun chunks: {', '.join(sorted(unknown_notes))}"
+        )
+    if any(not note.strip() for note in notes.values()):
+        raise VerificationError("Review note не может быть пустой")
+    (
+        root,
+        source,
+        draft,
+        translation_evidence,
+        output,
+        evidence,
+        fragment,
+    ) = _validate_paths(
+        repo_root,
+        source_path,
+        draft_path,
+        translation_evidence_path,
+        output_path,
+        evidence_path,
+        manifest_fragment_path,
+        resume=resume,
+    )
+    if not glossary_path.is_file():
+        raise VerificationError(f"Glossary не существует: {glossary_path}")
+    prompt_path = root / "prompts/verify_translation.txt"
+    schema_path = root / "prompts/verify_translation.schema.json"
+    if not prompt_path.is_file() or not schema_path.is_file():
+        raise VerificationError("Verification prompt/schema отсутствуют")
+
+    chunks = _load_translation_chunks(root, source, draft, translation_evidence)
+    source_text = "".join(chunk.source.text for chunk in chunks)
+    draft_parts = restore_missing_newline_boundaries(
+        tuple(chunk.source for chunk in chunks), tuple(chunk.draft_text for chunk in chunks)
+    )
+    draft_text = f"{TRANSLATION_NOTICE}\n\n{''.join(draft_parts)}"
+    headings = heading_context(source_text, draft_text)
+    source_relative, blob_sha1 = _source_identity(root, source, upstream_manifest)
+    terms = load_glossary(glossary_path)
+    glossary = _render_glossary(terms)
+    template = prompt_path.read_text(encoding="utf-8")
+    schema = _load_schema(schema_path)
+    available_indices = frozenset(chunk.source.index for chunk in chunks)
+    unknown_reruns = rerun_chunks - available_indices
+    if unknown_reruns:
+        raise VerificationError(f"Неизвестные rerun chunks: {', '.join(sorted(unknown_reruns))}")
+    corrected_parts: list[str] = []
+    verified_chunks: list[VerifiedChunk] = []
+    source_offset = 0
+    final_offset = 0
+
+    response_root = output.parent / ".responses" / output.stem
+    reused_chunks = (
+        _load_reused_chunks(root, reuse_run, source, draft, output, chunks, schema)
+        if reuse_run is not None
+        else {}
+    )
+    chunks_to_run = tuple(
+        chunk for chunk in chunks if reuse_run is None or chunk.source.index in rerun_chunks
+    )
+
+    def chunk_prompt(chunk: TranslationChunkEvidence) -> str:
+        prompt = (
+            _render_prompt(
+                template,
+                source.relative_to(root).as_posix(),
+                chunk,
+                glossary,
+            )
+            + headings
+        )
+        previous = reused_chunks.get(chunk.source.index)
+        if previous is not None:
+            note = notes.get(chunk.source.index, "Повторно проверь весь перевод.")
+            prompt += (
+                "\n\nRetry contract:\n"
+                "Предыдущий исправленный перевод ниже является baseline. "
+                "Сохрани все его корректные исправления, повторно сверь его с source "
+                "и внеси reviewer note. Не возвращайся к ошибкам исходного draft.\n"
+                f"Reviewer note: {note}\n\n"
+                "Предыдущий исправленный перевод:\n"
+                f"{previous.corrected}"
+            )
+        return prompt
+
+    checkpoint_name = output.stem
+    if reuse_run is not None:
+        retry_identity = json.dumps(
+            [str(reuse_run.resolve()), sorted(rerun_chunks), notes], sort_keys=True
+        )
+        checkpoint_name += "-retry-" + _sha256(retry_identity)[:16]
+    checkpoint_root = _inside(
+        output.parent / ".checkpoints" / checkpoint_name, root / ".tmp/verified", "Checkpoints"
+    )
+    response_root = _inside(response_root, root / ".tmp/verified", "Responses")
+    context = {
+        "source": _sha256(source_text),
+        "draft": _sha256(draft_text),
+        "translation_evidence": _sha256(translation_evidence.read_text(encoding="utf-8")),
+        "template": _sha256(template),
+        "schema": _sha256(schema_path.read_text(encoding="utf-8")),
+        "glossary": _sha256(glossary_path.read_text(encoding="utf-8")),
+        "upstream": _sha256(
+            (upstream_manifest or root / "upstream.json").read_text(encoding="utf-8")
+        ),
+    }
+    context_sha256 = _sha256(json.dumps(context, sort_keys=True))
+    checkpoint_results: dict[str, tuple[str, JsonObject]] = {}
+    # Validate every existing checkpoint before any paid call, including later chunks.
+    for chunk in chunks_to_run:
+        index = chunk.source.index
+        checkpoint = checkpoint_root / f"{index}.json"
+        response_path = response_root / f"{index}.json"
+        if checkpoint.is_symlink() or response_path.is_symlink():
+            raise VerificationError(f"Checkpoint/response symlink запрещён: {index}")
+        if not checkpoint.exists() and not response_path.exists():
+            continue
+        if not resume:
+            raise VerificationError(
+                f"Partial artifact уже существует: {index}; используйте --resume"
+            )
+        if not checkpoint.is_file() or not response_path.is_file():
+            raise VerificationError(
+                f"Неполный checkpoint: {index}; raw response без runtime не засчитывается"
+            )
+        saved = _load_json(checkpoint, f"checkpoint {index}")
+        if set(saved) != {"schema_version", "index", "context_sha256", "runtime"} or (
+            saved.get("schema_version") != 1
+            or saved.get("index") != index
+            or saved.get("context_sha256") != context_sha256
+        ):
+            raise VerificationError(f"Checkpoint identity/context не совпали: {index}")
+        response = response_path.read_text(encoding="utf-8")
+        runtime = _validate_runtime(saved.get("runtime"), f"checkpoint {index}", _sha256(response))
+        if runtime["prompt_sha256"] != _sha256(chunk_prompt(chunk)):
+            raise VerificationError(f"Checkpoint prompt не совпал: {index}")
+        checkpoint_results[index] = (_parse_response(response, schema, chunk), runtime)
+
+    if (
+        resume
+        and any(path.exists() for path in (output, evidence, fragment))
+        and (len(checkpoint_results) != len(chunks))
+    ):
+        raise VerificationError("Partial final artifacts требуют полный набор checkpoints")
+
+    def run_chunk(chunk: TranslationChunkEvidence) -> tuple[str, str, JsonObject]:
+        prior = checkpoint_results.get(chunk.source.index)
+        if prior is not None:
+            return chunk.source.index, prior[0], prior[1]
+        prompt = chunk_prompt(chunk)
+        response_path = response_root / f"{chunk.source.index}.json"
+        result = run_model(
+            EXACT_MODEL,
+            prompt,
+            root,
+            response_path,
+            timeout_seconds,
+            output_schema=schema,
+        )
+        corrected = _parse_response(result.response, schema, chunk)
+        runtime = _validate_runtime(
+            runtime_record(result), "fresh checkpoint", _sha256(result.response)
+        )
+        _write_checkpoint(
+            checkpoint_root / f"{chunk.source.index}.json",
+            {
+                "schema_version": 1,
+                "index": chunk.source.index,
+                "context_sha256": context_sha256,
+                "runtime": runtime,
+            },
+        )
+        return chunk.source.index, corrected, runtime
+
+    if jobs == 1:
+        fresh_result_items = tuple(run_chunk(chunk) for chunk in chunks_to_run)
+    else:
+        with ThreadPoolExecutor(
+            max_workers=min(jobs, len(chunks_to_run)),
+            thread_name_prefix="verify-chunk",
+        ) as executor:
+            fresh_result_items = tuple(executor.map(run_chunk, chunks_to_run))
+    fresh_results = {
+        index: (corrected, runtime) for index, corrected, runtime in fresh_result_items
+    }
+
+    for ordinal, chunk in enumerate(chunks):
+        response_path = response_root / f"{chunk.source.index}.json"
+        fresh = fresh_results.get(chunk.source.index)
+        if fresh is not None:
+            corrected, verification_runtime = fresh
+        else:
+            reused = reused_chunks.get(chunk.source.index)
+            if reused is None:
+                raise AssertionError("Chunk отсутствует и в fresh, и в reused results")
+            _write_response(response_path, reused.response)
+            corrected = reused.corrected
+            verification_runtime = reused.runtime
+        restored_corrected = restore_missing_newline_boundaries(
+            (chunk.source,),
+            (corrected,),
+        )[0]
+        corrected_sha256 = _sha256(restored_corrected)
+        source_end = source_offset + len(chunk.source.text)
+        final_end = final_offset + len(restored_corrected)
+        verified_chunks.append(
+            VerifiedChunk(
+                index=chunk.source.index,
+                start_line=chunk.source.start_line,
+                end_line=chunk.source.end_line,
+                source_start=source_offset,
+                source_end=source_end,
+                final_start=final_offset,
+                final_end=final_end,
+                source_sha256=chunk.source.sha256,
+                draft_sha256=chunk.draft_sha256,
+                final_sha256=corrected_sha256,
+                translation_runtime=chunk.runtime,
+                verification_runtime=verification_runtime,
+            )
+        )
+        corrected_parts.append(restored_corrected)
+        source_offset = source_end
+        final_offset = final_end
+        if ordinal + 1 != len(chunks) and not corrected:
+            raise AssertionError("Пустой corrected chunk прошёл schema")
+
+    final_text = f"{TRANSLATION_NOTICE}\n\n{''.join(corrected_parts)}"
+    if source.read_text(encoding="utf-8") != source_text:
+        raise VerificationError("Source изменился во время GPT-сверки")
+    if draft.read_text(encoding="utf-8") != draft_text:
+        raise VerificationError("Draft изменился во время GPT-сверки")
+    if _source_identity(root, source, upstream_manifest) != (source_relative, blob_sha1):
+        raise VerificationError("Pinned source изменился во время GPT-сверки")
+    candidate = output.parent / ".candidates" / output.name
+    if candidate.exists():
+        if (
+            not resume
+            or candidate.is_symlink()
+            or candidate.read_text(encoding="utf-8") != final_text
+        ):
+            raise VerificationError(f"Partial candidate уже существует или не совпал: {candidate}")
+    else:
+        candidate.parent.mkdir(parents=True, exist_ok=True)
+        with candidate.open("x", encoding="utf-8", newline="") as candidate_file:
+            candidate_file.write(final_text)
+    issues = validate_translation(source, candidate, terms)
+    if issues:
+        codes = ", ".join(sorted({issue.code for issue in issues}))
+        raise VerificationError(f"Corrected translation не прошёл validation: {codes}")
+    if output.exists() and resume:
+        if output.read_text(encoding="utf-8") != final_text:
+            raise VerificationError(f"Partial final output не совпал: {output}")
+    else:
+        try:
+            with output.open("x", encoding="utf-8", newline="") as output_file:
+                output_file.write(final_text)
+        except FileExistsError as error:
+            raise VerificationError(f"Partial artifact уже существует: {output}") from error
+    candidate.unlink()
+
+    source_sha256 = _sha256(source_text)
+    draft_sha256 = _sha256(draft_text)
+    final_sha256 = _sha256(final_text)
+
+    evidence_document: dict[str, object] = {
+        "schema_version": 1,
+        "pass": "source_verification",
+        "model_id": EXACT_MODEL,
+        "source_path": source.relative_to(root).as_posix(),
+        "draft_path": draft.relative_to(root).as_posix(),
+        "output_path": output.relative_to(root).as_posix(),
+        "source_sha256": source_sha256,
+        "draft_sha256": draft_sha256,
+        "final_sha256": final_sha256,
+        "chunks": [
+            {
+                "index": chunk.index,
+                "start_line": chunk.start_line,
+                "end_line": chunk.end_line,
+                "source_start": chunk.source_start,
+                "source_end": chunk.source_end,
+                "final_start": chunk.final_start,
+                "final_end": chunk.final_end,
+                "source_sha256": chunk.source_sha256,
+                "draft_sha256": chunk.draft_sha256,
+                "final_sha256": chunk.final_sha256,
+                "runtime": chunk.verification_runtime,
+            }
+            for chunk in verified_chunks
+        ],
+    }
+    fragment_document: dict[str, object] = {
+        "path": output.name,
+        "source": {
+            "path": source_relative,
+            "blob_sha1": blob_sha1,
+            "sha256": source_sha256,
+        },
+        "final_sha256": final_sha256,
+        "chunks": [
+            {
+                "index": chunk.index,
+                "start_line": chunk.start_line,
+                "end_line": chunk.end_line,
+                "source_start": chunk.source_start,
+                "source_end": chunk.source_end,
+                "final_start": chunk.final_start,
+                "final_end": chunk.final_end,
+                "source_sha256": chunk.source_sha256,
+                "draft_sha256": chunk.draft_sha256,
+                "final_sha256": chunk.final_sha256,
+                "passes": {
+                    "translation": chunk.translation_runtime,
+                    "source_verification": chunk.verification_runtime,
+                },
+            }
+            for chunk in verified_chunks
+        ],
+    }
+    for path, document in ((evidence, evidence_document), (fragment, fragment_document)):
+        if path.exists() and resume:
+            if _load_json(path, "Partial final evidence") != document:
+                raise VerificationError(f"Partial final evidence не совпал: {path}")
+        else:
+            _write_json(path, document)
+    return VerificationManifest(
+        source_path=source,
+        draft_path=draft,
+        output_path=output,
+        evidence_path=evidence,
+        manifest_fragment_path=fragment,
+        source_sha256=source_sha256,
+        draft_sha256=draft_sha256,
+        final_sha256=final_sha256,
+        chunks=tuple(verified_chunks),
+    )
+
+
+def _build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Сверить русский draft с pinned source")
+    parser.add_argument("--source", required=True, type=Path)
+    parser.add_argument("--draft", required=True, type=Path)
+    parser.add_argument("--translation-evidence", required=True, type=Path)
+    parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--evidence", required=True, type=Path)
+    parser.add_argument("--manifest-fragment", required=True, type=Path)
+    parser.add_argument("--glossary", required=True, type=Path)
+    parser.add_argument("--timeout-seconds", type=int, default=3_600)
+    parser.add_argument("--jobs", type=int, default=4)
+    parser.add_argument("--reuse-run", type=Path)
+    parser.add_argument("--rerun-chunk", action="append", default=[])
+    parser.add_argument("--review-note", action="append", default=[])
+    parser.add_argument("--upstream-manifest", type=Path)
+    parser.add_argument(
+        "--resume", action="store_true", help="Продолжить из проверенных chunk checkpoints"
+    )
+    return parser
+
+
+def _parse_review_notes(values: Sequence[str]) -> dict[str, str]:
+    notes: dict[str, str] = {}
+    for value in values:
+        index, separator, note = value.partition("=")
+        if not separator or not index or not note.strip():
+            raise ValueError("--review-note должен иметь формат CHUNK=TEXT")
+        if index in notes:
+            raise ValueError(f"Повторный --review-note для chunk {index}")
+        notes[index] = note
+    return notes
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    arguments = _build_parser().parse_args(argv)
+    repo_root = Path(__file__).resolve().parents[1]
+    try:
+        manifest = verify_file(
+            cast(Path, arguments.source),
+            cast(Path, arguments.draft),
+            cast(Path, arguments.translation_evidence),
+            cast(Path, arguments.output),
+            cast(Path, arguments.evidence),
+            cast(Path, arguments.manifest_fragment),
+            cast(Path, arguments.glossary),
+            repo_root,
+            cast(int, arguments.timeout_seconds),
+            cast(int, arguments.jobs),
+            cast(Path | None, arguments.reuse_run),
+            frozenset(cast(list[str], arguments.rerun_chunk)),
+            _parse_review_notes(cast(list[str], arguments.review_note)),
+            upstream_manifest=cast(Path | None, arguments.upstream_manifest),
+            resume=cast(bool, arguments.resume),
+        )
+    except (OSError, ValueError, VerificationError) as error:
+        print(f"verification-error: {error}", file=sys.stderr)
+        return 2
+    print(
+        f"verified {manifest.source_path} -> {manifest.output_path} "
+        f"with {len(manifest.chunks)} chunks"
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

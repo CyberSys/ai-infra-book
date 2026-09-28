@@ -1,0 +1,5638 @@
+{
+  "schema_version": 1,
+  "scope": "Russian full book: preface and chapters 1-12",
+  "pdf_path": "dist/AI-Infra-in-Depth-RU.pdf",
+  "pdf_sha256": "ae34114fe3f2ca7d2cb6d869a8eac82780d15a355ca46b046bdecddb7e545cc6",
+  "pages": 961,
+  "figures_checked": 496,
+  "table_count": 128,
+  "verified_diagram_labels_in_pdf": 3008,
+  "method": "MuPDF trace vector-root clips; SVG font sizes times measured placement scale; all glyph page bounds from MuPDF stext; exact whitespace-normalized diagram labels from pdftotext -raw",
+  "minimum_derived_font_pt": 9.017,
+  "outside_page_glyphs": 0,
+  "raster_images": 5,
+  "preserved_upstream_rasters": [
+    {
+      "figure": "book/ch06/figure-6-context-dependency.svg",
+      "page": 391,
+      "png_sha256": "b5248ebc3107cdc75987ddc23993a321c8b5a7647b787ead4b18cba8526aea43"
+    },
+    {
+      "figure": "book/ch08/figure-8-10-kv-quality.svg",
+      "page": 619,
+      "png_sha256": "1d9486fb8ca9aeaf4219fdb102646643494092e750b47da0b2292a0b7f3e710c"
+    },
+    {
+      "figure": "book/ch08/figure-8-kv-quality-1.svg",
+      "page": 620,
+      "png_sha256": "a484419bb2c0a95804008c064c46a4b39ed2889a4479b0a64970f2faa1978d15"
+    },
+    {
+      "figure": "book/ch08/figure-8-kv-quality-2.svg",
+      "page": 621,
+      "png_sha256": "210665758e124c73138108ec4f1ed690bbe83800adb4e7ca5d4de18ff5c765ab"
+    },
+    {
+      "figure": "book/ch09/figure-9-3-pd.svg",
+      "page": 658,
+      "png_sha256": "08fe0e2a5c931af9e0998c7f1cf6630f1ec32bd83b789a73d13e7e393af21042"
+    }
+  ],
+  "all_pdf_fonts_embedded": true,
+  "latex_warning_counts": {
+    "overfull": 0,
+    "missing_character": 0,
+    "undefined_references": 0
+  },
+  "visual_table_review_pages": [
+    30,
+    33,
+    50,
+    51,
+    53,
+    60,
+    61,
+    67,
+    70,
+    91,
+    99,
+    107,
+    111,
+    116,
+    117,
+    119,
+    121,
+    126,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    146,
+    148,
+    153,
+    159,
+    168,
+    175,
+    180,
+    185,
+    193,
+    198,
+    202,
+    203,
+    211,
+    215,
+    223,
+    243,
+    246,
+    263,
+    280,
+    285,
+    293,
+    294,
+    297,
+    300,
+    305,
+    311,
+    331,
+    341,
+    342,
+    354,
+    363,
+    373,
+    376,
+    377,
+    382,
+    398,
+    406,
+    407,
+    410,
+    414,
+    422,
+    448,
+    456,
+    457,
+    458,
+    460,
+    463,
+    478,
+    479,
+    489,
+    507,
+    508,
+    509,
+    542,
+    549,
+    568,
+    577,
+    581,
+    634,
+    636,
+    647,
+    650,
+    654,
+    656,
+    680,
+    691,
+    692,
+    702,
+    717,
+    728,
+    730,
+    733,
+    742,
+    751,
+    761,
+    770,
+    783,
+    787,
+    803,
+    816,
+    822,
+    866,
+    875,
+    877,
+    878,
+    885,
+    903,
+    904,
+    906,
+    908,
+    931,
+    944,
+    953
+  ],
+  "known_minor_layout_issues": [
+    "Chapter 2 subsection labels on physical pages 66, 131, 132, 135 and 136 are separated from table data by a page break; no text is lost.",
+    "A chapter 4 figure appears between parts of a table on physical pages 202-203; table rows and repeated headers remain visible.",
+    "Source diagram cosmetic border/arrow quirks remain as documented in per-chapter asset reports."
+  ],
+  "figures": [
+    {
+      "file": "book/ch01/figure-1-book-roadmap.svg",
+      "page": 9,
+      "bbox_pt": [
+        87.58675,
+        142.48391999999996,
+        507.68755,
+        646.60488
+      ],
+      "minimum_font_pt": 11.003
+    },
+    {
+      "file": "book/ch01/figure-1-programmability.svg",
+      "page": 19,
+      "bbox_pt": [
+        75.39807,
+        164.66473640000004,
+        519.87987,
+        600.51089
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch01/figure-1-1-panorama.svg",
+      "page": 21,
+      "bbox_pt": [
+        75.39807,
+        208.38602399999996,
+        519.87987,
+        604.6098
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch01/figure-1-2-request.svg",
+      "page": 24,
+      "bbox_pt": [
+        75.39807,
+        182.59804640000004,
+        519.87987,
+        618.4442
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch01/figure-1-weight-lifetime.svg",
+      "page": 26,
+      "bbox_pt": [
+        75.39807,
+        232.43467559999993,
+        519.87987,
+        556.6524
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch01/figure-1-3-datacenter.svg",
+      "page": 27,
+      "bbox_pt": [
+        75.39807,
+        184.2388224,
+        519.87987,
+        604.8456
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch01/figure-1-4-numbers.svg",
+      "page": 30,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch01/figure-1-capacity-path.svg",
+      "page": 35,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch01/figure-1-read-path.svg",
+      "page": 37,
+      "bbox_pt": [
+        75.39807,
+        70.86576,
+        519.87987,
+        299.4564
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch01/figure-1-5-budget.svg",
+      "page": 39,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch01/figure-1-batch-reuse.svg",
+      "page": 40,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch01/figure-1-batch-transition.svg",
+      "page": 41,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch01/figure-1-batch-throughput.svg",
+      "page": 42,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch01/figure-1-measured-throughput.svg",
+      "page": 43,
+      "bbox_pt": [
+        75.39807,
+        70.86515600000001,
+        519.87987,
+        322.31486
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch01/figure-1-measured-tpot.svg",
+      "page": 44,
+      "bbox_pt": [
+        75.39807,
+        70.86515600000001,
+        519.87987,
+        322.31486
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch01/figure-1-design-tpu.svg",
+      "page": 47,
+      "bbox_pt": [
+        75.39807,
+        70.86548000000002,
+        519.87987,
+        261.35768
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch01/figure-1-design-smartnic.svg",
+      "page": 48,
+      "bbox_pt": [
+        75.39807,
+        70.86548000000002,
+        519.87987,
+        261.35768
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch01/figure-1-design-ub.svg",
+      "page": 50,
+      "bbox_pt": [
+        75.39807,
+        70.86548000000002,
+        519.87987,
+        261.35768
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-1-dependencies.svg",
+      "page": 57,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch02/figure-2-causal-dependencies.svg",
+      "page": 58,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch02/figure-2-qkv-objects.svg",
+      "page": 62,
+      "bbox_pt": [
+        75.39807,
+        236.69719600000002,
+        519.87987,
+        564.34378
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch02/figure-2-causal-pairs.svg",
+      "page": 64,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch02/figure-2-ffn-gates.svg",
+      "page": 65,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-2-layer.svg",
+      "page": 66,
+      "bbox_pt": [
+        75.39807,
+        70.86507599999999,
+        519.87987,
+        436.6101
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch02/figure-2-history.svg",
+      "page": 72,
+      "bbox_pt": [
+        75.39807,
+        234.53038400000003,
+        519.87987,
+        554.55728
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch02/figure-2-history-batch.svg",
+      "page": 73,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch02/figure-2-3-sharing.svg",
+      "page": 76,
+      "bbox_pt": [
+        75.39807,
+        181.19167199999998,
+        519.87987,
+        607.8942
+      ],
+      "minimum_font_pt": 12.17
+    },
+    {
+      "file": "book/ch02/figure-2-4-cache.svg",
+      "page": 77,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch02/figure-2-mla-paths.svg",
+      "page": 78,
+      "bbox_pt": [
+        75.39807,
+        211.67067600000001,
+        519.87987,
+        577.4157
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-mla-capacity.svg",
+      "page": 80,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch02/figure-2-5-sparse.svg",
+      "page": 82,
+      "bbox_pt": [
+        75.39807,
+        224.74231600000002,
+        519.87987,
+        552.3889
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-sparse-capacity.svg",
+      "page": 83,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch02/figure-2-compression-steps.svg",
+      "page": 84,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch02/figure-2-recurrence.svg",
+      "page": 85,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-6-hybrid.svg",
+      "page": 87,
+      "bbox_pt": [
+        75.39807,
+        238.33999200000005,
+        519.87987,
+        550.7472
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-7-state-growth.svg",
+      "page": 88,
+      "bbox_pt": [
+        75.39807,
+        220.93272799999994,
+        519.87987,
+        556.199
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch02/figure-2-state-access.svg",
+      "page": 89,
+      "bbox_pt": [
+        75.39807,
+        214.954228,
+        519.87987,
+        550.2205
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-v41-ced-path.svg",
+      "page": 93,
+      "bbox_pt": [
+        75.39807,
+        179.02396000000005,
+        519.87987,
+        598.1068
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-v41-sharing.svg",
+      "page": 94,
+      "bbox_pt": [
+        75.39807,
+        70.86449199999998,
+        519.87987,
+        459.46858
+      ],
+      "minimum_font_pt": 9.842
+    },
+    {
+      "file": "book/ch02/figure-2-v41-selection.svg",
+      "page": 97,
+      "bbox_pt": [
+        75.39807,
+        198.0741,
+        519.87987,
+        579.0585
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch02/figure-2-expert-reuse.svg",
+      "page": 99,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch02/figure-2-8-residual.svg",
+      "page": 104,
+      "bbox_pt": [
+        75.39807,
+        230.72081599999996,
+        519.87987,
+        558.3674
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-architecture.svg",
+      "page": 109,
+      "bbox_pt": [
+        75.39807,
+        73.26263200000005,
+        519.87987,
+        385.66984
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch02/figure-2-architecture-width.svg",
+      "page": 109,
+      "bbox_pt": [
+        75.39807,
+        427.32707200000004,
+        519.87987,
+        739.73428
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch02/figure-2-architecture-experts.svg",
+      "page": 110,
+      "bbox_pt": [
+        75.39807,
+        244.31639200000006,
+        519.87987,
+        556.7236
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch02/figure-2-resources.svg",
+      "page": 112,
+      "bbox_pt": [
+        75.39807,
+        244.31639200000006,
+        519.87987,
+        556.7236
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch02/figure-2-resources-compute.svg",
+      "page": 113,
+      "bbox_pt": [
+        75.39807,
+        244.31639200000006,
+        519.87987,
+        556.7236
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch02/figure-2-resources-state.svg",
+      "page": 114,
+      "bbox_pt": [
+        75.39807,
+        238.33999200000005,
+        519.87987,
+        550.7472
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch02/figure-2-long-context-compute.svg",
+      "page": 120,
+      "bbox_pt": [
+        75.39807,
+        171.92972000000003,
+        519.87987,
+        629.111
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch02/figure-2-9-capacity.svg",
+      "page": 123,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-history-capacity.svg",
+      "page": 124,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch02/figure-2-reverse-budget.svg",
+      "page": 125,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch02/figure-2-10-request.svg",
+      "page": 128,
+      "bbox_pt": [
+        75.39807,
+        217.64806600000003,
+        519.87987,
+        583.39309
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch02/figure-2-request-compute.svg",
+      "page": 129,
+      "bbox_pt": [
+        75.39807,
+        238.33999200000005,
+        519.87987,
+        550.7472
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch03/figure-3-1-stages.svg",
+      "page": 144,
+      "bbox_pt": [
+        75.39807,
+        70.864258,
+        519.87987,
+        406.13053
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch03/figure-3-request-clocks.svg",
+      "page": 146,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch03/figure-3-state-time-area.svg",
+      "page": 147,
+      "bbox_pt": [
+        75.39807,
+        70.86527200000003,
+        519.87987,
+        307.0756
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch03/figure-3-2-workload-budget.svg",
+      "page": 149,
+      "bbox_pt": [
+        75.39807,
+        78.18898000000002,
+        519.87987,
+        344.87806
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch03/figure-3-stage-demand.svg",
+      "page": 149,
+      "bbox_pt": [
+        75.39807,
+        420.29751999999996,
+        519.87987,
+        686.9866
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch03/figure-3-queue-mechanism.svg",
+      "page": 150,
+      "bbox_pt": [
+        75.39807,
+        70.86587599999999,
+        519.87987,
+        284.21714
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch03/figure-3-queue-backlog.svg",
+      "page": 151,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch03/figure-3-arrival-measured.svg",
+      "page": 153,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch03/figure-3-success-cost.svg",
+      "page": 157,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch03/figure-3-3-agent.svg",
+      "page": 160,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch03/figure-3-tool-dependency.svg",
+      "page": 161,
+      "bbox_pt": [
+        75.39807,
+        87.15566000000001,
+        519.87987,
+        353.84474
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch03/figure-3-tool-parallel.svg",
+      "page": 161,
+      "bbox_pt": [
+        75.39807,
+        435.24162,
+        519.87987,
+        701.9307
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch03/figure-3-branch-state.svg",
+      "page": 162,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch03/figure-3-v41-ced.svg",
+      "page": 164,
+      "bbox_pt": [
+        75.39807,
+        205.693236,
+        519.87987,
+        571.43826
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch03/figure-3-decision-request.svg",
+      "page": 166,
+      "bbox_pt": [
+        75.39807,
+        180.54800520000003,
+        519.87987,
+        596.58297
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch03/figure-3-vision-shapes.svg",
+      "page": 168,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 12.17
+    },
+    {
+      "file": "book/ch03/figure-3-vision-state.svg",
+      "page": 169,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch03/figure-3-4-realtime.svg",
+      "page": 172,
+      "bbox_pt": [
+        75.39807,
+        70.86471599999999,
+        519.87987,
+        398.5113
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch03/figure-3-audio-timing.svg",
+      "page": 173,
+      "bbox_pt": [
+        75.39807,
+        75.72645599999998,
+        519.87987,
+        441.47148
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch03/figure-3-audio-interrupt.svg",
+      "page": 173,
+      "bbox_pt": [
+        75.39807,
+        511.96453599999995,
+        519.87987,
+        725.3158
+      ],
+      "minimum_font_pt": 9.842
+    },
+    {
+      "file": "book/ch03/figure-3-activation-lifetime.svg",
+      "page": 176,
+      "bbox_pt": [
+        75.39807,
+        70.86468400000001,
+        519.87987,
+        314.6947
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch03/figure-3-5-training.svg",
+      "page": 177,
+      "bbox_pt": [
+        75.39807,
+        70.86483200000004,
+        519.87987,
+        383.27204
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch03/figure-3-training-states.svg",
+      "page": 178,
+      "bbox_pt": [
+        75.39807,
+        242.14958000000001,
+        519.87987,
+        546.9371
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch03/figure-3-training-flops.svg",
+      "page": 181,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch03/figure-3-6-rl.svg",
+      "page": 186,
+      "bbox_pt": [
+        75.39807,
+        219.28991200000007,
+        519.87987,
+        569.79556
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch03/figure-3-rl-stage-work.svg",
+      "page": 187,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch03/figure-3-7-scaling.svg",
+      "page": 190,
+      "bbox_pt": [
+        75.39807,
+        92.04925599999996,
+        519.87987,
+        381.5974
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch03/figure-3-scaling-residual.svg",
+      "page": 190,
+      "bbox_pt": [
+        75.39807,
+        472.78194199999996,
+        519.87987,
+        708.99227
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch03/figure-3-lifecycle-cost.svg",
+      "page": 192,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch03/figure-3-8-history.svg",
+      "page": 195,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch03/figure-3-9-gpu-hours.svg",
+      "page": 196,
+      "bbox_pt": [
+        75.39807,
+        70.86500000000001,
+        519.87987,
+        451.8494
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-1-reuse.svg",
+      "page": 203,
+      "bbox_pt": [
+        75.39807,
+        70.86463400000008,
+        519.87987,
+        428.98997
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch04/figure-4-2-components.svg",
+      "page": 205,
+      "bbox_pt": [
+        75.39807,
+        207.86108800000005,
+        519.87987,
+        581.2258
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-codesign-loop.svg",
+      "page": 207,
+      "bbox_pt": [
+        75.39807,
+        205.693236,
+        519.87987,
+        571.43826
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch04/figure-4-energy-wire.svg",
+      "page": 210,
+      "bbox_pt": [
+        75.39807,
+        134.94844999999998,
+        519.87987,
+        630.22817
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch04/figure-4-energy-ladder.svg",
+      "page": 213,
+      "bbox_pt": [
+        75.39807,
+        181.19167199999998,
+        519.87987,
+        607.8942
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-energy-package.svg",
+      "page": 217,
+      "bbox_pt": [
+        75.39807,
+        213.312452,
+        519.87987,
+        563.8181
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch04/figure-4-energy-power-cap.svg",
+      "page": 218,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-matrix-array.svg",
+      "page": 220,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch04/figure-4-3-expert-rows.svg",
+      "page": 221,
+      "bbox_pt": [
+        75.39807,
+        83.34588000000002,
+        519.87987,
+        388.1334
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch04/figure-4-expert-padding-total.svg",
+      "page": 221,
+      "bbox_pt": [
+        75.39807,
+        473.865584,
+        519.87987,
+        717.6956
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-4-attention.svg",
+      "page": 225,
+      "bbox_pt": [
+        75.39807,
+        230.19468000000006,
+        519.87987,
+        534.9822
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-5-precision.svg",
+      "page": 227,
+      "bbox_pt": [
+        75.39807,
+        70.86471599999999,
+        519.87987,
+        398.5113
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch04/figure-4-6-capacity.svg",
+      "page": 230,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch04/figure-4-l2-structure.svg",
+      "page": 233,
+      "bbox_pt": [
+        75.39807,
+        70.86500000000001,
+        519.87987,
+        451.8494
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch04/figure-4-memory-inflight.svg",
+      "page": 235,
+      "bbox_pt": [
+        75.39807,
+        70.86515600000001,
+        519.87987,
+        322.31486
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch04/figure-4-7-memory.svg",
+      "page": 237,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch04/figure-4-8-layout.svg",
+      "page": 239,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch04/figure-4-slot-lifetime.svg",
+      "page": 241,
+      "bbox_pt": [
+        75.39807,
+        70.86527200000003,
+        519.87987,
+        307.0756
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-9-pipeline.svg",
+      "page": 242,
+      "bbox_pt": [
+        75.39807,
+        75.20085,
+        519.87987,
+        341.88993
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch04/figure-4-pipeline-two.svg",
+      "page": 242,
+      "bbox_pt": [
+        75.39807,
+        423.28682000000003,
+        519.87987,
+        689.9759
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch04/figure-4-pipeline-three.svg",
+      "page": 243,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch04/figure-4-matrix-vector-handoff.svg",
+      "page": 245,
+      "bbox_pt": [
+        75.39807,
+        242.14958000000001,
+        519.87987,
+        546.9371
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch04/figure-4-cross-sm-handoff.svg",
+      "page": 248,
+      "bbox_pt": [
+        75.39807,
+        190.45282400000002,
+        519.87987,
+        586.6766
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch04/figure-4-sync-ladder.svg",
+      "page": 249,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch04/figure-4-10-locality.svg",
+      "page": 252,
+      "bbox_pt": [
+        75.39807,
+        211.67067600000001,
+        519.87987,
+        577.4157
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-locality-compute.svg",
+      "page": 253,
+      "bbox_pt": [
+        75.39807,
+        211.67067600000001,
+        519.87987,
+        577.4157
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch04/figure-4-11-interconnect.svg",
+      "page": 256,
+      "bbox_pt": [
+        75.39807,
+        70.86468400000001,
+        519.87987,
+        314.6947
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch04/figure-4-large-message.svg",
+      "page": 257,
+      "bbox_pt": [
+        75.39807,
+        70.86468400000001,
+        519.87987,
+        314.6947
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-evolution-tensor-budget.svg",
+      "page": 259,
+      "bbox_pt": [
+        75.39807,
+        219.28991200000007,
+        519.87987,
+        569.79556
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch04/figure-4-evolution-precision.svg",
+      "page": 261,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch04/figure-4-evolution-nvidia-path.svg",
+      "page": 262,
+      "bbox_pt": [
+        75.39807,
+        226.91008800000003,
+        519.87987,
+        562.17636
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-evolution-img2col.svg",
+      "page": 265,
+      "bbox_pt": [
+        75.39807,
+        236.69719600000002,
+        519.87987,
+        564.34378
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-evolution-ascend.svg",
+      "page": 267,
+      "bbox_pt": [
+        75.39807,
+        225.26835200000005,
+        519.87987,
+        575.774
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-evolution-cv-budget.svg",
+      "page": 268,
+      "bbox_pt": [
+        75.39807,
+        70.864258,
+        519.87987,
+        406.13053
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-evolution-apple.svg",
+      "page": 271,
+      "bbox_pt": [
+        75.39807,
+        215.48026400000003,
+        519.87987,
+        573.6056
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-12-specialization.svg",
+      "page": 276,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch04/figure-4-rom-paths.svg",
+      "page": 277,
+      "bbox_pt": [
+        75.39807,
+        223.10052000000002,
+        519.87987,
+        565.98648
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch04/figure-4-13-roofline.svg",
+      "page": 280,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch04/figure-4-evolution-convergence.svg",
+      "page": 282,
+      "bbox_pt": [
+        75.39807,
+        196.431224,
+        519.87987,
+        592.655
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch04/figure-4-14-performance.svg",
+      "page": 285,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch04/figure-4-performance-traffic.svg",
+      "page": 286,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 9.736
+    },
+    {
+      "file": "book/ch05/figure-5-copy-paths.svg",
+      "page": 295,
+      "bbox_pt": [
+        75.39807,
+        203.40766320000006,
+        519.87987,
+        573.7245
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch05/figure-5-stream-event.svg",
+      "page": 297,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch05/figure-5-1-execution.svg",
+      "page": 299,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch05/figure-5-sm-residency.svg",
+      "page": 301,
+      "bbox_pt": [
+        75.39807,
+        245.43413199999998,
+        519.87987,
+        519.7429
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch05/figure-5-warp-pipeline.svg",
+      "page": 304,
+      "bbox_pt": [
+        75.39807,
+        241.09850799999998,
+        519.87987,
+        500.1679
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch05/figure-5-reuse-steps.svg",
+      "page": 307,
+      "bbox_pt": [
+        75.39807,
+        238.33999200000005,
+        519.87987,
+        550.7472
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch05/figure-5-tile-working-set.svg",
+      "page": 309,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch05/figure-5-2-tiles.svg",
+      "page": 310,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch05/figure-5-tile-residency.svg",
+      "page": 312,
+      "bbox_pt": [
+        75.39807,
+        70.86576,
+        519.87987,
+        299.4564
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch05/figure-5-3-banks.svg",
+      "page": 313,
+      "bbox_pt": [
+        75.39807,
+        217.12313999999998,
+        519.87987,
+        560.0091
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch05/figure-5-4-reduction.svg",
+      "page": 315,
+      "bbox_pt": [
+        75.39807,
+        207.33505200000002,
+        519.87987,
+        557.8407
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch05/figure-5-split-axes.svg",
+      "page": 316,
+      "bbox_pt": [
+        75.39807,
+        70.86507599999999,
+        519.87987,
+        436.6101
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch05/figure-5-reduction-order.svg",
+      "page": 318,
+      "bbox_pt": [
+        75.39807,
+        205.693236,
+        519.87987,
+        571.43826
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch05/figure-5-fusion-path.svg",
+      "page": 321,
+      "bbox_pt": [
+        75.39807,
+        234.53038400000003,
+        519.87987,
+        554.55728
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch05/figure-5-5-boundaries.svg",
+      "page": 322,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch05/figure-5-buffer-slots.svg",
+      "page": 324,
+      "bbox_pt": [
+        75.39807,
+        226.385092,
+        519.87987,
+        538.7923
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch05/figure-5-6-fusion-buffer.svg",
+      "page": 325,
+      "bbox_pt": [
+        75.39807,
+        213.312452,
+        519.87987,
+        563.8181
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch05/figure-5-attention-storage.svg",
+      "page": 328,
+      "bbox_pt": [
+        75.39807,
+        222.57550400000002,
+        519.87987,
+        542.6024
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch05/figure-5-7-online-softmax.svg",
+      "page": 329,
+      "bbox_pt": [
+        75.39807,
+        70.86471999999998,
+        519.87987,
+        413.75068
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch05/figure-5-8-attention-tradeoff.svg",
+      "page": 331,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch05/figure-5-9-polyhedral.svg",
+      "page": 335,
+      "bbox_pt": [
+        75.39807,
+        70.86414200000007,
+        519.87987,
+        421.36979
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch05/figure-5-activation-order.svg",
+      "page": 336,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 14.816
+    },
+    {
+      "file": "book/ch05/figure-5-quantization-scale.svg",
+      "page": 338,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch05/figure-5-10-quantization.svg",
+      "page": 340,
+      "bbox_pt": [
+        75.39807,
+        230.72081599999996,
+        519.87987,
+        558.3674
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch05/figure-5-11-feedback.svg",
+      "page": 343,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch05/figure-5-host-pipeline.svg",
+      "page": 345,
+      "bbox_pt": [
+        75.39807,
+        172.2839924,
+        519.87987,
+        592.89077
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch05/figure-5-launch-vs-graph.svg",
+      "page": 347,
+      "bbox_pt": [
+        75.39807,
+        70.86468400000001,
+        519.87987,
+        314.6947
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch05/figure-5-12-runtime.svg",
+      "page": 348,
+      "bbox_pt": [
+        75.39807,
+        110.01532800000001,
+        519.87987,
+        330.98628
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch05/figure-5-runtime-1.svg",
+      "page": 348,
+      "bbox_pt": [
+        75.39807,
+        470.056108,
+        519.87987,
+        691.02706
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch05/figure-5-runtime-2.svg",
+      "page": 349,
+      "bbox_pt": [
+        75.39807,
+        110.01532800000001,
+        519.87987,
+        330.98628
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch05/figure-5-runtime-3.svg",
+      "page": 349,
+      "bbox_pt": [
+        75.39807,
+        470.056108,
+        519.87987,
+        691.02706
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch05/figure-5-graph-address.svg",
+      "page": 350,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch05/figure-5-13-graph-copy.svg",
+      "page": 351,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch05/figure-5-shape-buckets.svg",
+      "page": 352,
+      "bbox_pt": [
+        75.39807,
+        70.86576,
+        519.87987,
+        299.4564
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch05/figure-5-14-specialization.svg",
+      "page": 355,
+      "bbox_pt": [
+        75.39807,
+        243.26631000000003,
+        519.87987,
+        509.95539
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch05/figure-5-15-persistent.svg",
+      "page": 357,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch05/figure-5-persistent-blocks.svg",
+      "page": 358,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch05/figure-5-16-critical-path.svg",
+      "page": 360,
+      "bbox_pt": [
+        75.39807,
+        213.83848800000004,
+        519.87987,
+        587.2032
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch05/figure-5-v41-traffic.svg",
+      "page": 362,
+      "bbox_pt": [
+        75.39807,
+        192.62163600000002,
+        519.87987,
+        596.4651
+      ],
+      "minimum_font_pt": 13.758
+    },
+    {
+      "file": "book/ch05/figure-5-17-request.svg",
+      "page": 364,
+      "bbox_pt": [
+        75.39807,
+        231.836526,
+        519.87987,
+        521.38467
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch06/figure-6-1-placement.svg",
+      "page": 372,
+      "bbox_pt": [
+        75.39807,
+        220.93272799999994,
+        519.87987,
+        556.199
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch06/figure-6-2-capacity.svg",
+      "page": 374,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch06/figure-6-parallel-map.svg",
+      "page": 378,
+      "bbox_pt": [
+        75.39807,
+        213.312452,
+        519.87987,
+        563.8181
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-dp.svg",
+      "page": 379,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-tp-layer.svg",
+      "page": 381,
+      "bbox_pt": [
+        75.39807,
+        198.0741,
+        519.87987,
+        579.0585
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-dense-moe.svg",
+      "page": 383,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-tp-columns.svg",
+      "page": 384,
+      "bbox_pt": [
+        75.39807,
+        226.91008800000003,
+        519.87987,
+        562.17636
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch06/figure-6-tp-rows.svg",
+      "page": 385,
+      "bbox_pt": [
+        75.39807,
+        70.864258,
+        519.87987,
+        406.13053
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch06/figure-6-3-tp.svg",
+      "page": 386,
+      "bbox_pt": [
+        75.39807,
+        70.86449199999998,
+        519.87987,
+        459.46858
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch06/figure-6-sp.svg",
+      "page": 389,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-cp.svg",
+      "page": 391,
+      "bbox_pt": [
+        75.39807,
+        74.64222000000001,
+        519.87987,
+        341.3313
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-context-dependency.svg",
+      "page": 391,
+      "bbox_pt": [
+        75.39807,
+        397.70176000000004,
+        519.87987,
+        702.48928
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch06/figure-6-pp.svg",
+      "page": 393,
+      "bbox_pt": [
+        75.39807,
+        89.88180799999998,
+        519.87987,
+        310.85276
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-4-pipeline.svg",
+      "page": 393,
+      "bbox_pt": [
+        75.39807,
+        397.70181599999995,
+        519.87987,
+        687.24996
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch06/figure-6-ep.svg",
+      "page": 395,
+      "bbox_pt": [
+        75.39807,
+        236.17108000000007,
+        519.87987,
+        540.9586
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-5-dispatch.svg",
+      "page": 396,
+      "bbox_pt": [
+        75.39807,
+        70.86463400000008,
+        519.87987,
+        428.98997
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch06/figure-6-6-ep-layout.svg",
+      "page": 399,
+      "bbox_pt": [
+        75.39807,
+        181.19167199999998,
+        519.87987,
+        607.8942
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch06/figure-6-ep-reduction.svg",
+      "page": 400,
+      "bbox_pt": [
+        75.39807,
+        181.19167199999998,
+        519.87987,
+        607.8942
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch06/figure-6-7-reuse.svg",
+      "page": 402,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch06/figure-6-8-expert-load.svg",
+      "page": 403,
+      "bbox_pt": [
+        75.39807,
+        99.93189799999999,
+        519.87987,
+        359.00129
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-expert-load-1.svg",
+      "page": 403,
+      "bbox_pt": [
+        75.39807,
+        453.995308,
+        519.87987,
+        713.0647
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-expert-load-2.svg",
+      "page": 404,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-9-ring-rounds.svg",
+      "page": 408,
+      "bbox_pt": [
+        75.39807,
+        70.86471599999999,
+        519.87987,
+        398.5113
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch06/figure-6-ring-gather.svg",
+      "page": 409,
+      "bbox_pt": [
+        75.39807,
+        210.02889999999996,
+        519.87987,
+        591.0133
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch06/figure-6-10-tp-time.svg",
+      "page": 410,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch06/figure-6-11-collectives.svg",
+      "page": 412,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch06/figure-6-12-resources.svg",
+      "page": 415,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-resources-concurrent.svg",
+      "page": 416,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-initiator.svg",
+      "page": 418,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 9.017
+    },
+    {
+      "file": "book/ch06/figure-6-13-ports.svg",
+      "page": 421,
+      "bbox_pt": [
+        75.39807,
+        213.312452,
+        519.87987,
+        563.8181
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch06/figure-6-14-topology.svg",
+      "page": 423,
+      "bbox_pt": [
+        75.39807,
+        217.64806600000003,
+        519.87987,
+        583.39309
+      ],
+      "minimum_font_pt": 14.816
+    },
+    {
+      "file": "book/ch06/figure-6-topology-swing.svg",
+      "page": 424,
+      "bbox_pt": [
+        75.39807,
+        223.625476,
+        519.87987,
+        589.3705
+      ],
+      "minimum_font_pt": 14.816
+    },
+    {
+      "file": "book/ch06/figure-6-topology-load.svg",
+      "page": 425,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-topology-hops.svg",
+      "page": 426,
+      "bbox_pt": [
+        75.39807,
+        237.81394599999993,
+        519.87987,
+        527.36209
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-topology-patterns.svg",
+      "page": 428,
+      "bbox_pt": [
+        75.39807,
+        70.86468400000001,
+        519.87987,
+        314.6947
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-15-torus.svg",
+      "page": 433,
+      "bbox_pt": [
+        75.39807,
+        78.71493400000003,
+        519.87987,
+        398.74183
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch06/figure-6-torus-growth.svg",
+      "page": 433,
+      "bbox_pt": [
+        75.39807,
+        463.257208,
+        519.87987,
+        722.3266
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-ub-layers.svg",
+      "page": 436,
+      "bbox_pt": [
+        75.39807,
+        224.74231600000002,
+        519.87987,
+        552.3889
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch06/figure-6-ub-controller.svg",
+      "page": 437,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 9.017
+    },
+    {
+      "file": "book/ch06/figure-6-ub-hosts.svg",
+      "page": 439,
+      "bbox_pt": [
+        75.39807,
+        237.81394599999993,
+        519.87987,
+        527.36209
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-ub-setup.svg",
+      "page": 440,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-16-systems.svg",
+      "page": 441,
+      "bbox_pt": [
+        75.39807,
+        188.81201800000002,
+        519.87987,
+        600.27517
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-17-pool-placement.svg",
+      "page": 443,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch06/figure-6-pool-after.svg",
+      "page": 444,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch06/figure-6-18-read-window.svg",
+      "page": 445,
+      "bbox_pt": [
+        75.39807,
+        213.312452,
+        519.87987,
+        563.8181
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch06/figure-6-19-memory-pool.svg",
+      "page": 447,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch06/figure-6-session-capacity.svg",
+      "page": 449,
+      "bbox_pt": [
+        75.39807,
+        77.36861200000004,
+        519.87987,
+        351.67738
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-session-tp2.svg",
+      "page": 449,
+      "bbox_pt": [
+        75.39807,
+        437.40943200000004,
+        519.87987,
+        711.7182
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-session-tp4.svg",
+      "page": 450,
+      "bbox_pt": [
+        75.39807,
+        77.36861200000004,
+        519.87987,
+        351.67738
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-session-tp8.svg",
+      "page": 450,
+      "bbox_pt": [
+        75.39807,
+        425.454532,
+        519.87987,
+        699.7633
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-21-scale-cost.svg",
+      "page": 453,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch06/figure-6-scale-cost-fault.svg",
+      "page": 454,
+      "bbox_pt": [
+        75.39807,
+        243.79235599999998,
+        519.87987,
+        533.3405
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch06/figure-6-supernode-inference.svg",
+      "page": 461,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-weight-placement.svg",
+      "page": 462,
+      "bbox_pt": [
+        75.39807,
+        239.981768,
+        519.87987,
+        537.1496
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-rom-token-time.svg",
+      "page": 464,
+      "bbox_pt": [
+        75.39807,
+        73.82139999999998,
+        519.87987,
+        340.51048
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch06/figure-6-engram-placement.svg",
+      "page": 464,
+      "bbox_pt": [
+        75.39807,
+        407.1939040000001,
+        519.87987,
+        727.2208
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch07/figure-7-1-boundaries.svg",
+      "page": 471,
+      "bbox_pt": [
+        75.39807,
+        181.19167199999998,
+        519.87987,
+        607.8942
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-2-cut.svg",
+      "page": 474,
+      "bbox_pt": [
+        75.39807,
+        245.43413199999998,
+        519.87987,
+        519.7429
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-clos-cut.svg",
+      "page": 477,
+      "bbox_pt": [
+        75.39807,
+        212.78741599999995,
+        519.87987,
+        540.434
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch07/figure-7-3-hierarchy.svg",
+      "page": 482,
+      "bbox_pt": [
+        75.39807,
+        226.91008800000003,
+        519.87987,
+        562.17636
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-ring-interleaved.svg",
+      "page": 483,
+      "bbox_pt": [
+        75.39807,
+        232.88752800000003,
+        519.87987,
+        568.1538
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch07/figure-7-hierarchy-stages.svg",
+      "page": 484,
+      "bbox_pt": [
+        75.39807,
+        196.431224,
+        519.87987,
+        592.655
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-hierarchy-bytes.svg",
+      "page": 485,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-in-network-sweep.svg",
+      "page": 490,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-4-pipeline.svg",
+      "page": 492,
+      "bbox_pt": [
+        75.39807,
+        245.43413199999998,
+        519.87987,
+        519.7429
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-5-expert.svg",
+      "page": 494,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch07/figure-7-expert-path-1.svg",
+      "page": 495,
+      "bbox_pt": [
+        75.39807,
+        77.89466800000002,
+        519.87987,
+        375.0625
+      ],
+      "minimum_font_pt": 13.758
+    },
+    {
+      "file": "book/ch07/figure-7-expert-path-2.svg",
+      "page": 495,
+      "bbox_pt": [
+        75.39807,
+        425.980628,
+        519.87987,
+        723.14846
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch07/figure-7-6-relay.svg",
+      "page": 498,
+      "bbox_pt": [
+        75.39807,
+        199.71587600000004,
+        519.87987,
+        565.4609
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-rail-pairing.svg",
+      "page": 501,
+      "bbox_pt": [
+        75.39807,
+        146.377224,
+        519.87987,
+        618.79788
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-7-access.svg",
+      "page": 504,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch07/figure-7-access-1.svg",
+      "page": 505,
+      "bbox_pt": [
+        75.39807,
+        78.71504599999997,
+        519.87987,
+        368.26319
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch07/figure-7-access-2.svg",
+      "page": 505,
+      "bbox_pt": [
+        75.39807,
+        444.734256,
+        519.87987,
+        734.2824
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch07/figure-7-access-3.svg",
+      "page": 506,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch07/figure-7-ub-round-trip.svg",
+      "page": 510,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch07/figure-7-ub-link-delay.svg",
+      "page": 512,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-snapshot-paths.svg",
+      "page": 513,
+      "bbox_pt": [
+        75.39807,
+        70.86483200000004,
+        519.87987,
+        383.27204
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch07/figure-7-8-snapshot.svg",
+      "page": 514,
+      "bbox_pt": [
+        75.39807,
+        90.14490999999998,
+        519.87987,
+        356.83399
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-snapshot-partial.svg",
+      "page": 514,
+      "bbox_pt": [
+        75.39807,
+        444.20822,
+        519.87987,
+        710.8973
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-slot-lifetime.svg",
+      "page": 516,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-9-window.svg",
+      "page": 517,
+      "bbox_pt": [
+        75.39807,
+        84.16642000000002,
+        519.87987,
+        350.8555
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-window-rate.svg",
+      "page": 517,
+      "bbox_pt": [
+        75.39807,
+        438.23081,
+        519.87987,
+        704.91989
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-pcie-transactions.svg",
+      "page": 519,
+      "bbox_pt": [
+        75.39807,
+        70.86468400000001,
+        519.87987,
+        314.6947
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch07/figure-7-pcie-limits.svg",
+      "page": 520,
+      "bbox_pt": [
+        75.39807,
+        70.86587599999999,
+        519.87987,
+        284.21714
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-pcie-asymmetry.svg",
+      "page": 521,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch07/figure-7-10-lifetime.svg",
+      "page": 523,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-11-state.svg",
+      "page": 525,
+      "bbox_pt": [
+        75.39807,
+        70.86471999999998,
+        519.87987,
+        413.75068
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch07/figure-7-state-capacity.svg",
+      "page": 526,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-ub-state-growth.svg",
+      "page": 527,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch07/figure-7-ub-cache-cliff.svg",
+      "page": 528,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-12-ordering.svg",
+      "page": 530,
+      "bbox_pt": [
+        75.39807,
+        83.34606200000002,
+        519.87987,
+        357.65483
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-ordering-independent.svg",
+      "page": 530,
+      "bbox_pt": [
+        75.39807,
+        431.432102,
+        519.87987,
+        705.74087
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-13-stale.svg",
+      "page": 532,
+      "bbox_pt": [
+        75.39807,
+        204.05040000000002,
+        519.87987,
+        585.0348
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch07/figure-7-14-reclaim.svg",
+      "page": 534,
+      "bbox_pt": [
+        75.39807,
+        204.05040000000002,
+        519.87987,
+        585.0348
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-reclaim-more.svg",
+      "page": 535,
+      "bbox_pt": [
+        75.39807,
+        204.05040000000002,
+        519.87987,
+        585.0348
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch07/figure-7-15-congestion.svg",
+      "page": 538,
+      "bbox_pt": [
+        75.39807,
+        78.71504599999997,
+        519.87987,
+        368.26319
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-congestion-queue.svg",
+      "page": 538,
+      "bbox_pt": [
+        75.39807,
+        432.77845599999995,
+        519.87987,
+        722.3266
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-feedback-loop.svg",
+      "page": 540,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-16-feedback.svg",
+      "page": 541,
+      "bbox_pt": [
+        75.39807,
+        237.81394599999993,
+        519.87987,
+        527.36209
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch07/figure-7-incast-feedback.svg",
+      "page": 543,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-17-packets.svg",
+      "page": 545,
+      "bbox_pt": [
+        75.39807,
+        76.54724400000003,
+        519.87987,
+        358.4757
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch07/figure-7-packets-1.svg",
+      "page": 545,
+      "bbox_pt": [
+        75.39807,
+        418.65564400000005,
+        519.87987,
+        700.5841
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch07/figure-7-packets-2.svg",
+      "page": 547,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch07/figure-7-ecmp-collision.svg",
+      "page": 551,
+      "bbox_pt": [
+        75.39807,
+        243.26631000000003,
+        519.87987,
+        509.95539
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch07/figure-7-18-deadlock.svg",
+      "page": 553,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-response-reserve.svg",
+      "page": 554,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-19-progress.svg",
+      "page": 555,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-progress-1.svg",
+      "page": 556,
+      "bbox_pt": [
+        75.39807,
+        87.15566000000001,
+        519.87987,
+        353.84474
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-progress-2.svg",
+      "page": 556,
+      "bbox_pt": [
+        75.39807,
+        435.24162,
+        519.87987,
+        701.9307
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch07/figure-7-20-step.svg",
+      "page": 558,
+      "bbox_pt": [
+        75.39807,
+        70.865298,
+        519.87987,
+        291.83625
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch07/figure-7-step-1.svg",
+      "page": 559,
+      "bbox_pt": [
+        75.39807,
+        104.03684799999996,
+        519.87987,
+        325.0078
+      ],
+      "minimum_font_pt": 9.017
+    },
+    {
+      "file": "book/ch07/figure-7-step-2.svg",
+      "page": 559,
+      "bbox_pt": [
+        75.39807,
+        452.122828,
+        519.87987,
+        673.09378
+      ],
+      "minimum_font_pt": 9.017
+    },
+    {
+      "file": "book/ch07/figure-7-step-3.svg",
+      "page": 560,
+      "bbox_pt": [
+        75.39807,
+        104.03684799999996,
+        519.87987,
+        325.0078
+      ],
+      "minimum_font_pt": 9.017
+    },
+    {
+      "file": "book/ch07/figure-7-step-4.svg",
+      "page": 560,
+      "bbox_pt": [
+        75.39807,
+        464.078748,
+        519.87987,
+        685.0497
+      ],
+      "minimum_font_pt": 9.017
+    },
+    {
+      "file": "book/ch07/figure-7-step-5.svg",
+      "page": 561,
+      "bbox_pt": [
+        75.39807,
+        70.865298,
+        519.87987,
+        291.83625
+      ],
+      "minimum_font_pt": 9.017
+    },
+    {
+      "file": "book/ch07/figure-7-21-message.svg",
+      "page": 562,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch07/figure-7-supernode-groups.svg",
+      "page": 565,
+      "bbox_pt": [
+        75.39807,
+        207.33505200000002,
+        519.87987,
+        557.8407
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch07/figure-7-supernode-scaling.svg",
+      "page": 570,
+      "bbox_pt": [
+        75.39807,
+        235.64614400000005,
+        519.87987,
+        517.5746
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch08/figure-8-request-iterations.svg",
+      "page": 578,
+      "bbox_pt": [
+        75.39807,
+        215.48026400000003,
+        519.87987,
+        573.6056
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch08/figure-8-1-lifecycle.svg",
+      "page": 579,
+      "bbox_pt": [
+        75.39807,
+        70.86576,
+        519.87987,
+        299.4564
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch08/figure-8-2-batch.svg",
+      "page": 584,
+      "bbox_pt": [
+        75.39807,
+        223.69127400000002,
+        519.87987,
+        505.61973
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch08/figure-8-batch-counterfactual.svg",
+      "page": 586,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.371
+    },
+    {
+      "file": "book/ch08/figure-8-3-scheduling.svg",
+      "page": 588,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch08/figure-8-scheduling-continuous.svg",
+      "page": 589,
+      "bbox_pt": [
+        75.39807,
+        237.81394599999993,
+        519.87987,
+        527.36209
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch08/figure-8-scheduling-chunked.svg",
+      "page": 590,
+      "bbox_pt": [
+        75.39807,
+        231.836526,
+        519.87987,
+        521.38467
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch08/figure-8-4-attention.svg",
+      "page": 591,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch08/figure-8-attention-history.svg",
+      "page": 592,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch08/figure-8-page-map.svg",
+      "page": 594,
+      "bbox_pt": [
+        75.39807,
+        70.86471999999998,
+        519.87987,
+        413.75068
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch08/figure-8-5-pages.svg",
+      "page": 596,
+      "bbox_pt": [
+        75.39807,
+        219.28991200000007,
+        519.87987,
+        569.79556
+      ],
+      "minimum_font_pt": 13.758
+    },
+    {
+      "file": "book/ch08/figure-8-pages-paged.svg",
+      "page": 597,
+      "bbox_pt": [
+        75.39807,
+        225.26835200000005,
+        519.87987,
+        575.774
+      ],
+      "minimum_font_pt": 13.758
+    },
+    {
+      "file": "book/ch08/figure-8-pages-shared.svg",
+      "page": 598,
+      "bbox_pt": [
+        75.39807,
+        232.88752800000003,
+        519.87987,
+        568.1538
+      ],
+      "minimum_font_pt": 10.265
+    },
+    {
+      "file": "book/ch08/figure-8-reference-release.svg",
+      "page": 599,
+      "bbox_pt": [
+        75.39807,
+        236.69719600000002,
+        519.87987,
+        564.34378
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch08/figure-8-copy-on-write.svg",
+      "page": 600,
+      "bbox_pt": [
+        75.39807,
+        70.86471599999999,
+        519.87987,
+        398.5113
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch08/figure-8-cancel-lifetime.svg",
+      "page": 602,
+      "bbox_pt": [
+        75.39807,
+        240.506704,
+        519.87987,
+        560.5336
+      ],
+      "minimum_font_pt": 9.948
+    },
+    {
+      "file": "book/ch08/figure-8-6-prefix.svg",
+      "page": 604,
+      "bbox_pt": [
+        75.39807,
+        223.10052000000002,
+        519.87987,
+        565.98648
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch08/figure-8-prefix-lengths.svg",
+      "page": 605,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch08/figure-8-prefix-restore.svg",
+      "page": 606,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch08/figure-8-context-edits.svg",
+      "page": 607,
+      "bbox_pt": [
+        75.39807,
+        234.53038400000003,
+        519.87987,
+        554.55728
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch08/figure-8-v41-recovery.svg",
+      "page": 609,
+      "bbox_pt": [
+        75.39807,
+        163.78449799999999,
+        519.87987,
+        613.34609
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch08/figure-8-7-cache-choice.svg",
+      "page": 611,
+      "bbox_pt": [
+        75.39807,
+        232.36155200000007,
+        519.87987,
+        544.76876
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch08/figure-8-8-kv-format.svg",
+      "page": 614,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch08/figure-8-9-offload.svg",
+      "page": 616,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch08/figure-8-offload-copy.svg",
+      "page": 617,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch08/figure-8-10-kv-quality.svg",
+      "page": 619,
+      "bbox_pt": [
+        75.39807,
+        70.86463400000008,
+        519.87987,
+        428.98997
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch08/figure-8-kv-quality-1.svg",
+      "page": 620,
+      "bbox_pt": [
+        75.39807,
+        215.48026400000003,
+        519.87987,
+        573.6056
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch08/figure-8-kv-quality-2.svg",
+      "page": 621,
+      "bbox_pt": [
+        75.39807,
+        203.5254440000001,
+        519.87987,
+        561.65078
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch08/figure-8-11-verification.svg",
+      "page": 623,
+      "bbox_pt": [
+        75.39807,
+        70.86414200000007,
+        519.87987,
+        421.36979
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch08/figure-8-sample-A.svg",
+      "page": 624,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch08/figure-8-sample-B.svg",
+      "page": 625,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch08/figure-8-12-speculation.svg",
+      "page": 627,
+      "bbox_pt": [
+        75.39807,
+        233.47826200000003,
+        519.87987,
+        507.78703
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch08/figure-8-13-service.svg",
+      "page": 632,
+      "bbox_pt": [
+        75.39807,
+        242.14958000000001,
+        519.87987,
+        546.9371
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch08/figure-8-service-goodput.svg",
+      "page": 633,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch08/figure-8-14-design.svg",
+      "page": 637,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch08/figure-8-15-task.svg",
+      "page": 638,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch09/figure-9-1-organization.svg",
+      "page": 644,
+      "bbox_pt": [
+        75.39807,
+        88.502094,
+        519.87987,
+        370.43055
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-organization-1.svg",
+      "page": 644,
+      "bbox_pt": [
+        75.39807,
+        442.566504,
+        519.87987,
+        724.49496
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch09/figure-9-organization-2.svg",
+      "page": 645,
+      "bbox_pt": [
+        75.39807,
+        88.502094,
+        519.87987,
+        370.43055
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch09/figure-9-organization-3.svg",
+      "page": 645,
+      "bbox_pt": [
+        75.39807,
+        442.566504,
+        519.87987,
+        724.49496
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch09/figure-9-2-state.svg",
+      "page": 648,
+      "bbox_pt": [
+        75.39807,
+        70.86471599999999,
+        519.87987,
+        398.5113
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch09/figure-9-kv-residency.svg",
+      "page": 651,
+      "bbox_pt": [
+        75.39807,
+        70.86414200000007,
+        519.87987,
+        421.36979
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch09/figure-9-kv-publish.svg",
+      "page": 652,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch09/figure-9-kv-release.svg",
+      "page": 653,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch09/figure-9-pd-layout.svg",
+      "page": 656,
+      "bbox_pt": [
+        75.39807,
+        70.864258,
+        519.87987,
+        406.13053
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch09/figure-9-3-pd.svg",
+      "page": 658,
+      "bbox_pt": [
+        75.39807,
+        205.16722999999996,
+        519.87987,
+        548.05319
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch09/figure-9-4-allocation.svg",
+      "page": 660,
+      "bbox_pt": [
+        75.39807,
+        195.905148,
+        519.87987,
+        569.26986
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-5-local.svg",
+      "page": 662,
+      "bbox_pt": [
+        75.39807,
+        238.866018,
+        519.87987,
+        574.13229
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch09/figure-9-local-cpu.svg",
+      "page": 663,
+      "bbox_pt": [
+        75.39807,
+        226.91008800000003,
+        519.87987,
+        562.17636
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch09/figure-9-6-reuse.svg",
+      "page": 665,
+      "bbox_pt": [
+        75.39807,
+        228.02585799999997,
+        519.87987,
+        525.19369
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-cpu-bottleneck.svg",
+      "page": 667,
+      "bbox_pt": [
+        75.39807,
+        70.86515600000001,
+        519.87987,
+        322.31486
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch09/figure-9-ep-layer.svg",
+      "page": 670,
+      "bbox_pt": [
+        75.39807,
+        153.99752000000007,
+        519.87987,
+        611.1788
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch09/figure-9-af-pingpong.svg",
+      "page": 672,
+      "bbox_pt": [
+        75.39807,
+        245.43413199999998,
+        519.87987,
+        519.7429
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-mla-handoff.svg",
+      "page": 674,
+      "bbox_pt": [
+        75.39807,
+        237.81394599999993,
+        519.87987,
+        527.36209
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-9-balance.svg",
+      "page": 676,
+      "bbox_pt": [
+        75.39807,
+        71.09585000000004,
+        519.87987,
+        375.88337
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-balance-hotspot.svg",
+      "page": 676,
+      "bbox_pt": [
+        75.39807,
+        425.1592800000001,
+        519.87987,
+        729.9468
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-ep-scale-cards.svg",
+      "page": 677,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch09/figure-9-ep-scale-sweep.svg",
+      "page": 678,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch09/figure-9-ep-skew.svg",
+      "page": 681,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch09/figure-9-10-experts.svg",
+      "page": 683,
+      "bbox_pt": [
+        75.39807,
+        239.456732,
+        519.87987,
+        513.7655
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch09/figure-9-11-overlap.svg",
+      "page": 686,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch09/figure-9-overlap-pipeline.svg",
+      "page": 687,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch09/figure-9-ep-tail.svg",
+      "page": 688,
+      "bbox_pt": [
+        75.39807,
+        70.86515600000001,
+        519.87987,
+        322.31486
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch09/figure-9-cache-directory.svg",
+      "page": 690,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch09/figure-9-kv-tiers.svg",
+      "page": 691,
+      "bbox_pt": [
+        75.39807,
+        70.86414200000007,
+        519.87987,
+        421.36979
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch09/figure-9-kv-capacity.svg",
+      "page": 693,
+      "bbox_pt": [
+        75.39807,
+        222.57550400000002,
+        519.87987,
+        542.6024
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-kv-hit.svg",
+      "page": 694,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch09/figure-9-kv-load-serial.svg",
+      "page": 697,
+      "bbox_pt": [
+        75.39807,
+        128.24300000000002,
+        519.87987,
+        318.7352
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-kv-load-layerwise.svg",
+      "page": 697,
+      "bbox_pt": [
+        75.39807,
+        482.30639999999994,
+        519.87987,
+        672.7986
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-kv-load-preload.svg",
+      "page": 698,
+      "bbox_pt": [
+        75.39807,
+        70.86548000000002,
+        519.87987,
+        261.35768
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch09/figure-9-kv-prefetch.svg",
+      "page": 699,
+      "bbox_pt": [
+        75.39807,
+        236.17108000000007,
+        519.87987,
+        540.9586
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch09/figure-9-12-cache.svg",
+      "page": 701,
+      "bbox_pt": [
+        75.39807,
+        70.86471999999998,
+        519.87987,
+        413.75068
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-13-route.svg",
+      "page": 703,
+      "bbox_pt": [
+        75.39807,
+        112.18216000000004,
+        519.87987,
+        340.7728
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-route-1.svg",
+      "page": 703,
+      "bbox_pt": [
+        75.39807,
+        472.22402,
+        519.87987,
+        700.81466
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-route-2.svg",
+      "page": 704,
+      "bbox_pt": [
+        75.39807,
+        103.21653,
+        519.87987,
+        331.80717
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-route-3.svg",
+      "page": 704,
+      "bbox_pt": [
+        75.39807,
+        457.27986,
+        519.87987,
+        685.8705
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch09/figure-9-v41-routing.svg",
+      "page": 707,
+      "bbox_pt": [
+        75.39807,
+        220.40666199999998,
+        519.87987,
+        532.81387
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch09/figure-9-17-service.svg",
+      "page": 709,
+      "bbox_pt": [
+        75.39807,
+        187.75994599999996,
+        519.87987,
+        553.50497
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch09/figure-9-14-migration.svg",
+      "page": 711,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch09/figure-9-15-recovery.svg",
+      "page": 713,
+      "bbox_pt": [
+        75.39807,
+        70.86507599999999,
+        519.87987,
+        436.6101
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch09/figure-9-16-composition.svg",
+      "page": 715,
+      "bbox_pt": [
+        75.39807,
+        86.33423199999999,
+        519.87987,
+        360.643
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch09/figure-9-composition-pool.svg",
+      "page": 715,
+      "bbox_pt": [
+        75.39807,
+        428.44283200000007,
+        519.87987,
+        702.7516
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch10/figure-10-update-cycle.svg",
+      "page": 729,
+      "bbox_pt": [
+        75.39807,
+        204.05040000000002,
+        519.87987,
+        585.0348
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-1-state.svg",
+      "page": 731,
+      "bbox_pt": [
+        75.39807,
+        221.45775400000002,
+        519.87987,
+        579.58309
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-2-budget.svg",
+      "page": 735,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch10/figure-10-budget-1.svg",
+      "page": 736,
+      "bbox_pt": [
+        75.39807,
+        76.54724400000003,
+        519.87987,
+        358.4757
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch10/figure-10-budget-2.svg",
+      "page": 736,
+      "bbox_pt": [
+        75.39807,
+        430.610634,
+        519.87987,
+        712.53909
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch10/figure-10-zero-0.svg",
+      "page": 738,
+      "bbox_pt": [
+        75.39807,
+        231.24575200000004,
+        519.87987,
+        581.7514
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-zero-1.svg",
+      "page": 739,
+      "bbox_pt": [
+        75.39807,
+        231.24575200000004,
+        519.87987,
+        581.7514
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-zero-2.svg",
+      "page": 740,
+      "bbox_pt": [
+        75.39807,
+        231.24575200000004,
+        519.87987,
+        581.7514
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-zero-3.svg",
+      "page": 741,
+      "bbox_pt": [
+        75.39807,
+        231.24575200000004,
+        519.87987,
+        581.7514
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch10/figure-10-3-sharding.svg",
+      "page": 743,
+      "bbox_pt": [
+        75.39807,
+        209.50276400000007,
+        519.87987,
+        567.6281
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-gradient-branches.svg",
+      "page": 744,
+      "bbox_pt": [
+        75.39807,
+        70.86483200000004,
+        519.87987,
+        383.27204
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch10/figure-10-4-recompute.svg",
+      "page": 745,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-recompute-rebuild.svg",
+      "page": 746,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-5-casting.svg",
+      "page": 748,
+      "bbox_pt": [
+        75.39807,
+        229.07792999999998,
+        519.87987,
+        571.96389
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch10/figure-10-casting-gpu.svg",
+      "page": 749,
+      "bbox_pt": [
+        75.39807,
+        229.07792999999998,
+        519.87987,
+        571.96389
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch10/figure-10-6-candidates.svg",
+      "page": 752,
+      "bbox_pt": [
+        75.39807,
+        228.55190400000004,
+        519.87987,
+        548.5788
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-7-pipeline.svg",
+      "page": 756,
+      "bbox_pt": [
+        75.40217,
+        213.43486839999997,
+        519.87477266,
+        563.69729
+      ],
+      "minimum_font_pt": 9.074
+    },
+    {
+      "file": "book/ch10/figure-10-pipeline-1f1b.svg",
+      "page": 757,
+      "bbox_pt": [
+        75.39807,
+        80.61947200000003,
+        519.87987,
+        393.02668
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch10/figure-10-pipeline-gap.svg",
+      "page": 757,
+      "bbox_pt": [
+        75.39807,
+        461.35210800000004,
+        519.87987,
+        720.4215
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch10/figure-10-pipeline-memory.svg",
+      "page": 758,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-pipeline-interleaved.svg",
+      "page": 763,
+      "bbox_pt": [
+        75.39807,
+        220.40666199999998,
+        519.87987,
+        532.81387
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch10/figure-10-pipeline-zero-bubble.svg",
+      "page": 764,
+      "bbox_pt": [
+        75.39807,
+        220.40666199999998,
+        519.87987,
+        532.81387
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch10/figure-10-pipeline-dualpipe.svg",
+      "page": 765,
+      "bbox_pt": [
+        75.39807,
+        232.36155200000007,
+        519.87987,
+        544.76876
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch10/figure-10-pipeline-schedules.svg",
+      "page": 766,
+      "bbox_pt": [
+        75.39807,
+        82.262268,
+        519.87987,
+        379.4301
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch10/figure-10-8-overlap.svg",
+      "page": 766,
+      "bbox_pt": [
+        75.39807,
+        474.94985399999996,
+        519.87987,
+        718.77987
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-overlap-busy.svg",
+      "page": 767,
+      "bbox_pt": [
+        75.39807,
+        70.86468400000001,
+        519.87987,
+        314.6947
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-moe-capacity.svg",
+      "page": 771,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-9-attention-area.svg",
+      "page": 773,
+      "bbox_pt": [
+        75.39807,
+        211.67067600000001,
+        519.87987,
+        577.4157
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch10/figure-10-attention-unequal.svg",
+      "page": 774,
+      "bbox_pt": [
+        75.39807,
+        217.64806600000003,
+        519.87987,
+        583.39309
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch10/figure-10-10-input-queue.svg",
+      "page": 776,
+      "bbox_pt": [
+        75.39807,
+        232.36155200000007,
+        519.87987,
+        544.76876
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch10/figure-10-11-resharding.svg",
+      "page": 778,
+      "bbox_pt": [
+        75.39807,
+        230.19468000000006,
+        519.87987,
+        534.9822
+      ],
+      "minimum_font_pt": 11.641
+    },
+    {
+      "file": "book/ch10/figure-10-checkpoint-commit.svg",
+      "page": 780,
+      "bbox_pt": [
+        75.39807,
+        226.91008800000003,
+        519.87987,
+        562.17636
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-12-recovery.svg",
+      "page": 781,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch10/figure-10-recovery-fast.svg",
+      "page": 782,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch10/figure-10-13-save-interval.svg",
+      "page": 784,
+      "bbox_pt": [
+        75.39807,
+        232.36155200000007,
+        519.87987,
+        544.76876
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-mimo-interruptions.svg",
+      "page": 786,
+      "bbox_pt": [
+        75.39807,
+        196.70108,
+        519.87987,
+        556.51968
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-14-rl-flow.svg",
+      "page": 792,
+      "bbox_pt": [
+        75.39807,
+        70.86530400000004,
+        519.87987,
+        390.8922
+      ],
+      "minimum_font_pt": 10.583
+    },
+    {
+      "file": "book/ch10/figure-10-15-rl.svg",
+      "page": 793,
+      "bbox_pt": [
+        75.39807,
+        70.86483200000004,
+        519.87987,
+        383.27204
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-rl-staged.svg",
+      "page": 794,
+      "bbox_pt": [
+        75.39807,
+        244.31639200000006,
+        519.87987,
+        556.7236
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-weight-update.svg",
+      "page": 795,
+      "bbox_pt": [
+        75.39807,
+        70.86530400000004,
+        519.87987,
+        390.8922
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-policy-versions.svg",
+      "page": 796,
+      "bbox_pt": [
+        75.39807,
+        70.86471999999998,
+        519.87987,
+        413.75068
+      ],
+      "minimum_font_pt": 12.699
+    },
+    {
+      "file": "book/ch10/figure-10-16-async-cycle.svg",
+      "page": 798,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-async-overlap.svg",
+      "page": 799,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-17-replay.svg",
+      "page": 801,
+      "bbox_pt": [
+        75.39807,
+        207.86108800000005,
+        519.87987,
+        581.2258
+      ],
+      "minimum_font_pt": 9.101
+    },
+    {
+      "file": "book/ch10/figure-10-18-deadline.svg",
+      "page": 804,
+      "bbox_pt": [
+        75.39807,
+        237.81394599999993,
+        519.87987,
+        527.36209
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-19-hardware.svg",
+      "page": 807,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch10/figure-10-20-scale.svg",
+      "page": 808,
+      "bbox_pt": [
+        75.39807,
+        228.55190400000004,
+        519.87987,
+        548.5788
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-1-timeline.svg",
+      "page": 817,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-memory-area.svg",
+      "page": 818,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-capacity.svg",
+      "page": 820,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-capacity-slow.svg",
+      "page": 821,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-2-boundary.svg",
+      "page": 824,
+      "bbox_pt": [
+        75.39807,
+        217.12313999999998,
+        519.87987,
+        560.0091
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-isolation-0.svg",
+      "page": 825,
+      "bbox_pt": [
+        75.39807,
+        77.07218,
+        519.87987,
+        381.8597
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-isolation-1.svg",
+      "page": 825,
+      "bbox_pt": [
+        75.39807,
+        431.13664000000006,
+        519.87987,
+        735.92416
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-isolation-2.svg",
+      "page": 826,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-sandbox-boundaries.svg",
+      "page": 827,
+      "bbox_pt": [
+        75.39807,
+        226.91008800000003,
+        519.87987,
+        562.17636
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-template-runtime.svg",
+      "page": 829,
+      "bbox_pt": [
+        75.39807,
+        240.506704,
+        519.87987,
+        560.5336
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-pages.svg",
+      "page": 831,
+      "bbox_pt": [
+        75.39807,
+        242.14958000000001,
+        519.87987,
+        546.9371
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-page-cache-copies.svg",
+      "page": 833,
+      "bbox_pt": [
+        75.39807,
+        77.89466800000002,
+        519.87987,
+        375.0625
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-page-cache-shared.svg",
+      "page": 833,
+      "bbox_pt": [
+        75.39807,
+        425.980628,
+        519.87987,
+        723.14846
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-pause.svg",
+      "page": 835,
+      "bbox_pt": [
+        75.39807,
+        109.19291000000001,
+        519.87987,
+        337.78355
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-pause-release.svg",
+      "page": 835,
+      "bbox_pt": [
+        75.39807,
+        451.30245,
+        519.87987,
+        679.89309
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-preempt-pause.svg",
+      "page": 837,
+      "bbox_pt": [
+        75.39807,
+        70.86468400000001,
+        519.87987,
+        314.6947
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-residency.svg",
+      "page": 839,
+      "bbox_pt": [
+        75.39807,
+        79.53542400000003,
+        519.87987,
+        361.46388
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-residency-rebuild.svg",
+      "page": 839,
+      "bbox_pt": [
+        75.39807,
+        427.62241400000005,
+        519.87987,
+        709.55087
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-3-lifecycle.svg",
+      "page": 840,
+      "bbox_pt": [
+        75.39807,
+        70.86587599999999,
+        519.87987,
+        284.21714
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-prewarm-1.svg",
+      "page": 841,
+      "bbox_pt": [
+        75.39807,
+        116.81418600000003,
+        519.87987,
+        330.16545
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-prewarm-2.svg",
+      "page": 841,
+      "bbox_pt": [
+        75.39807,
+        470.87753599999996,
+        519.87987,
+        684.2288
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-prewarm-3.svg",
+      "page": 842,
+      "bbox_pt": [
+        75.39807,
+        101.573836,
+        519.87987,
+        314.9251
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-prewarm-wrong.svg",
+      "page": 842,
+      "bbox_pt": [
+        75.39807,
+        425.159402,
+        519.87987,
+        699.46817
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-4-placement.svg",
+      "page": 844,
+      "bbox_pt": [
+        75.39807,
+        70.86483200000004,
+        519.87987,
+        383.27204
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-placement-after.svg",
+      "page": 845,
+      "bbox_pt": [
+        75.39807,
+        70.86483200000004,
+        519.87987,
+        383.27204
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-queue.svg",
+      "page": 846,
+      "bbox_pt": [
+        75.39807,
+        70.86500000000001,
+        519.87987,
+        451.8494
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-queue-burst.svg",
+      "page": 847,
+      "bbox_pt": [
+        75.39807,
+        210.02889999999996,
+        519.87987,
+        591.0133
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-placement-sampling.svg",
+      "page": 849,
+      "bbox_pt": [
+        75.39807,
+        219.28991200000007,
+        519.87987,
+        569.79556
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-smt-sibling.svg",
+      "page": 850,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-smt-core-scheduling.svg",
+      "page": 851,
+      "bbox_pt": [
+        75.39807,
+        70.86604400000004,
+        519.87987,
+        352.7945
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-rl-stages.svg",
+      "page": 853,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-weights.svg",
+      "page": 854,
+      "bbox_pt": [
+        75.39807,
+        70.86500000000001,
+        519.87987,
+        451.8494
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-rollout-owner-before.svg",
+      "page": 856,
+      "bbox_pt": [
+        75.39807,
+        226.91008800000003,
+        519.87987,
+        562.17636
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-rollout-owner-after.svg",
+      "page": 857,
+      "bbox_pt": [
+        75.39807,
+        232.88752800000003,
+        519.87987,
+        568.1538
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-5-stages.svg",
+      "page": 859,
+      "bbox_pt": [
+        75.39807,
+        70.86527200000003,
+        519.87987,
+        307.0756
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-stages-batch.svg",
+      "page": 860,
+      "bbox_pt": [
+        75.39807,
+        85.25074200000003,
+        519.87987,
+        321.46107
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-remaining-time.svg",
+      "page": 860,
+      "bbox_pt": [
+        75.39807,
+        411.00315,
+        519.87987,
+        715.79067
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-thinking.svg",
+      "page": 863,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-6-service.svg",
+      "page": 864,
+      "bbox_pt": [
+        75.39807,
+        232.36155200000007,
+        519.87987,
+        544.76876
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-7-routing.svg",
+      "page": 867,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-routing-deadline.svg",
+      "page": 868,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-purchase.svg",
+      "page": 870,
+      "bbox_pt": [
+        75.39807,
+        243.79235599999998,
+        519.87987,
+        533.3405
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-commit-ack.svg",
+      "page": 872,
+      "bbox_pt": [
+        75.39807,
+        219.28991200000007,
+        519.87987,
+        569.79556
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-recovery-coverage.svg",
+      "page": 874,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-retry-tree.svg",
+      "page": 879,
+      "bbox_pt": [
+        75.39807,
+        198.599036,
+        519.87987,
+        602.4425
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-retry-conditional.svg",
+      "page": 880,
+      "bbox_pt": [
+        75.39807,
+        188.81201800000002,
+        519.87987,
+        600.27517
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-8-retry.svg",
+      "page": 881,
+      "bbox_pt": [
+        75.39807,
+        218.23987999999997,
+        519.87987,
+        523.0274
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch11/figure-11-environment-overlap.svg",
+      "page": 882,
+      "bbox_pt": [
+        75.39807,
+        70.864258,
+        519.87987,
+        406.13053
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch11/figure-11-decision.svg",
+      "page": 884,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch12/figure-12-image-path.svg",
+      "page": 893,
+      "bbox_pt": [
+        75.39807,
+        70.86507599999999,
+        519.87987,
+        436.6101
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-1-raw.svg",
+      "page": 895,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-2-overlap.svg",
+      "page": 896,
+      "bbox_pt": [
+        75.39807,
+        70.86438000000004,
+        519.87987,
+        375.6519
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-overlap-chunks.svg",
+      "page": 897,
+      "bbox_pt": [
+        75.39807,
+        242.14958000000001,
+        519.87987,
+        546.9371
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-audio-clocks.svg",
+      "page": 899,
+      "bbox_pt": [
+        75.39807,
+        238.33999200000005,
+        519.87987,
+        550.7472
+      ],
+      "minimum_font_pt": 9.525
+    },
+    {
+      "file": "book/ch12/figure-12-3-paths.svg",
+      "page": 900,
+      "bbox_pt": [
+        75.39807,
+        212.78741599999995,
+        519.87987,
+        540.434
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-4-buffer.svg",
+      "page": 901,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-5-agent.svg",
+      "page": 902,
+      "bbox_pt": [
+        75.39807,
+        70.86483200000004,
+        519.87987,
+        383.27204
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-local-tiers.svg",
+      "page": 907,
+      "bbox_pt": [
+        75.39807,
+        70.86564800000002,
+        519.87987,
+        329.93504
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-encoder-remote.svg",
+      "page": 911,
+      "bbox_pt": [
+        75.39807,
+        134.94844999999998,
+        519.87987,
+        630.22817
+      ],
+      "minimum_font_pt": 9.736
+    },
+    {
+      "file": "book/ch12/figure-12-encoder-local.svg",
+      "page": 912,
+      "bbox_pt": [
+        75.39807,
+        128.96997999999996,
+        519.87987,
+        624.2497
+      ],
+      "minimum_font_pt": 9.736
+    },
+    {
+      "file": "book/ch12/figure-12-6-placement.svg",
+      "page": 913,
+      "bbox_pt": [
+        75.39807,
+        70.86515600000001,
+        519.87987,
+        322.31486
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-cache-restart.svg",
+      "page": 915,
+      "bbox_pt": [
+        75.39807,
+        182.833548,
+        519.87987,
+        594.2967
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-7-migration.svg",
+      "page": 916,
+      "bbox_pt": [
+        75.39807,
+        70.86492800000002,
+        519.87987,
+        368.03276
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-8-sync.svg",
+      "page": 918,
+      "bbox_pt": [
+        75.39807,
+        232.36155200000007,
+        519.87987,
+        544.76876
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-sync-ffn.svg",
+      "page": 919,
+      "bbox_pt": [
+        75.39807,
+        238.33999200000005,
+        519.87987,
+        550.7472
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-9-window.svg",
+      "page": 922,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-loss-repair.svg",
+      "page": 927,
+      "bbox_pt": [
+        75.39807,
+        233.47826200000003,
+        519.87987,
+        507.78703
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-10-transport.svg",
+      "page": 928,
+      "bbox_pt": [
+        75.39807,
+        70.86468400000001,
+        519.87987,
+        314.6947
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-transport-per-stream.svg",
+      "page": 929,
+      "bbox_pt": [
+        75.39807,
+        70.86468400000001,
+        519.87987,
+        314.6947
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-13-queqiao.svg",
+      "page": 932,
+      "bbox_pt": [
+        75.39807,
+        70.86443599999996,
+        519.87987,
+        360.41258
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-queqiao-tuned.svg",
+      "page": 933,
+      "bbox_pt": [
+        75.39807,
+        243.79235599999998,
+        519.87987,
+        533.3405
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-experiment-design.svg",
+      "page": 934,
+      "bbox_pt": [
+        75.39807,
+        221.45775400000002,
+        519.87987,
+        579.58309
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-11-wireless.svg",
+      "page": 937,
+      "bbox_pt": [
+        75.39807,
+        236.17108000000007,
+        519.87987,
+        540.9586
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-cancel-paths.svg",
+      "page": 939,
+      "bbox_pt": [
+        75.39807,
+        70.864258,
+        519.87987,
+        406.13053
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-multipath-independent.svg",
+      "page": 940,
+      "bbox_pt": [
+        75.39807,
+        70.86414200000007,
+        519.87987,
+        421.36979
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-12-multipath.svg",
+      "page": 941,
+      "bbox_pt": [
+        75.39807,
+        70.86414200000007,
+        519.87987,
+        421.36979
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-14-budgets.svg",
+      "page": 946,
+      "bbox_pt": [
+        75.39807,
+        70.86556200000001,
+        519.87987,
+        345.17433
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-budgets-1.svg",
+      "page": 947,
+      "bbox_pt": [
+        75.39807,
+        80.356832,
+        519.87987,
+        354.6656
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-budgets-2.svg",
+      "page": 947,
+      "bbox_pt": [
+        75.39807,
+        422.46530200000007,
+        519.87987,
+        696.77407
+      ],
+      "minimum_font_pt": 10.054
+    },
+    {
+      "file": "book/ch12/figure-12-15-deployment.svg",
+      "page": 949,
+      "bbox_pt": [
+        75.39807,
+        212.26138000000003,
+        519.87987,
+        517.0489
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-16-recovery.svg",
+      "page": 951,
+      "bbox_pt": [
+        75.39807,
+        70.86530400000004,
+        519.87987,
+        390.8922
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-recovery-all.svg",
+      "page": 952,
+      "bbox_pt": [
+        75.39807,
+        240.506704,
+        519.87987,
+        560.5336
+      ],
+      "minimum_font_pt": 11.112
+    },
+    {
+      "file": "book/ch12/figure-12-task-counterfactual.svg",
+      "page": 955,
+      "bbox_pt": [
+        75.39807,
+        70.86507,
+        519.87987,
+        337.55415
+      ],
+      "minimum_font_pt": 10.054
+    }
+  ],
+  "visual_table_review_method": "Fresh visual review of all 128 tables after PT Serif rebuild; no prior-font visual coverage reused. Details: pdf-tables-1-4.json, pdf-tables-5-8.json, pdf-tables-9-12.json.",
+  "minimum_font_scope": "Native SVG text labels only; original outlined source glyphs are excluded.",
+  "emitted_footnotes_checked": 564,
+  "typography_report": "verification/pdf-typography.json"
+}

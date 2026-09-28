@@ -1,0 +1,648 @@
+{
+  "figure-11-1-timeline.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-2-boundary.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-3-lifecycle.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-4-placement.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-5-stages.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-6-service.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-7-routing.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-8-retry.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-capacity-slow.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-capacity.svg": {
+    "font_size": 9.5,
+    "move_groups": {
+      "text_12": {
+        "dx": 22,
+        "dy": 0
+      }
+    }
+  },
+  "figure-11-commit-ack.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-decision.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-environment-overlap.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-isolation-0.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-isolation-1.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-isolation-2.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-memory-area.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-page-cache-copies.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-page-cache-shared.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-pages.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-pause-release.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-pause.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-placement-after.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-placement-sampling.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-preempt-pause.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-prewarm-1.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-prewarm-2.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-prewarm-3.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-prewarm-wrong.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-purchase.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-queue-burst.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-queue.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-recovery-coverage.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-remaining-time.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-residency-rebuild.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-residency.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-retry-conditional.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-retry-tree.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-rl-stages.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-rollout-owner-after.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-rollout-owner-before.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-routing-deadline.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-sandbox-boundaries.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-smt-core-scheduling.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-smt-sibling.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-stages-batch.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-template-runtime.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-thinking.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-weights.svg": {
+    "font_size": 9.5
+  },
+  "figure-11-1-timeline.svg:0001": {
+    "align": "end",
+    "x": 81.2,
+    "max_width": 78.2,
+    "font_size": 9
+  },
+  "figure-11-1-timeline.svg:0002": {
+    "align": "end",
+    "x": 79.319688,
+    "max_width": 76.319688,
+    "font_size": 9
+  },
+  "figure-11-3-lifecycle.svg:0001": {
+    "align": "end",
+    "x": 85.4,
+    "max_width": 82.4,
+    "font_size": 9
+  },
+  "figure-11-5-stages.svg:0001": {
+    "align": "end",
+    "x": 77.0,
+    "max_width": 74.0,
+    "font_size": 9
+  },
+  "figure-11-5-stages.svg:0002": {
+    "align": "end",
+    "x": 77.0,
+    "max_width": 74.0,
+    "font_size": 9
+  },
+  "figure-11-7-routing.svg:0001": {
+    "y": 144.0,
+    "max_width": 253.0,
+    "font_size": 9.5
+  },
+  "figure-11-8-retry.svg:0006": {
+    "y": 144.0,
+    "max_width": 253.0,
+    "font_size": 9.5
+  },
+  "figure-11-capacity-slow.svg:0001": {
+    "align": "end",
+    "x": 93.7999995,
+    "max_width": 90.7999995,
+    "font_size": 9
+  },
+  "figure-11-capacity-slow.svg:0002": {
+    "align": "end",
+    "x": 93.8,
+    "max_width": 90.8,
+    "font_size": 9
+  },
+  "figure-11-capacity-slow.svg:0003": {
+    "align": "end",
+    "x": 92.622656,
+    "max_width": 89.622656,
+    "font_size": 9
+  },
+  "figure-11-capacity.svg:0001": {
+    "align": "end",
+    "x": 93.7999995,
+    "max_width": 90.7999995,
+    "font_size": 9
+  },
+  "figure-11-capacity.svg:0002": {
+    "align": "end",
+    "x": 93.8,
+    "max_width": 90.8,
+    "font_size": 9
+  },
+  "figure-11-capacity.svg:0003": {
+    "align": "end",
+    "x": 92.622656,
+    "max_width": 89.622656,
+    "font_size": 9
+  },
+  "figure-11-decision.svg:0001": {
+    "align": "end",
+    "x": 77.0,
+    "max_width": 74.0,
+    "font_size": 9
+  },
+  "figure-11-decision.svg:0002": {
+    "align": "end",
+    "x": 77.0,
+    "max_width": 74.0,
+    "font_size": 9
+  },
+  "figure-11-environment-overlap.svg:0001": {
+    "align": "end",
+    "x": 93.8,
+    "max_width": 90.8,
+    "font_size": 9
+  },
+  "figure-11-environment-overlap.svg:0002": {
+    "align": "end",
+    "x": 93.8,
+    "max_width": 90.8,
+    "font_size": 9
+  },
+  "figure-11-environment-overlap.svg:0003": {
+    "align": "end",
+    "x": 93.8,
+    "max_width": 90.8,
+    "font_size": 9
+  },
+  "figure-11-environment-overlap.svg:0004": {
+    "align": "end",
+    "x": 93.8,
+    "max_width": 90.8,
+    "font_size": 9
+  },
+  "figure-11-memory-area.svg:0001": {
+    "align": "end",
+    "x": 81.20000025,
+    "max_width": 78.20000025,
+    "font_size": 9
+  },
+  "figure-11-pages.svg:0001": {
+    "align": "end",
+    "x": 98.0,
+    "max_width": 95.0,
+    "font_size": 9
+  },
+  "figure-11-pages.svg:0002": {
+    "align": "end",
+    "x": 98.0,
+    "max_width": 95.0,
+    "font_size": 9
+  },
+  "figure-11-pages.svg:0003": {
+    "align": "end",
+    "x": 98.0,
+    "max_width": 95.0,
+    "font_size": 9
+  },
+  "figure-11-pages.svg:0004": {
+    "align": "end",
+    "x": 98.0,
+    "max_width": 95.0,
+    "font_size": 9
+  },
+  "figure-11-pause-release.svg:0001": {
+    "align": "end",
+    "x": 81.20000025,
+    "max_width": 78.20000025,
+    "font_size": 9
+  },
+  "figure-11-pause.svg:0001": {
+    "align": "end",
+    "x": 81.20000025,
+    "max_width": 78.20000025,
+    "font_size": 9
+  },
+  "figure-11-preempt-pause.svg:0001": {
+    "align": "end",
+    "x": 85.39999975,
+    "max_width": 82.39999975,
+    "font_size": 9
+  },
+  "figure-11-preempt-pause.svg:0002": {
+    "align": "end",
+    "x": 85.4,
+    "max_width": 82.4,
+    "font_size": 9
+  },
+  "figure-11-prewarm-1.svg:0001": {
+    "align": "end",
+    "x": 85.4,
+    "max_width": 82.4,
+    "font_size": 9
+  },
+  "figure-11-prewarm-2.svg:0001": {
+    "align": "end",
+    "x": 85.4,
+    "max_width": 82.4,
+    "font_size": 9
+  },
+  "figure-11-prewarm-3.svg:0001": {
+    "align": "end",
+    "x": 85.4,
+    "max_width": 82.4,
+    "font_size": 9
+  },
+  "figure-11-prewarm-wrong.svg:0001": {
+    "align": "end",
+    "x": 98.0,
+    "max_width": 95.0,
+    "font_size": 9
+  },
+  "figure-11-prewarm-wrong.svg:0002": {
+    "align": "end",
+    "x": 98.0,
+    "max_width": 95.0,
+    "font_size": 9
+  },
+  "figure-11-purchase.svg:0001": {
+    "y": 136.8,
+    "max_width": 238.60000000000002,
+    "font_size": 9.5
+  },
+  "figure-11-purchase.svg:0002": {
+    "align": "start",
+    "x": 112.1,
+    "max_width": 302.9
+  },
+  "figure-11-purchase.svg:0003": {
+    "align": "start",
+    "x": 112.1,
+    "max_width": 302.9
+  },
+  "figure-11-queue-burst.svg:0001": {
+    "y": 180.0,
+    "max_width": 325.0,
+    "font_size": 9.5
+  },
+  "figure-11-queue.svg:0001": {
+    "y": 180.0,
+    "max_width": 325.0,
+    "font_size": 9.5
+  },
+  "figure-11-remaining-time.svg:0001": {
+    "align": "end",
+    "x": 76.9449995,
+    "max_width": 73.9449995,
+    "font_size": 9
+  },
+  "figure-11-remaining-time.svg:0002": {
+    "align": "end",
+    "x": 76.9449995,
+    "max_width": 73.9449995,
+    "font_size": 9
+  },
+  "figure-11-remaining-time.svg:0003": {
+    "align": "end",
+    "x": 76.94500049999999,
+    "max_width": 73.94500049999999,
+    "font_size": 9
+  },
+  "figure-11-residency-rebuild.svg:0001": {
+    "align": "end",
+    "x": 81.20000025,
+    "max_width": 78.20000025,
+    "font_size": 9
+  },
+  "figure-11-residency.svg:0001": {
+    "align": "end",
+    "x": 81.20000025,
+    "max_width": 78.20000025,
+    "font_size": 9
+  },
+  "figure-11-rl-stages.svg:0001": {
+    "align": "end",
+    "x": 72,
+    "max_width": 70,
+    "font_size": 9
+  },
+  "figure-11-rl-stages.svg:0002": {
+    "align": "end",
+    "x": 68.6,
+    "max_width": 65.6,
+    "font_size": 9
+  },
+  "figure-11-rl-stages.svg:0003": {
+    "x": 106,
+    "y": 52,
+    "max_width": 72
+  },
+  "figure-11-rl-stages.svg:0004": {
+    "align": "center",
+    "x": 171.39999999999998,
+    "y": 52,
+    "max_width": 72
+  },
+  "figure-11-rl-stages.svg:0005": {
+    "align": "center",
+    "x": 246.2,
+    "y": 52,
+    "max_width": 72
+  },
+  "figure-11-rl-stages.svg:0006": {
+    "align": "center",
+    "x": 321.0,
+    "y": 52,
+    "max_width": 72
+  },
+  "figure-11-routing-deadline.svg:0001": {
+    "y": 144.0,
+    "max_width": 253.0,
+    "font_size": 9.5
+  },
+  "figure-11-stages-batch.svg:0001": {
+    "align": "end",
+    "x": 77.0,
+    "max_width": 74.0,
+    "font_size": 9
+  },
+  "figure-11-stages-batch.svg:0002": {
+    "align": "end",
+    "x": 77.0,
+    "max_width": 74.0,
+    "font_size": 9
+  },
+  "figure-11-thinking.svg:0001": {
+    "align": "end",
+    "x": 72,
+    "max_width": 70,
+    "font_size": 9
+  },
+  "figure-11-thinking.svg:0002": {
+    "align": "end",
+    "x": 72,
+    "max_width": 70,
+    "font_size": 9
+  },
+  "figure-11-thinking.svg:0003": {
+    "align": "center",
+    "x": 96.6,
+    "y": 52,
+    "max_width": 72
+  },
+  "figure-11-thinking.svg:0004": {
+    "align": "center",
+    "x": 171.39999999999998,
+    "y": 52,
+    "max_width": 72
+  },
+  "figure-11-thinking.svg:0005": {
+    "align": "center",
+    "x": 246.2,
+    "y": 52,
+    "max_width": 72
+  },
+  "figure-11-6-service.svg:0000": {
+    "max_width": 82
+  },
+  "figure-11-6-service.svg:0001": {
+    "max_width": 82
+  },
+  "figure-11-6-service.svg:0003": {
+    "max_width": 80
+  },
+  "figure-11-commit-ack.svg:0003": {
+    "max_width": 118
+  },
+  "figure-11-8-retry.svg:0000": {
+    "max_width": 95,
+    "y": 225
+  },
+  "figure-11-8-retry.svg:0001": {
+    "max_width": 95,
+    "y": 248
+  },
+  "figure-11-8-retry.svg:0002": {
+    "max_width": 95,
+    "y": 225
+  },
+  "figure-11-page-cache-shared.svg:0004": {
+    "max_width": 110,
+    "font_size": 9,
+    "y": 218
+  },
+  "figure-11-placement-sampling.svg:0000": {
+    "y": 140
+  },
+  "figure-11-placement-sampling.svg:0001": {
+    "max_width": 118,
+    "y": 169
+  },
+  "figure-11-placement-sampling.svg:0007": {
+    "max_width": 90,
+    "x": 190,
+    "y": 88
+  },
+  "figure-11-preempt-pause.svg:0006": {
+    "max_width": 57
+  },
+  "figure-11-preempt-pause.svg:0007": {
+    "y": 110,
+    "max_width": 85
+  },
+  "figure-11-preempt-pause.svg:0008": {
+    "max_width": 102
+  },
+  "figure-11-preempt-pause.svg:0009": {
+    "y": 110,
+    "max_width": 90
+  },
+  "figure-11-preempt-pause.svg:0010": {
+    "max_width": 57
+  },
+  "figure-11-recovery-coverage.svg:0013": {
+    "max_width": 70
+  },
+  "figure-11-recovery-coverage.svg:0016": {
+    "max_width": 166,
+    "x": 295
+  },
+  "figure-11-retry-conditional.svg:0003": {
+    "max_width": 130,
+    "y": 188
+  },
+  "figure-11-retry-conditional.svg:0004": {
+    "y": 219
+  },
+  "figure-11-retry-tree.svg:0001": {
+    "max_width": 105,
+    "y": 184
+  },
+  "figure-11-retry-tree.svg:0002": {
+    "max_width": 105,
+    "y": 184
+  },
+  "figure-11-sandbox-boundaries.svg:0002": {
+    "max_width": 116
+  },
+  "figure-11-sandbox-boundaries.svg:0003": {
+    "max_width": 145
+  },
+  "figure-11-sandbox-boundaries.svg:0004": {
+    "max_width": 60
+  },
+  "figure-11-sandbox-boundaries.svg:0005": {
+    "x": 95,
+    "y": 195,
+    "max_width": 88
+  },
+  "figure-11-sandbox-boundaries.svg:0006": {
+    "x": 95,
+    "y": 209
+  },
+  "figure-11-template-runtime.svg:0002": {
+    "y": 71
+  },
+  "figure-11-template-runtime.svg:0003": {
+    "max_width": 128,
+    "y": 99
+  },
+  "figure-11-template-runtime.svg:0005": {
+    "max_width": 190,
+    "y": 234
+  },
+  "figure-11-template-runtime.svg:0006": {
+    "max_width": 110
+  },
+  "figure-11-page-cache-copies.svg:0000": {
+    "max_width": 80
+  },
+  "figure-11-page-cache-copies.svg:0001": {
+    "max_width": 80
+  },
+  "figure-11-page-cache-copies.svg:0002": {
+    "max_width": 80
+  },
+  "figure-11-page-cache-shared.svg:0000": {
+    "max_width": 95
+  },
+  "figure-11-page-cache-shared.svg:0001": {
+    "max_width": 95
+  },
+  "figure-11-page-cache-shared.svg:0002": {
+    "max_width": 95
+  },
+  "figure-11-smt-core-scheduling.svg:0001": {
+    "max_width": 138
+  },
+  "figure-11-smt-core-scheduling.svg:0002": {
+    "max_width": 138
+  },
+  "figure-11-smt-sibling.svg:0001": {
+    "max_width": 138
+  },
+  "figure-11-smt-sibling.svg:0002": {
+    "max_width": 138
+  },
+  "figure-11-8-retry.svg:0003": {
+    "max_width": 95,
+    "y": 248
+  },
+  "figure-11-8-retry.svg:0004": {
+    "max_width": 95,
+    "y": 225
+  },
+  "figure-11-8-retry.svg:0005": {
+    "max_width": 95,
+    "y": 248
+  },
+  "figure-11-pause-release.svg:0003": {
+    "font_size": 9,
+    "max_width": 100,
+    "x": 365,
+    "y": 12
+  }
+}

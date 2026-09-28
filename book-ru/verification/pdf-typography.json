@@ -1,0 +1,31 @@
+{
+  "pdf_path": "dist/AI-Infra-in-Depth-RU.pdf",
+  "pdf_sha256": "ae34114fe3f2ca7d2cb6d869a8eac82780d15a355ca46b046bdecddb7e545cc6",
+  "body_font": "PT Serif",
+  "body_font_size_tex_pt": 11,
+  "body_baseline_skip_tex_pt": 15,
+  "measured_body_sizes_pdf_pt": {
+    "10.959": 1578692
+  },
+  "body_lines_at_15_tex_pt_baseline": 18746,
+  "most_common_body_baseline_gaps_pdf_pt": [
+    [
+      14.94,
+      18745
+    ],
+    [
+      0.0,
+      1
+    ],
+    [
+      16.12,
+      1
+    ],
+    [
+      14.95,
+      1
+    ]
+  ],
+  "method": "MuPDF structured text: native PTSerif-Regular glyph sizes and consecutive body-line baselines within blocks. TeX pt converted to PDF pt by 72/72.27.",
+  "limitations": "Body measurements exclude tables, headings, captions, footnotes and diagram labels; those intentionally use other sizes."
+}

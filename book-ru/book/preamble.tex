@@ -1,0 +1,56 @@
+% Russian preview typography. No CJK font or class dependency.
+\usepackage{fontspec}
+\setmainfont{PT Serif}
+% Body type approved for the Russian edition: 11 pt on a 15 pt baseline.
+\usepackage{etoolbox}
+\apptocmd{\normalsize}{\fontsize{11}{15}\selectfont}{}{}
+\AtBeginDocument{\normalsize}
+\setsansfont{Noto Sans}
+\setmonofont[Scale=0.84]{DejaVu Sans Mono}
+\usepackage{newunicodechar}
+\newfontfamily\infrasymbols{DejaVu Sans}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≈}{\ensuremath{\approx}}
+\newunicodechar{γ}{\ensuremath{\gamma}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{★}{{\infrasymbols\mdseries ★}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{←}{\ensuremath{\leftarrow}}
+\newunicodechar{↔}{\ensuremath{\leftrightarrow}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{①}{{\infrasymbols ①}}
+\newunicodechar{②}{{\infrasymbols ②}}
+\newunicodechar{③}{{\infrasymbols ③}}
+\usepackage{microtype}
+\usepackage{xurl}
+\urlstyle{same}
+\usepackage{fvextra}
+\fvset{breaklines=true,breakanywhere=true}
+\usepackage{caption}
+\captionsetup{labelformat=empty,font={small,sf},skip=5pt,justification=raggedright,singlelinecheck=false}
+\usepackage{tikz}
+\definecolor{infranavy}{RGB}{27,50,88}
+\definecolor{infrateal}{RGB}{15,137,148}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\sffamily\bfseries\color{infranavy}}
+  {\Large\chaptertitlename\ \thechapter}{12pt}{\Huge}
+\titleformat{\section}{\Large\sffamily\bfseries\color{infranavy}}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\large\sffamily\bfseries\color{infranavy}}{\thesubsection}{0.8em}{}
+\setcounter{tocdepth}{1}
+\setlength{\emergencystretch}{5em}
+\newcommand{\infragraphic}[1]{\includegraphics[width=.98\linewidth,height=.72\textheight,keepaspectratio]{#1}}
+\usepackage{ragged2e}
+\let\raggedright\RaggedRight
+\usepackage{pdflscape}
+\usepackage{placeins}
+\makeatletter
+\renewcommand{\@pnumwidth}{2.5em}
+\renewcommand{\@tocrmarg}{3.5em}
+\makeatother
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{3pt}}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt plus 1pt}
+\raggedbottom

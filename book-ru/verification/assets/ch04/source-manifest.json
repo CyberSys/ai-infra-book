@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/bojieli/ai-infra-book",
+  "source_commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "files": [
+    {
+      "path": "manuscripts/ch04/figure-4-1-reuse.svg",
+      "sha256": "76d1918893e35b68f0b68eec29a70e846c938ed4a00cd6d981fa9225250f123e"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-10-locality.svg",
+      "sha256": "5fe26883ab7578120d38280a0343cffbd2c6041ae4bfd98fa36f68f7b8d25865"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-11-interconnect.svg",
+      "sha256": "f9825f420d68e16aea79f065bff5aa65ee76c4b25d52ce0e35c36823860c04f6"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-12-specialization.svg",
+      "sha256": "80fd2939cb31371f73ed763ffa6260489aebb00ecc9a10b881e395b29939b6b9"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-13-roofline.svg",
+      "sha256": "a1681851c5866fb2050bd60a5fb99ea57d572824a09e97022450dbe984a94c82"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-14-performance.svg",
+      "sha256": "676bcdde2be7046d5940ff1dd52034739af6e0797377eb8bf6e14eee444aed87"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-2-components.svg",
+      "sha256": "972b4ab546bccb4e90002f5b54c77a44bd231289d7357c08456a2aa8c432ab97"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-3-expert-rows.svg",
+      "sha256": "1cc6eda8c8e36c3eb1ae913d45ab81b4dcc34afc311c803179d7d06d30c1033b"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-4-attention.svg",
+      "sha256": "243d8b756e4f738172cfe6a1fde3d1b8e5a293c4713f90f49869cb8c6147cbc5"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-5-precision.svg",
+      "sha256": "33e1abc131fb8b2e234aa63c7ca80232a2f90b79c30a017fa9eede83ddd5d3d6"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-6-capacity.svg",
+      "sha256": "57444c5d24e997169098ffb5aed30a9ff2b34ef0e8660b89550cfe1cc6ca518d"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-7-memory.svg",
+      "sha256": "d9787cea71958247db5c45b1cc8bc41f58e4c3c1ba1469ea6b0627537666b5e8"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-8-layout.svg",
+      "sha256": "beaa89342d43fd735dd8fdbcd0453372534148b67acd704ed926cb9e0c6f0970"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-9-pipeline.svg",
+      "sha256": "da039cc9842a5e8f1d43921521494b3a70b5cedc58e37a767639679bbc6f1834"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-codesign-loop.svg",
+      "sha256": "0bf6d9083db6f5480b9a094c8b0fa6997dc8dfb1a87ddbaf2deaddc266daf20d"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-cross-sm-handoff.svg",
+      "sha256": "61c479c9ac315f148be5025488add35db8cdebfa83525921972ad2526284b41a"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-energy-ladder.svg",
+      "sha256": "71698133feb797e867ed827e49cf181917671937534821a4603a94d525a32d81"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-energy-package.svg",
+      "sha256": "9a887ffcae4860deeb8a550cc4829888b207a9f3a0ee013000adb4f974089c21"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-energy-power-cap.svg",
+      "sha256": "b85d6f6f4a896f3d921156a0a417f540276b541296b7c80f5e8bdb9d1f2d30ee"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-energy-wire.svg",
+      "sha256": "31d782a7d89346128d88e6bd41d2a9fd13fdc94d7beae30658aee5b88c7835a8"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-evolution-apple.svg",
+      "sha256": "7abf53169cf06fe2af2a43ee5426f27b04654bf76e058a8ec633fdcca1185445"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-evolution-ascend.svg",
+      "sha256": "a943aa409aa1eae60c81e12078c0b7971d93fd12ba9ddfd6d91432f0cf1aa280"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-evolution-convergence.svg",
+      "sha256": "925cff712dcfe1a51a751d50ca036e72f2adf2aa9d5bcc672b7f195912b95a73"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-evolution-cv-budget.svg",
+      "sha256": "5c4c9296bb6f4e0da41818a36956c98feba61a181cf085d3acc913362b0f8b6f"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-evolution-img2col.svg",
+      "sha256": "d1c1d14dcfa89be02534357289a4e3b535e54e9893afbf428e2a552bae58a8e1"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-evolution-nvidia-path.svg",
+      "sha256": "abc1ed1c0ad373a2e79b28a9236910b11a182acd2cf9f765f790b7dca503ae67"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-evolution-precision.svg",
+      "sha256": "0ee894be641ca606259c4cf3669ef74857f350053ddf77b0f1d69978cd47e012"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-evolution-tensor-budget.svg",
+      "sha256": "97cda7d1b2e8a61c4c21119cbc7adf30903e2736f3a461f0b884323b3621468e"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-expert-padding-total.svg",
+      "sha256": "3d560aeb142ecc4128841fa2f0874fc615983fe68b5f6b61b558b2353eb0f817"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-l2-structure.svg",
+      "sha256": "5adafb0836a9ba504225f35faeb7cd6ca53c5d3b3d7227a097a42f7f18319f21"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-large-message.svg",
+      "sha256": "bccc5896a9e8b95dc4ca67fe3a20e3d62b1cf77c0506b843e366a755e86f8370"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-locality-compute.svg",
+      "sha256": "c7239396473da7fa3816cb8e5e750f0452f881a37efb70b158b5a69b7b465003"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-matrix-array.svg",
+      "sha256": "5d8f64c938349b0976a1262b823ff6ea4f5c102d712f99f8414be744811db837"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-matrix-vector-handoff.svg",
+      "sha256": "520dcaf92a032095cb8a206472787b8e50faed87bea4d61b0780812a3ef19a48"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-memory-inflight.svg",
+      "sha256": "9237cf0bfa00e3ff1395b2ece4468b90de763ccc5ceee87b25425ef038ef12df"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-performance-traffic.svg",
+      "sha256": "ed1679e044d09e6abfa87c5ecb7aab4c1603287de30ff15cd4a4b20344808354"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-pipeline-three.svg",
+      "sha256": "4eec6de14d2a878b6112f396c1600a88e4cd12617dcb00ae0cd1e92fe7ad2841"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-pipeline-two.svg",
+      "sha256": "88e9d7f7cfb6a312b660e1e20f064e260dc61a28ea463e0f981a055334bd90da"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-rom-paths.svg",
+      "sha256": "354a5acd9592abe1744553ac083033148ed5c07d157a24f42ef5651098d5302e"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-slot-lifetime.svg",
+      "sha256": "0f57dbddae83782fa36de77e7d3d5679b1ea15719b3ba29277de42e543a6aefd"
+    },
+    {
+      "path": "manuscripts/ch04/figure-4-sync-ladder.svg",
+      "sha256": "78dc0ce784e6b1b02866dedd475c2ac3ed1f8d5589c2149e1e25b007012c4747"
+    }
+  ]
+}

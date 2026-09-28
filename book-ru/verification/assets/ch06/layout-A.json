@@ -1,0 +1,529 @@
+{
+  "figure-6-dense-moe.svg:0004": {
+    "align": "start",
+    "x": 355,
+    "font_size": 8.6
+  },
+  "figure-6-2-capacity.svg:0001": {
+    "align": "end",
+    "x": 96,
+    "font_size": 9,
+    "max_width": 90
+  },
+  "figure-6-2-capacity.svg:0002": {
+    "align": "end",
+    "x": 96,
+    "font_size": 9,
+    "max_width": 90
+  },
+  "figure-6-2-capacity.svg:0004": {
+    "align": "start",
+    "x": 315,
+    "font_size": 9
+  },
+  "figure-6-3-tp.svg:0001": {
+    "x": 112,
+    "y": 132,
+    "font_size": 9,
+    "max_width": 150
+  },
+  "figure-6-3-tp.svg:0002": {
+    "x": 112,
+    "y": 228,
+    "font_size": 9,
+    "max_width": 150
+  },
+  "figure-6-3-tp.svg:0003": {
+    "x": 308,
+    "y": 132,
+    "font_size": 9,
+    "max_width": 150
+  },
+  "figure-6-3-tp.svg:0004": {
+    "x": 308,
+    "y": 228,
+    "font_size": 9,
+    "max_width": 150
+  },
+  "figure-6-4-pipeline.svg:0001": {
+    "align": "end",
+    "x": 73,
+    "font_size": 9.5
+  },
+  "figure-6-4-pipeline.svg:0002": {
+    "align": "end",
+    "x": 73,
+    "font_size": 9.5
+  },
+  "figure-6-4-pipeline.svg:0003": {
+    "align": "end",
+    "x": 73,
+    "font_size": 9.5
+  },
+  "figure-6-4-pipeline.svg:0004": {
+    "align": "end",
+    "x": 73,
+    "font_size": 9.5
+  },
+  "figure-6-5-dispatch.svg:0005": {
+    "x": 210,
+    "font_size": 9,
+    "max_width": 275
+  },
+  "figure-6-7-reuse.svg:0001": {
+    "align": "end",
+    "x": 113,
+    "font_size": 9,
+    "max_width": 105
+  },
+  "figure-6-7-reuse.svg:0002": {
+    "align": "end",
+    "x": 113,
+    "font_size": 9,
+    "max_width": 105
+  },
+  "figure-6-8-expert-load.svg:0004": {
+    "font_size": 8.6
+  },
+  "figure-6-expert-load-1.svg:0004": {
+    "font_size": 8.6
+  },
+  "figure-6-10-tp-time.svg:0001": {
+    "align": "start",
+    "x": 288,
+    "font_size": 9
+  },
+  "figure-6-10-tp-time.svg:0002": {
+    "align": "start",
+    "x": 363,
+    "font_size": 9
+  },
+  "figure-6-11-collectives.svg:0002": {
+    "align": "start",
+    "x": 106,
+    "font_size": 9.5
+  },
+  "figure-6-11-collectives.svg:0003": {
+    "align": "start",
+    "x": 106,
+    "font_size": 9.5
+  },
+  "figure-6-12-resources.svg:0001": {
+    "align": "start",
+    "x": 349,
+    "font_size": 9,
+    "y": 161.88
+  },
+  "figure-6-12-resources.svg:0002": {
+    "align": "start",
+    "x": 349,
+    "font_size": 8.6,
+    "max_width": 68,
+    "y": 184
+  },
+  "figure-6-16-systems.svg:0000": {
+    "font_size": 9,
+    "max_width": 88
+  },
+  "figure-6-16-systems.svg:0002": {
+    "font_size": 9,
+    "max_width": 88
+  },
+  "figure-6-16-systems.svg:0004": {
+    "font_size": 8.6,
+    "max_width": 88
+  },
+  "figure-6-16-systems.svg:0005": {
+    "y": 207,
+    "font_size": 9,
+    "max_width": 88
+  },
+  "figure-6-16-systems.svg:0006": {
+    "y": 230,
+    "font_size": 9
+  },
+  "figure-6-16-systems.svg:0008": {
+    "font_size": 8.6,
+    "max_width": 88
+  },
+  "figure-6-16-systems.svg:0010": {
+    "font_size": 8.6,
+    "max_width": 88
+  },
+  "figure-6-16-systems.svg:0013": {
+    "font_size": 9,
+    "max_width": 88
+  },
+  "figure-6-17-pool-placement.svg:0005": {
+    "align": "start",
+    "x": 130,
+    "y": 30,
+    "font_size": 10,
+    "max_width": 275
+  },
+  "figure-6-19-memory-pool.svg:0002": {
+    "align": "start",
+    "x": 105,
+    "font_size": 9.5
+  },
+  "figure-6-19-memory-pool.svg:0003": {
+    "align": "start",
+    "x": 105,
+    "font_size": 9.5
+  },
+  "figure-6-19-memory-pool.svg:0004": {
+    "align": "start",
+    "x": 105,
+    "font_size": 9.5
+  },
+  "figure-6-context-dependency.svg:0004": {
+    "x": 295,
+    "y": 168,
+    "font_size": 9,
+    "max_width": 100
+  },
+  "figure-6-dp.svg:0000": {
+    "x": 55,
+    "y": 111,
+    "font_size": 9,
+    "max_width": 58
+  },
+  "figure-6-dp.svg:0001": {
+    "x": 55,
+    "y": 139,
+    "font_size": 8.6,
+    "max_width": 60
+  },
+  "figure-6-dp.svg:0003": {
+    "x": 136,
+    "y": 57,
+    "font_size": 8.6,
+    "max_width": 45
+  },
+  "figure-6-dp.svg:0006": {
+    "x": 339,
+    "y": 57,
+    "font_size": 8.6,
+    "max_width": 45
+  },
+  "figure-6-dp.svg:0008": {
+    "x": 136,
+    "y": 181,
+    "font_size": 8.6,
+    "max_width": 45
+  },
+  "figure-6-dp.svg:0011": {
+    "x": 339,
+    "y": 181,
+    "font_size": 8.6,
+    "max_width": 45
+  },
+  "figure-6-dp.svg:0012": {
+    "font_size": 9,
+    "max_width": 110
+  },
+  "figure-6-engram-placement.svg:0000": {
+    "font_size": 9,
+    "max_width": 340
+  },
+  "figure-6-engram-placement.svg:0002": {
+    "font_size": 9,
+    "max_width": 70
+  },
+  "figure-6-engram-placement.svg:0003": {
+    "font_size": 9,
+    "max_width": 90
+  },
+  "figure-6-engram-placement.svg:0004": {
+    "x": 100,
+    "y": 153,
+    "font_size": 8.6,
+    "max_width": 100
+  },
+  "figure-6-engram-placement.svg:0005": {
+    "font_size": 9,
+    "max_width": 115
+  },
+  "figure-6-engram-placement.svg:0006": {
+    "font_size": 9,
+    "max_width": 70
+  },
+  "figure-6-engram-placement.svg:0008": {
+    "font_size": 9,
+    "max_width": 90
+  },
+  "figure-6-engram-placement.svg:0009": {
+    "x": 245,
+    "y": 153,
+    "font_size": 8.6,
+    "max_width": 95
+  },
+  "figure-6-engram-placement.svg:0011": {
+    "font_size": 9,
+    "max_width": 70
+  },
+  "figure-6-engram-placement.svg:0012": {
+    "font_size": 9,
+    "max_width": 90
+  },
+  "figure-6-engram-placement.svg:0013": {
+    "x": 360,
+    "y": 151,
+    "font_size": 8.6,
+    "max_width": 100
+  },
+  "figure-6-ep.svg:0000": {
+    "font_size": 9,
+    "max_width": 290
+  },
+  "figure-6-ep.svg:0001": {
+    "font_size": 8.6,
+    "max_width": 290
+  },
+  "figure-6-ep.svg:0004": {
+    "font_size": 8.6,
+    "max_width": 290,
+    "line_height": 8.8
+  },
+  "figure-6-dense-moe.svg": {
+    "move_groups": {
+      "patch_23": {
+        "dx": -20,
+        "dy": 0
+      },
+      "patch_24": {
+        "dx": -20,
+        "dy": 0
+      }
+    }
+  },
+  "figure-6-dense-moe.svg:0003": {
+    "align": "start",
+    "x": 355,
+    "font_size": 9
+  },
+  "figure-6-cp.svg": {
+    "move_groups": {
+      "patch_2": {
+        "scale_x": 1.7778915628377994,
+        "dx": -36.63500597371565,
+        "dy": 0
+      },
+      "patch_3": {
+        "scale_x": 0.775,
+        "dx": 41.5,
+        "dy": 0
+      },
+      "patch_4": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_5": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_6": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_7": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_8": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_9": {
+        "scale_x": 0.775,
+        "dx": 41.5,
+        "dy": 0
+      },
+      "patch_10": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_11": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_12": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_13": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_14": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_15": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_16": {
+        "dx": 20,
+        "dy": 0
+      },
+      "patch_17": {
+        "dx": 20,
+        "dy": 0
+      },
+      "text_3": {
+        "dx": 20,
+        "dy": 0
+      },
+      "text_7": {
+        "dx": 20,
+        "dy": 0
+      }
+    }
+  },
+  "figure-6-cp.svg:0000": {
+    "x": 52,
+    "y": 119,
+    "max_width": 98,
+    "font_size": 8.6,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0001": {
+    "x": 52,
+    "y": 143,
+    "max_width": 98,
+    "font_size": 9,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0002": {
+    "x": 116,
+    "y": 32,
+    "max_width": 95,
+    "font_size": 11,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0003": {
+    "x": 129.927,
+    "y": 76,
+    "max_width": 64,
+    "font_size": 8.6,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0004": {
+    "x": 255.389,
+    "y": 56,
+    "max_width": 101,
+    "font_size": 10,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0005": {
+    "x": 255.389,
+    "y": 74,
+    "max_width": 101,
+    "font_size": 8.6,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0006": {
+    "x": 368.663,
+    "y": 57,
+    "max_width": 78,
+    "font_size": 10,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0007": {
+    "x": 368.663,
+    "y": 76,
+    "max_width": 78,
+    "font_size": 9,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0008": {
+    "x": 116,
+    "y": 231,
+    "max_width": 95,
+    "font_size": 11,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0009": {
+    "x": 129.927,
+    "y": 203,
+    "max_width": 64,
+    "font_size": 8.6,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0010": {
+    "x": 255.389,
+    "y": 182,
+    "max_width": 101,
+    "font_size": 10,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0011": {
+    "x": 255.389,
+    "y": 201,
+    "max_width": 101,
+    "font_size": 8.6,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0012": {
+    "x": 368.663,
+    "y": 184,
+    "max_width": 78,
+    "font_size": 10,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0013": {
+    "x": 368.663,
+    "y": 203,
+    "max_width": 78,
+    "font_size": 9,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-cp.svg:0014": {
+    "x": 255.389,
+    "y": 130,
+    "max_width": 100,
+    "font_size": 9,
+    "align": "center",
+    "line_height": 10.3
+  },
+  "figure-6-16-systems.svg:0003": {
+    "y": 200
+  },
+  "figure-6-16-systems.svg:0007": {
+    "y": 200
+  },
+  "figure-6-context-dependency.svg:0002": {
+    "x": 295,
+    "y": 63,
+    "font_size": 9,
+    "max_width": 100
+  },
+  "figure-6-context-dependency.svg:0003": {
+    "x": 295,
+    "y": 93,
+    "font_size": 9
+  },
+  "figure-6-12-resources.svg": {
+    "move_groups": {
+      "patch_9": {
+        "dx": 0,
+        "dy": -12
+      }
+    }
+  }
+}

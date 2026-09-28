@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "verdict": "PASS",
+  "scope": "Fresh visual layout review of all 30 Pandoc AST tables in chapters 9-12; no semantic translation review",
+  "pdf": ".tmp/pdf-build/AI-Infra-in-Depth-RU.pdf",
+  "final_pdf_sha256": "ae34114fe3f2ca7d2cb6d869a8eac82780d15a355ca46b046bdecddb7e545cc6",
+  "final_page_count": 961,
+  "page_numbering": "1-based physical PDF pages",
+  "font_change": "PT Serif body 11pt/15pt; no old visual coverage reused",
+  "coverage_method": "Pandoc AST enumerated 8+10+6+6 tables. pdftotext matched cell content to candidate pages. Every table page and continuation was rendered with mutool at 110 dpi and viewed individually at readable full-page resolution. Headers, every body row, wrapping, cell separation, clipping and continuation headers checked against AST row inventory. Formula table 11-4 additionally viewed as 220 dpi crop.",
+  "inventory": ".tmp/pt-tables-9-12-map.json",
+  "rendered_pages_directory": ".tmp/pt-tables-9-12-images",
+  "table_pages": {
+    "9-1": [647], "9-2": [650], "9-3": [654], "9-4": [656],
+    "9-5": [680], "9-6": [691, 692], "9-7": [702], "9-8": [717],
+    "10-1": [728], "10-2": [730], "10-3": [733], "10-4": [742],
+    "10-5": [751], "10-6": [761], "10-7": [770], "10-8": [783],
+    "10-9": [787], "10-10": [803],
+    "11-1": [816], "11-2": [822], "11-3": [866], "11-4": [875],
+    "11-5": [877, 878], "11-6": [885],
+    "12-1": [903, 904], "12-2": [906], "12-3": [908], "12-4": [931],
+    "12-5": [944], "12-6": [953]
+  },
+  "visual_reviewed_final_pages": [647, 650, 654, 656, 680, 691, 692, 702, 717, 728, 730, 733, 742, 751, 761, 770, 783, 787, 803, 816, 822, 866, 875, 877, 878, 885, 903, 904, 906, 908, 931, 944, 953],
+  "additional_neighbor_pages_viewed": [804, 954],
+  "continuations": {
+    "9-6": "Four body rows on 691, final comparison row on 692; header repeated; all five body rows visible.",
+    "11-5": "Four body rows on 877, final two rows on 878; header repeated; all six outcomes visible.",
+    "12-1": "First body row on 903, remaining two rows on 904; header repeated; all three rows visible."
+  },
+  "detail_checks": {
+    "11-4": "220 dpi detail confirms formulas do not collide with adjacent time column; final unit in second formula wraps to next line inside its cell."
+  },
+  "findings": [],
+  "needs_visual_review": []
+}

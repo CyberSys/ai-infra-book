@@ -1,0 +1,10 @@
+{
+  "figure-7-rail-pairing.svg:0000": "Согласованное попарное соединение rank i ↔ i+8: каждая пара остаётся в своей rail",
+  "figure-7-rail-pairing.svg:0001": "Spine-коммутатор",
+  "figure-7-rail-pairing.svg:0002": "Оранжевый: сетевые карты 0–7 сервера A; фиолетовый: сетевые карты 8–15 сервера B; одна rail — один leaf-коммутатор",
+  "figure-7-rail-pairing.svg:0003": "Смещённое попарное соединение rank i ↔ i+9: каждая пара через spine-коммутатор переходит на следующую rail",
+  "figure-7-rail-pairing.svg:0004": "Spine-коммутатор",
+  "figure-7-rail-pairing.svg:0005": "0 → spine → 9",
+  "figure-7-rail-pairing.svg:0006": "5 → spine → 14",
+  "figure-7-rail-pairing.svg:0007": "Оранжевый: сетевые карты 0–7 сервера A; фиолетовый: сетевые карты 8–15 сервера B; одна rail — один leaf-коммутатор"
+}

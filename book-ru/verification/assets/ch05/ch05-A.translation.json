@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "pass": "translation",
+  "model_id": "gpt-5.6-sol",
+  "source_directory": ".tmp/source-checkout/manuscripts/ch05",
+  "file_pattern": "figure-5-[0-9]+-.*\\.svg",
+  "record_count": 92,
+  "metadata_only": false,
+  "source_records_sha256": "54885aa0141eb578bf1ef4103f79e4eb97e1daa43b829958dc45a53443bf201f",
+  "mapping_sha256": "eb027e4a2c4eae2968177a3335f52a268e215fbe7b7dd9d3220b1983815b9d4a",
+  "runtime": {
+    "requested_model": "gpt-5.6-sol",
+    "reported_model": "gpt-5.6-sol",
+    "provider": "openai",
+    "thread_id": "01a0e4d0-bf23-7b40-b281-c0b3027e9f04",
+    "turn_id": "01a0e4d0-bf95-7c71-a8c9-853005926ebc",
+    "ephemeral": true,
+    "fallback_allowed": false,
+    "sandbox_type": "readOnly",
+    "completion_observed": true,
+    "usage_observed": true,
+    "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+    "prompt_sha256": "f655ac3ec8e8e8ebfcbabcfcda3cc9ba6f5e5144eea630170f7b2b01a3d0c489",
+    "response_sha256": "eb027e4a2c4eae2968177a3335f52a268e215fbe7b7dd9d3220b1983815b9d4a",
+    "stdout_sha256": "c79be057ff29576847cb2be9d868c4865316a6a79b96eb706d2e78397807bdae",
+    "stderr_sha256": "dc53bc25d9595bc23b036084b8a6c9d1957f18a8d734053d0299e32cdbd0b6bd"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "files": [
+    {
+      "path": "manuscripts/ch11/figure-11-1-timeline.svg",
+      "sha256": "a4b12d1e2ad0642647a6dd75877431cf2d6cc0701ddaba7486ccb2fa7b857261"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-2-boundary.svg",
+      "sha256": "62b5b2f075123d800cae72820133588e73439ab3d3bac96f12d00d0610321f7e"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-3-lifecycle.svg",
+      "sha256": "804f0e531f6abd2593a3c6352daa838d54abc7d8439ae88aeb2fa43b15555bbb"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-4-placement.svg",
+      "sha256": "c22aaef6a0ea2ad330dd8c5be5b3736ceb7d632212f684d49c0ad8b6ef7d7291"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-5-stages.svg",
+      "sha256": "ed7c77c8c0dc75aa1a6cb3c1855c41fcaa8865c7a00740f4f3cfa7d22f50acc0"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-6-service.svg",
+      "sha256": "7726489a630924e3f9d5d30995a148b4a19d6d6724467771e2c830cf1947bff1"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-7-routing.svg",
+      "sha256": "68e5c6cea036028f95ade4b00de67a31244531b592894daaa39b009d74eee54f"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-8-retry.svg",
+      "sha256": "35e8ea3fb8dde95fdece3dce993bce8434f2f376985cf1a438687bc80109b522"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-capacity-slow.svg",
+      "sha256": "6a3b9f8b070b045459106394d94b62607d7f1b508f2b93ff74b954f09fb17eb6"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-capacity.svg",
+      "sha256": "74e17f3876a0f290eb1bdda108d67de9884aed71d6b034e9ab6ce2da90643b57"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-commit-ack.svg",
+      "sha256": "94a1f6dd5c6ec5213ee1d1f67cc8c04cab64d6c215d8c7b4cf1354315f0080b8"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-decision.svg",
+      "sha256": "fb9c6ed6e44f735eb50c198f956a03d87bb4a9d3bedc1730288b35d7a19a7560"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-environment-overlap.svg",
+      "sha256": "6502ef140e5a1bbcd962cd1db3c4935c93be97fbf49e0c2b817eb8af908cdecf"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-isolation-0.svg",
+      "sha256": "de8d4d8f1f2d019268656f852ece400509687303d9836ced59b0591f72bab6cb"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-isolation-1.svg",
+      "sha256": "c5bde49fe33c1a6f1a2bb586713e3427d88a78135b45d3b1ab83808e1658169e"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-isolation-2.svg",
+      "sha256": "c277a65275e1ddc21e3666dbeb4a4c300ef7684b99b34d555e2d3adfc5ecc520"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-memory-area.svg",
+      "sha256": "9cb9fb0ee901f8a7b58cbd11ad99ccddcacf819db279fb5bbfcc45e7a7dda7bd"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-page-cache-copies.svg",
+      "sha256": "92507ec6782978001e40f019494ff31a1f0853f98cffd4f8a62c139002688cbc"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-page-cache-shared.svg",
+      "sha256": "991abcf96f1040e59663b69e4fc056f75f92a7e92c07b2bdf008364e712343b0"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-pages.svg",
+      "sha256": "66dba2ae2ae3487992ac8327dba9d44c3957be65684cb7cc70fde3c5ba29431a"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-pause-release.svg",
+      "sha256": "b5f7284b2e0819d292b87c58c7b9aa873634be11c41547061300b9440666ca65"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-pause.svg",
+      "sha256": "e53668843bb5e75a35222b490061cb1a457f83ea55ba2880807e89447ebbdc75"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-placement-after.svg",
+      "sha256": "4375e397fe674ade5b03919adb1f8cd66666408318ae5522e54dea17f0b140e6"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-placement-sampling.svg",
+      "sha256": "5d2cb04159c72fe4a571e40d556ea2b2bbd5daf7f17ec89b5a72db9b6c2d5e09"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-preempt-pause.svg",
+      "sha256": "c50161ddf95687f0cd5056524405ede2277c49a01c455631ff0169047a60a4dd"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-prewarm-1.svg",
+      "sha256": "110cd42f4def9d5d69d323fabe9cdcd05d7fb1eb12c7a2f1744e5e07ff8b838b"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-prewarm-2.svg",
+      "sha256": "b89b228642e1eb4d9f9913400987449185d7d38850cca65104e367870daf3036"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-prewarm-3.svg",
+      "sha256": "4fd40ecd41d2943bee18590a9eb0602dd48084e24eee0bc33abbf3a2e526cfc2"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-prewarm-wrong.svg",
+      "sha256": "92939a0e5f4effb8a48472bd4b3371e193fde37612d7ea97f1931b3f76cda489"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-purchase.svg",
+      "sha256": "48023f5411d5e503810c61cb630f99c9617bf52dfe54e66d99556c058c5ec92e"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-queue-burst.svg",
+      "sha256": "fc60b0564d19d4485ad08cbb3e33914622e52e33599bba42f15060ca246a3c00"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-queue.svg",
+      "sha256": "e8f068572266331fbdc9296706f0da2f6a209358623af04b7e5b9b9e4148b5a9"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-recovery-coverage.svg",
+      "sha256": "d76e861d3fd0a995e2f585dab40070aac76b15fe159cfba074c98aaa9f8b2ed6"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-remaining-time.svg",
+      "sha256": "858eeb2a9dd052d7f4d277c8ccc5746182ba2a6bea50f60c711d23dcf09c09ec"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-residency-rebuild.svg",
+      "sha256": "1e0ad982453841e42a7304c5b0444b213394084dcbe8335de24790149d71b401"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-residency.svg",
+      "sha256": "e9a8d82caa96cede922c8477deb414c3432445ae681daf110ec0e2213e3d911c"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-retry-conditional.svg",
+      "sha256": "3f6336f1400d5d8908ec11917c9bb06a0efa68390b7d55ae6dca1ff38dbbf62b"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-retry-tree.svg",
+      "sha256": "8f460cf8d71a6364b0905d72b6b4bbefdd8a5503e9510d4eae3257ec1fb07b7b"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-rl-stages.svg",
+      "sha256": "b86ed95bafc93c8f49093c710792760925240059b6163809bef1f17236c7bf0c"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-rollout-owner-after.svg",
+      "sha256": "b3a04669e0ed2f37d0bba1c034e5748d8f7572bfd302cd2e7067262b20d83537"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-rollout-owner-before.svg",
+      "sha256": "ba4ae711bd69126e96d01a81a6730fe5d4d716572a7f28bf4f8d3f1bb6a20173"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-routing-deadline.svg",
+      "sha256": "57b8bd3c9a296af686059f4c610e1a6084fe846ad2d3478bd02fce14cfa55b12"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-sandbox-boundaries.svg",
+      "sha256": "11f4966dcbb78054913f0706245ea03d72a5398ba2a09082eed2dc33134c4811"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-smt-core-scheduling.svg",
+      "sha256": "b05f4e02d9427d8b25f210f922ba4d16074ebf25e493954f89559343f0d3342a"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-smt-sibling.svg",
+      "sha256": "2e5be5a617b9e451bf1b23a54d75336cfc1e62d0a863a25a671b49886a3a1e81"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-stages-batch.svg",
+      "sha256": "2511bc170db9b94b18e99f796545410957abd73a680a3f6c59eb0616eef54c99"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-template-runtime.svg",
+      "sha256": "a4badef6098ab629d35b36c210c290a4eee4c83fbdc9d5f30771342006473b67"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-thinking.svg",
+      "sha256": "51f5aa2307d43a0743640b481ebb8438239e4bd8d5fd48015438a71441b869cc"
+    },
+    {
+      "path": "manuscripts/ch11/figure-11-weights.svg",
+      "sha256": "393e6bb647a74bad0ea2f3a414cae02235318a2688cf633136f3b24798695b9f"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/bojieli/ai-infra-book",
+  "commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "scope": "18 SVG figures referenced by preface and chapter 1",
+  "files": [
+    {
+      "path": "manuscripts/ch01/figure-1-1-panorama.svg",
+      "sha256": "24beb8b0bad523a789e36916bde3d0fdff225e53ed61b03bbce03a2e8283fdb5"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-2-request.svg",
+      "sha256": "e7ae4ecfcb661b33a22874ec9ac6b15ebfda50b9f873396a0b3ff0a3739b4352"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-3-datacenter.svg",
+      "sha256": "27a80380046246f0675d19639a5df9ff72788cc4992e3111129902a8ef24bc56"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-4-numbers.svg",
+      "sha256": "b55db1783c8ce0661cee293ee4fde1d87b8d767577cfcfadab4b5d7391020ff9"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-5-budget.svg",
+      "sha256": "dad420305e9b50771e2325d90219cbbec6263fcd48878db5a0544dc2731533e7"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-batch-reuse.svg",
+      "sha256": "0a43b481ba752b3ca6b10003a14d880fb17bdf6b3c7d42b19634ccfd5427af38"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-batch-throughput.svg",
+      "sha256": "8e840b84d1d1aaa3b165cff72d03bf8936179165cc3a1484c180bed0215690bf"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-batch-transition.svg",
+      "sha256": "2d0ef2d4afe7f989d9f16f365b18d35081d4ffae5991b5de8efa29fda0a24a61"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-book-roadmap.svg",
+      "sha256": "dcb7b5860f761ff0a29b7749776c9a6272c3a4aafe994e436be4c0cff424dc09"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-capacity-path.svg",
+      "sha256": "564c99324285677705857305569a348bd2c39727a75e433d033d5aa91dce6992"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-design-smartnic.svg",
+      "sha256": "19e731be03d16728f308e64a2f55abcd513a55b16f26d65629ad1906e10af7cd"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-design-tpu.svg",
+      "sha256": "fb79398644f02d20a55546911fef62e778a14011003582a0840acc550162aa1b"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-design-ub.svg",
+      "sha256": "8e301c09cb507512e49a99e9a2ad7251622bf8cca71a104999f184dc630b33dc"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-measured-throughput.svg",
+      "sha256": "3c5fd2c005f81432105f77724e3851c60385c3a9df5ad4a5cd6d58df113a63f8"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-measured-tpot.svg",
+      "sha256": "83c25940ad177a5ceb712ae8b98e06dde99ee88224205ae1668e52ed55aa8ff3"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-programmability.svg",
+      "sha256": "ec0be6ed231d5bcecee9086cc2b128acad21ea4363bfc71c8542959bf7504515"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-read-path.svg",
+      "sha256": "4c45d895614ba2f5d8b6ca88a692c821e80613d0da38143d4ca7a580c7eb15ca"
+    },
+    {
+      "path": "manuscripts/ch01/figure-1-weight-lifetime.svg",
+      "sha256": "268c087d0de75505d3aea471bb3682c2b70a341213e86de2ab8866b7fcba0605"
+    }
+  ]
+}

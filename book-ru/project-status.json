@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "edition": "Русский перевод: community edition",
+  "upstream": "https://github.com/bojieli/ai-infra-book",
+  "source_commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "source_directory": "manuscripts",
+  "model": "gpt-5.6-sol",
+  "fallback_allowed": false,
+  "status": "full_book_verified",
+  "scope": "preface and 12 chapters, Russian figures, verified PDF",
+  "translated_chapters": [
+    "preface",
+    "chapter1",
+    "chapter2",
+    "chapter3",
+    "chapter4",
+    "chapter5",
+    "chapter6",
+    "chapter7",
+    "chapter8",
+    "chapter9",
+    "chapter10",
+    "chapter11",
+    "chapter12"
+  ],
+  "verified_chapters": [
+    "preface",
+    "chapter1",
+    "chapter2",
+    "chapter3",
+    "chapter4",
+    "chapter5",
+    "chapter6",
+    "chapter7",
+    "chapter8",
+    "chapter9",
+    "chapter10",
+    "chapter11",
+    "chapter12"
+  ],
+  "translation_chunks": 167,
+  "source_verification_chunks": 167,
+  "pdf": "dist/AI-Infra-in-Depth-RU.pdf",
+  "pdf_sha256": "ae34114fe3f2ca7d2cb6d869a8eac82780d15a355ca46b046bdecddb7e545cc6",
+  "pages": 961,
+  "figures": 496,
+  "tables": 128,
+  "verified_diagram_labels_in_pdf": 3008,
+  "emitted_footnotes": 564,
+  "original_embedded_rasters": 5,
+  "pdf_build_command": ".venv/bin/python scripts/build_pdf.py --full",
+  "full_book_ready": true,
+  "verification": {
+    "build_provenance": "verification/pdf.json",
+    "layout": "verification/pdf-layout.json",
+    "targeted_visual_review": "verification/pdf-visual-review.json",
+    "footnotes": "verification/pdf-footnotes.json",
+    "tests_passed": 207,
+    "ruff": "passed",
+    "pyright_errors": 0,
+    "pyright_warnings": 0,
+    "table_reviews": [
+      "verification/pdf-tables-1-4.json",
+      "verification/pdf-tables-5-8.json",
+      "verification/pdf-tables-9-12.json"
+    ]
+  },
+  "layout_status": "All 128 tables freshly visually reviewed after PT Serif rebuild; 496 figure placements and 3008 native diagram labels checked; no overfull, missing-glyph or undefined-reference warnings; all fonts embedded; 564 emitted footnotes match independent per-chapter rendering.",
+  "figure_strategy": "Verified native Cyrillic labels in vector SVG/PDF; original chart paths and five embedded source rasters retained. Minimum measured native-label size is 9.017 pt; original outlined source glyphs are not included in that minimum.",
+  "known_minor_layout_issues": [
+    "Cosmetic table subsection breaks on physical pages 66, 131, 132, 135 and 136; a figure between table parts on pages 202-203. No table text is lost or clipped.",
+    "Original cosmetic diagram-border/arrow quirks are documented in per-chapter asset reports."
+  ],
+  "excluded": [
+    "research archives",
+    "experiment datasets",
+    "other language editions"
+  ],
+  "typography": {
+    "body_font": "PT Serif",
+    "body_font_size_tex_pt": 11,
+    "body_baseline_skip_tex_pt": 15,
+    "measurement_report": "verification/pdf-typography.json"
+  }
+}

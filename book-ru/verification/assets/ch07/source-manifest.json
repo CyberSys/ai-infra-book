@@ -1,0 +1,254 @@
+{
+  "repository": "https://github.com/bojieli/ai-infra-book",
+  "commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "files": [
+    {
+      "path": "manuscripts/ch07/figure-7-1-boundaries.svg",
+      "sha256": "be31e4d4a1d63ba2bd950c802d344581dbb4efca387e3c1c0a2240e47c885b8d"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-10-lifetime.svg",
+      "sha256": "9a824db2040aef52fac7371e57e3060e95c895dbd095ce62bb27302e1cfbf028"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-11-state.svg",
+      "sha256": "05cbca3652aa486dd0a4e6851647ed2eb8d544804ee93d35c2b047c41fd6bb68"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-12-ordering.svg",
+      "sha256": "342bb00116d8b38745a8dd895ead1575d395361bcf61d418a0abd3083c92d626"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-13-stale.svg",
+      "sha256": "51ff5954e312ad887904b7bd9eaa6616aa3a9201ea0a52edcfed8542b65f78da"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-14-reclaim.svg",
+      "sha256": "c5502c0b4f4a87e5dd302bd86df4c2295c5b60ce6f6f877a804992802d2ce5f9"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-15-congestion.svg",
+      "sha256": "4aa56ab85be8cbbdd68a340337cd9f5f5f06f281895ecbf70111f2017b527408"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-16-feedback.svg",
+      "sha256": "aab2ea747728e71f66da7c60cca037ef5dfbf97024a6cb202169551cdf1a85ee"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-17-packets.svg",
+      "sha256": "084800f0e3eb3c9794f6cb52601258424e1efead62035eed50f69ca1c90396a7"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-18-deadlock.svg",
+      "sha256": "8facc5cbd9fbe4b124c06f60ab6063f8f2af22dfafc4c9c6279de8e11d88f63d"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-19-progress.svg",
+      "sha256": "6b3891dfdba54ac20ad897de1317e5d5698cd595740e2fa74369b80819491505"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-2-cut.svg",
+      "sha256": "eb6fa3b64ab331a418ef6a9bb61e4b394ecf3a43197dfd181037f65a0ed99634"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-20-step.svg",
+      "sha256": "19811f200ea61a26ad88e92f64bea215e6553397cdc969bd8f28c30158971e3b"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-21-message.svg",
+      "sha256": "7b673964094779df7e3b1831ea82b5a6441366bad776e803ec99767172faf16d"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-3-hierarchy.svg",
+      "sha256": "571668039b9227ff95df9e59a04f6026183ee26ab3af641401321b8e8150408c"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-4-pipeline.svg",
+      "sha256": "793198ca3d13a3e2a1a33f43026a082be138f5adaf4cfc80a73d10f50605c6c4"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-5-expert.svg",
+      "sha256": "31dd8ce2b50398dafd9e11987bd117fce5b5c19dfe0e4711a3eabff786f3c393"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-6-relay.svg",
+      "sha256": "6d2bc43d2f122f13f49ea8f629c1abac7bec71cd508744894adfdff24c6e5955"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-7-access.svg",
+      "sha256": "94fd43e00df84db9d1313bede82080e2af09b0d18156a6a4a7241c3fd503473d"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-8-snapshot.svg",
+      "sha256": "5099d0467602bcfcee28c647f7d98b75c22998882d3f01cefc4748308db1b7f4"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-9-window.svg",
+      "sha256": "9f2bb1a9260f850f1b0ef67501cef4e213f53c3e0f3aa86b25bcededdbe338fa"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-access-1.svg",
+      "sha256": "ea9784f720adb3486be5b2a49620f98e20a083deb80c7048dbfb09b8e611a42d"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-access-2.svg",
+      "sha256": "d60e1326ed9bacc588d50d2c8401b6b2bf5b92c0f2883087ec36ccd3e5029931"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-access-3.svg",
+      "sha256": "a1faed2f94e8963d46ba8a1428c252addac87d51a68b95880038ee968b3b7330"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-clos-cut.svg",
+      "sha256": "75e931c1b069ed1f1dbb5923028ce84765ab23180fe595448951a68fba577b63"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-congestion-queue.svg",
+      "sha256": "b94c01efd303e7c1d4851aa6e38de5ad3ff015a26b493209ead298da2075b3d2"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-ecmp-collision.svg",
+      "sha256": "b64d1036a5272b5aebdd9ed241217c44aadbc4a02d0df675bb8ac99f903ba9f7"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-expert-path-1.svg",
+      "sha256": "d19dd5799531c75933bbf319570b49964c992337481d6cd5a928e9388aca3ba5"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-expert-path-2.svg",
+      "sha256": "9ed19e8a05d3f616f846b24f2810b170c6acb0e7c4efc19df673f44ede531521"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-feedback-loop.svg",
+      "sha256": "69dbc5e65a8d864068aa2524fc51fd50b925c5fa77c721399d763eff588ebd3a"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-hierarchy-bytes.svg",
+      "sha256": "2d6bb8003f824f61d7fde9bacbd62ba142c9ea12d71ef934839d468c07be3d75"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-hierarchy-stages.svg",
+      "sha256": "964ab7788f0945682014335b38254ac4db067cebe7ad9c455f9c3bda34c7add1"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-in-network-sweep.svg",
+      "sha256": "d7f7360bb41dd1a3cc2ad041cc2d1b5ca25e81f5f296b5b665b0a781fbfdeb33"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-incast-feedback.svg",
+      "sha256": "f59ffa9fbf0c9bfdcc06b35d7369c4bae2556468ee04064aff47500fefd4710e"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-ordering-independent.svg",
+      "sha256": "ae61fc4d93c84c7b4ec8381a182a545ce633aa5bc2309edc4e2b74f997c28696"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-packets-1.svg",
+      "sha256": "a0d57abb1d5410a2fc0a785f4e1b42e4dd3f27f1a6f87e84f6cc125b8d44218c"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-packets-2.svg",
+      "sha256": "9113ff3cb3dbb15d0a5692e669e3aa4e35b659893b0fb2f35f7680180d1a4adc"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-pcie-asymmetry.svg",
+      "sha256": "0464dfb3f866a161e09c0793becd54c65b87c7f8df2e853e97b517654ae6a21a"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-pcie-limits.svg",
+      "sha256": "d55310dadd5da6b2f901979f9a6b59cb017c0673a5944af0f33dd47c6c805080"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-pcie-transactions.svg",
+      "sha256": "83f029b254201d9d58f8c74c508a5d568c6e086e893f878f42efd97095761d17"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-progress-1.svg",
+      "sha256": "0a1772864eb889b6fda2d24b7773374aff7c4cae74232ce70d7a45e0e4b83a6a"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-progress-2.svg",
+      "sha256": "ee4cdea5031d3bcfe13b391a203f5cd6842fc2f4eda88fa9444bcf84af4e7504"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-rail-pairing.svg",
+      "sha256": "9cf187112ddb6757597f5620b55cbdb8635959f96a536cc98edf52a6755e8d0c"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-reclaim-more.svg",
+      "sha256": "8ab54317193c54363c72d9ac17dbedf2b48576be7e6986ffd1cd4c4b4f209621"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-response-reserve.svg",
+      "sha256": "533e8d08dc0795617553414165f3981463f6ebb16d7d927e3cdc318bed285323"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-ring-interleaved.svg",
+      "sha256": "1d8425d32e8a9796eecbe5917676edb249401a0d44684270b66d9c151c3cff3e"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-slot-lifetime.svg",
+      "sha256": "4bb25ad0092389701893d03a516c174903c5a31bb406f30c8a9cd0e0cbbd2c01"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-snapshot-partial.svg",
+      "sha256": "211421acc8420b8f360a7c5c4112ba748df9d9061094abc7f3be11d537306437"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-snapshot-paths.svg",
+      "sha256": "3bd03209049a0a4f591878e82d2c20142e0d5e3d3c012972e3fd2a437fecdcbc"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-state-capacity.svg",
+      "sha256": "a6ed6c6228905f6840f6dcf22156d4321d635f2c8a4c31736f1708f26aa85a00"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-step-1.svg",
+      "sha256": "bf8debb917d66e9474b1257adf41db9a126f360a9e9b50b8be67f0065de99457"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-step-2.svg",
+      "sha256": "753060eedf840fdcd17b812184f49dd3ba15298ce8dbaa864f4074a985959542"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-step-3.svg",
+      "sha256": "9c6375b9daa37a4ca611f89cc4d81b94d429196f3d1ee5342613d2ded69ada33"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-step-4.svg",
+      "sha256": "ffcb0db739f3af39fffbd005a4602f63ffff23140f576b8650d67c6f8ca3ca88"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-step-5.svg",
+      "sha256": "96d3dd813ad07e81654d325afb0538c7790e5c4224831128b7a5ad7042a199ae"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-supernode-groups.svg",
+      "sha256": "49285aede9e6ef3e83b2782a25f68cbcf094f11b1344051334b9edc07f6a0e0b"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-supernode-scaling.svg",
+      "sha256": "d07588cf0dcaaf93014dc87812847b029c37f73bcae09ecd136c97552ee3da79"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-ub-cache-cliff.svg",
+      "sha256": "1285fa2fc1968fd01ea3ddba022fc57d0bf7c192823a8196f70d81590142d5e0"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-ub-link-delay.svg",
+      "sha256": "44f5698a917d51b1f2c372833dad9035a3249dac393a7b745b53b8c9ea455fa3"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-ub-round-trip.svg",
+      "sha256": "72af5e47630985f8045875250745d9980c2373c2aaf17edda6f19b08fd443cc0"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-ub-state-growth.svg",
+      "sha256": "d2fc4113a78f0010a86a3d4ff67b6826ad905eaa14877a6b940a7ca5d8517c8d"
+    },
+    {
+      "path": "manuscripts/ch07/figure-7-window-rate.svg",
+      "sha256": "e44f5d4364f0996c0bfd2f0e65983d08e6db8491b4181bdb59cd982a61bd8e0c"
+    }
+  ]
+}

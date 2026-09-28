@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "file": "figure-10-7-pipeline.svg",
+  "reason": "Fit native Russian y-axis labels at the minimum 9 pt embedded size with a 4.7 pt gap before the axes",
+  "left_expansion_pt": 27.0,
+  "original_view_box": [0.0, 0.0, 864.477344, 702.52],
+  "final_view_box": [-27.0, 0.0, 891.477, 702.52],
+  "original_width_pt": 864.477344,
+  "final_width_pt": 891.477,
+  "height_pt": 702.52,
+  "preserve_aspect_ratio": true,
+  "path_data_transformed": false,
+  "background_rect": {
+    "x": -27.0,
+    "y": 0.0,
+    "width": 891.477,
+    "height": 702.52,
+    "fill": "#ffffff"
+  }
+}

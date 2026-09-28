@@ -1,0 +1,682 @@
+{
+  "figure-7-step-1.svg:0001": {
+    "x": 160,
+    "y": 18,
+    "font_size": 8.52,
+    "max_width": 115
+  },
+  "figure-7-step-2.svg:0001": {
+    "x": 160,
+    "y": 18,
+    "font_size": 8.52,
+    "max_width": 115
+  },
+  "figure-7-step-3.svg:0001": {
+    "x": 160,
+    "y": 18,
+    "font_size": 8.52,
+    "max_width": 115
+  },
+  "figure-7-step-4.svg:0001": {
+    "x": 160,
+    "y": 18,
+    "font_size": 8.52,
+    "max_width": 115
+  },
+  "figure-7-step-5.svg:0001": {
+    "x": 160,
+    "y": 18,
+    "font_size": 8.52,
+    "max_width": 115
+  },
+  "figure-7-hierarchy-stages.svg:0000": {
+    "x": 110.397,
+    "y": 43,
+    "font_size": 14,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0001": {
+    "x": 110.397,
+    "y": 104,
+    "font_size": 10.5,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0002": {
+    "x": 110.397,
+    "y": 123,
+    "font_size": 10,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0003": {
+    "x": 110.397,
+    "y": 198,
+    "font_size": 10,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0004": {
+    "x": 110.397,
+    "y": 233,
+    "font_size": 10,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0005": {
+    "x": 110.397,
+    "y": 306,
+    "font_size": 10.5,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0006": {
+    "x": 110.397,
+    "y": 326,
+    "font_size": 10,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0007": {
+    "x": 309.603,
+    "y": 43,
+    "font_size": 14,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0008": {
+    "x": 309.603,
+    "y": 104,
+    "font_size": 10.5,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0009": {
+    "x": 309.603,
+    "y": 123,
+    "font_size": 10,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0010": {
+    "x": 309.603,
+    "y": 198,
+    "font_size": 10,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0011": {
+    "x": 309.603,
+    "y": 233,
+    "font_size": 10,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0012": {
+    "x": 309.603,
+    "y": 306,
+    "font_size": 10.5,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg:0013": {
+    "x": 309.603,
+    "y": 326,
+    "font_size": 10,
+    "max_width": 152,
+    "line_height": 12,
+    "align": "center"
+  },
+  "figure-7-hierarchy-stages.svg": {
+    "move_groups": {
+      "patch_3": {
+        "dx": 0,
+        "dy": -69.58667715709413,
+        "scale_y": 1.3309169485408667
+      },
+      "patch_8": {
+        "dx": 0,
+        "dy": -69.58667715709413,
+        "scale_y": 1.3309169485408667
+      },
+      "patch_5": {
+        "dx": 0,
+        "dy": 38.18034322020614,
+        "scale_y": 0.7339635004145322
+      },
+      "patch_10": {
+        "dx": 0,
+        "dy": 38.18034322020614,
+        "scale_y": 0.7339635004145322
+      },
+      "patch_6": {
+        "dx": 0,
+        "dy": 88.77731683704928,
+        "scale_y": 0.6815375360992084
+      },
+      "patch_11": {
+        "dx": 0,
+        "dy": 88.77731683704928,
+        "scale_y": 0.6815375360992084
+      }
+    }
+  },
+  "figure-7-in-network-sweep.svg:0002": {
+    "align": "start",
+    "x": 96,
+    "font_size": 10
+  },
+  "figure-7-in-network-sweep.svg:0003": {
+    "align": "start",
+    "x": 96,
+    "font_size": 10
+  },
+  "figure-7-incast-feedback.svg:0003": {
+    "x": 205,
+    "y": 18,
+    "font_size": 10,
+    "max_width": 260
+  },
+  "figure-7-ordering-independent.svg:0001": {
+    "align": "end",
+    "x": 82,
+    "font_size": 9.5,
+    "max_width": 78
+  },
+  "figure-7-ordering-independent.svg:0002": {
+    "align": "end",
+    "x": 82,
+    "font_size": 9.5,
+    "max_width": 78
+  },
+  "figure-7-pcie-asymmetry.svg:0000": {
+    "font_size": 9.2,
+    "max_width": 68
+  },
+  "figure-7-pcie-asymmetry.svg:0001": {
+    "font_size": 9.2,
+    "max_width": 68
+  },
+  "figure-7-pcie-asymmetry.svg:0003": {
+    "font_size": 9,
+    "max_width": 145,
+    "line_height": 10.5
+  },
+  "figure-7-pcie-asymmetry.svg:0004": {
+    "font_size": 9,
+    "max_width": 130,
+    "line_height": 10.5,
+    "x": 160
+  },
+  "figure-7-pcie-asymmetry.svg:0005": {
+    "font_size": 9,
+    "max_width": 130,
+    "line_height": 10.5,
+    "x": 160
+  },
+  "figure-7-pcie-asymmetry.svg:0006": {
+    "font_size": 9,
+    "max_width": 145,
+    "line_height": 10.5
+  },
+  "figure-7-pcie-asymmetry.svg:0007": {
+    "font_size": 10,
+    "max_width": 120
+  },
+  "figure-7-pcie-asymmetry.svg:0008": {
+    "font_size": 9,
+    "max_width": 120,
+    "line_height": 10.5
+  },
+  "figure-7-pcie-asymmetry.svg:0009": {
+    "font_size": 10,
+    "max_width": 120
+  },
+  "figure-7-pcie-asymmetry.svg:0010": {
+    "font_size": 9,
+    "max_width": 120,
+    "line_height": 10.5
+  },
+  "figure-7-pcie-limits.svg:0001": {
+    "align": "end",
+    "x": 137,
+    "font_size": 9.5,
+    "max_width": 125
+  },
+  "figure-7-pcie-limits.svg:0002": {
+    "align": "end",
+    "x": 137,
+    "font_size": 9.5,
+    "max_width": 125
+  },
+  "figure-7-pcie-limits.svg:0003": {
+    "align": "end",
+    "x": 137,
+    "font_size": 9.5,
+    "max_width": 125
+  },
+  "figure-7-pcie-limits.svg:0004": {
+    "align": "end",
+    "x": 137,
+    "font_size": 9.5,
+    "max_width": 125
+  },
+  "figure-7-pcie-transactions.svg:0001": {
+    "font_size": 9,
+    "max_width": 60
+  },
+  "figure-7-pcie-transactions.svg:0002": {
+    "font_size": 9,
+    "max_width": 60
+  },
+  "figure-7-pcie-transactions.svg:0003": {
+    "font_size": 9.5,
+    "max_width": 165
+  },
+  "figure-7-pcie-transactions.svg:0005": {
+    "font_size": 9,
+    "max_width": 60
+  },
+  "figure-7-pcie-transactions.svg:0006": {
+    "font_size": 9,
+    "max_width": 60
+  },
+  "figure-7-pcie-transactions.svg:0007": {
+    "font_size": 9.5,
+    "max_width": 165
+  },
+  "figure-7-progress-1.svg:0001": {
+    "align": "end",
+    "x": 72,
+    "font_size": 10
+  },
+  "figure-7-progress-1.svg:0002": {
+    "align": "end",
+    "x": 72,
+    "font_size": 10
+  },
+  "figure-7-progress-1.svg:0003": {
+    "align": "end",
+    "x": 72,
+    "font_size": 10
+  },
+  "figure-7-progress-1.svg:0004": {
+    "align": "end",
+    "x": 72,
+    "font_size": 10
+  },
+  "figure-7-progress-2.svg:0001": {
+    "align": "end",
+    "x": 72,
+    "font_size": 10
+  },
+  "figure-7-progress-2.svg:0002": {
+    "align": "end",
+    "x": 72,
+    "font_size": 10
+  },
+  "figure-7-progress-2.svg:0003": {
+    "align": "end",
+    "x": 72,
+    "font_size": 10
+  },
+  "figure-7-progress-2.svg:0004": {
+    "align": "end",
+    "x": 72,
+    "font_size": 10
+  },
+  "figure-7-reclaim-more.svg:0001": {
+    "x": 210,
+    "y": 346,
+    "font_size": 9.5,
+    "max_width": 370,
+    "line_height": 11
+  },
+  "figure-7-response-reserve.svg:0000": {
+    "font_size": 10,
+    "max_width": 95,
+    "line_height": 12
+  },
+  "figure-7-response-reserve.svg:0001": {
+    "font_size": 10,
+    "max_width": 95,
+    "line_height": 12
+  },
+  "figure-7-response-reserve.svg:0002": {
+    "font_size": 10,
+    "y": 116,
+    "max_width": 95,
+    "line_height": 12
+  },
+  "figure-7-response-reserve.svg:0003": {
+    "font_size": 10,
+    "y": 142
+  },
+  "figure-7-slot-lifetime.svg:0001": {
+    "font_size": 9.5,
+    "max_width": 95
+  },
+  "figure-7-slot-lifetime.svg:0002": {
+    "font_size": 9.5,
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-7-slot-lifetime.svg:0003": {
+    "font_size": 9.5,
+    "y": 132,
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-7-slot-lifetime.svg:0004": {
+    "font_size": 9.5,
+    "y": 156,
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-7-snapshot-partial.svg:0002": {
+    "align": "start",
+    "x": 106,
+    "font_size": 9.5
+  },
+  "figure-7-snapshot-partial.svg:0003": {
+    "align": "start",
+    "x": 106,
+    "font_size": 9.5
+  },
+  "figure-7-snapshot-paths.svg:0000": {
+    "font_size": 10.5,
+    "max_width": 115
+  },
+  "figure-7-snapshot-paths.svg:0003": {
+    "font_size": 10.5,
+    "max_width": 115
+  },
+  "figure-7-state-capacity.svg:0001": {
+    "align": "end",
+    "x": 104,
+    "font_size": 9.5,
+    "max_width": 100,
+    "line_height": 11
+  },
+  "figure-7-state-capacity.svg:0002": {
+    "align": "end",
+    "x": 104,
+    "font_size": 9.5,
+    "max_width": 100,
+    "line_height": 11
+  },
+  "figure-7-state-capacity.svg:0003": {
+    "align": "end",
+    "x": 104,
+    "font_size": 9.5,
+    "max_width": 100,
+    "line_height": 11
+  },
+  "figure-7-state-capacity.svg:0004": {
+    "align": "start",
+    "x": 360,
+    "font_size": 9.5,
+    "max_width": 58,
+    "line_height": 11
+  },
+  "figure-7-state-capacity.svg:0005": {
+    "align": "start",
+    "x": 360,
+    "font_size": 9.5,
+    "max_width": 58
+  },
+  "figure-7-state-capacity.svg:0006": {
+    "align": "start",
+    "x": 360,
+    "font_size": 9.5,
+    "max_width": 58
+  },
+  "figure-7-step-1.svg:0002": {
+    "align": "end",
+    "x": 68,
+    "font_size": 10
+  },
+  "figure-7-step-2.svg:0002": {
+    "align": "end",
+    "x": 68,
+    "font_size": 10
+  },
+  "figure-7-step-3.svg:0002": {
+    "align": "end",
+    "x": 68,
+    "font_size": 10
+  },
+  "figure-7-step-4.svg:0002": {
+    "align": "end",
+    "x": 68,
+    "font_size": 10
+  },
+  "figure-7-step-5.svg:0002": {
+    "align": "end",
+    "x": 68,
+    "font_size": 10
+  },
+  "figure-7-supernode-scaling.svg:0002": {
+    "align": "start",
+    "x": 116,
+    "font_size": 9.5
+  },
+  "figure-7-supernode-scaling.svg:0003": {
+    "align": "start",
+    "x": 116,
+    "font_size": 9.5
+  },
+  "figure-7-supernode-scaling.svg:0004": {
+    "align": "start",
+    "x": 116,
+    "font_size": 9.5
+  },
+  "figure-7-ub-cache-cliff.svg:0002": {
+    "x": 260,
+    "y": 57,
+    "font_size": 9.5,
+    "max_width": 220,
+    "line_height": 11
+  },
+  "figure-7-ub-cache-cliff.svg:0004": {
+    "align": "start",
+    "x": 160,
+    "font_size": 9.5
+  },
+  "figure-7-ub-link-delay.svg": {
+    "move_groups": {
+      "line2d_25": {
+        "dx": -124,
+        "dy": 15
+      }
+    }
+  },
+  "figure-7-ub-link-delay.svg:0002": {
+    "align": "start",
+    "x": 95,
+    "y": 31,
+    "font_size": 9.5
+  },
+  "figure-7-ub-link-delay.svg:0003": {
+    "align": "start",
+    "x": 95,
+    "y": 46,
+    "font_size": 9.5
+  },
+  "figure-7-ub-state-growth.svg:0004": {
+    "align": "start",
+    "x": 74,
+    "y": 27,
+    "font_size": 9,
+    "max_width": 165,
+    "line_height": 11
+  },
+  "figure-7-ub-state-growth.svg:0005": {
+    "align": "start",
+    "x": 244,
+    "y": 27,
+    "font_size": 9,
+    "max_width": 170,
+    "line_height": 11
+  },
+  "figure-7-window-rate.svg:0002": {
+    "align": "start",
+    "x": 106,
+    "font_size": 9.5
+  },
+  "figure-7-window-rate.svg:0003": {
+    "align": "start",
+    "x": 106,
+    "font_size": 9.5
+  },
+  "figure-7-ub-round-trip.svg": {
+    "move_groups": {
+      "patch_19": {
+        "dx": -25.07,
+        "dy": -7.5
+      },
+      "patch_20": {
+        "dx": -25.07,
+        "dy": -7
+      },
+      "patch_21": {
+        "dx": 66.37,
+        "dy": -7.5
+      },
+      "patch_22": {
+        "dx": 66.37,
+        "dy": -7
+      },
+      "patch_23": {
+        "dx": -188.09,
+        "dy": 26.5
+      },
+      "patch_24": {
+        "dx": -18.09,
+        "dy": 10
+      }
+    }
+  },
+  "figure-7-ub-round-trip.svg:0001": {
+    "align": "end",
+    "x": 97,
+    "font_size": 9,
+    "max_width": 95
+  },
+  "figure-7-ub-round-trip.svg:0002": {
+    "align": "end",
+    "x": 97,
+    "font_size": 9,
+    "max_width": 95
+  },
+  "figure-7-ub-round-trip.svg:0004": {
+    "align": "start",
+    "x": 190,
+    "font_size": 10,
+    "max_width": 200
+  },
+  "figure-7-ub-round-trip.svg:0005": {
+    "align": "start",
+    "x": 160,
+    "font_size": 10,
+    "max_width": 220
+  },
+  "figure-7-ub-round-trip.svg:0006": {
+    "align": "start",
+    "x": 94,
+    "y": 16,
+    "font_size": 9.2
+  },
+  "figure-7-ub-round-trip.svg:0007": {
+    "align": "start",
+    "x": 94,
+    "y": 33,
+    "font_size": 9.2
+  },
+  "figure-7-ub-round-trip.svg:0008": {
+    "align": "start",
+    "x": 264,
+    "y": 16,
+    "font_size": 9.2
+  },
+  "figure-7-ub-round-trip.svg:0009": {
+    "align": "start",
+    "x": 264,
+    "y": 33,
+    "font_size": 9.2
+  },
+  "figure-7-ub-round-trip.svg:0010": {
+    "align": "start",
+    "x": 94,
+    "y": 50,
+    "font_size": 9.2
+  },
+  "figure-7-ub-round-trip.svg:0011": {
+    "align": "start",
+    "x": 264,
+    "y": 50,
+    "font_size": 9.2
+  },
+  "figure-7-rail-pairing.svg": {
+    "font_size": 10,
+    "line_height": 11,
+    "align": "center"
+  },
+  "figure-7-rail-pairing.svg:0000": {
+    "x": 210,
+    "y": 25,
+    "max_width": 370
+  },
+  "figure-7-rail-pairing.svg:0001": {
+    "x": 210,
+    "y": 57,
+    "max_width": 300,
+    "font_size": 12
+  },
+  "figure-7-rail-pairing.svg:0002": {
+    "x": 210,
+    "y": 211,
+    "max_width": 380
+  },
+  "figure-7-rail-pairing.svg:0003": {
+    "x": 210,
+    "y": 233,
+    "max_width": 380
+  },
+  "figure-7-rail-pairing.svg:0004": {
+    "x": 210,
+    "y": 265,
+    "max_width": 133
+  },
+  "figure-7-rail-pairing.svg:0005": {
+    "x": 81,
+    "y": 260,
+    "max_width": 110,
+    "font_size": 9.5
+  },
+  "figure-7-rail-pairing.svg:0006": {
+    "x": 337,
+    "y": 260,
+    "max_width": 110,
+    "font_size": 9.5
+  },
+  "figure-7-rail-pairing.svg:0007": {
+    "x": 210,
+    "y": 420,
+    "max_width": 380
+  }
+}

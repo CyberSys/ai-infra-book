@@ -1,0 +1,729 @@
+{
+  "figure-5-1-execution.svg:0001": {
+    "align": "end",
+    "x": 80,
+    "font_size": 9.5
+  },
+  "figure-5-1-execution.svg:0002": {
+    "align": "end",
+    "x": 80,
+    "font_size": 9.5,
+    "max_width": 78
+  },
+  "figure-5-1-execution.svg:0003": {
+    "x": 96,
+    "y": 36,
+    "font_size": 9
+  },
+  "figure-5-1-execution.svg:0004": {
+    "x": 119,
+    "y": 36,
+    "font_size": 9
+  },
+  "figure-5-1-execution.svg:0005": {
+    "x": 96,
+    "y": 122,
+    "font_size": 9
+  },
+  "figure-5-1-execution.svg:0006": {
+    "x": 119,
+    "y": 122,
+    "font_size": 9
+  },
+  "figure-5-4-reduction.svg:0000": {
+    "align": "start",
+    "x": 30,
+    "y": 34,
+    "font_size": 11,
+    "max_width": 300
+  },
+  "figure-5-4-reduction.svg:0001": {
+    "x": 79,
+    "font_size": 10,
+    "max_width": 90
+  },
+  "figure-5-4-reduction.svg:0002": {
+    "x": 211,
+    "font_size": 9.5,
+    "max_width": 95
+  },
+  "figure-5-4-reduction.svg:0003": {
+    "x": 345,
+    "font_size": 10,
+    "max_width": 85
+  },
+  "figure-5-4-reduction.svg:0004": {
+    "align": "start",
+    "x": 30,
+    "y": 139,
+    "font_size": 11,
+    "max_width": 300
+  },
+  "figure-5-4-reduction.svg:0005": {
+    "x": 210,
+    "y": 154,
+    "font_size": 10,
+    "max_width": 350
+  },
+  "figure-5-4-reduction.svg:0006": {
+    "x": 210,
+    "font_size": 9,
+    "max_width": 130
+  },
+  "figure-5-4-reduction.svg:0007": {
+    "x": 89,
+    "font_size": 9.5,
+    "max_width": 110
+  },
+  "figure-5-4-reduction.svg:0008": {
+    "x": 329,
+    "font_size": 9.5,
+    "max_width": 110
+  },
+  "figure-5-5-boundaries.svg": {
+    "move_groups": {
+      "patch_14": {
+        "dx": 89,
+        "dy": 0
+      },
+      "patch_15": {
+        "dx": -137,
+        "dy": 17
+      }
+    }
+  },
+  "figure-5-5-boundaries.svg:0001": {
+    "align": "end",
+    "x": 88,
+    "font_size": 9.5
+  },
+  "figure-5-5-boundaries.svg:0002": {
+    "align": "end",
+    "x": 88,
+    "font_size": 9.5,
+    "max_width": 85
+  },
+  "figure-5-5-boundaries.svg:0003": {
+    "align": "end",
+    "x": 88,
+    "font_size": 9.5,
+    "max_width": 85
+  },
+  "figure-5-5-boundaries.svg:0004": {
+    "align": "start",
+    "x": 131,
+    "y": 19,
+    "font_size": 9
+  },
+  "figure-5-5-boundaries.svg:0005": {
+    "align": "start",
+    "x": 295,
+    "y": 19,
+    "font_size": 9
+  },
+  "figure-5-5-boundaries.svg:0006": {
+    "align": "start",
+    "x": 131,
+    "y": 36,
+    "font_size": 9
+  },
+  "figure-5-6-fusion-buffer.svg:0000": {
+    "align": "end",
+    "x": 61,
+    "font_size": 8.6
+  },
+  "figure-5-6-fusion-buffer.svg:0001": {
+    "align": "end",
+    "x": 61,
+    "font_size": 8.6
+  },
+  "figure-5-6-fusion-buffer.svg:0004": {
+    "align": "end",
+    "x": 61,
+    "font_size": 8.6
+  },
+  "figure-5-6-fusion-buffer.svg:0005": {
+    "align": "end",
+    "x": 61,
+    "font_size": 8.6
+  },
+  "figure-5-6-fusion-buffer.svg:0007": {
+    "align": "start",
+    "x": 126,
+    "font_size": 9
+  },
+  "figure-5-6-fusion-buffer.svg:0008": {
+    "align": "start",
+    "x": 246,
+    "font_size": 9
+  },
+  "figure-5-8-attention-tradeoff.svg:0004": {
+    "x": 19,
+    "font_size": 9.5
+  },
+  "figure-5-9-polyhedral.svg:0000": {
+    "align": "start",
+    "x": 26,
+    "y": 34,
+    "font_size": 11,
+    "max_width": 370
+  },
+  "figure-5-9-polyhedral.svg:0001": {
+    "align": "start",
+    "x": 38,
+    "y": 80,
+    "font_size": 11,
+    "max_width": 340
+  },
+  "figure-5-9-polyhedral.svg:0002": {
+    "font_size": 10,
+    "max_width": 275
+  },
+  "figure-5-9-polyhedral.svg:0004": {
+    "x": 210,
+    "font_size": 9.5,
+    "max_width": 260
+  },
+  "figure-5-9-polyhedral.svg:0005": {
+    "font_size": 10,
+    "max_width": 275
+  },
+  "figure-5-10-quantization.svg:0000": {
+    "align": "start",
+    "x": 30,
+    "y": 50,
+    "font_size": 10.5,
+    "max_width": 365
+  },
+  "figure-5-10-quantization.svg:0001": {
+    "x": 210,
+    "font_size": 10,
+    "max_width": 330
+  },
+  "figure-5-10-quantization.svg:0003": {
+    "align": "start",
+    "x": 30,
+    "y": 187,
+    "font_size": 10.5,
+    "max_width": 365
+  },
+  "figure-5-10-quantization.svg:0004": {
+    "x": 210,
+    "font_size": 10,
+    "max_width": 330
+  },
+  "figure-5-11-feedback.svg": {
+    "move_groups": {
+      "line2d_15": {
+        "dx": -235,
+        "dy": -15
+      },
+      "line2d_16": {
+        "dx": -235,
+        "dy": -15
+      }
+    }
+  },
+  "figure-5-11-feedback.svg:0002": {
+    "align": "start",
+    "x": 118,
+    "y": 21.716,
+    "font_size": 9.5
+  },
+  "figure-5-11-feedback.svg:0003": {
+    "align": "start",
+    "x": 118,
+    "y": 38.216,
+    "font_size": 9.5
+  },
+  "figure-5-12-runtime.svg:0001": {
+    "align": "end",
+    "x": 80,
+    "font_size": 9.5
+  },
+  "figure-5-12-runtime.svg:0002": {
+    "align": "end",
+    "x": 80,
+    "font_size": 9.5
+  },
+  "figure-5-13-graph-copy.svg": {
+    "move_groups": {
+      "patch_14": {
+        "dx": -46,
+        "dy": 0
+      },
+      "patch_15": {
+        "dx": 51,
+        "dy": 0
+      },
+      "patch_16": {
+        "dx": -171,
+        "dy": 13
+      }
+    }
+  },
+  "figure-5-13-graph-copy.svg:0000": {
+    "font_size": 10,
+    "max_width": 280,
+    "y": 235
+  },
+  "figure-5-13-graph-copy.svg:0001": {
+    "align": "end",
+    "x": 101,
+    "font_size": 9.5
+  },
+  "figure-5-13-graph-copy.svg:0002": {
+    "align": "end",
+    "x": 101,
+    "font_size": 9.5
+  },
+  "figure-5-13-graph-copy.svg:0003": {
+    "align": "end",
+    "x": 101,
+    "font_size": 9.5
+  },
+  "figure-5-13-graph-copy.svg:0004": {
+    "align": "start",
+    "x": 140,
+    "y": 26.58,
+    "font_size": 9
+  },
+  "figure-5-13-graph-copy.svg:0005": {
+    "align": "start",
+    "x": 300,
+    "y": 26.58,
+    "font_size": 9
+  },
+  "figure-5-13-graph-copy.svg:0006": {
+    "align": "start",
+    "x": 140,
+    "y": 39.58,
+    "font_size": 9
+  },
+  "figure-5-14-specialization.svg:0002": {
+    "align": "start",
+    "x": 109,
+    "font_size": 9.5
+  },
+  "figure-5-14-specialization.svg:0003": {
+    "align": "start",
+    "x": 109,
+    "font_size": 9.5
+  },
+  "figure-5-14-specialization.svg:0004": {
+    "align": "start",
+    "x": 109,
+    "font_size": 9.5
+  },
+  "figure-5-15-persistent.svg:0001": {
+    "align": "end",
+    "x": 77,
+    "font_size": 9.5
+  },
+  "figure-5-15-persistent.svg:0002": {
+    "align": "end",
+    "x": 77,
+    "font_size": 9.5
+  },
+  "figure-5-16-critical-path.svg:0001": {
+    "x": 69,
+    "font_size": 9.5,
+    "max_width": 75
+  },
+  "figure-5-16-critical-path.svg:0002": {
+    "x": 350,
+    "font_size": 9.5,
+    "max_width": 75
+  },
+  "figure-5-16-critical-path.svg:0004": {
+    "x": 69,
+    "font_size": 9.5,
+    "max_width": 75
+  },
+  "figure-5-16-critical-path.svg:0005": {
+    "x": 350,
+    "font_size": 9.5,
+    "max_width": 75
+  },
+  "figure-5-17-request.svg:0001": {
+    "x": 29,
+    "font_size": 9.5
+  },
+  "figure-5-activation-order.svg:0001": {
+    "y": 158
+  },
+  "figure-5-attention-storage.svg:0001": {
+    "font_size": 9,
+    "max_width": 90
+  },
+  "figure-5-attention-storage.svg:0002": {
+    "font_size": 9,
+    "max_width": 90
+  },
+  "figure-5-attention-storage.svg:0003": {
+    "font_size": 9,
+    "max_width": 90
+  },
+  "figure-5-attention-storage.svg:0005": {
+    "font_size": 10,
+    "x": 210,
+    "y": 167,
+    "max_width": 370
+  },
+  "figure-5-attention-storage.svg:0006": {
+    "font_size": 9,
+    "max_width": 90
+  },
+  "figure-5-attention-storage.svg:0008": {
+    "font_size": 8.6,
+    "max_width": 85
+  },
+  "figure-5-copy-paths.svg": {
+    "geometry": {
+      "scale_y": 1.35
+    }
+  },
+  "figure-5-copy-paths.svg:0002": {
+    "font_size": 9,
+    "y": 64,
+    "max_width": 128
+  },
+  "figure-5-copy-paths.svg:0003": {
+    "font_size": 9,
+    "y": 80,
+    "max_width": 128
+  },
+  "figure-5-copy-paths.svg:0004": {
+    "font_size": 8.6,
+    "y": 122,
+    "max_width": 128,
+    "line_height": 10
+  },
+  "figure-5-copy-paths.svg:0005": {
+    "font_size": 8.6,
+    "y": 141,
+    "max_width": 128,
+    "line_height": 10
+  },
+  "figure-5-copy-paths.svg:0008": {
+    "font_size": 9,
+    "y": 82,
+    "max_width": 128
+  },
+  "figure-5-copy-paths.svg:0011": {
+    "font_size": 8.6,
+    "x": 143,
+    "y": 102,
+    "max_width": 77,
+    "line_height": 10
+  },
+  "figure-5-fusion-path.svg:0004": {
+    "font_size": 10,
+    "x": 210,
+    "y": 186,
+    "max_width": 370
+  },
+  "figure-5-fusion-path.svg:0003": {
+    "x": 338
+  },
+  "figure-5-fusion-path.svg:0005": {
+    "font_size": 9,
+    "max_width": 75
+  },
+  "figure-5-graph-address.svg:0003": {
+    "font_size": 9,
+    "max_width": 128
+  },
+  "figure-5-graph-address.svg:0005": {
+    "x": 105,
+    "y": 146
+  },
+  "figure-5-graph-address.svg:0006": {
+    "font_size": 9,
+    "max_width": 185
+  },
+  "figure-5-host-pipeline.svg": {
+    "geometry": {
+      "scale_y": 1.2
+    }
+  },
+  "figure-5-host-pipeline.svg:0000": {
+    "font_size": 9,
+    "x": 210,
+    "max_width": 380
+  },
+  "figure-5-host-pipeline.svg:0003": {
+    "font_size": 9,
+    "x": 210,
+    "y": 119,
+    "max_width": 380
+  },
+  "figure-5-host-pipeline.svg:0006": {
+    "font_size": 9,
+    "x": 210,
+    "y": 218,
+    "max_width": 380
+  },
+  "figure-5-persistent-blocks.svg:0001": {
+    "align": "end",
+    "x": 76,
+    "font_size": 10,
+    "max_width": 70
+  },
+  "figure-5-persistent-blocks.svg:0002": {
+    "align": "end",
+    "x": 76,
+    "font_size": 10,
+    "max_width": 70
+  },
+  "figure-5-reduction-order.svg:0007": {
+    "font_size": 9.5,
+    "x": 391
+  },
+  "figure-5-reduction-order.svg:0010": {
+    "font_size": 8.6,
+    "max_width": 400,
+    "y": 339
+  },
+  "figure-5-reuse-steps.svg:0000": {
+    "font_size": 11,
+    "max_width": 150,
+    "x": 85,
+    "y": 31
+  },
+  "figure-5-reuse-steps.svg:0003": {
+    "font_size": 11,
+    "max_width": 150,
+    "y": 166
+  },
+  "figure-5-runtime-1.svg:0001": {
+    "align": "end",
+    "font_size": 10,
+    "max_width": 75,
+    "x": 80
+  },
+  "figure-5-runtime-2.svg:0001": {
+    "align": "end",
+    "font_size": 10,
+    "max_width": 75,
+    "x": 80
+  },
+  "figure-5-runtime-3.svg:0001": {
+    "align": "end",
+    "font_size": 10,
+    "max_width": 75,
+    "x": 80
+  },
+  "figure-5-shape-buckets.svg:0001": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 116,
+    "x": 118
+  },
+  "figure-5-shape-buckets.svg:0002": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 116,
+    "x": 118
+  },
+  "figure-5-shape-buckets.svg:0003": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 116,
+    "x": 118
+  },
+  "figure-5-shape-buckets.svg:0004": {
+    "align": "start",
+    "font_size": 9.5,
+    "x": 194
+  },
+  "figure-5-shape-buckets.svg:0005": {
+    "align": "start",
+    "font_size": 9.5,
+    "x": 354
+  },
+  "figure-5-shape-buckets.svg:0006": {
+    "align": "start",
+    "font_size": 9.5,
+    "x": 354
+  },
+  "figure-5-shape-buckets.svg:0007": {
+    "align": "start",
+    "font_size": 9.5,
+    "max_width": 85,
+    "x": 203,
+    "y": 24
+  },
+  "figure-5-shape-buckets.svg:0008": {
+    "align": "start",
+    "font_size": 9.5,
+    "max_width": 90,
+    "x": 303,
+    "y": 24
+  },
+  "figure-5-split-axes.svg": {
+    "font_size": 9.5
+  },
+  "figure-5-split-axes.svg:0000": {
+    "font_size": 12,
+    "max_width": 140
+  },
+  "figure-5-split-axes.svg:0001": {
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-5-split-axes.svg:0002": {
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-5-split-axes.svg:0003": {
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-5-split-axes.svg:0004": {
+    "font_size": 12,
+    "max_width": 140
+  },
+  "figure-5-split-axes.svg:0005": {
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-5-split-axes.svg:0006": {
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-5-split-axes.svg:0007": {
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-5-split-axes.svg:0008": {
+    "font_size": 12,
+    "max_width": 140
+  },
+  "figure-5-split-axes.svg:0009": {
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-5-split-axes.svg:0010": {
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-5-split-axes.svg:0011": {
+    "max_width": 95,
+    "line_height": 11
+  },
+  "figure-5-split-axes.svg:0012": {
+    "font_size": 11
+  },
+  "figure-5-stream-event.svg:0000": {
+    "align": "start",
+    "font_size": 8.6,
+    "max_width": 60,
+    "x": 5
+  },
+  "figure-5-stream-event.svg:0001": {
+    "align": "start",
+    "font_size": 8.6,
+    "max_width": 60,
+    "x": 5
+  },
+  "figure-5-stream-event.svg:0002": {
+    "font_size": 9
+  },
+  "figure-5-stream-event.svg:0003": {
+    "font_size": 9
+  },
+  "figure-5-stream-event.svg:0004": {
+    "font_size": 9
+  },
+  "figure-5-stream-event.svg:0005": {
+    "font_size": 9
+  },
+  "figure-5-stream-event.svg:0006": {
+    "font_size": 9
+  },
+  "figure-5-stream-event.svg:0007": {
+    "font_size": 9
+  },
+  "figure-5-stream-event.svg:0008": {
+    "font_size": 9.5,
+    "max_width": 90,
+    "line_height": 10
+  },
+  "figure-5-stream-event.svg:0009": {
+    "font_size": 9.5
+  },
+  "figure-5-stream-event.svg:0010": {
+    "font_size": 9.5,
+    "max_width": 90,
+    "line_height": 10
+  },
+  "figure-5-stream-event.svg:0011": {
+    "font_size": 9.5
+  },
+  "figure-5-stream-event.svg:0012": {
+    "font_size": 9.5,
+    "max_width": 90,
+    "line_height": 10.5,
+    "x": 85,
+    "y": 129
+  },
+  "figure-5-stream-event.svg:0013": {
+    "font_size": 9.5,
+    "max_width": 105,
+    "line_height": 10.5,
+    "x": 230,
+    "y": 118
+  },
+  "figure-5-tile-residency.svg:0004": {
+    "x": 328
+  },
+  "figure-5-tile-working-set.svg:0004": {
+    "font_size": 10,
+    "max_width": 210,
+    "line_height": 12,
+    "x": 159,
+    "y": 219
+  },
+  "figure-5-warp-pipeline.svg:0001": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 95,
+    "x": 98
+  },
+  "figure-5-warp-pipeline.svg:0002": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 95,
+    "x": 98
+  },
+  "figure-5-warp-pipeline.svg:0003": {
+    "align": "end",
+    "font_size": 8.6,
+    "max_width": 95,
+    "x": 98
+  },
+  "figure-5-warp-pipeline.svg:0004": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 95,
+    "x": 98
+  },
+  "figure-5-warp-pipeline.svg:0005": {
+    "x": 150
+  },
+  "figure-5-warp-pipeline.svg:0006": {
+    "x": 260,
+    "y": 115
+  },
+  "figure-5-warp-pipeline.svg:0008": {
+    "align": "start",
+    "font_size": 9.5,
+    "x": 125
+  },
+  "figure-5-warp-pipeline.svg:0009": {
+    "align": "start",
+    "font_size": 9.5,
+    "x": 247
+  }
+}

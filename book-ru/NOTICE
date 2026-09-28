@@ -1,0 +1,18 @@
+AI Infra in Depth: Quantitative Analysis and System Design
+Copyright 2026 Bojie Li. Licensed under Apache License 2.0.
+Original: https://github.com/bojieli/ai-infra-book
+Pinned source: 56ecb425b07ea6d16e891cba87bf7db416927d09
+
+Русский перевод: community edition. Неофициальное издание сообщества.
+Полное русское издание: предисловие и 12 глав.
+PDF: dist/AI-Infra-in-Depth-RU.pdf.
+
+Translation tooling adapted from ilkruglov/ai-agent-book at
+dd3bec63e5bbbd613a38b1a2f03f4aeba859ab1e.
+Third-party material retains its original copyright and license notices.
+
+Localized diagrams retain original Matplotlib chart geometry and some original
+font outlines. Source Han Sans font license: licenses/SourceHanSans-OFL.txt.
+Russian diagram labels use DejaVu Sans; font notices: licenses/DejaVu-fonts.txt.
+The PDF body uses PT Serif; font notices: licenses/PT-Serif-fonts.txt.
+Headings use Noto Sans; font notices: licenses/Noto-fonts.txt.

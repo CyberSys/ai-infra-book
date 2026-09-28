@@ -1,0 +1,150 @@
+{
+  "repository": "https://github.com/bojieli/ai-infra-book",
+  "commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "files": [
+    {
+      "path": "manuscripts/ch08/figure-8-1-lifecycle.svg",
+      "sha256": "c6437868c9869d158a569a9acfd0d05ce3a8a39d7852dec648e87f0420b31ef5"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-10-kv-quality.svg",
+      "sha256": "a5b679c2df9a9617f8595b64946d2984a9540117d13f5cf935d9c7bec9f46aba"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-11-verification.svg",
+      "sha256": "7a050e5cb46478217d9c7656ffd986a15841fa5c2a4685efc4d42cd12716bd14"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-12-speculation.svg",
+      "sha256": "336448a241f6751d3068b9c1a64027a06ae67196104a478f37f0f683f62db518"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-13-service.svg",
+      "sha256": "9c93a86e92403a18e9d992f0f5dc1851eb10ebcaa368943f23daeda929b66dcc"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-14-design.svg",
+      "sha256": "1d6f89560c2189d34d68363aa873a9b4d33d470f0778354e37197b744cd2bbc4"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-15-task.svg",
+      "sha256": "513e2157835bf1de5e8a73e48cdb334b54add32bc9b4ab5925b27b5ee46e69b6"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-2-batch.svg",
+      "sha256": "cf4b48890adea1a2ec55967975ec5b2b4f7c5e19520a5bcd99e6d1558c5b4d6f"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-3-scheduling.svg",
+      "sha256": "98e52881f67727ae615fdaa3728d67acadd548a30d0b35cb114ab6134d929614"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-4-attention.svg",
+      "sha256": "f4d14a494b9100d4d6c1ed85c1d365a2d9af959c7f3fe728b8c2110d4fefe1e6"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-5-pages.svg",
+      "sha256": "26953d6281ba7497a3c1ee5672f6817a5e388f85858b689f07e45750a5e83846"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-6-prefix.svg",
+      "sha256": "25cadee1179405528d868bc0fed84e137de83a0aa3b1f2caecfbb60af7283752"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-7-cache-choice.svg",
+      "sha256": "e9d12c978457937ccc7ae82e40dbca95cfdbbef98676c8bec791130851fd8063"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-8-kv-format.svg",
+      "sha256": "aa547e1c1e22a6cbc2f37b9fea550b157e6c8171390c471068cc5aa77f60347d"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-9-offload.svg",
+      "sha256": "a2fe0a123ad33e8ddc191a4efa0ac2d489af02127fd7bfdc04e72d351ac35d73"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-attention-history.svg",
+      "sha256": "f32e6239e2a378d24c9d67b56294d5b2389568235b450cfe06d129b38eb3ddad"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-batch-counterfactual.svg",
+      "sha256": "0205045782060ed1841c4f0a96fa63bf13ebe89dfea71304a13b81e7c1fd9c4a"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-cancel-lifetime.svg",
+      "sha256": "8300c7be44f199ccb8f80d1f269cce52393925046c8559d6e9429ea46d1312c4"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-context-edits.svg",
+      "sha256": "a60f5ed2a7d5fe8d551e5af1fe6020a47276ffb86204354f3ed15d2bb2bda84c"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-copy-on-write.svg",
+      "sha256": "d5687b1e613cbf76b50627019ba5e3ca8f53c938e5720f79cba615645737c56a"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-kv-quality-1.svg",
+      "sha256": "41c3fc202444281aee40416e42e012178fffed0a2b53376a284a2796c29d7bd6"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-kv-quality-2.svg",
+      "sha256": "3f51b9ebbbef619d9bdee69c46ffaa9d7a52be9c2eee339a96f896d09033bb27"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-offload-copy.svg",
+      "sha256": "0c6642e9f31cf3a2a65400b2b467c83f2441fb55c2b51a870074fd322674a8b6"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-page-map.svg",
+      "sha256": "4143f849a99d975468803f8336fd23789d22dc94fb90260ab7720ca4d049f875"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-pages-paged.svg",
+      "sha256": "b49f41f06d136c36b1b9ec4bc6484061dcc8ff9af1e81fbfb9a1e873689f1827"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-pages-shared.svg",
+      "sha256": "90eb1312b601687b40be7d256a0db0cae339193a5ba84ab43d8f64febceb012e"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-prefix-lengths.svg",
+      "sha256": "767e34c075399b2c9cafcdd868fad12d2f393dcaac084a35e6227f5f0999a6df"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-prefix-restore.svg",
+      "sha256": "eb9d3166e835752a1b1e27e284d9a3406040375500e0993c5aaa47af88428c93"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-reference-release.svg",
+      "sha256": "70efdbe9990ff99928a34e0963bc8c99f9fbf35282b6cad69af2839a0797788a"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-request-iterations.svg",
+      "sha256": "e2fd91cb2ffffb0259194dd0b3f3e46e49fa198347462a6fb68b0e9e25d63a3c"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-sample-A.svg",
+      "sha256": "8f50c3221da290c408f790ba79abe774f58eff9d1c12f71985c39ed49ec602ce"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-sample-B.svg",
+      "sha256": "48a903c0d3126b87ec3c0fbf4dc74a59d0401d7acf659dbbac83189ae5d65a4c"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-scheduling-chunked.svg",
+      "sha256": "a586e7a74cba3f5c3a41507e892b884c94e0869fa70a39d6888f31e5162e35ac"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-scheduling-continuous.svg",
+      "sha256": "8237c62604add474055947c97be3a58a1872782c48c0fbb8aa0c6f0085ad33b8"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-service-goodput.svg",
+      "sha256": "2bdf98354cee0a62ab6e580562110d73869e959cdcf704fe4dd8162ada6b112b"
+    },
+    {
+      "path": "manuscripts/ch08/figure-8-v41-recovery.svg",
+      "sha256": "ffe3c2a98e6032cb476a14150b01c8dc1ab31ea28a2c5861046de032ea33c09e"
+    }
+  ]
+}
