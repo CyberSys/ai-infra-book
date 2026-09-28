@@ -12,7 +12,7 @@
 > - **简体中文**：[PDF](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book.pdf) · [EPUB](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book.epub) · [在线阅读](https://bojieli.github.io/ai-infra-book/)
 > - **English**: [PDF](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-EN.pdf) · [EPUB](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-EN.epub) · [Read online](https://bojieli.github.io/ai-infra-book/en/)
 > - **繁體中文**：[PDF](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-ZH-TW.pdf) · [EPUB](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-ZH-TW.epub) · [線上閱讀](https://bojieli.github.io/ai-infra-book/zh-tw/)
-> - **Русский — community edition**: [PDF](book-ru/dist/AI-Infra-in-Depth-RU.pdf?raw=true) · [О переводе](book-ru/)
+> - **Русский — community edition**: [PDF](https://raw.githubusercontent.com/ilkruglov/ai-infra-book/main/book-ru/dist/AI-Infra-in-Depth-RU.pdf) · [О переводе](book-ru/)
 
 《深入理解 AI Infra》是 GitHub 上获得 **45k+ Star** 的[《深入理解 AI Agent：设计原理与工程实践》](https://github.com/bojieli/ai-agent-book)的姊妹篇。
 
