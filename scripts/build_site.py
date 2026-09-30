@@ -67,9 +67,10 @@ def chapters(edition):
 
 
 def title(path):
-    heading = path.read_text(encoding='utf-8').splitlines()[0]
+    heading = next((line for line in path.read_text(encoding='utf-8').splitlines()
+                    if line.startswith('# ')), '# ' + path.stem)
     heading = re.sub(r'\s*\{[^}]*\}\s*$', '', heading)
-    return re.sub(r'^# (第 \d+ 章 )?', '', heading)
+    return re.sub(r'^# (第 \d+ 章 |Глава \d+\.\s*)?', '', heading)
 
 
 def rasterize(pdf):
