@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "pass": "translation",
+  "model_id": "gpt-5.6-sol",
+  "source_directory": ".tmp/ch06-source",
+  "file_pattern": "(?:figure-6-expert-load-2\\.svg|figure-6-initiator\\.svg|figure-6-parallel-map\\.svg|figure-6-pool-after\\.svg|figure-6-pp\\.svg|figure-6-resources-concurrent\\.svg|figure-6-ring-gather\\.svg|figure-6-rom-token-time\\.svg|figure-6-scale-cost-fault\\.svg|figure-6-session-capacity\\.svg|figure-6-session-tp2\\.svg|figure-6-session-tp4\\.svg|figure-6-session-tp8\\.svg|figure-6-sp\\.svg|figure-6-supernode-inference\\.svg|figure-6-topology-hops\\.svg|figure-6-topology-load\\.svg|figure-6-topology-patterns\\.svg|figure-6-topology-swing\\.svg|figure-6-torus-growth\\.svg|figure-6-tp-columns\\.svg|figure-6-tp-layer\\.svg|figure-6-tp-rows\\.svg|figure-6-ub-controller\\.svg|figure-6-ub-hosts\\.svg|figure-6-ub-layers\\.svg|figure-6-ub-setup\\.svg|figure-6-weight-placement\\.svg)",
+  "record_count": 238,
+  "metadata_only": false,
+  "source_records_sha256": "23bed46a07037ca1904fda152c6522435674029d65622ce32d0b36c4f57cfcc7",
+  "mapping_sha256": "012492fb8cc3b3cf1761eef13c89fa1f9f076930aab8d49930517b14eddf500b",
+  "runtime": {
+    "requested_model": "gpt-5.6-sol",
+    "reported_model": "gpt-5.6-sol",
+    "provider": "openai",
+    "thread_id": "01a0e4e5-8159-7f92-8d45-bf9d216e1c9e",
+    "turn_id": "01a0e4e5-81bc-76d1-9e3c-a61e5caef3d0",
+    "ephemeral": true,
+    "fallback_allowed": false,
+    "sandbox_type": "readOnly",
+    "completion_observed": true,
+    "usage_observed": true,
+    "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+    "prompt_sha256": "0ceec9d43cc6e110cbfdda53ebeb6eba4b080a7950ba63ac18e9ae7ce832f6e4",
+    "response_sha256": "012492fb8cc3b3cf1761eef13c89fa1f9f076930aab8d49930517b14eddf500b",
+    "stdout_sha256": "9088bcce998b3ad28536b537bb6b03397d5ba22954fd6be3a9108be21bf2a587",
+    "stderr_sha256": "f8321703788a15e15089b96b12cfd824bc4c3d6343d284fb8bcd24094fd8f8fa"
+  }
+}

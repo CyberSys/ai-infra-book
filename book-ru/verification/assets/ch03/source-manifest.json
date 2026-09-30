@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/bojieli/ai-infra-book",
+  "source_commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "files": [
+    {
+      "path": "manuscripts/ch03/figure-3-1-stages.svg",
+      "sha256": "a500008f977fc3e9c2e2b8244532aad6ebb61a1ba978ff31849a346d662ec40b"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-2-workload-budget.svg",
+      "sha256": "6c7fea020eb902f2ae67b369048a6f61a9ba2e2e562136f32032659a3e56a5f4"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-3-agent.svg",
+      "sha256": "e7392bc47e6b193dfbe22e5d75e63811a00f19a6648ddb64ed3d70733885617d"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-4-realtime.svg",
+      "sha256": "8b99a392497741c7be1617736f92fd9a478a5a806cafcfd4fff9e554b04b2bf5"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-5-training.svg",
+      "sha256": "1f0c33069f0e58f4b945c034f09820f48ff0ab4ee9cdf9b622978bd330035d1b"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-6-rl.svg",
+      "sha256": "3f1358c18647c40ff52b1ade295e38a9acc438512546299069c4b4b25a585172"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-7-scaling.svg",
+      "sha256": "4935b8314e4f57720c948a9615de0a6fb07d57e0ffb691e8de50a402d8554ee2"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-8-history.svg",
+      "sha256": "7726fb5fe0a72076168f7380f4f11b586f44afe91047658a741444646e46144d"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-9-gpu-hours.svg",
+      "sha256": "993c3acb9c32163d128b7da42d1d5d6f3b6fc7b27e16a1b59cd0ab64c31d92f4"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-activation-lifetime.svg",
+      "sha256": "52c1252ad4f128086068809d077ab6004301aa40692940a78ae25c2d45d28c1e"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-arrival-measured.svg",
+      "sha256": "837eb45a7e41f2b6c81837c778a21451d098e3fc3e03c32ac3f3708afd3ea85b"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-audio-interrupt.svg",
+      "sha256": "dccdd6430ad0592c780f29928af4af84077030d332ad794173becc058aecf072"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-audio-timing.svg",
+      "sha256": "092c058df426bda94c2692aa9cfab09be2bdafe1f2e8809ce6ef749027f08b53"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-branch-state.svg",
+      "sha256": "20a669f80fdc6d5863fa3f4ecd84f56716e5f33075bc7538d6840498ee875b5f"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-decision-request.svg",
+      "sha256": "97dd376c34727bf27c6f5f37f4862284f6960ea530fe605b723a77f17a70ec43"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-lifecycle-cost.svg",
+      "sha256": "d82938b294ae6c687994e040386c3148f850b4dc72e740e7b5da4086de4b6d83"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-queue-backlog.svg",
+      "sha256": "05aef886561a9cced3c1c3b0d2a4ad20634de84037fc112232265d6f074c8e81"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-queue-mechanism.svg",
+      "sha256": "32204f228e3565d8d4866bb8ca67d75b9dff6a9b92845e249eb675abca371be6"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-request-clocks.svg",
+      "sha256": "55c0cc2ee46d8e66cc315c21f9a1ff3eb3ab2118e1e63e8f0c23b486dc40befc"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-rl-stage-work.svg",
+      "sha256": "b739cf7dfb88cec3591fbe4b90279c47413207457177683b5f75707d8f3406f2"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-scaling-residual.svg",
+      "sha256": "bf97db9fb665766720d155c4a3fc7ce52f1d31784125f69c4d262361d4327141"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-stage-demand.svg",
+      "sha256": "c6d0d3b7c89eb9c126c3e942d3ec03628f1077833c9b53bfbe7d9e55cd021b72"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-state-time-area.svg",
+      "sha256": "6de3921d69b72d27d8ac5936c3bd9b982d0180f3cf1545563f9ad7493445af2d"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-success-cost.svg",
+      "sha256": "ce4a14cf927d0ea9cb47202aec462fc19fc8e280ff9cdb1b6463f358704d1a95"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-tool-dependency.svg",
+      "sha256": "625c9cc3c5ec42aa64c6e3c710b6339df93cef9f19e7ad944d94e9a8dd0d480d"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-tool-parallel.svg",
+      "sha256": "52af8550d589c7d7ec02dc042c86d05f389caf079614c8ec1e2e83d9a4f52da7"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-training-flops.svg",
+      "sha256": "806de16ba96b00a97794497759837922765e7f234682ec7409b06789fd81d724"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-training-states.svg",
+      "sha256": "3e01fc109adee530c55373baf07c1c0aca7d28604cf37d96d7e46238d14f36f2"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-v41-ced.svg",
+      "sha256": "06aab96063818c730fb44646d1877b97bc4cc1dc30cf723fdcd93ef934a3008a"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-vision-shapes.svg",
+      "sha256": "41c5660160b623a615856c43a5e60e5564b492191437a718dc0c5ffa94feb394"
+    },
+    {
+      "path": "manuscripts/ch03/figure-3-vision-state.svg",
+      "sha256": "98ab557e84cadce593d7578e2f4cb562a41d0469c2fb143efabdc42945104c10"
+    }
+  ]
+}

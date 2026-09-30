@@ -1,0 +1,2077 @@
+{
+  "status": "pass",
+  "pdf": ".tmp/pdf-build/AI-Infra-in-Depth-RU.pdf",
+  "pdf_sha256": "ae34114fe3f2ca7d2cb6d869a8eac82780d15a355ca46b046bdecddb7e545cc6",
+  "pdf_page_count": 961,
+  "font_change": "PT Serif body 11pt/15pt",
+  "scope": "Visual review of all Pandoc AST tables in chapters 1-4, including continuation pages; not semantic translation review",
+  "method": "Pandoc AST inventory and pdftotext mapping, direct inspection of every listed table page at 140 dpi; page 111 doubtful intercolumn gap independently checked in 220 dpi crop",
+  "tables_expected": 62,
+  "tables_reviewed": 62,
+  "table_pages_reviewed": [
+    30,
+    33,
+    50,
+    51,
+    53,
+    60,
+    61,
+    67,
+    70,
+    91,
+    99,
+    107,
+    111,
+    116,
+    117,
+    119,
+    121,
+    126,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    146,
+    148,
+    153,
+    159,
+    168,
+    175,
+    180,
+    185,
+    193,
+    198,
+    202,
+    203,
+    211,
+    215,
+    223,
+    243,
+    246,
+    263,
+    280,
+    285
+  ],
+  "all_pages_visually_inspected": [
+    30,
+    33,
+    50,
+    51,
+    52,
+    53,
+    54,
+    60,
+    61,
+    66,
+    67,
+    68,
+    69,
+    70,
+    90,
+    91,
+    92,
+    99,
+    107,
+    110,
+    111,
+    112,
+    116,
+    117,
+    119,
+    121,
+    126,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    146,
+    148,
+    153,
+    159,
+    167,
+    168,
+    175,
+    180,
+    185,
+    193,
+    198,
+    199,
+    202,
+    203,
+    211,
+    215,
+    223,
+    224,
+    243,
+    246,
+    263,
+    280,
+    285
+  ],
+  "additional_evidence": [
+    ".tmp/pt-serif-tables-1-4/p111-crop.png"
+  ],
+  "issues": [],
+  "cosmetic_observations": [
+    {
+      "kind": "orphan_table_subheading",
+      "source": "book/chapter2.md:172",
+      "text": "Вход модели",
+      "heading_physical_page": 66,
+      "table_physical_page": 67,
+      "table_index_in_chapter": 3
+    },
+    {
+      "kind": "orphan_table_subheading",
+      "source": "book/chapter2.md:949",
+      "text": "Ветвь полного внимания",
+      "heading_physical_page": 131,
+      "table_physical_page": 132,
+      "table_index_in_chapter": 19
+    },
+    {
+      "kind": "orphan_table_subheading",
+      "source": "book/chapter2.md:977",
+      "text": "Выходной интерфейс",
+      "heading_physical_page": 132,
+      "table_physical_page": 133,
+      "table_index_in_chapter": 22
+    },
+    {
+      "kind": "orphan_table_subheading",
+      "source": "book/chapter2.md:1048",
+      "text": "Операции, специфичные для CSA",
+      "heading_physical_page": 135,
+      "table_physical_page": 136,
+      "table_index_in_chapter": 29
+    },
+    {
+      "kind": "orphan_table_subheading",
+      "source": "book/chapter2.md:1073",
+      "text": "Выходной интерфейс",
+      "heading_physical_page": 136,
+      "table_physical_page": 137,
+      "table_index_in_chapter": 32
+    },
+    {
+      "kind": "figure_between_table_parts",
+      "chapter": 4,
+      "table_index_in_chapter": 1,
+      "physical_pages": [
+        202,
+        203
+      ],
+      "detail": "Continuation on page 203 follows figure 4-1; repeated header and both remaining rows are present and readable"
+    }
+  ],
+  "limitations": [
+    "No claim about translation accuracy, numerical correctness, figures, or non-table pages outside the listed inspection set"
+  ],
+  "tables": [
+    {
+      "chapter": 1,
+      "table_index_in_chapter": 1,
+      "source": "book/chapter1.md:109",
+      "header": [
+        "Операция",
+        "Время (ns)"
+      ],
+      "data_row_count": 12,
+      "physical_pages_1_based": [
+        30
+      ],
+      "printed_pages": [
+        14
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-030.png"
+      ]
+    },
+    {
+      "chapter": 1,
+      "table_index_in_chapter": 2,
+      "source": "book/chapter1.md:180",
+      "header": [
+        "Ресурс или операция",
+        "RTX 4090",
+        "A100 80GB SXM",
+        "H100 SXM"
+      ],
+      "data_row_count": 4,
+      "physical_pages_1_based": [
+        33
+      ],
+      "printed_pages": [
+        17
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-033.png"
+      ]
+    },
+    {
+      "chapter": 1,
+      "table_index_in_chapter": 3,
+      "source": "book/chapter1.md:421",
+      "header": [
+        "Изменение",
+        "Предположение, которое перестаёт выполняться",
+        "Главы"
+      ],
+      "data_row_count": 8,
+      "physical_pages_1_based": [
+        50,
+        51
+      ],
+      "printed_pages": [
+        34,
+        35
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": true,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-050.png",
+        ".tmp/pt-serif-tables-1-4/p-051.png"
+      ]
+    },
+    {
+      "chapter": 1,
+      "table_index_in_chapter": 4,
+      "source": "book/chapter1.md:454",
+      "header": [
+        "Требования модели",
+        "Значение",
+        "Как использовать"
+      ],
+      "data_row_count": 7,
+      "physical_pages_1_based": [
+        53
+      ],
+      "printed_pages": [
+        37
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-053.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 1,
+      "source": "book/chapter2.md:71",
+      "header": [
+        "Параметр конфигурации",
+        "Параметр Qwen3-8B",
+        "Непосредственное влияние на требования к ресурсам"
+      ],
+      "data_row_count": 6,
+      "physical_pages_1_based": [
+        60
+      ],
+      "printed_pages": [
+        44
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-060.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 2,
+      "source": "book/chapter2.md:94",
+      "header": [
+        "Символ",
+        "Значение и область применения"
+      ],
+      "data_row_count": 7,
+      "physical_pages_1_based": [
+        61
+      ],
+      "printed_pages": [
+        45
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-061.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 3,
+      "source": "book/chapter2.md:174",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (входная ширина × выходная ширина)",
+        "Матричные FLOPs",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        67
+      ],
+      "printed_pages": [
+        51
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-067.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 4,
+      "source": "book/chapter2.md:180",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (входная ширина × выходная ширина)",
+        "Матричные FLOPs",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 4,
+      "physical_pages_1_based": [
+        67
+      ],
+      "printed_pages": [
+        51
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-067.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 5,
+      "source": "book/chapter2.md:189",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (входная ширина × выходная ширина)",
+        "Матричные FLOPs",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 2,
+      "physical_pages_1_based": [
+        67
+      ],
+      "printed_pages": [
+        51
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-067.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 6,
+      "source": "book/chapter2.md:196",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (входная ширина × выходная ширина)",
+        "Матричные FLOPs",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        67
+      ],
+      "printed_pages": [
+        51
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-067.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 7,
+      "source": "book/chapter2.md:240",
+      "header": [
+        "Категория данных",
+        "Хранение и повторное использование",
+        "Основные рассчитываемые в этой главе показатели"
+      ],
+      "data_row_count": 3,
+      "physical_pages_1_based": [
+        70
+      ],
+      "printed_pages": [
+        54
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-070.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 8,
+      "source": "book/chapter2.md:460",
+      "header": [
+        "Модель и путь кэша",
+        "Средний прирост глобальной истории (B/token)",
+        "Глобальная история 8K (MiB)",
+        "Считывание KV внимания и индекса при каждом decode (MiB)"
+      ],
+      "data_row_count": 9,
+      "physical_pages_1_based": [
+        91
+      ],
+      "printed_pages": [
+        75
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-091.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 9,
+      "source": "book/chapter2.md:558",
+      "header": [
+        "Вариант маршрутизации при B=64",
+        "Различных экспертов, используемых в слое",
+        "Токенов на эксперта",
+        "Идеальный объём чтения маршрутизируемых экспертов на слой"
+      ],
+      "data_row_count": 2,
+      "physical_pages_1_based": [
+        99
+      ],
+      "printed_pages": [
+        83
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-099.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 10,
+      "source": "book/chapter2.md:649",
+      "header": [
+        "Параметр архитектуры",
+        "DeepSeek V4.1 Flash",
+        "Qwen3-8B",
+        "Qwen3.6-35B-A3B",
+        "DeepSeek V4-Flash",
+        "Kimi K3"
+      ],
+      "data_row_count": 11,
+      "physical_pages_1_based": [
+        107
+      ],
+      "printed_pages": [
+        91
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-107.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 11,
+      "source": "book/chapter2.md:694",
+      "header": [
+        "Ветвь модели",
+        "Состояние контекста",
+        "Веса и дополнительные вычисления",
+        "Компоненты, чаще всего упускаемые при подсчёте"
+      ],
+      "data_row_count": 6,
+      "physical_pages_1_based": [
+        111
+      ],
+      "printed_pages": [
+        95
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-111.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 12,
+      "source": "book/chapter2.md:729",
+      "header": [
+        "Модель",
+        "Эмбеддинги и выходная голова",
+        "Проекции внимания",
+        "Плотные / общие FFN",
+        "Маршрутизируемые эксперты",
+        "Engram",
+        "Прочее"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        116
+      ],
+      "printed_pages": [
+        100
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-116.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 13,
+      "source": "book/chapter2.md:741",
+      "header": [
+        "Модель",
+        "Prefill 8K (TFLOPs)",
+        "BF16-веса маршрутизируемых экспертов, выбранных для одного токена (GiB)"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        117
+      ],
+      "printed_pages": [
+        101
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-117.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 14,
+      "source": "book/chapter2.md:767",
+      "header": [
+        "Этап",
+        "Эталонный прямой проход по всем слоям",
+        "CED + воспроизведение конечного окна"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        119
+      ],
+      "printed_pages": [
+        103
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-119.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 15,
+      "source": "book/chapter2.md:789",
+      "header": [
+        "Модель",
+        "Взаимодействие с контекстом 8K (GFLOPs)",
+        "Взаимодействие с контекстом 1M (GFLOPs)",
+        "Состояние 8K (GiB)",
+        "Состояние 1M (GiB)"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        121
+      ],
+      "printed_pages": [
+        105
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-121.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 16,
+      "source": "book/chapter2.md:869",
+      "header": [
+        "Модель",
+        "Матричные вычисления полного запроса (TFLOPs)",
+        "Использованный в расчёте способ реализации"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        126
+      ],
+      "printed_pages": [
+        110
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-126.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 17,
+      "source": "book/chapter2.md:917",
+      "header": [
+        "Соответствующая тема",
+        "Точка входа для локального воспроизведения вычислений"
+      ],
+      "data_row_count": 11,
+      "physical_pages_1_based": [
+        130,
+        131
+      ],
+      "printed_pages": [
+        114,
+        115
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": true,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-130.png",
+        ".tmp/pt-serif-tables-1-4/p-131.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 18,
+      "source": "book/chapter2.md:945",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        131
+      ],
+      "printed_pages": [
+        115
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-131.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 19,
+      "source": "book/chapter2.md:951",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 4,
+      "physical_pages_1_based": [
+        132
+      ],
+      "printed_pages": [
+        116
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-132.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 20,
+      "source": "book/chapter2.md:960",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        132
+      ],
+      "printed_pages": [
+        116
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-132.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 21,
+      "source": "book/chapter2.md:970",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 4,
+      "physical_pages_1_based": [
+        132
+      ],
+      "printed_pages": [
+        116
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-132.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 22,
+      "source": "book/chapter2.md:979",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        133
+      ],
+      "printed_pages": [
+        117
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-133.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 23,
+      "source": "book/chapter2.md:993",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        133
+      ],
+      "printed_pages": [
+        117
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-133.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 24,
+      "source": "book/chapter2.md:999",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 6,
+      "physical_pages_1_based": [
+        133,
+        134
+      ],
+      "printed_pages": [
+        117,
+        118
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": true,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-133.png",
+        ".tmp/pt-serif-tables-1-4/p-134.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 25,
+      "source": "book/chapter2.md:1010",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 4,
+      "physical_pages_1_based": [
+        134
+      ],
+      "printed_pages": [
+        118
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-134.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 26,
+      "source": "book/chapter2.md:1019",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        134
+      ],
+      "printed_pages": [
+        118
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-134.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 27,
+      "source": "book/chapter2.md:1033",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        135
+      ],
+      "printed_pages": [
+        119
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-135.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 28,
+      "source": "book/chapter2.md:1039",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 6,
+      "physical_pages_1_based": [
+        135
+      ],
+      "printed_pages": [
+        119
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-135.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 29,
+      "source": "book/chapter2.md:1050",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        136
+      ],
+      "printed_pages": [
+        120
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-136.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 30,
+      "source": "book/chapter2.md:1060",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        136
+      ],
+      "printed_pages": [
+        120
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-136.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 31,
+      "source": "book/chapter2.md:1066",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 4,
+      "physical_pages_1_based": [
+        136
+      ],
+      "printed_pages": [
+        120
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-136.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 32,
+      "source": "book/chapter2.md:1075",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        137
+      ],
+      "printed_pages": [
+        121
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-137.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 33,
+      "source": "book/chapter2.md:1089",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        137
+      ],
+      "printed_pages": [
+        121
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-137.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 34,
+      "source": "book/chapter2.md:1095",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 7,
+      "physical_pages_1_based": [
+        137,
+        138
+      ],
+      "printed_pages": [
+        121,
+        122
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": true,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-137.png",
+        ".tmp/pt-serif-tables-1-4/p-138.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 35,
+      "source": "book/chapter2.md:1107",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "FLOPs матрицы",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 8,
+      "physical_pages_1_based": [
+        138
+      ],
+      "printed_pages": [
+        122
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-138.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 36,
+      "source": "book/chapter2.md:1120",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "Матричные FLOPs",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 6,
+      "physical_pages_1_based": [
+        138,
+        139
+      ],
+      "printed_pages": [
+        122,
+        123
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": true,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-138.png",
+        ".tmp/pt-serif-tables-1-4/p-139.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 37,
+      "source": "book/chapter2.md:1131",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "Матричные FLOPs",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        139
+      ],
+      "printed_pages": [
+        123
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-139.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 38,
+      "source": "book/chapter2.md:1137",
+      "header": [
+        "Модуль и назначение",
+        "Вход → выход (число строк × ширина)",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "Матричные FLOPs",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 1,
+      "physical_pages_1_based": [
+        139
+      ],
+      "printed_pages": [
+        123
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-139.png"
+      ]
+    },
+    {
+      "chapter": 2,
+      "table_index_in_chapter": 39,
+      "source": "book/chapter2.md:1149",
+      "header": [
+        "Модуль и назначение",
+        "Матрица весов (ширина входа × ширина выхода)",
+        "Число обрабатываемых строк",
+        "Число слоёв/вызовов"
+      ],
+      "data_row_count": 21,
+      "physical_pages_1_based": [
+        140
+      ],
+      "printed_pages": [
+        124
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-140.png"
+      ]
+    },
+    {
+      "chapter": 3,
+      "table_index_in_chapter": 1,
+      "source": "book/chapter3.md:50",
+      "header": [
+        "Вопрос, на который нужно ответить",
+        "Необходимая метрика или запись"
+      ],
+      "data_row_count": 6,
+      "physical_pages_1_based": [
+        146
+      ],
+      "printed_pages": [
+        130
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-146.png"
+      ]
+    },
+    {
+      "chapter": 3,
+      "table_index_in_chapter": 2,
+      "source": "book/chapter3.md:87",
+      "header": [
+        "Временное окно",
+        "Новые входные токены/с",
+        "Последующие шаги decode/с"
+      ],
+      "data_row_count": 3,
+      "physical_pages_1_based": [
+        148
+      ],
+      "printed_pages": [
+        132
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-148.png"
+      ]
+    },
+    {
+      "chapter": 3,
+      "table_index_in_chapter": 3,
+      "source": "book/chapter3.md:125",
+      "header": [
+        "Фактическое наблюдение",
+        "Равномерная смесь",
+        "Сначала 9:1, затем 1:9"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        153
+      ],
+      "printed_pages": [
+        137
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-153.png"
+      ]
+    },
+    {
+      "chapter": 3,
+      "table_index_in_chapter": 4,
+      "source": "book/chapter3.md:213",
+      "header": [
+        "Наблюдение",
+        "Режим рассуждения выключен",
+        "Режим рассуждения включён"
+      ],
+      "data_row_count": 6,
+      "physical_pages_1_based": [
+        159
+      ],
+      "printed_pages": [
+        143
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-159.png"
+      ]
+    },
+    {
+      "chapter": 3,
+      "table_index_in_chapter": 5,
+      "source": "book/chapter3.md:310",
+      "header": [
+        "Объект",
+        "Размер в этом примере",
+        "Условие возможности повторного использования"
+      ],
+      "data_row_count": 3,
+      "physical_pages_1_based": [
+        168
+      ],
+      "printed_pages": [
+        152
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-168.png"
+      ]
+    },
+    {
+      "chapter": 3,
+      "table_index_in_chapter": 6,
+      "source": "book/chapter3.md:396",
+      "header": [
+        "Операция",
+        "Решаемая задача",
+        "Формы левого и правого входов",
+        "Форма выхода",
+        "Матричные FLOPs"
+      ],
+      "data_row_count": 3,
+      "physical_pages_1_based": [
+        175
+      ],
+      "printed_pages": [
+        159
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-175.png"
+      ]
+    },
+    {
+      "chapter": 3,
+      "table_index_in_chapter": 7,
+      "source": "book/chapter3.md:448",
+      "header": [
+        "Матричные вычисления",
+        "TFLOPs"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        180
+      ],
+      "printed_pages": [
+        164
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-180.png"
+      ]
+    },
+    {
+      "chapter": 3,
+      "table_index_in_chapter": 8,
+      "source": "book/chapter3.md:516",
+      "header": [
+        "Этап",
+        "Обрабатываемые примеры",
+        "Объём матричных вычислений (TFLOPs)"
+      ],
+      "data_row_count": 6,
+      "physical_pages_1_based": [
+        185
+      ],
+      "printed_pages": [
+        169
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-185.png"
+      ]
+    },
+    {
+      "chapter": 3,
+      "table_index_in_chapter": 9,
+      "source": "book/chapter3.md:617",
+      "header": [
+        "Модель и охват отчёта",
+        "Обучающие токены",
+        "Приблизительная оценка D/N",
+        "Приблизительная оценка 6ND"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        193
+      ],
+      "printed_pages": [
+        177
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-193.png"
+      ]
+    },
+    {
+      "chapter": 3,
+      "table_index_in_chapter": 10,
+      "source": "book/chapter3.md:691",
+      "header": [
+        "Нагрузка",
+        "Обязательные поля",
+        "Последующее использование"
+      ],
+      "data_row_count": 3,
+      "physical_pages_1_based": [
+        198
+      ],
+      "printed_pages": [
+        182
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-198.png"
+      ]
+    },
+    {
+      "chapter": 4,
+      "table_index_in_chapter": 1,
+      "source": "book/chapter4.md:39",
+      "header": [
+        "Одна Q-проекция",
+        "M=1",
+        "M=256"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        202,
+        203
+      ],
+      "printed_pages": [
+        186,
+        187
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": true,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-202.png",
+        ".tmp/pt-serif-tables-1-4/p-203.png"
+      ]
+    },
+    {
+      "chapter": 4,
+      "table_index_in_chapter": 2,
+      "source": "book/chapter4.md:141",
+      "header": [
+        "Уровень",
+        "Исходное значение",
+        "Энергия на байт",
+        "Технологический процесс и год"
+      ],
+      "data_row_count": 6,
+      "physical_pages_1_based": [
+        211
+      ],
+      "printed_pages": [
+        195
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-211.png"
+      ]
+    },
+    {
+      "chapter": 4,
+      "table_index_in_chapter": 3,
+      "source": "book/chapter4.md:180",
+      "header": [
+        "GPU",
+        "Ёмкость",
+        "Пропускная способность",
+        "Число стеков",
+        "Ёмкость одного стека",
+        "Пропускная способность одного стека",
+        "Скорость контакта"
+      ],
+      "data_row_count": 3,
+      "physical_pages_1_based": [
+        215
+      ],
+      "printed_pages": [
+        199
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-215.png"
+      ]
+    },
+    {
+      "chapter": 4,
+      "table_index_in_chapter": 4,
+      "source": "book/chapter4.md:278",
+      "header": [
+        "Работа",
+        "NVIDIA GPU",
+        "Ascend",
+        "Apple GPU"
+      ],
+      "data_row_count": 3,
+      "physical_pages_1_based": [
+        223
+      ],
+      "printed_pages": [
+        207
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-223.png"
+      ]
+    },
+    {
+      "chapter": 4,
+      "table_index_in_chapter": 5,
+      "source": "book/chapter4.md:548",
+      "header": [
+        "Число входных слотов",
+        "Входной буфер",
+        "Время завершения",
+        "Экономия относительно предыдущего варианта"
+      ],
+      "data_row_count": 4,
+      "physical_pages_1_based": [
+        243
+      ],
+      "printed_pages": [
+        227
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-243.png"
+      ]
+    },
+    {
+      "chapter": 4,
+      "table_index_in_chapter": 6,
+      "source": "book/chapter4.md:577",
+      "header": [
+        "Способ передачи",
+        "Размер группы строк",
+        "Число слотов",
+        "Начало векторных вычислений",
+        "Время завершения"
+      ],
+      "data_row_count": 5,
+      "physical_pages_1_based": [
+        246
+      ],
+      "printed_pages": [
+        230
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-246.png"
+      ]
+    },
+    {
+      "chapter": 4,
+      "table_index_in_chapter": 7,
+      "source": "book/chapter4.md:742",
+      "header": [
+        "Модель и линейка продуктов",
+        "Ёмкость, GB",
+        "Пропускная способность, GB/s",
+        "Плотные матрицы BF16/FP32, TFLOP/s"
+      ],
+      "data_row_count": 7,
+      "physical_pages_1_based": [
+        263
+      ],
+      "printed_pages": [
+        247
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-263.png"
+      ]
+    },
+    {
+      "chapter": 4,
+      "table_index_in_chapter": 8,
+      "source": "book/chapter4.md:936",
+      "header": [
+        "Число обрабатываемых в этот раз токенов M",
+        "Время матричных вычислений",
+        "Время передачи данных между чипом и внешней памятью",
+        "Максимальное из двух значений времени",
+        "Доминирующий ресурс"
+      ],
+      "data_row_count": 2,
+      "physical_pages_1_based": [
+        280
+      ],
+      "printed_pages": [
+        264
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-280.png"
+      ]
+    },
+    {
+      "chapter": 4,
+      "table_index_in_chapter": 9,
+      "source": "book/chapter4.md:1004",
+      "header": [
+        "Число обрабатываемых токенов M",
+        "M2 Max: повторное использование / чередование",
+        "RTX PRO 6000: повторное использование / чередование"
+      ],
+      "data_row_count": 2,
+      "physical_pages_1_based": [
+        285
+      ],
+      "printed_pages": [
+        269
+      ],
+      "visual_status": "pass",
+      "checks": {
+        "all_data_rows_visible": true,
+        "headers_visible": true,
+        "continuation_headers_present": null,
+        "no_cell_clipping": true,
+        "no_column_overlap": true,
+        "wrapping_readable": true
+      },
+      "rendered_evidence": [
+        ".tmp/pt-serif-tables-1-4/p-285.png"
+      ]
+    }
+  ]
+}

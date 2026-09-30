@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "pass": "source-verification",
+  "model_id": "gpt-5.6-sol",
+  "source_directory": ".tmp/ch06-source",
+  "file_pattern": "(?:figure-6-1-placement\\.svg|figure-6-10-tp-time\\.svg|figure-6-11-collectives\\.svg|figure-6-12-resources\\.svg|figure-6-13-ports\\.svg|figure-6-14-topology\\.svg|figure-6-15-torus\\.svg|figure-6-16-systems\\.svg|figure-6-17-pool-placement\\.svg|figure-6-18-read-window\\.svg|figure-6-19-memory-pool\\.svg|figure-6-2-capacity\\.svg|figure-6-21-scale-cost\\.svg|figure-6-3-tp\\.svg|figure-6-4-pipeline\\.svg|figure-6-5-dispatch\\.svg|figure-6-6-ep-layout\\.svg|figure-6-7-reuse\\.svg|figure-6-8-expert-load\\.svg|figure-6-9-ring-rounds\\.svg|figure-6-context-dependency\\.svg|figure-6-cp\\.svg|figure-6-dense-moe\\.svg|figure-6-dp\\.svg|figure-6-engram-placement\\.svg|figure-6-ep-reduction\\.svg|figure-6-ep\\.svg|figure-6-expert-load-1\\.svg)",
+  "record_count": 206,
+  "metadata_only": false,
+  "source_records_sha256": "8966035fbc89a1f140a94e9432dabdb60bd41cfc57c7351ca4812c2d32ce1712",
+  "mapping_sha256": "896e93f1cc0899bdc48c89ce5924725408a5c327f9520eb9c7514f8de87934e4",
+  "runtime": {
+    "requested_model": "gpt-5.6-sol",
+    "reported_model": "gpt-5.6-sol",
+    "provider": "openai",
+    "thread_id": "01a0e4e6-e4af-7743-8b11-066a8d8fb006",
+    "turn_id": "01a0e4e6-e52b-7762-8eeb-5e0f4cc24fa8",
+    "ephemeral": true,
+    "fallback_allowed": false,
+    "sandbox_type": "readOnly",
+    "completion_observed": true,
+    "usage_observed": true,
+    "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+    "prompt_sha256": "7b2678915c704f3e7c9c030c6b7bc0bc2fbf8a31b6d4f11d473dbc518ec952e0",
+    "response_sha256": "896e93f1cc0899bdc48c89ce5924725408a5c327f9520eb9c7514f8de87934e4",
+    "stdout_sha256": "9fd66e68c1172d4351ab23466fb41522107108a5fbe27168bf30baec298972d9",
+    "stderr_sha256": "15608e18503580e74eb84a679d59a7278e6376b536e3b425faabbcdbeee418da"
+  },
+  "draft_mapping_sha256": "a4bf8b50df782598f1ee5d191c68108a17a54a8c41c8e317d64c533db4c6ef2c"
+}

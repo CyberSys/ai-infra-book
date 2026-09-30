@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "pass": "source-verification",
+  "model_id": "gpt-5.6-sol",
+  "source_directory": ".tmp/ch07-source",
+  "file_pattern": "(?:figure-7-1-boundaries\\.svg|figure-7-10-lifetime\\.svg|figure-7-11-state\\.svg|figure-7-12-ordering\\.svg|figure-7-13-stale\\.svg|figure-7-14-reclaim\\.svg|figure-7-15-congestion\\.svg|figure-7-16-feedback\\.svg|figure-7-17-packets\\.svg|figure-7-18-deadlock\\.svg|figure-7-19-progress\\.svg|figure-7-2-cut\\.svg|figure-7-20-step\\.svg|figure-7-21-message\\.svg|figure-7-3-hierarchy\\.svg|figure-7-4-pipeline\\.svg|figure-7-5-expert\\.svg|figure-7-6-relay\\.svg|figure-7-7-access\\.svg|figure-7-8-snapshot\\.svg|figure-7-9-window\\.svg|figure-7-access-1\\.svg|figure-7-access-2\\.svg|figure-7-access-3\\.svg|figure-7-clos-cut\\.svg|figure-7-congestion-queue\\.svg|figure-7-ecmp-collision\\.svg|figure-7-expert-path-1\\.svg|figure-7-expert-path-2\\.svg|figure-7-feedback-loop\\.svg|figure-7-hierarchy-bytes\\.svg)",
+  "record_count": 143,
+  "metadata_only": false,
+  "source_records_sha256": "1ffd2db4467002414d9d86a2693f887d810265816295d52f066ed1d685e850e3",
+  "mapping_sha256": "1580ad194835fd5cea237034d21653096942d81317e951785328560892ae2676",
+  "runtime": {
+    "requested_model": "gpt-5.6-sol",
+    "reported_model": "gpt-5.6-sol",
+    "provider": "openai",
+    "thread_id": "01a0e518-aa5a-79e1-8c07-bbc9c28ee420",
+    "turn_id": "01a0e518-aaca-7782-85a9-a8f17152e198",
+    "ephemeral": true,
+    "fallback_allowed": false,
+    "sandbox_type": "readOnly",
+    "completion_observed": true,
+    "usage_observed": true,
+    "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+    "prompt_sha256": "49a99583341f19415d4eb941d6d27f5d203ee095f0b61e37c89f3bedb0eb887a",
+    "response_sha256": "1580ad194835fd5cea237034d21653096942d81317e951785328560892ae2676",
+    "stdout_sha256": "146194b0d3581044651fe83571eaef878d6859cb8a5e9817cc5425fdaf913c3b",
+    "stderr_sha256": "564bbf124ca814dbb065d4606571e7b797701b8f33fa1abc7062501313f790b9"
+  },
+  "draft_mapping_sha256": "18f35b263249418cb9f568074a36aa30db4c3c1a1184d76b765645ac86ccee02"
+}

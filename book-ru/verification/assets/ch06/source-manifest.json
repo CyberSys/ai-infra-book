@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/bojieli/ai-infra-book",
+  "source_commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "files": [
+    {
+      "path": "manuscripts/ch06/figure-6-1-placement.svg",
+      "sha256": "8449bec9d913dbeaa6dde1c41a2a9137d49ae3fceea6dbe4f07bea759a422f5b"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-10-tp-time.svg",
+      "sha256": "2156ffac6adfba73a317c5b0133f0ecf1bac7bacee566a42e01761d449f79870"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-11-collectives.svg",
+      "sha256": "7eeabf488eabbf5d24df9c31a3e8be8c11d63ca916034af1491c83cbdbe61d07"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-12-resources.svg",
+      "sha256": "89168da715a3faa0267f31fee0884645bf3f61b7e319ae4abbd4c9c45a136ba3"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-13-ports.svg",
+      "sha256": "2f13f768d0fb0e7b2af3cbda0067b330cfce6f2d95945c5f6371804deb405ebb"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-14-topology.svg",
+      "sha256": "825658dd5683c5accbc26e61583cb7c6e2d0ac4a2ef57a467e14ebb55627f08e"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-15-torus.svg",
+      "sha256": "aafb29acf7b196419e0391fe2127e6e8a4fe08b8f0d1caf64063ce69ca68031d"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-16-systems.svg",
+      "sha256": "a10308be0d0a32fdc52019ef4f21950e0fbb8ef54105ca5504a2002bc0a43ba7"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-17-pool-placement.svg",
+      "sha256": "5520b6f16120858663ace4a7887ecaac85baa231a155a1b66160212e90a871a2"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-18-read-window.svg",
+      "sha256": "f51893123360e7a0e00d66b4d0d43833c0665d88a7097def57826140fb0ae8ad"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-19-memory-pool.svg",
+      "sha256": "0848531ed3d09e11d0ad29deacccd14a5ce487132d5f78b722987a7b4598bc71"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-2-capacity.svg",
+      "sha256": "14796e6854a07288583a7e49324e5bb78ee71b85523d9b337f86a322b92b447b"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-21-scale-cost.svg",
+      "sha256": "eee3be14e8b632dd5d8eb5de5aad0e24a1af82c575df934ce9266dd7b3fb9ec1"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-3-tp.svg",
+      "sha256": "64deb57023eb970a768a9cbddc4163f6f56038d96bdc71690750998fc23b5e46"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-4-pipeline.svg",
+      "sha256": "23b5b4eaf4def87c4b81c6b53ed5ed8b390cafea2173bb7c562dbcff5b6c7e97"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-5-dispatch.svg",
+      "sha256": "a23c41434c01c796fb5a4521e1c3b15e752c2cdca48e66355e8022a35e82d8a9"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-6-ep-layout.svg",
+      "sha256": "d75c34fe5091d4b16c5234eefb1b9c4cfb1abb39074bdf7aec053c1cb0438937"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-7-reuse.svg",
+      "sha256": "22e90ae2d648c30128d5528cedac590e05534f2e95cbb26816d0e7a74d42d684"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-8-expert-load.svg",
+      "sha256": "83e07cc5fffd2ebe11ed2c77137282207fe1e2f34d5b7091ef2922f72addd148"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-9-ring-rounds.svg",
+      "sha256": "8d25b9d5e5b084ae7fec4957c12b82cf6260427c99f532818e918f016ec0d376"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-context-dependency.svg",
+      "sha256": "d0009f43cdb145174aaf6ec1a1ec2b5e7e1da6a82d9b70238a9eb98b60e5712f"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-cp.svg",
+      "sha256": "93235959c9ae3169f98ab640c28305a7d57b5699da46a62f97555c88d4717f5a"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-dense-moe.svg",
+      "sha256": "ef4bdd7a37850bd5d70280f6356082fef44a6079981a0e188fce01c715e02e48"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-dp.svg",
+      "sha256": "a9ffbc40042993049f0310c6eadffcf92ad3065c2bde352ada0a872f48554784"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-engram-placement.svg",
+      "sha256": "0c50c6aecb1f8db0e0393a6ca855c0975135ed2a6eccec06fa9b5647918db27a"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-ep-reduction.svg",
+      "sha256": "9aaf61baef8cd754ea5208cdcff03f654226ab7372087549751e6c0bb27de0e1"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-ep.svg",
+      "sha256": "5bb41576a457b1144567670471b0ac6e8d7ff4e35844c27f7c793e1c18dd39ac"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-expert-load-1.svg",
+      "sha256": "dc27aa215ed1a8ef1a72059983ca8682f516f6d04447f6d576f2d8c14707edb8"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-expert-load-2.svg",
+      "sha256": "14c14c2afed78e3776f532903a5bc1d9b14b95db9762a8f25d5583ead7e075e6"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-initiator.svg",
+      "sha256": "cd21c4b8dec7698d973ef4b297033fe61808f8da3cb3691dfefd96f87bbec6d4"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-parallel-map.svg",
+      "sha256": "4088fc0c5f8539a58acb2edeab98a5fb75e2165a19349c093c6b6ecfe3f7ddcd"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-pool-after.svg",
+      "sha256": "3d884a488857d5a79e7e092d446efc9b25e32c68be366c0be1de950d435868f6"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-pp.svg",
+      "sha256": "72cec3ee7312cb5306d6bee30934ff11d29dc5f1acb45911fc1a6319b2210dd7"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-resources-concurrent.svg",
+      "sha256": "3459ee0ddd60f01c872d2442d9d5cb76e5da556ce7991e3fa04cd335435f6384"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-ring-gather.svg",
+      "sha256": "540943d035f4ae28f88b9cc25d390745bae56001aa7d990fe4e4da62f5263429"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-rom-token-time.svg",
+      "sha256": "29bac56a10ac44d33791c99fbe3bec78599413e24f3a34c99309f85441234f69"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-scale-cost-fault.svg",
+      "sha256": "7095ee52cebd7636a068fab416d9714bb7ec088bfebab5a399043e32f21f3db1"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-session-capacity.svg",
+      "sha256": "872279b41ab2a1f3b1b0c0c2ff6d33b75a3869c8154d38cb4e1c234809c99d14"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-session-tp2.svg",
+      "sha256": "f5ef78ca28e28e9020ad90b9f9a767757ed394e55b1f1b8c1a3e77b62d1d0942"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-session-tp4.svg",
+      "sha256": "d6e220cd69cbc1325e3318c685ed9a4b77baa92ca1f0b5470b1914eecd454ef9"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-session-tp8.svg",
+      "sha256": "b04310b7b3def8f24a809704e2a66a2c384d41b69c4e1683dd310e0aca7bab54"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-sp.svg",
+      "sha256": "ce6229ba233b267a859b109207c1032f1c80f1e78256845a9900980db36c5e86"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-supernode-inference.svg",
+      "sha256": "a1624cb07ea52de94244a33e64ac3d8d8f9753d168483d0ef95e3f5f832475b7"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-topology-hops.svg",
+      "sha256": "4cd6dcec6802d2ab7d6809ba30715ae721e59f46022a581b542d4cc09cce6c14"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-topology-load.svg",
+      "sha256": "b80a088552cea09fb910926c0e0be6ddca2c85f316d78c4d45d1bfc3afc4d398"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-topology-patterns.svg",
+      "sha256": "c3b9e48e72a533573a7c2bd53e6007b0058923ec3573e3487a999b93b3df38d9"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-topology-swing.svg",
+      "sha256": "f9044476791ef3ea006b693f4dd5ab91284c390a60acc098fb945ebe1648e7b9"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-torus-growth.svg",
+      "sha256": "1e9a9fd1781365f45e765e6c154c50d594ba2a9ca8cfff86a80a9bd2e002d910"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-tp-columns.svg",
+      "sha256": "400764b08a21f60f7415328b39f36b5a207529f11731cd83b88866e970027bf9"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-tp-layer.svg",
+      "sha256": "3ba3bc423856f8aa6fbdd2ab343ab7fc8b76d1a45712658af237d39a2e4c4868"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-tp-rows.svg",
+      "sha256": "10fb82a75fa92be04b20608abbe264bf53aca0c5ab753cf0f46d1b0f8d5241b2"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-ub-controller.svg",
+      "sha256": "a196e3890dddf0f92c439cf327cd7821a50c088a17a69586aefbe75946b37581"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-ub-hosts.svg",
+      "sha256": "301760dc656fed117ea1515f2a2964057583f090052b74c5f3978b5bf2065659"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-ub-layers.svg",
+      "sha256": "09ae9316b7ab40c5d6f375599220c78239b063be06aa375d54cafe6ca0253f4c"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-ub-setup.svg",
+      "sha256": "e45a2a419867e7c6cf60e6c344cce6613fa1dac7187a84aa6f36ac83fbaeadce"
+    },
+    {
+      "path": "manuscripts/ch06/figure-6-weight-placement.svg",
+      "sha256": "fab08560646ea3b1c6a34890d02a5bbe7b69b8371ed9211a1b6edb100fd70ed3"
+    }
+  ]
+}

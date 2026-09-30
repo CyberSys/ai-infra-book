@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/bojieli/ai-infra-book",
+  "source_commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "files": [
+    {
+      "path": "manuscripts/ch02/figure-2-1-dependencies.svg",
+      "sha256": "81e2cb2fb2ad20c1cc6a2cb2f2392693e9acbdf64a1c7b238e7429c8b91fbd83"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-10-request.svg",
+      "sha256": "afd237632cd3096af826db4d1a9df953893d8e1bf6e6dee197dfb0c3b2d1af75"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-2-layer.svg",
+      "sha256": "6eec436e742864e9023b49a9047849f20dcaed6cf329e03e66f95a3380b1fe99"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-3-sharing.svg",
+      "sha256": "19f05019127f8b56927582ce1d3943412252826de2787ab54c68db50175ca69b"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-4-cache.svg",
+      "sha256": "51d8a412c57fbeece5965b12945900bfb27e47a636446fe65871f47a6c0882ba"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-5-sparse.svg",
+      "sha256": "399d64d50306d8fea4ed9860297c23aed416b13862e9e11d9b2cf8e5add8cf18"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-6-hybrid.svg",
+      "sha256": "a36fdffb5e2b9f6d58d97cabb94c1f3ca9b15d6388224a87c7dd3246d4e4b04f"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-7-state-growth.svg",
+      "sha256": "52ab4e4ab05fd1a61cf6dae7765642554ba171cdc081dbc13f1408b0e91fcec7"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-8-residual.svg",
+      "sha256": "f9f26377b7e4fe3e8be8ff0957f28ab14e658faf7f097c0b09ad30b5f08f219c"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-9-capacity.svg",
+      "sha256": "ea874ed3af9058279229073d3780b3ebc03e75aacc3a4dae0f276f01c6710744"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-architecture-experts.svg",
+      "sha256": "af166a6d12b26cbd043f0ad08de9aefef9d748b8c950deb0cc14255c8422889e"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-architecture-width.svg",
+      "sha256": "72dea1255dd182618a3f59a863eac5084337658a612a8a80fefcb4f2e6f1ce4e"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-architecture.svg",
+      "sha256": "8bed991c14ddc094a9022f17feb35b85a954c913d55f3205c7ebc60d0d1852b7"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-causal-dependencies.svg",
+      "sha256": "6dea321ff4802c5446030d1941fa8cb97baaed8d19cb2445da299d73f5be8fd2"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-causal-pairs.svg",
+      "sha256": "fa9e6527774baa130aaff91767605ad7bf2c41b03d37f4d03d4c8a9409fd9186"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-compression-steps.svg",
+      "sha256": "09cd4d76af5192cb9ec3bc92544448f57d2ea73b3ce8ee357e3bd09b6bd0bb63"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-expert-reuse.svg",
+      "sha256": "f8e3df561f5975c69c9a821c86a3cbcaa5e19e982e39400a8000b76c8caa4edf"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-ffn-gates.svg",
+      "sha256": "96b39311461538898498d24ca9d77e56949283bafd3765e758e7206a4c7afcaa"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-history-batch.svg",
+      "sha256": "b4e43d2d349f0f2c6bb31c81a253d27c22e4d3f531716b55880251fb7eec61d1"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-history-capacity.svg",
+      "sha256": "c070183df0684a1faa13cad7bf6732d670ff756a8f6f72eafa94d17c6d4f6719"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-history.svg",
+      "sha256": "f39ef9559ff15c3cf7fc459e76b742620bbf922492d9bb88ef62a15b9d435b32"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-long-context-compute.svg",
+      "sha256": "61de97edf09f9785ca233315363f334a0b9f0ead3ac6974e78ccfc200f7ba85d"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-mla-capacity.svg",
+      "sha256": "3176be3d2833a2bcfd4c2a601bc8e32fc9c9435d032ad73cacea527e106b4ebb"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-mla-paths.svg",
+      "sha256": "f9e5ac6e0c4acd985d197f6353f9f9ed67aabf51d8ee01bafe3a6fab00ef3d0e"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-qkv-objects.svg",
+      "sha256": "dc3e4a2e1f21ac95a0c3997cc5194bce6b94844b891bc45c44a8ef63fbd907dd"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-recurrence.svg",
+      "sha256": "0f22acde35d2e245cd4e574c8e73d3320c8edcdfa363b6d88d5257e1b5c14e85"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-request-compute.svg",
+      "sha256": "f43d09f7f3be2d51cb381d80b42578903ca6c2e28427f8c464c8a87b0064ba1f"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-resources-compute.svg",
+      "sha256": "61aba9c3b10cb693d6a5fd8bd6588c6e214ba2582eb64d070e5da88c08b249c8"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-resources-state.svg",
+      "sha256": "ba005cace260ed5e612e60e5b5f053ff1901cf285e4c813188518a0e233d717b"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-resources.svg",
+      "sha256": "056b352aad40b8deb104ee6e51ebfbdacbc552b8a9263c17bdc0782455c4f06a"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-reverse-budget.svg",
+      "sha256": "c5b3cebb2536918f25f45d33dcd4367edc2901b0aa08ce5e451096146cd7ec03"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-sparse-capacity.svg",
+      "sha256": "95b862debec5c6f65b697c227de455ba23744e310b5a4bfbbe01aa0fca51d653"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-state-access.svg",
+      "sha256": "98569f8de82d3f1ce41f5a34b327675fa047061282f2caebcb560e77e5d8b1c4"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-v41-ced-path.svg",
+      "sha256": "72f45286b75c2ba278491c98d6ff767eee53fcc7546f19b729f3082a7c210534"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-v41-selection.svg",
+      "sha256": "c2f7dfbd47e85543047efdf928dc6d104e328e092e922cf27bad80f2daa096a4"
+    },
+    {
+      "path": "manuscripts/ch02/figure-2-v41-sharing.svg",
+      "sha256": "96884af6c648b7e846928c2c16f7ffbab5c88e08d00037e4279fdf0925cb5309"
+    }
+  ]
+}

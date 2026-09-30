@@ -1,0 +1,2408 @@
+{
+  "schema_version": 1,
+  "scope": "All Pandoc Table blocks in chapters 5 to 8; visual layout only, no semantic translation review",
+  "final_pdf": {
+    "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pdf-build/AI-Infra-in-Depth-RU.pdf",
+    "sha256": "ae34114fe3f2ca7d2cb6d869a8eac82780d15a355ca46b046bdecddb7e545cc6",
+    "physical_page_count": 961
+  },
+  "font_change_review": "Fresh visual review after PT Serif 11pt/15pt rebuild; no previous-font visual coverage reused",
+  "counts": {
+    "tables": 36,
+    "physical_pages_with_tables": 40,
+    "continuation_pages": 5,
+    "visual_pass": 36
+  },
+  "physical_pages_reviewed": [
+    293,
+    294,
+    297,
+    300,
+    305,
+    311,
+    331,
+    341,
+    342,
+    354,
+    363,
+    373,
+    376,
+    377,
+    382,
+    398,
+    406,
+    407,
+    410,
+    414,
+    422,
+    448,
+    456,
+    457,
+    458,
+    460,
+    463,
+    478,
+    479,
+    489,
+    507,
+    508,
+    509,
+    542,
+    549,
+    568,
+    577,
+    581,
+    634,
+    636
+  ],
+  "additional_candidate_pages_reviewed": [
+    296,
+    378,
+    510,
+    511,
+    550
+  ],
+  "pandoc_ast_sha256": {
+    "5": "a183391d440997f5077d9fbb90a7f52a324b180a5f9e3ee45d3cd83f7b6a86ab",
+    "6": "35c5bb5eeb0b565a4076cf0c1eebfba2a893d1e6d78c14342342752960b3c3d0",
+    "7": "8725374cf9bd9da607788f555a17494dda7fda9ced6fd4427b3b643a22badf27",
+    "8": "69b6ab587aaf9ccd00166ab065fe77e8076e4df8ad9caece32cf58e91628a9eb"
+  },
+  "findings": [],
+  "tables": [
+    {
+      "chapter": 5,
+      "table_index_in_pandoc_ast": 1,
+      "physical_pages": [
+        293
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 4,
+      "column_count": 4,
+      "rows": [
+        [
+          "Объект",
+          "Форма",
+          "Размер",
+          "Роль в вычислении"
+        ],
+        [
+          "Входная матрица X",
+          "[1024,4096]",
+          "8 MiB",
+          "Вектор признаков каждого токена занимает одну строку; после проекции получается новый вектор признаков этого токена"
+        ],
+        [
+          "Веса W",
+          "[4096,12288]",
+          "96 MiB",
+          "Совместно используются при вычислении проекций 1024 токенов"
+        ],
+        [
+          "Проекция C",
+          "[1024,12288]",
+          "24 MiB",
+          "В дальнейшем подвергается активации и другой обработке"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-293.png",
+          "sha256": "63fdb392cf7fc96cfc17177ac63da8ad9895111aef5b6a276e40ab2f8afc5663"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "table_index_in_pandoc_ast": 2,
+      "physical_pages": [
+        294
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 4,
+      "column_count": 3,
+      "rows": [
+        [
+          "Название",
+          "Направление копирования",
+          "Типичный объект"
+        ],
+        [
+          "H2D",
+          "Память хоста → видеопамять",
+          "Входной тензор текущего batch"
+        ],
+        [
+          "D2H",
+          "Видеопамять → память хоста",
+          "Результат вычисления, необходимый CPU"
+        ],
+        [
+          "D2D",
+          "Видеопамять → видеопамять",
+          "Фиксированный входной буфер или результат перестановки"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-294.png",
+          "sha256": "f79b48da8d01edca734b5a69f22d1ecfb2f199d9511f30996e2597cd475ec785"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "table_index_in_pandoc_ast": 3,
+      "physical_pages": [
+        297
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 3,
+      "rows": [
+        [
+          "Буфер",
+          "Последний пользователь",
+          "Последующее действие"
+        ],
+        [
+          "Исходный буфер хоста для H2D",
+          "Считывается механизмом копирования",
+          "CPU записывает входные данные следующего batch"
+        ],
+        [
+          "Входной буфер GPU",
+          "Kernel, считывающий эти входные данные",
+          "Механизм копирования записывает входные данные следующего batch"
+        ],
+        [
+          "Исходный буфер ускорителя для D2H",
+          "Считывается механизмом копирования",
+          "GPU записывает новый результат"
+        ],
+        [
+          "Целевой буфер хоста для D2H",
+          "Записывается механизмом копирования",
+          "CPU считывает текущий результат"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-297.png",
+          "sha256": "6115a3419b09e4835b3b01f4fd0e9882c5a1568cebd8a5fd1cb1331d83c4328e"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "table_index_in_pandoc_ast": 4,
+      "physical_pages": [
+        300
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 4,
+      "rows": [
+        [
+          "Ресурс",
+          "Общий объём SM",
+          "Потребность одного блока потоков",
+          "Допустимое число блоков потоков"
+        ],
+        [
+          "Слоты потоков",
+          "2048",
+          "256",
+          "8"
+        ],
+        [
+          "Регистры",
+          "64K",
+          "256 × 128 = 32K",
+          "2"
+        ],
+        [
+          "Общая память",
+          "228 KB (233,472 bytes)",
+          "Рабочий набор 96 KiB + резерв 1 KiB на блок = 97 KiB",
+          "2"
+        ],
+        [
+          "Предельное число блоков потоков",
+          "32",
+          "1",
+          "32"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-300.png",
+          "sha256": "8bee9a9a60fe9f375f056b6dd0a3f03460fb73ab4739308d9d3dd3738b2ff491"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "table_index_in_pandoc_ast": 5,
+      "physical_pages": [
+        305
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 4,
+      "column_count": 3,
+      "rows": [
+        [
+          "Механизм из этого раздела",
+          "NVIDIA GPU",
+          "Ascend"
+        ],
+        [
+          "Выдача инструкций и разделение работы",
+          "Warp — единица выдачи инструкций для 32 потоков; warp-производители и warp-потребители разделяют работу внутри одного SM",
+          "AIC и AIV — отдельные ядра, а не warp: матричная работа выполняется на AIC, векторная — на AIV; у каждого свой поток инструкций"
+        ],
+        [
+          "Резидентность и ёмкость",
+          "Регистры, общая память и слоты потоков определяют число резидентных блоков потоков на каждом SM",
+          "Ёмкость L0, L1 и унифицированного буфера определяет размер блоков, одновременно размещаемых на каждом ядре"
+        ],
+        [
+          "Перемещение и синхронизация",
+          "Асинхронное копирование достигает барьера, warp ожидают барьер",
+          "Данные перемещаются с помощью MTE/NDDMA, а BufferID идентифицирует буферы и организует их передачу"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-305.png",
+          "sha256": "4037837e564be22b563a483de671d1e9ddaf6e8b94fb7959700d0a686ffcc1ce"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "table_index_in_pandoc_ast": 6,
+      "physical_pages": [
+        311
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 4,
+      "column_count": 4,
+      "rows": [
+        [
+          "Выходной блок",
+          "Требуемая локальная память",
+          "Обращения между рабочим буфером и следующим уровнем памяти",
+          "Арифметическая интенсивность"
+        ],
+        [
+          "32×32",
+          "8 KiB",
+          "6168 MiB",
+          "15.9 FLOP/byte"
+        ],
+        [
+          "64×64",
+          "24 KiB",
+          "3096 MiB",
+          "31.7 FLOP/byte"
+        ],
+        [
+          "128×128",
+          "80 KiB",
+          "1560 MiB",
+          "63.0 FLOP/byte"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-311.png",
+          "sha256": "1c60f8b65c45e12f03bdb4cb8e49b8e649f77d917e878f52ac64d92f7db69ca7"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "table_index_in_pandoc_ast": 7,
+      "physical_pages": [
+        331
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 4,
+      "column_count": 5,
+      "rows": [
+        [
+          "Число строк в блоке K/V, b",
+          "Число помещающихся строк Q, a",
+          "Число полных проходов по K/V",
+          "Объём обращений между буфером и хранилищем следующего уровня",
+          "Число обновлений состояния между блоками Q и K/V"
+        ],
+        [
+          "1",
+          "128",
+          "64",
+          "260 MiB",
+          "524288"
+        ],
+        [
+          "64",
+          "82",
+          "100",
+          "404 MiB",
+          "12800"
+        ],
+        [
+          "128",
+          "53",
+          "155",
+          "624 MiB",
+          "9920"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-331.png",
+          "sha256": "313832993ac40b3078d7eefd1f73581054ecb4322731c1f40bf7ef684cf4bc3b"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "table_index_in_pandoc_ast": 8,
+      "physical_pages": [
+        341,
+        342
+      ],
+      "continuation_pages": [
+        342
+      ],
+      "orientation": "portrait",
+      "row_count_including_header": 6,
+      "column_count": 3,
+      "rows": [
+        [
+          "Этап выбора",
+          "Данные для матричного примера этой главы",
+          "Основание для исключения или сравнения"
+        ],
+        [
+          "Зафиксировать цель",
+          "Форма входа, точность, ошибка, частота вызовов",
+          "Сравнение одинаковой математической работы и одинаковой нагрузки"
+        ],
+        [
+          "Перечислить кандидатов",
+          "Тайл, порядок циклов, число буферов, область слияния",
+          "Поддержка компилятором и оборудованием"
+        ],
+        [
+          "Проверить выполнимость",
+          "Общая память, регистры, потоки, выравнивание и зависимости",
+          "Отчёт о ресурсах компиляции и проверка корректности"
+        ],
+        [
+          "Оценить время",
+          "Объём вычислений, фактический объём чтения и записи, запуск и преобразование раскладки",
+          "Время обслуживания каждым ресурсом и критический путь"
+        ],
+        [
+          "Измерить и выбрать",
+          "Время и разброс для репрезентативных форм, а также полная цепочка операторов",
+          "Минимизация стоимости рабочей нагрузки с сохранением близких по результату кандидатов"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": true,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-341.png",
+          "sha256": "3c75b623d16168e7076a7e43259091ffe85da3ca7c63a1ae45516c72b3989a9e"
+        },
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-342.png",
+          "sha256": "2afff4ef127c9bcea8b4799f135328242cee818836a27ad44545a3caa34a27b4"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "table_index_in_pandoc_ast": 9,
+      "physical_pages": [
+        354
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 4,
+      "column_count": 4,
+      "rows": [
+        [
+          "Стратегия",
+          "Однократная подготовка P",
+          "Выполнение одной группы T",
+          "Способ обработки форм"
+        ],
+        [
+          "Универсальная",
+          "100 ms",
+          "17,0 ms",
+          "Выполнение по фактическим 5632 строкам"
+        ],
+        [
+          "Корзины",
+          "400 ms",
+          "12,4 ms",
+          "Дополнение до двух корзин, выполнение для 8192 строк"
+        ],
+        [
+          "Специализация по каждой форме",
+          "900 ms",
+          "6,8 ms",
+          "Отдельная генерация программы для трёх форм"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-354.png",
+          "sha256": "8e98d11d2ea135592d5d27c1afd0bb80e4ee7d5059268b055b6c3f55a4bb8b44"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "table_index_in_pandoc_ast": 10,
+      "physical_pages": [
+        363
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 3,
+      "column_count": 4,
+      "rows": [
+        [
+          "Этап SwiGLU",
+          "Форма и количество вызовов",
+          "Исходное ядро",
+          "Заменённое ядро"
+        ],
+        [
+          "Prefill",
+          "7239 строк, 36 раз",
+          "около 11,2 ms",
+          "около 11,2 ms"
+        ],
+        [
+          "Decode",
+          "1 строка, 1116 раз",
+          "около 2,4 ms",
+          "около 0,92 ms"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-363.png",
+          "sha256": "20a990e949d5ec3773440037f5f11c860e2814be0732466924c3b5375158327c"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 1,
+      "physical_pages": [
+        373
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 3,
+      "column_count": 5,
+      "rows": [
+        [
+          "Размещение",
+          "Веса",
+          "KV",
+          "Резерв для активаций и рабочих областей",
+          "Итого"
+        ],
+        [
+          "Одна карта",
+          "470.2 GB",
+          "1.58 GB",
+          "2.15 GB",
+          "473.9 GB"
+        ],
+        [
+          "Каждая из восьми карт",
+          "58.96 GB",
+          "0.39 GB",
+          "2.15 GB",
+          "61.50 GB"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-373.png",
+          "sha256": "51af3f379181418fe150baef22c20857dfb56625002630f5ba173c71b6b35874"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 2,
+      "physical_pages": [
+        376,
+        377
+      ],
+      "continuation_pages": [
+        377
+      ],
+      "orientation": "portrait",
+      "row_count_including_header": 7,
+      "column_count": 4,
+      "rows": [
+        [
+          "Способ распараллеливания",
+          "Разбиваемое измерение",
+          "Что хранит и вычисляет каждая карта",
+          "Чем необходимо обмениваться между картами"
+        ],
+        [
+          "Параллелизм по данным (DP)",
+          "Образцы B",
+          "Полная копия модели, разные образцы",
+          "При инференсе обмена нет; при обучении объединяются градиенты всех карт"
+        ],
+        [
+          "Тензорный параллелизм (TP)",
+          "Признаки H: столбцы или строки весов, головы внимания",
+          "Часть матриц одного слоя",
+          "Фрагменты выходных данных при необходимости собираются; частичные суммы необходимо сложить"
+        ],
+        [
+          "Параллелизм по последовательности (SP)",
+          "Позиции последовательности S для поточечных операторов над токенами",
+          "Отрезок позиций одной последовательности в этих операторах",
+          "Перед матричным умножением собираются все позиции; после суммирования частичных сумм данные снова разбиваются по позициям"
+        ],
+        [
+          "Контекстный параллелизм (CP)",
+          "Позиции последовательности S в механизме внимания",
+          "Q, K и V для отрезка позиций одной последовательности",
+          "Удалённые K и V либо статистики внимания для каждого отрезка"
+        ],
+        [
+          "Конвейерный параллелизм (PP)",
+          "Слои L",
+          "Непрерывная группа слоёв",
+          "Между соседними этапами передаются активации; при обучении в обратном направлении также передаются градиенты"
+        ],
+        [
+          "Параллелизм экспертов (EP)",
+          "Эксперты E",
+          "Часть экспертов",
+          "Токен отправляется на карту с выбранным экспертом, а результат возвращается обратно"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": true,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-376.png",
+          "sha256": "b2794ea4cd79128e26aa341f3316a503d3c4259f9c5be8a8aa02b0f8b7872603"
+        },
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-377.png",
+          "sha256": "2631d23be9ebdebf7e77b9e13f35fb30807e06d0faf8f68cb8e6449988117ef4"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 3,
+      "physical_pages": [
+        382
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 11,
+      "column_count": 4,
+      "rows": [
+        [
+          "Показатель",
+          "Qwen3-32B",
+          "Qwen3-30B-A3B",
+          "Qwen3.6-35B-A3B"
+        ],
+        [
+          "Постоянно размещённые BF16-веса",
+          "65,52 GB",
+          "61,06 GB",
+          "69,32 GB"
+        ],
+        [
+          "KV-кэш на токен",
+          "256 KiB",
+          "96 KiB",
+          "20 KiB (только 10 слоёв полного внимания)"
+        ],
+        [
+          "Фиксированное состояние одного запроса",
+          "—",
+          "—",
+          "62,9 MB рекуррентного состояния (FP32) + 2,0 MB состояния свёртки"
+        ],
+        [
+          "Состояние одного запроса 128K",
+          "34,36 GB",
+          "12,88 GB",
+          "2,75 GB"
+        ],
+        [
+          "Чтение весов за шаг (batch 1, контекст 32K)",
+          "63,97 GB",
+          "6,08 GB",
+          "5,89 GB"
+        ],
+        [
+          "Чтение весов за шаг (batch 64, контекст 32K)",
+          "63,97 GB",
+          "60,44 GB",
+          "68,30 GB"
+        ],
+        [
+          "Матричные вычисления за шаг (batch 64, контекст 32K)",
+          "8,49 TFLOPs",
+          "2,04 TFLOPs",
+          "0,73 TFLOPs"
+        ],
+        [
+          "Чтение состояния за шаг (batch 64, контекст 32K)",
+          "549,8 GB",
+          "206,2 GB",
+          "47,1 GB"
+        ],
+        [
+          "Число запросов 128K/32K на одной H100",
+          "0/1",
+          "1/5",
+          "3/11"
+        ],
+        [
+          "Число запросов 128K/32K на двух H100",
+          "2/10",
+          "7/29",
+          "31/117"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-382.png",
+          "sha256": "ea48b6b6314f84ddcc4e119ce05fce2c81167b44ba42cc0fa93ad9122506c83d"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 4,
+      "physical_pages": [
+        398
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 5,
+      "rows": [
+        [
+          "Группа экспертов",
+          "Карты",
+          "Номера экспертов",
+          "Промежуточная размерность эксперта на карту",
+          "KV-головы на карту"
+        ],
+        [
+          "0",
+          "0, 1",
+          "0—31",
+          "768",
+          "чётная карта: 0, 1; нечётная карта: 2, 3"
+        ],
+        [
+          "1",
+          "2, 3",
+          "32—63",
+          "768",
+          "то же"
+        ],
+        [
+          "2",
+          "4, 5",
+          "64—95",
+          "768",
+          "то же"
+        ],
+        [
+          "3",
+          "6, 7",
+          "96—127",
+          "768",
+          "то же"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-398.png",
+          "sha256": "1d8580e244fc1c84f39931d687588ffe6d8759580a2aa940f2d9d5d58c724077"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 5,
+      "physical_pages": [
+        406,
+        407
+      ],
+      "continuation_pages": [
+        407
+      ],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 4,
+      "rows": [
+        [
+          "Операция",
+          "Что находится на каждой карте в начале",
+          "Что находится на каждой карте после завершения",
+          "Назначение"
+        ],
+        [
+          "AllReduce",
+          "Частичные результаты одного тензора",
+          "Полный результат редукции",
+          "Частичные суммы TP, градиенты обучения"
+        ],
+        [
+          "ReduceScatter",
+          "Частичные результаты одного тензора",
+          "Разные сегменты результата редукции",
+          "Сегментированный вывод, сегменты градиентов"
+        ],
+        [
+          "AllGather",
+          "Разные сегменты одного тензора",
+          "Полный объединённый результат",
+          "Восстановление полного входа"
+        ],
+        [
+          "All-to-All",
+          "Данные для разных получателей",
+          "Данные, отправленные этой карте всеми исходными картами",
+          "Dispatch входов экспертов и возврат результатов"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": true,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-406.png",
+          "sha256": "338b42b098fc3e75859915a223af57e0322320f1d8ad4770bf949c5c40bcbdf1"
+        },
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-407.png",
+          "sha256": "179cecd81e8762fe44ab7ac3fdd7f5f035d41b58910b71f2a10a2f16594f2d74"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 6,
+      "physical_pages": [
+        410
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 4,
+      "rows": [
+        [
+          "Число карт TP",
+          "Локальный доступ к памяти",
+          "128 редукций",
+          "Время шага"
+        ],
+        [
+          "1",
+          "29,35 ms",
+          "0",
+          "29,35 ms"
+        ],
+        [
+          "2",
+          "14,68 ms",
+          "0,21 ms",
+          "14,89 ms"
+        ],
+        [
+          "4",
+          "7,34 ms",
+          "0,64 ms",
+          "7,97 ms"
+        ],
+        [
+          "8",
+          "3,67 ms",
+          "1,48 ms",
+          "5,15 ms"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-410.png",
+          "sha256": "ae96446ce60748eee6e85010a02486b08910f9b9f07cde00d0343965d8a4e1ac"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 7,
+      "physical_pages": [
+        414
+      ],
+      "continuation_pages": [],
+      "orientation": "landscape",
+      "row_count_including_header": 3,
+      "column_count": 6,
+      "rows": [
+        [
+          "Объём данных редукции",
+          "Коммуникация отдельно",
+          "Вычисление отдельно",
+          "Коммуникация при одновременном выполнении",
+          "Вычисление при одновременном выполнении",
+          "Завершение всей группы при одновременном выполнении"
+        ],
+        [
+          "4 MiB",
+          "2,67 ms",
+          "11,53 ms",
+          "6,14 ms",
+          "11,52 ms",
+          "11,58 ms"
+        ],
+        [
+          "64 MiB",
+          "36,92 ms",
+          "11,03 ms",
+          "45,21 ms",
+          "12,89 ms",
+          "45,24 ms"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-414.png",
+          "sha256": "8fc80121544f45501a36bb19611e07a3f121f3995cc78bc8324ecc9a347f3d62"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 8,
+      "physical_pages": [
+        422
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 4,
+      "column_count": 3,
+      "rows": [
+        [
+          "Первые три раунда",
+          "Рекурсивные маршруты",
+          "Маршруты Swing"
+        ],
+        [
+          "Число физических переходов на передачу",
+          "1, 2, 4",
+          "1, 1, 3"
+        ],
+        [
+          "Максимальный объём передачи по однонаправленной линии",
+          "4, 4, 4 MiB",
+          "4, 2, 2 MiB"
+        ],
+        [
+          "Совокупный объём передачи по физическим линиям всей сети",
+          "64, 64, 64 MiB",
+          "64, 32, 48 MiB"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-422.png",
+          "sha256": "f3bbbeb8bb62e186f0b7ca03e43f87725de29f204968ca0fa6dff6cacedb0b07"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 9,
+      "physical_pages": [
+        448
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 4,
+      "rows": [
+        [
+          "Вариант развёртывания",
+          "Восемь шагов одного сеанса",
+          "Моменты завершения четырёх сеансов",
+          "Завершение всех сеансов"
+        ],
+        [
+          "Восемь экземпляров на одном GPU",
+          "Не помещается",
+          "—",
+          "—"
+        ],
+        [
+          "Четыре экземпляра на двух GPU",
+          "119,1 мс",
+          "119,1, 119,1, 119,1, 119,1 мс",
+          "119,1 мс"
+        ],
+        [
+          "Два экземпляра на четырёх GPU",
+          "63,8 мс",
+          "63,8, 63,8, 127,6, 127,6 мс",
+          "127,6 мс"
+        ],
+        [
+          "Один экземпляр на восьми GPU",
+          "41,2 мс",
+          "41,2, 82,4, 123,5, 164,7 мс",
+          "164,7 мс"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-448.png",
+          "sha256": "49db7bf973337bbe7e9ad1cfb4d48543baa1992b207c02ab43823e822b45756e"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 10,
+      "physical_pages": [
+        456,
+        457
+      ],
+      "continuation_pages": [
+        457
+      ],
+      "orientation": "portrait",
+      "row_count_including_header": 7,
+      "column_count": 3,
+      "rows": [
+        [
+          "Текущее ограничение или узкое место",
+          "Приоритетные варианты",
+          "Затраты, которые необходимо дополнительно рассчитать"
+        ],
+        [
+          "Веса не помещаются в память либо при малом batch их повторное чтение слишком медленно",
+          "TP, PP; для MoE можно использовать EP",
+          "Редукции, последовательное выполнение стадий, трафик экспертов и рабочая область"
+        ],
+        [
+          "Много независимых запросов, полная модель уже помещается в память",
+          "Больше DP/сервисных реплик, меньшие группы TP",
+          "Очереди, переиспользование внутри batch, объём KV на каждую реплику"
+        ],
+        [
+          "Активации в определённом диапазоне хранятся с дублированием",
+          "Включить SP внутри одной группы TP",
+          "Сбор и редукции на границах раскладки, поддержка со стороны ядер"
+        ],
+        [
+          "При длинном контексте доминируют KV и внимание",
+          "Сочетание CP и TP",
+          "Обмен K и V, редукции статистик, неравномерность нагрузки при каузальном внимании"
+        ],
+        [
+          "Большой объём весов множества слоёв, дорогие межузловые редукции",
+          "TP внутри узла + PP между узлами",
+          "Достаточно ли micro-batch, самая медленная стадия и простои конвейера"
+        ],
+        [
+          "Большой набор экспертов, выраженные горячие точки маршрутизации",
+          "EP, реплики экспертов, отделение экспертов (размещение маршрутизируемых экспертов в отдельном пуле ресурсов экспертов)",
+          "Трафик dispatch/combine в обоих направлениях, наиболее загруженная карта и очередь пула экспертов"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": true,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-456.png",
+          "sha256": "f24284661706845a863fb609b521b54126d04d2fcf209c0db6cebc96a96c3e8d"
+        },
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-457.png",
+          "sha256": "5b606f887290b2ca3510de9d8078a39386b0d256f4b0f26645175091fc1fecab"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 11,
+      "physical_pages": [
+        458
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 3,
+      "rows": [
+        [
+          "Заданные условия",
+          "Выбор с учётом ограничений",
+          "Почему"
+        ],
+        [
+          "Четыре сеанса, 128K, не менее 75% должны завершиться за 130 ms",
+          "Четыре экземпляра TP2",
+          "TP1 не помещается в память; с TP2 все сеансы завершаются примерно за 119.1 ms, а стоимость каждого своевременно завершённого сеанса составляет около 0.238 GPU·s, что ниже 0.255 для TP4 и 0.439 для TP8"
+        ],
+        [
+          "Один сеанс, 128K, срок 50 ms",
+          "Один экземпляр TP8",
+          "Около 41.2 ms; TP4 требует около 63.8 ms, что уже превышает срок"
+        ],
+        [
+          "Два сервера HGX H100, всего 16 карт; один сеанс, 128K, срок 50 ms",
+          "По-прежнему один экземпляр TP8",
+          "Межсерверный TP16 по измеренному времени AllReduce требует около 53.3 ms, что превышает срок; на другом сервере можно запускать другие экземпляры"
+        ],
+        [
+          "Четыре сеанса, 32K, не менее 75% должны завершиться за 130 ms",
+          "Четыре экземпляра TP2",
+          "TP1 помещается в память, но восемь шагов требуют 173.3 ms; с TP2 все сеансы завершаются примерно за 88.3 ms, а стоимость каждого своевременно завершённого сеанса составляет около 0.177 GPU·s"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-458.png",
+          "sha256": "a48e3e253b64dc3bc28be518514c263f8404bc303cbea5ed252ba7185e02e7ea"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 12,
+      "physical_pages": [
+        460
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 5,
+      "rows": [
+        [
+          "Суперузел",
+          "Веса на карту",
+          "Сеансов на карту",
+          "Время шага",
+          "Пропускная способность на карту"
+        ],
+        [
+          "8 карт",
+          "71,0 GB",
+          "37",
+          "14,1 ms",
+          "2 632 токена/s"
+        ],
+        [
+          "64 карты",
+          "17,2 GB",
+          "335",
+          "17,3 ms",
+          "19 420 токенов/s"
+        ],
+        [
+          "128 карт",
+          "13,4 GB",
+          "356",
+          "18,4 ms",
+          "19 392 токена/s"
+        ],
+        [
+          "256 карт",
+          "11,5 GB",
+          "367",
+          "18,9 ms",
+          "19 378 токенов/s"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-460.png",
+          "sha256": "f3f348634d67b8c2ae83567fdc68a46766d4102ff9ca6d2a36374ce0b91b01d9"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 13,
+      "physical_pages": [
+        463
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 4,
+      "column_count": 5,
+      "rows": [
+        [
+          "Машина",
+          "Хранение и вычисления",
+          "Коллективная коммуникация",
+          "Скорость одного пользователя",
+          "Доля коммуникации"
+        ],
+        [
+          "8 карт H100, веса в HBM",
+          "2 689 μs",
+          "76 μs",
+          "362 токена/s",
+          "3%"
+        ],
+        [
+          "58 карт B200 с тензорным параллелизмом, веса в HBM",
+          "165 μs",
+          "562 μs",
+          "1 357 токенов/s",
+          "76%"
+        ],
+        [
+          "Две пластины ROM, веса в ROM",
+          "77 μs",
+          "159 μs",
+          "4 070 токенов/s",
+          "65%"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-463.png",
+          "sha256": "79f53c77ef4b9fc70b0e80bccad33d0f28b264768dae5e97c054c920807cc0d0"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "table_index_in_pandoc_ast": 14,
+      "physical_pages": [
+        463
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 4,
+      "column_count": 3,
+      "rows": [
+        [
+          "Размещение",
+          "Занимаемая ёмкость",
+          "Получение 48 строк"
+        ],
+        [
+          "Память хоста, предварительная выборка через PCIe или RDMA",
+          "Не занимает HBM",
+          "Один обмен туда и обратно: 1,05 μs"
+        ],
+        [
+          "Шарды в HBM каждой карты суперузла",
+          "Для 8 карт — 25,4 GB на карту, что эквивалентно 140 сеансам; для 64 карт — 3,2 GB на карту, что эквивалентно 18 сеансам",
+          "Один раунд обмена через NVLink: 0,83 μs"
+        ],
+        [
+          "Масочная ROM",
+          "21 651 mm², примерно половина пластины",
+          "Внутрикристальное чтение"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-463.png",
+          "sha256": "79f53c77ef4b9fc70b0e80bccad33d0f28b264768dae5e97c054c920807cc0d0"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "table_index_in_pandoc_ast": 1,
+      "physical_pages": [
+        478
+      ],
+      "continuation_pages": [],
+      "orientation": "landscape",
+      "row_count_including_header": 3,
+      "column_count": 6,
+      "rows": [
+        [
+          "Коэффициент переподписки",
+          "Нисходящие/восходящие порты на leaf-коммутатор",
+          "Число leaf-коммутаторов для 1024 карт",
+          "Число соединений в разрезе",
+          "Пропускная способность разреза",
+          "Доля на карту"
+        ],
+        [
+          "1:1",
+          "32/32",
+          "32",
+          "1024",
+          "51.2 TB/s",
+          "50 GB/s"
+        ],
+        [
+          "3:1",
+          "48/16",
+          "22",
+          "352",
+          "17.6 TB/s",
+          "17.2 GB/s"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-478.png",
+          "sha256": "617ba6a5a77ee5a90ef23937695c8458beb2a328935913aad46bfc5997cbc18b"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "table_index_in_pandoc_ast": 2,
+      "physical_pages": [
+        479
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 5,
+      "rows": [
+        [
+          "Число карт в суперузле",
+          "Междоменная передача на узел",
+          "Выход без блокировки",
+          "Выход при переподписке 3:1",
+          "Время междоменной передачи (без блокировки → 3:1)"
+        ],
+        [
+          "8",
+          "127 GB",
+          "400 GB/s",
+          "133 GB/s",
+          "0.318 → 0.953 s"
+        ],
+        [
+          "64",
+          "120 GB",
+          "3.2 TB/s",
+          "1.07 TB/s",
+          "37.5 → 112.5 ms"
+        ],
+        [
+          "128",
+          "112 GB",
+          "6.4 TB/s",
+          "2.13 TB/s",
+          "17.5 → 52.5 ms"
+        ],
+        [
+          "256",
+          "96 GB",
+          "12.8 TB/s",
+          "4.27 TB/s",
+          "7.5 → 22.5 ms"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-479.png",
+          "sha256": "e198782ccd11bd9846a55fc4c3b93460060849712ab9a98d91e36b4f960eab48"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "table_index_in_pandoc_ast": 3,
+      "physical_pages": [
+        489
+      ],
+      "continuation_pages": [],
+      "orientation": "landscape",
+      "row_count_including_header": 6,
+      "column_count": 6,
+      "rows": [
+        [
+          "Число серверов",
+          "Кольцо: отправка на сетевую карту",
+          "Кольцо: число раундов",
+          "Кольцо: время",
+          "Редукция в сети: отправка на сетевую карту",
+          "Редукция в сети: время"
+        ],
+        [
+          "2",
+          "24 MiB",
+          "2",
+          "0.505 ms",
+          "24 MiB",
+          "0.504 ms"
+        ],
+        [
+          "4",
+          "36 MiB",
+          "6",
+          "0.760 ms",
+          "24 MiB",
+          "0.504 ms"
+        ],
+        [
+          "8",
+          "42 MiB",
+          "14",
+          "0.892 ms",
+          "24 MiB",
+          "0.504 ms"
+        ],
+        [
+          "16",
+          "45 MiB",
+          "30",
+          "0.969 ms",
+          "24 MiB",
+          "0.504 ms"
+        ],
+        [
+          "32",
+          "46.5 MiB",
+          "62",
+          "1.027 ms",
+          "24 MiB",
+          "0.504 ms"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-489.png",
+          "sha256": "df67eed662da57b40b3db11aeff4bd512250a017c109ec33075fc731288468ca"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "table_index_in_pandoc_ast": 4,
+      "physical_pages": [
+        507
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 6,
+      "column_count": 3,
+      "rows": [
+        [
+          "Критерий сравнения",
+          "Load/Store",
+          "Асинхронные Read/Write"
+        ],
+        [
+          "Инициация и путь",
+          "Инструкция процессора, направляемая посредством отображения адресов в доступную память; в UB её может обслуживать контроллер на кристалле",
+          "Отправка запроса с адресом, длиной и другими параметрами; продвижение через очередь, doorbell или интерфейс инициации устройства"
+        ],
+        [
+          "Зависимости и завершение",
+          "Аппаратное обеспечение отслеживает потребителей Load; для удалённой видимости Store отдельно требуются гарантии порядка",
+          "Среда выполнения ожидает заданного события завершения, после чего использует результат или освобождает буфер"
+        ],
+        [
+          "Типичная область применения",
+          "Мелкогранулярное чтение, доступ по указателям, часто используемые данные, для которых важны низкие накладные расходы на отправку",
+          "Пакетное перемещение активаций, KV, весов и явные конвейеры"
+        ],
+        [
+          "Ограничения параллелизма",
+          "Зависимости инструкций, слоты незавершённых обращений к памяти, преобразование адресов и аппаратные ресурсы",
+          "Очереди запросов и завершений, зарегистрированная память, возможности отправки программного обеспечения или устройства"
+        ],
+        [
+          "Обработка сбоев",
+          "Зависит от механизмов платформы для тайм-аутов, исключений и ошибок памяти",
+          "Ошибки могут сообщаться отдельно для каждого запроса; всё равно необходимо обрабатывать тайм-ауты, частичную запись и освобождение буферов"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-507.png",
+          "sha256": "887f1d366fdf16ebf803acf999f273e78ab2f8c7403a898087dcccfd799364cf"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "table_index_in_pandoc_ast": 5,
+      "physical_pages": [
+        508,
+        509
+      ],
+      "continuation_pages": [
+        509
+      ],
+      "orientation": "portrait",
+      "row_count_including_header": 23,
+      "column_count": 5,
+      "rows": [
+        [
+          "Этап",
+          "Категория",
+          "Периферийная сетевая карта PCIe",
+          "Асинхронное чтение UB",
+          "UB Load"
+        ],
+        [
+          "Отправка через интерфейсную библиотеку",
+          "Программная отправка",
+          "50",
+          "50",
+          ""
+        ],
+        [
+          "Построение дескриптора запроса",
+          "Программная отправка",
+          "30",
+          "30",
+          ""
+        ],
+        [
+          "Запись doorbell",
+          "Прохождение PCIe",
+          "150",
+          "",
+          ""
+        ],
+        [
+          "Чтение дескриптора сетевой картой через DMA",
+          "Прохождение PCIe",
+          "500",
+          "",
+          ""
+        ],
+        [
+          "Отправка по шине на кристалле",
+          "Шина на кристалле",
+          "",
+          "30",
+          "30"
+        ],
+        [
+          "Передающий конвейер сетевой карты",
+          "Конвейер сетевой карты",
+          "28",
+          "78",
+          "25"
+        ],
+        [
+          "Линия в прямом направлении",
+          "Линия",
+          "100",
+          "100",
+          "100"
+        ],
+        [
+          "Приёмный конвейер сетевой карты на целевой стороне",
+          "Конвейер сетевой карты",
+          "28",
+          "78",
+          "25"
+        ],
+        [
+          "Чтение памяти хоста сетевой картой через DMA на целевой стороне",
+          "Прохождение PCIe",
+          "500",
+          "",
+          ""
+        ],
+        [
+          "Доступ к памяти по шине на кристалле на целевой стороне",
+          "Шина на кристалле",
+          "",
+          "30",
+          "30"
+        ],
+        [
+          "Попадание в строку памяти на целевой стороне",
+          "Память и завершение",
+          "30",
+          "30",
+          "30"
+        ],
+        [
+          "Отправка ответа сетевой картой на целевой стороне",
+          "Конвейер сетевой карты",
+          "28",
+          "78",
+          "25"
+        ],
+        [
+          "Линия в обратном направлении",
+          "Линия",
+          "100",
+          "100",
+          "100"
+        ],
+        [
+          "Получение ответа сетевой картой",
+          "Конвейер сетевой карты",
+          "28",
+          "78",
+          "25"
+        ],
+        [
+          "Запись полезной нагрузки ответа через DMA",
+          "Прохождение PCIe",
+          "250",
+          "",
+          ""
+        ],
+        [
+          "Запись сведений о завершении через DMA",
+          "Прохождение PCIe",
+          "250",
+          "",
+          ""
+        ],
+        [
+          "Завершение по шине на кристалле",
+          "Шина на кристалле",
+          "",
+          "30",
+          "30"
+        ],
+        [
+          "Опрос очереди завершений",
+          "Память и завершение",
+          "70",
+          "5",
+          ""
+        ],
+        [
+          "Опрос через интерфейсную библиотеку",
+          "Память и завершение",
+          "30",
+          "30",
+          ""
+        ],
+        [
+          "Сериализация выделения порядкового номера",
+          "Память и завершение",
+          "50",
+          "",
+          ""
+        ],
+        [
+          "Итого (расчёт)",
+          "",
+          "2222",
+          "746",
+          "419"
+        ],
+        [
+          "Измерено в симуляции",
+          "",
+          "2236",
+          "757",
+          "500"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": true,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-508.png",
+          "sha256": "9878340bf3412a2f03f6db8801e7ef3ed269427d4e39c2ceb854090671634704"
+        },
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-509.png",
+          "sha256": "cacbdd22f22190961e56aeece38aa80fce200ba0f1896984edb3920e7dd43c4b"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "table_index_in_pandoc_ast": 6,
+      "physical_pages": [
+        542
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 4,
+      "column_count": 5,
+      "rows": [
+        [
+          "N",
+          "Число отправителей",
+          "Скорость поступления",
+          "Избыточная скорость",
+          "Допустимая задержка обратной связи"
+        ],
+        [
+          "8",
+          "7",
+          "350 GB/s",
+          "300 GB/s",
+          "3,50 μs"
+        ],
+        [
+          "16",
+          "15",
+          "750 GB/s",
+          "700 GB/s",
+          "1,50 μs"
+        ],
+        [
+          "64",
+          "63",
+          "3150 GB/s",
+          "3100 GB/s",
+          "0,34 μs"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-542.png",
+          "sha256": "ddb638b03e7f68833acf638908995d7b03a019af113b318bac015d428863a928"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "table_index_in_pandoc_ast": 7,
+      "physical_pages": [
+        549
+      ],
+      "continuation_pages": [],
+      "orientation": "landscape",
+      "row_count_including_header": 6,
+      "column_count": 7,
+      "rows": [
+        [
+          "Число потоков n",
+          "Число восходящих каналов m",
+          "Число потоков на самом загруженном восходящем канале без конфликтов",
+          "\\mathrm{E}[L_{\\max}]",
+          "p99",
+          "Вероятность отсутствия конфликтов",
+          "Скорость относительно варианта без конфликтов"
+        ],
+        [
+          "8",
+          "32",
+          "1",
+          "1,66",
+          "3",
+          "38,6%",
+          "60,1%"
+        ],
+        [
+          "8",
+          "16",
+          "1",
+          "2,06",
+          "4",
+          "12,1%",
+          "48,5%"
+        ],
+        [
+          "32",
+          "32",
+          "1",
+          "3,53",
+          "6",
+          "1.8\\times10^{-13}",
+          "28,3%"
+        ],
+        [
+          "32",
+          "16",
+          "2",
+          "4,83",
+          "8",
+          "0",
+          "41,4%"
+        ],
+        [
+          "128",
+          "16",
+          "8",
+          "13,36",
+          "18",
+          "0",
+          "59,9%"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-549.png",
+          "sha256": "6343c6329183cf914308024d5dd1cd6555f78d771c72425c7411edb3db57514b"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "table_index_in_pandoc_ast": 8,
+      "physical_pages": [
+        568
+      ],
+      "continuation_pages": [],
+      "orientation": "landscape",
+      "row_count_including_header": 5,
+      "column_count": 6,
+      "rows": [
+        [
+          "Ускорителей в суперузле",
+          "Суперузлов",
+          "Локальных участников DP q",
+          "Междоменная отправка на узел",
+          "Внешний интерфейс масштабируется с числом ускорителей: время шага / пропускная способность",
+          "Внешний интерфейс фиксирован на 400 GB/s: время шага / пропускная способность"
+        ],
+        [
+          "8",
+          "128",
+          "1",
+          "127 GB",
+          "0.939 s / 1.117 млн токенов/s",
+          "0.939 s / 1.117 млн токенов/s"
+        ],
+        [
+          "64",
+          "16",
+          "8",
+          "120 GB",
+          "0.690 s / 1.520 млн токенов/s",
+          "0.939 s / 1.117 млн токенов/s"
+        ],
+        [
+          "128",
+          "8",
+          "16",
+          "112 GB",
+          "0.672 s / 1.560 млн токенов/s",
+          "0.935 s / 1.122 млн токенов/s"
+        ],
+        [
+          "256",
+          "4",
+          "32",
+          "96 GB",
+          "0.663 s / 1.581 млн токенов/s",
+          "0.896 s / 1.171 млн токенов/s"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-568.png",
+          "sha256": "02de3e35a87132b142b5291c7d0e48a16a85eb23d828f55892337f0ed457e57c"
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "table_index_in_pandoc_ast": 1,
+      "physical_pages": [
+        577
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 3,
+      "rows": [
+        [
+          "Условие проектирования",
+          "Короткий диалог",
+          "Длинный контекст"
+        ],
+        [
+          "Длина входных данных",
+          "2048 токенов",
+          "8192 токена"
+        ],
+        [
+          "Длина выходных данных",
+          "256 токенов",
+          "256 токенов"
+        ],
+        [
+          "Длина общего префикса",
+          "0",
+          "6144 токена"
+        ],
+        [
+          "Срок завершения",
+          "7 s",
+          "7 s"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-577.png",
+          "sha256": "2aa9d5fc3b57594fed8e578f7fec7dc425aa62eee5b5f717134085f67bd71389"
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "table_index_in_pandoc_ast": 2,
+      "physical_pages": [
+        581
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 3,
+      "column_count": 4,
+      "rows": [
+        [
+          "Независимый запрос",
+          "KV после prefill",
+          "Выделенный объём KV после вывода 256 токенов",
+          "Число запросов, одновременно помещающихся в 12 GiB"
+        ],
+        [
+          "Короткий диалог",
+          "288 MiB",
+          "324 MiB",
+          "37"
+        ],
+        [
+          "Длинный контекст",
+          "1152 MiB",
+          "1188 MiB",
+          "10"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-581.png",
+          "sha256": "de2b7d967ab2c57915340e03e849403734a8f669cee267d615518c99f79c5317"
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "table_index_in_pandoc_ast": 3,
+      "physical_pages": [
+        634
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 6,
+      "column_count": 5,
+      "rows": [
+        [
+          "Контекст 2K, без общего префикса",
+          "batch 1",
+          "batch 4",
+          "batch 16",
+          "batch 64"
+        ],
+        [
+          "Веса и KV, читаемые за раунд",
+          "15.44 GB",
+          "16.34 GB",
+          "19.97 GB",
+          "34.46 GB"
+        ],
+        [
+          "Время чтения при 1792 GB/s",
+          "8.62 ms",
+          "9.12 ms",
+          "11.14 ms",
+          "19.23 ms"
+        ],
+        [
+          "Измеренное время одного раунда decode",
+          "26.26 ms",
+          "26.62 ms",
+          "27.44 ms",
+          "29.63 ms"
+        ],
+        [
+          "Эффективность пропускной способности decode",
+          "33%",
+          "34%",
+          "41%",
+          "65%"
+        ],
+        [
+          "Эффективность вычислений prefill",
+          "62%",
+          "61%",
+          "61%",
+          "58%"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-634.png",
+          "sha256": "e9024f5e1659c05673c08d35695bdaf1d988a0977fd945f49d211726601115a1"
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "table_index_in_pandoc_ast": 4,
+      "physical_pages": [
+        636
+      ],
+      "continuation_pages": [],
+      "orientation": "portrait",
+      "row_count_including_header": 5,
+      "column_count": 4,
+      "rows": [
+        [
+          "Вариант",
+          "Организация состояния",
+          "До возврата первого токена (prefill всего batch)",
+          "Выполнение после возврата первого токена"
+        ],
+        [
+          "A",
+          "BF16, независимые контексты",
+          "7.34 s",
+          "255 раундов по 29.63 ms"
+        ],
+        [
+          "B",
+          "BF16, общий префикс",
+          "2.04 s",
+          "255 раундов по 27.35 ms"
+        ],
+        [
+          "C",
+          "q8_0, независимые контексты",
+          "7.34 s",
+          "255 раундов примерно по 28.26 ms"
+        ],
+        [
+          "D",
+          "BF16, общий префикс и спекулятивное декодирование",
+          "2.23 s",
+          "85 раундов по 3 токена, каждый раунд по 27.35 ms"
+        ]
+      ],
+      "visual_review": {
+        "status": "pass",
+        "header_complete": true,
+        "all_rows_complete": true,
+        "cell_text_clipping": false,
+        "cell_text_overlap": false,
+        "wrapping_readable": true,
+        "within_page_bounds": true,
+        "continuation_headers_repeated": null,
+        "method": "Direct visual review of every page at 125 dpi using view_image; checked all rows against Pandoc AST inventory"
+      },
+      "renders": [
+        {
+          "path": "/home/ikruglov/ai-infra-book-ru/.tmp/pt-tables-5-8/page-636.png",
+          "sha256": "0d3262f6f0780baf732040b6f71cce669f4d505326d3db083cda97fd36be8211"
+        }
+      ]
+    }
+  ]
+}

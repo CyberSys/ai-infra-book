@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "pass": "translation",
+  "model_id": "gpt-5.6-sol",
+  "source_directory": ".tmp/ch07-source",
+  "file_pattern": "(?:figure-7-1-boundaries\\.svg|figure-7-10-lifetime\\.svg|figure-7-11-state\\.svg|figure-7-12-ordering\\.svg|figure-7-13-stale\\.svg|figure-7-14-reclaim\\.svg|figure-7-15-congestion\\.svg|figure-7-16-feedback\\.svg|figure-7-17-packets\\.svg|figure-7-18-deadlock\\.svg|figure-7-19-progress\\.svg|figure-7-2-cut\\.svg|figure-7-20-step\\.svg|figure-7-21-message\\.svg|figure-7-3-hierarchy\\.svg|figure-7-4-pipeline\\.svg|figure-7-5-expert\\.svg|figure-7-6-relay\\.svg|figure-7-7-access\\.svg|figure-7-8-snapshot\\.svg|figure-7-9-window\\.svg|figure-7-access-1\\.svg|figure-7-access-2\\.svg|figure-7-access-3\\.svg|figure-7-clos-cut\\.svg|figure-7-congestion-queue\\.svg|figure-7-ecmp-collision\\.svg|figure-7-expert-path-1\\.svg|figure-7-expert-path-2\\.svg|figure-7-feedback-loop\\.svg|figure-7-hierarchy-bytes\\.svg)",
+  "record_count": 143,
+  "metadata_only": false,
+  "source_records_sha256": "1ffd2db4467002414d9d86a2693f887d810265816295d52f066ed1d685e850e3",
+  "mapping_sha256": "18f35b263249418cb9f568074a36aa30db4c3c1a1184d76b765645ac86ccee02",
+  "runtime": {
+    "requested_model": "gpt-5.6-sol",
+    "reported_model": "gpt-5.6-sol",
+    "provider": "openai",
+    "thread_id": "01a0e517-735a-7093-8b4c-59d15b84a455",
+    "turn_id": "01a0e517-73c2-75d1-9272-c8fc4c702307",
+    "ephemeral": true,
+    "fallback_allowed": false,
+    "sandbox_type": "readOnly",
+    "completion_observed": true,
+    "usage_observed": true,
+    "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+    "prompt_sha256": "2cd9f928f8a56b830ac72524e8ae34a275ca62508513a082d5bedbe5b8b883b6",
+    "response_sha256": "18f35b263249418cb9f568074a36aa30db4c3c1a1184d76b765645ac86ccee02",
+    "stdout_sha256": "e74a85cdeef49a6f4395bc731ad0181d51b18c4284351f6f728c959d066d67a6",
+    "stderr_sha256": "fc5bf3a30075bb6f2dcc72252e5a298d0909d22d470facb31b475e0358dcbf11"
+  }
+}

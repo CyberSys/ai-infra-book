@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/bojieli/ai-infra-book",
+  "source_commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "files": [
+    {
+      "path": "manuscripts/ch05/figure-5-1-execution.svg",
+      "sha256": "8c255f35bc7707524907d31b4f86d259219eb3a0766f64ffebd315e558db8e13"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-10-quantization.svg",
+      "sha256": "3b642689562db09f908e9a39d4e4ebf03d798edd9d4a09e3559c4e9262c1c80b"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-11-feedback.svg",
+      "sha256": "e5266d5078a0d1adcd4e1fe75c4faa021005b44d3d04841a006e5e407d9b4c94"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-12-runtime.svg",
+      "sha256": "4e05d577fcf7f307c5fbb26f7d0f14ce28d04f9f9be1ea0a415f30adeed86a7d"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-13-graph-copy.svg",
+      "sha256": "043effa7b5ea9dfb3fb32bce7443abc6c6d4ce5ba8f330a743babdc8722dc183"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-14-specialization.svg",
+      "sha256": "b02eff09184d6372b0ef3a503dd3ccb80dabc923ed1cb0485af2e1ebfae6b4a7"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-15-persistent.svg",
+      "sha256": "59dca49eddfcd83158249f749694ad4566dc24fb0e5275d60413c5fcde5c9b0f"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-16-critical-path.svg",
+      "sha256": "c63c7c6fdbf6edeb3d0382089b821f1a4393563beca60e110b6d19bb3f64435c"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-17-request.svg",
+      "sha256": "cc104df5ad8f14b540b81a721745a8ac080cd1810c86d0d841c50494097869ab"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-2-tiles.svg",
+      "sha256": "a05f464ae448698d1baa5b189ccdfdc47a89119f99f4f17e23c13a72facdb2be"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-3-banks.svg",
+      "sha256": "7cfef5075f156d62901895197ba8e938c2b16cd060a0ce8b7983914bc11d7ea2"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-4-reduction.svg",
+      "sha256": "51bf1355d7aaf07c9e4d99d89e34ac46e87ccf6e62b21a7742543ee007b3119e"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-5-boundaries.svg",
+      "sha256": "71ddb4b62d1cbf90244a6001be74b45d8ae26e1510a09f24b983594a943ece0b"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-6-fusion-buffer.svg",
+      "sha256": "dc0e1be396dbe9bc45961eb96ff6fc33f9dd1d6d92897bce5189807cf3fa2d69"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-7-online-softmax.svg",
+      "sha256": "7378db69f47e97f304d33bb49ca41861b7286492c878c50685193189b750f121"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-8-attention-tradeoff.svg",
+      "sha256": "f72ed97721b5407f6d09e06fe4c686676cd61b1e6a3c9bc4e24eabee167b6a49"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-9-polyhedral.svg",
+      "sha256": "c7b69ce5952aafffb5cee6bb12578a09eac29dc4f4ffbff14c32bbd37683dac5"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-activation-order.svg",
+      "sha256": "7b418f22210c434528dce4b174fc890ef387b285cce8a003450ed92b62e43930"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-attention-storage.svg",
+      "sha256": "521c9c75142553ce1b884238323d5a710522a058fad2038179e06b2353fe7447"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-buffer-slots.svg",
+      "sha256": "bdc1b52349b1fc0c523068e2cbb195d7d0e5f5189ea8d25acfee5f740222dfcc"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-copy-paths.svg",
+      "sha256": "299230039e2208a9f68ab3d0c990e71519060b9764299dce0c01626bf86089e0"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-fusion-path.svg",
+      "sha256": "6d8a62d7da6d522070f8d5e4aabf26a09443acc14cee0bd1780d9f82bc6a61e3"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-graph-address.svg",
+      "sha256": "77d86eb919070aa424974e1879a67d2a5927bc4dc7641edf1d7edec2371bb390"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-host-pipeline.svg",
+      "sha256": "188ea82c287dce3aa9983dd4caeacb9a33b6dc20bf033cbe643d5c5e50f3aeae"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-launch-vs-graph.svg",
+      "sha256": "50fe58468e0a4677301b95091e40772c530c334374ac4aeabb61285d77b74616"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-persistent-blocks.svg",
+      "sha256": "288217998fab6bcbe94b7751db681d9412f3d73795c3e70ea7a16abb89fea498"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-quantization-scale.svg",
+      "sha256": "482d5d510d02728c904a031c7d6549a8d32a831b3c3d50fa5cbe8e841d2c6e60"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-reduction-order.svg",
+      "sha256": "60b753827d65912d0d0bf9669cf118a3db2b58cf161211826a14940dc2f71049"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-reuse-steps.svg",
+      "sha256": "dc160fc1e41b97a93d7f2586d8848512a8b2db5f63ff6b08832ed82e68f3bf01"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-runtime-1.svg",
+      "sha256": "fed54c3d1f1da807e66a5a9574dc3ed15e5cba75c4ef3337521c499c0eb20367"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-runtime-2.svg",
+      "sha256": "190679bd7ad8c357aeb37134a79b5348fd7123f008f2d32774716a0fbc5b81c4"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-runtime-3.svg",
+      "sha256": "6f0a1352f2a2596037e05940d3756775aea9867ef9c3b901ed77458e5cd7b432"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-shape-buckets.svg",
+      "sha256": "ce4811ae1e7eb55ce7171d2625c9a8230ce8e70741be8c1d7f29754673e7456b"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-sm-residency.svg",
+      "sha256": "c7467c29a5c06002fc54c37685d7bc94af3982434bf5ce35bc1b460905c9e94e"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-split-axes.svg",
+      "sha256": "2ec6c4b135df630efcaa41e6937d4af6561c34ef6e51e09be71467695f3e4c11"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-stream-event.svg",
+      "sha256": "0e27191855a5e2d1e7c7ddbe9a2c6a056d65dc7325ff31913be048814cab088b"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-tile-residency.svg",
+      "sha256": "dc3139804e7a8166fccb90eddfa739ea1585e346bd884cc21ca5b3a91abca9cf"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-tile-working-set.svg",
+      "sha256": "ee382d7e047a7e57b851372aadac2054b164a98961b4f48a366e058108ad6796"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-v41-traffic.svg",
+      "sha256": "a7db69089ffbadbeac05c9ec18a2e72ab2e647cc221206b97adb97e1e7236874"
+    },
+    {
+      "path": "manuscripts/ch05/figure-5-warp-pipeline.svg",
+      "sha256": "a235e8173f014d9f1a4a87b4da4ac6ce63656ad77c8f21f08d6c3ed1c58a9870"
+    }
+  ]
+}

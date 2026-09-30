@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "pass": "translation",
+  "model_id": "gpt-5.6-sol",
+  "source_directory": ".tmp/ch07-source",
+  "file_pattern": "(?:figure-7-hierarchy-stages\\.svg|figure-7-in-network-sweep\\.svg|figure-7-incast-feedback\\.svg|figure-7-ordering-independent\\.svg|figure-7-packets-1\\.svg|figure-7-packets-2\\.svg|figure-7-pcie-asymmetry\\.svg|figure-7-pcie-limits\\.svg|figure-7-pcie-transactions\\.svg|figure-7-progress-1\\.svg|figure-7-progress-2\\.svg|figure-7-rail-pairing\\.svg|figure-7-reclaim-more\\.svg|figure-7-response-reserve\\.svg|figure-7-ring-interleaved\\.svg|figure-7-slot-lifetime\\.svg|figure-7-snapshot-partial\\.svg|figure-7-snapshot-paths\\.svg|figure-7-state-capacity\\.svg|figure-7-step-1\\.svg|figure-7-step-2\\.svg|figure-7-step-3\\.svg|figure-7-step-4\\.svg|figure-7-step-5\\.svg|figure-7-supernode-groups\\.svg|figure-7-supernode-scaling\\.svg|figure-7-ub-cache-cliff\\.svg|figure-7-ub-link-delay\\.svg|figure-7-ub-round-trip\\.svg|figure-7-ub-state-growth\\.svg|figure-7-window-rate\\.svg)",
+  "record_count": 160,
+  "metadata_only": false,
+  "source_records_sha256": "90cb9faf8a3170002e02b9780ac9f0e27241b96d58a1adbce81fe18d9e2cf06e",
+  "mapping_sha256": "ff7fa427dab9092869bf312fa5a35cc655acd4fa386e9640c6d613268ca6a4d7",
+  "runtime": {
+    "requested_model": "gpt-5.6-sol",
+    "reported_model": "gpt-5.6-sol",
+    "provider": "openai",
+    "thread_id": "01a0e517-9289-74d0-8e2b-017bc1a1c5e2",
+    "turn_id": "01a0e517-92f9-7580-8b95-898c1450f99f",
+    "ephemeral": true,
+    "fallback_allowed": false,
+    "sandbox_type": "readOnly",
+    "completion_observed": true,
+    "usage_observed": true,
+    "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+    "prompt_sha256": "9398aad52d73ee0dab7009b9fe574a7441f9ab4736e4aa35e5f15e1db93683ba",
+    "response_sha256": "ff7fa427dab9092869bf312fa5a35cc655acd4fa386e9640c6d613268ca6a4d7",
+    "stdout_sha256": "b3d25a44d3ea7037c89d29967a87a6cb3ead5d9eba90daee109db2c709a564d8",
+    "stderr_sha256": "75741193a7e77ad085949de9bc1f8a9d35f1164ff8aefd7d5553797e7aab0102"
+  }
+}

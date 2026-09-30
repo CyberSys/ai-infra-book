@@ -1,0 +1,670 @@
+{
+  "figure-3-1-stages.svg:0000": {
+    "align": "start",
+    "x": 20,
+    "y": 26,
+    "font_size": 11,
+    "max_width": 310
+  },
+  "figure-3-1-stages.svg:0001": {
+    "font_size": 9.5,
+    "max_width": 132
+  },
+  "figure-3-1-stages.svg:0002": {
+    "align": "start",
+    "x": 20,
+    "font_size": 10
+  },
+  "figure-3-1-stages.svg:0003": {
+    "font_size": 9.5,
+    "max_width": 132
+  },
+  "figure-3-1-stages.svg:0004": {
+    "align": "start",
+    "x": 20,
+    "font_size": 10
+  },
+  "figure-3-1-stages.svg:0005": {
+    "font_size": 9.5,
+    "max_width": 132
+  },
+  "figure-3-1-stages.svg:0006": {
+    "align": "start",
+    "x": 20,
+    "font_size": 10
+  },
+  "figure-3-1-stages.svg:0007": {
+    "font_size": 9.5,
+    "max_width": 132
+  },
+  "figure-3-1-stages.svg:0008": {
+    "align": "start",
+    "x": 20,
+    "font_size": 10
+  },
+  "figure-3-2-workload-budget.svg:0000": {
+    "font_size": 9.5,
+    "max_width": 100,
+    "y": 223
+  },
+  "figure-3-2-workload-budget.svg:0001": {
+    "font_size": 9.5,
+    "max_width": 100,
+    "y": 223
+  },
+  "figure-3-2-workload-budget.svg:0002": {
+    "font_size": 9.5,
+    "max_width": 100,
+    "y": 223
+  },
+  "figure-3-2-workload-budget.svg:0004": {
+    "align": "start",
+    "x": 177,
+    "font_size": 9,
+    "max_width": 70
+  },
+  "figure-3-2-workload-budget.svg:0005": {
+    "align": "start",
+    "x": 273,
+    "font_size": 9,
+    "max_width": 80
+  },
+  "figure-3-3-agent.svg:0001": {
+    "align": "end",
+    "x": 116,
+    "font_size": 9.5,
+    "max_width": 106
+  },
+  "figure-3-3-agent.svg:0002": {
+    "align": "end",
+    "x": 116,
+    "font_size": 9.5,
+    "max_width": 106
+  },
+  "figure-3-3-agent.svg:0003": {
+    "align": "end",
+    "x": 116,
+    "font_size": 9.5,
+    "max_width": 106
+  },
+  "figure-3-3-agent.svg:0004": {
+    "align": "end",
+    "x": 116,
+    "font_size": 9.5,
+    "max_width": 106
+  },
+  "figure-3-4-realtime.svg:0000": {
+    "align": "start",
+    "x": 20,
+    "y": 28,
+    "font_size": 11,
+    "max_width": 380
+  },
+  "figure-3-4-realtime.svg:0001": {
+    "font_size": 10.5,
+    "max_width": 325
+  },
+  "figure-3-4-realtime.svg:0002": {
+    "font_size": 10.5,
+    "max_width": 325
+  },
+  "figure-3-4-realtime.svg:0003": {
+    "font_size": 10.5,
+    "max_width": 325
+  },
+  "figure-3-4-realtime.svg:0004": {
+    "font_size": 10.5,
+    "max_width": 325
+  },
+  "figure-3-5-training.svg:0000": {
+    "align": "start",
+    "x": 20,
+    "y": 24,
+    "font_size": 10.5,
+    "max_width": 380
+  },
+  "figure-3-5-training.svg:0001": {
+    "font_size": 9.5,
+    "max_width": 90
+  },
+  "figure-3-5-training.svg:0002": {
+    "font_size": 9.5,
+    "max_width": 90
+  },
+  "figure-3-5-training.svg:0003": {
+    "font_size": 9.5,
+    "max_width": 90
+  },
+  "figure-3-5-training.svg:0004": {
+    "font_size": 10.5
+  },
+  "figure-3-5-training.svg:0005": {
+    "y": 136,
+    "font_size": 9.5,
+    "max_width": 380
+  },
+  "figure-3-5-training.svg:0006": {
+    "font_size": 9.5,
+    "max_width": 190
+  },
+  "figure-3-6-rl.svg:0000": {
+    "align": "start",
+    "x": 20,
+    "y": 27,
+    "font_size": 10.5,
+    "max_width": 380
+  },
+  "figure-3-6-rl.svg:0001": {
+    "font_size": 10.5,
+    "max_width": 290
+  },
+  "figure-3-6-rl.svg:0002": {
+    "font_size": 10.5,
+    "max_width": 290
+  },
+  "figure-3-6-rl.svg:0003": {
+    "font_size": 10.5,
+    "max_width": 290
+  },
+  "figure-3-6-rl.svg:0004": {
+    "font_size": 10.5,
+    "max_width": 290
+  },
+  "figure-3-6-rl.svg:0005": {
+    "align": "start",
+    "x": 20,
+    "y": 311,
+    "font_size": 9.5,
+    "max_width": 380
+  },
+  "figure-3-7-scaling.svg:0002": {
+    "align": "start",
+    "x": 105,
+    "font_size": 9.5,
+    "max_width": 250
+  },
+  "figure-3-7-scaling.svg:0003": {
+    "align": "start",
+    "x": 105,
+    "font_size": 9.5,
+    "max_width": 250
+  },
+  "figure-3-8-history.svg:0000": {
+    "y": 270,
+    "font_size": 10.5,
+    "max_width": 320
+  },
+  "figure-3-9-gpu-hours.svg": {
+    "move_groups": {
+      "patch_13": {
+        "dx": 0,
+        "dy": -16
+      },
+      "patch_14": {
+        "dx": 0,
+        "dy": -10
+      },
+      "patch_15": {
+        "dx": 0,
+        "dy": -5
+      }
+    }
+  },
+  "figure-3-9-gpu-hours.svg:0000": {
+    "y": 313,
+    "font_size": 10,
+    "max_width": 300
+  },
+  "figure-3-9-gpu-hours.svg:0001": {
+    "y": 343,
+    "font_size": 10
+  },
+  "figure-3-9-gpu-hours.svg:0003": {
+    "align": "start",
+    "x": 270,
+    "y": 205,
+    "font_size": 9,
+    "max_width": 140
+  },
+  "figure-3-9-gpu-hours.svg:0004": {
+    "align": "start",
+    "x": 270,
+    "y": 227,
+    "font_size": 9,
+    "max_width": 140
+  },
+  "figure-3-9-gpu-hours.svg:0005": {
+    "align": "start",
+    "x": 270,
+    "y": 249,
+    "font_size": 9,
+    "max_width": 140
+  },
+  "figure-3-activation-lifetime.svg:0000": {
+    "font_size": 9,
+    "x": 91,
+    "y": 202
+  },
+  "figure-3-activation-lifetime.svg:0001": {
+    "font_size": 8.6,
+    "max_width": 70,
+    "x": 163,
+    "y": 202
+  },
+  "figure-3-activation-lifetime.svg:0002": {
+    "font_size": 8.6,
+    "max_width": 70,
+    "x": 306,
+    "y": 202
+  },
+  "figure-3-activation-lifetime.svg:0003": {
+    "font_size": 8.6,
+    "max_width": 70,
+    "x": 377,
+    "y": 202
+  },
+  "figure-3-activation-lifetime.svg:0004": {
+    "font_size": 10,
+    "x": 239,
+    "y": 225
+  },
+  "figure-3-activation-lifetime.svg:0005": {
+    "align": "end",
+    "font_size": 9,
+    "max_width": 72,
+    "x": 78
+  },
+  "figure-3-activation-lifetime.svg:0006": {
+    "align": "end",
+    "font_size": 9,
+    "max_width": 72,
+    "x": 78
+  },
+  "figure-3-activation-lifetime.svg:0007": {
+    "font_size": 9,
+    "max_width": 62
+  },
+  "figure-3-activation-lifetime.svg:0008": {
+    "font_size": 9,
+    "max_width": 62
+  },
+  "figure-3-arrival-measured.svg:0003": {
+    "align": "start",
+    "font_size": 8.6,
+    "x": 322
+  },
+  "figure-3-arrival-measured.svg:0004": {
+    "align": "start",
+    "font_size": 8.6,
+    "x": 322
+  },
+  "figure-3-audio-interrupt.svg:0000": {
+    "font_size": 12,
+    "max_width": 390,
+    "x": 210,
+    "y": 30
+  },
+  "figure-3-audio-interrupt.svg:0001": {
+    "font_size": 10.5,
+    "max_width": 125
+  },
+  "figure-3-audio-interrupt.svg:0002": {
+    "font_size": 9.3,
+    "max_width": 125
+  },
+  "figure-3-audio-timing.svg": {
+    "move_groups": {
+      "line2d_33": {
+        "dx": 0,
+        "dy": -11
+      },
+      "line2d_34": {
+        "dx": 0,
+        "dy": -11
+      },
+      "patch_13": {
+        "dx": 0,
+        "dy": 11
+      }
+    }
+  },
+  "figure-3-audio-timing.svg:0001": {
+    "align": "end",
+    "font_size": 10,
+    "x": 64
+  },
+  "figure-3-audio-timing.svg:0002": {
+    "align": "end",
+    "font_size": 10,
+    "x": 64
+  },
+  "figure-3-audio-timing.svg:0003": {
+    "align": "end",
+    "font_size": 10,
+    "x": 64
+  },
+  "figure-3-audio-timing.svg:0004": {
+    "align": "end",
+    "font_size": 10,
+    "x": 64
+  },
+  "figure-3-audio-timing.svg:0005": {
+    "align": "end",
+    "font_size": 10,
+    "x": 64
+  },
+  "figure-3-audio-timing.svg:0006": {
+    "align": "end",
+    "font_size": 10,
+    "x": 64
+  },
+  "figure-3-audio-timing.svg:0007": {
+    "align": "end",
+    "font_size": 10,
+    "x": 64
+  },
+  "figure-3-audio-timing.svg:0008": {
+    "align": "end",
+    "font_size": 10,
+    "x": 64
+  },
+  "figure-3-audio-timing.svg:0009": {
+    "align": "start",
+    "font_size": 9,
+    "x": 96,
+    "y": 29
+  },
+  "figure-3-audio-timing.svg:0010": {
+    "align": "start",
+    "font_size": 8.7,
+    "max_width": 100,
+    "x": 174,
+    "y": 29
+  },
+  "figure-3-audio-timing.svg:0011": {
+    "align": "start",
+    "font_size": 8.6,
+    "max_width": 130,
+    "x": 274,
+    "y": 51
+  },
+  "figure-3-branch-state.svg:0000": {
+    "font_size": 12,
+    "max_width": 380,
+    "x": 210,
+    "y": 29
+  },
+  "figure-3-decision-request.svg": {
+    "geometry": {
+      "scale_y": 1.3
+    }
+  },
+  "figure-3-decision-request.svg:0000": {
+    "align": "end",
+    "font_size": 8.6,
+    "max_width": 72,
+    "x": 78
+  },
+  "figure-3-decision-request.svg:0001": {
+    "align": "start",
+    "font_size": 9.3,
+    "x": 124
+  },
+  "figure-3-decision-request.svg:0002": {
+    "align": "start",
+    "font_size": 9.3,
+    "x": 124
+  },
+  "figure-3-decision-request.svg:0003": {
+    "font_size": 9.2,
+    "max_width": 385,
+    "x": 210
+  },
+  "figure-3-decision-request.svg:0005": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 70,
+    "x": 78
+  },
+  "figure-3-decision-request.svg:0006": {
+    "font_size": 9.5,
+    "max_width": 320,
+    "x": 240,
+    "y": 216
+  },
+  "figure-3-decision-request.svg:0007": {
+    "font_size": 9.3,
+    "max_width": 390,
+    "x": 210
+  },
+  "figure-3-lifecycle-cost.svg:0001": {
+    "font_size": 8.6
+  },
+  "figure-3-lifecycle-cost.svg:0002": {
+    "align": "start",
+    "font_size": 9.5,
+    "x": 112
+  },
+  "figure-3-lifecycle-cost.svg:0003": {
+    "align": "start",
+    "font_size": 9.5,
+    "x": 112
+  },
+  "figure-3-queue-mechanism.svg:0000": {
+    "font_size": 9.5,
+    "max_width": 82
+  },
+  "figure-3-queue-mechanism.svg:0001": {
+    "font_size": 9.5,
+    "max_width": 82
+  },
+  "figure-3-queue-mechanism.svg:0002": {
+    "font_size": 9.5,
+    "max_width": 82
+  },
+  "figure-3-request-clocks.svg:0000": {
+    "font_size": 12,
+    "max_width": 380,
+    "x": 210
+  },
+  "figure-3-request-clocks.svg:0001": {
+    "font_size": 9.5,
+    "x": 62
+  },
+  "figure-3-request-clocks.svg:0002": {
+    "font_size": 9.5
+  },
+  "figure-3-request-clocks.svg:0003": {
+    "font_size": 9.5
+  },
+  "figure-3-request-clocks.svg:0004": {
+    "font_size": 8.8,
+    "max_width": 112
+  },
+  "figure-3-request-clocks.svg:0005": {
+    "font_size": 8.6,
+    "max_width": 155
+  },
+  "figure-3-rl-stage-work.svg:0000": {
+    "font_size": 8.6,
+    "max_width": 68,
+    "y": 244
+  },
+  "figure-3-rl-stage-work.svg:0001": {
+    "font_size": 8.6,
+    "max_width": 68,
+    "y": 244
+  },
+  "figure-3-rl-stage-work.svg:0002": {
+    "font_size": 8.6,
+    "max_width": 68,
+    "y": 244
+  },
+  "figure-3-rl-stage-work.svg:0003": {
+    "font_size": 8.6,
+    "max_width": 68,
+    "y": 244
+  },
+  "figure-3-rl-stage-work.svg:0005": {
+    "align": "start",
+    "font_size": 9,
+    "x": 302
+  },
+  "figure-3-rl-stage-work.svg:0006": {
+    "align": "start",
+    "font_size": 9,
+    "x": 302
+  },
+  "figure-3-scaling-residual.svg:0001": {
+    "font_size": 9.5,
+    "max_width": 190,
+    "y": 110
+  },
+  "figure-3-stage-demand.svg:0000": {
+    "font_size": 9
+  },
+  "figure-3-stage-demand.svg:0001": {
+    "font_size": 9
+  },
+  "figure-3-stage-demand.svg:0002": {
+    "font_size": 9
+  },
+  "figure-3-stage-demand.svg:0004": {
+    "align": "start",
+    "font_size": 9.5,
+    "x": 320
+  },
+  "figure-3-stage-demand.svg:0005": {
+    "align": "start",
+    "font_size": 9,
+    "max_width": 95,
+    "x": 320
+  },
+  "figure-3-success-cost.svg:0000": {
+    "font_size": 10.5,
+    "max_width": 100
+  },
+  "figure-3-success-cost.svg:0003": {
+    "font_size": 10.5,
+    "max_width": 75
+  },
+  "figure-3-tool-dependency.svg:0001": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 63,
+    "x": 63
+  },
+  "figure-3-tool-dependency.svg:0002": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 63,
+    "x": 63
+  },
+  "figure-3-tool-dependency.svg:0003": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 63,
+    "x": 63
+  },
+  "figure-3-tool-parallel.svg:0001": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 63,
+    "x": 63
+  },
+  "figure-3-tool-parallel.svg:0002": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 63,
+    "x": 63
+  },
+  "figure-3-tool-parallel.svg:0003": {
+    "align": "end",
+    "font_size": 9.5,
+    "max_width": 63,
+    "x": 63
+  },
+  "figure-3-training-flops.svg:0001": {
+    "align": "end",
+    "font_size": 10.5,
+    "max_width": 105,
+    "x": 115
+  },
+  "figure-3-training-flops.svg:0002": {
+    "align": "end",
+    "font_size": 10.5,
+    "max_width": 105,
+    "x": 115
+  },
+  "figure-3-training-flops.svg:0003": {
+    "align": "end",
+    "font_size": 10.5,
+    "max_width": 105,
+    "x": 115
+  },
+  "figure-3-training-flops.svg:0004": {
+    "align": "end",
+    "font_size": 10.5,
+    "max_width": 105,
+    "x": 115
+  },
+  "figure-3-training-states.svg:0001": {
+    "align": "end",
+    "font_size": 10.5,
+    "max_width": 105,
+    "x": 115
+  },
+  "figure-3-training-states.svg:0002": {
+    "align": "end",
+    "font_size": 10.5,
+    "max_width": 105,
+    "x": 115
+  },
+  "figure-3-training-states.svg:0003": {
+    "align": "end",
+    "font_size": 10.5,
+    "max_width": 105,
+    "x": 115
+  },
+  "figure-3-training-states.svg:0004": {
+    "align": "end",
+    "font_size": 10.5,
+    "max_width": 105,
+    "x": 115
+  },
+  "figure-3-training-states.svg:0005": {
+    "align": "end",
+    "font_size": 10.5,
+    "max_width": 105,
+    "x": 115
+  },
+  "figure-3-v41-ced.svg:0000": {
+    "font_size": 12,
+    "max_width": 380,
+    "x": 210,
+    "y": 36
+  },
+  "figure-3-v41-ced.svg:0004": {
+    "font_size": 9.5,
+    "max_width": 75,
+    "x": 341,
+    "y": 152
+  },
+  "figure-3-vision-shapes.svg:0000": {
+    "font_size": 12,
+    "max_width": 380,
+    "x": 210
+  },
+  "figure-3-vision-shapes.svg:0003": {
+    "font_size": 11.5
+  },
+  "figure-3-vision-state.svg:0000": {
+    "font_size": 12,
+    "max_width": 380,
+    "x": 210
+  },
+  "figure-3-vision-state.svg:0003": {
+    "font_size": 10.5,
+    "max_width": 340
+  }
+}

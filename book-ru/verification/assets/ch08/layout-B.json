@@ -1,0 +1,177 @@
+{
+  "figure-8-batch-counterfactual.svg:0001": {
+    "align": "start",
+    "x": 293,
+    "font_size": 9.8
+  },
+  "figure-8-batch-counterfactual.svg:0002": {
+    "align": "start",
+    "x": 293,
+    "font_size": 9.8
+  },
+  "figure-8-cancel-lifetime.svg:0000": {
+    "x": 77,
+    "y": 122,
+    "font_size": 10,
+    "max_width": 96
+  },
+  "figure-8-cancel-lifetime.svg:0001": {
+    "x": 77,
+    "y": 151,
+    "font_size": 9.4,
+    "max_width": 96,
+    "line_height": 11.2
+  },
+  "figure-8-cancel-lifetime.svg:0002": {
+    "x": 210,
+    "y": 120,
+    "font_size": 9.4,
+    "max_width": 96,
+    "line_height": 11.2
+  },
+  "figure-8-cancel-lifetime.svg:0003": {
+    "x": 210,
+    "y": 155,
+    "font_size": 9.4,
+    "max_width": 96,
+    "line_height": 11.2
+  },
+  "figure-8-cancel-lifetime.svg:0004": {
+    "x": 343,
+    "y": 120,
+    "font_size": 9.4,
+    "max_width": 96,
+    "line_height": 11.2
+  },
+  "figure-8-cancel-lifetime.svg:0005": {
+    "x": 343,
+    "y": 155,
+    "font_size": 9.4,
+    "max_width": 96,
+    "line_height": 11.2
+  },
+  "figure-8-context-edits.svg:0000": {
+    "font_size": 11
+  },
+  "figure-8-context-edits.svg:0006": {
+    "align": "start",
+    "x": 210,
+    "font_size": 10.5,
+    "max_width": 188,
+    "line_height": 12
+  },
+  "figure-8-copy-on-write.svg:0000": {
+    "max_width": 185,
+    "font_size": 11,
+    "line_height": 13
+  },
+  "figure-8-copy-on-write.svg:0003": {
+    "x": 210,
+    "y": 264,
+    "font_size": 10.5,
+    "max_width": 380
+  },
+  "figure-8-kv-quality-1.svg:0001": {"align": "end", "x": 96},
+  "figure-8-kv-quality-1.svg:0002": {"align": "end", "x": 96},
+  "figure-8-kv-quality-1.svg:0003": {"align": "end", "x": 96},
+  "figure-8-kv-quality-1.svg:0004": {"align": "end", "x": 96},
+  "figure-8-kv-quality-1.svg:0005": {"align": "end", "x": 96},
+  "figure-8-kv-quality-1.svg:0006": {"align": "end", "x": 96},
+  "figure-8-kv-quality-1.svg:0007": {"align": "end", "x": 96},
+  "figure-8-kv-quality-1.svg:0008": {"align": "end", "x": 96},
+  "figure-8-kv-quality-2.svg:0001": {"align": "end", "x": 96},
+  "figure-8-kv-quality-2.svg:0002": {"align": "end", "x": 96},
+  "figure-8-kv-quality-2.svg:0003": {"align": "end", "x": 96},
+  "figure-8-kv-quality-2.svg:0004": {"align": "end", "x": 96},
+  "figure-8-kv-quality-2.svg:0005": {"align": "end", "x": 96},
+  "figure-8-kv-quality-2.svg:0006": {"align": "end", "x": 96},
+  "figure-8-kv-quality-2.svg:0007": {"align": "end", "x": 96},
+  "figure-8-kv-quality-2.svg:0008": {"align": "end", "x": 96},
+  "figure-8-offload-copy.svg:0000": {
+    "font_size": 9.5,
+    "max_width": 240
+  },
+  "figure-8-pages-shared.svg:0000": {
+    "font_size": 10.5,
+    "max_width": 100
+  },
+  "figure-8-pages-shared.svg:0001": {
+    "font_size": 10.5,
+    "max_width": 100
+  },
+  "figure-8-pages-shared.svg:0002": {
+    "x": 210,
+    "y": 172,
+    "font_size": 9.7,
+    "max_width": 145,
+    "line_height": 11.5
+  },
+  "figure-8-pages-shared.svg:0003": {
+    "x": 210,
+    "y": 194,
+    "font_size": 9.7,
+    "max_width": 145
+  },
+  "figure-8-pages-shared.svg:0004": {
+    "font_size": 10,
+    "max_width": 100,
+    "line_height": 11.5
+  },
+  "figure-8-pages-shared.svg:0005": {
+    "font_size": 10,
+    "max_width": 100,
+    "line_height": 11.5
+  },
+  "figure-8-prefix-lengths.svg:0002": {
+    "align": "start",
+    "x": 105,
+    "font_size": 9.5
+  },
+  "figure-8-prefix-lengths.svg:0003": {
+    "align": "start",
+    "x": 105,
+    "font_size": 9.5
+  },
+  "figure-8-prefix-restore.svg:0001": {
+    "x": 60,
+    "y": 184,
+    "font_size": 10.5
+  },
+  "figure-8-prefix-restore.svg:0002": {
+    "x": 210,
+    "y": 184,
+    "font_size": 10.5,
+    "max_width": 125
+  },
+  "figure-8-prefix-restore.svg:0003": {
+    "x": 350,
+    "y": 184,
+    "font_size": 10.5,
+    "max_width": 125
+  },
+  "figure-8-prefix-restore.svg:0004": {
+    "y": 235
+  },
+  "figure-8-reference-release.svg:0002": {
+    "font_size": 10.5,
+    "max_width": 220,
+    "line_height": 12
+  },
+  "figure-8-reference-release.svg:0004": {
+    "font_size": 10.5,
+    "max_width": 220,
+    "line_height": 12
+  },
+  "figure-8-sample-A.svg:0002": {"x": 75, "font_size": 10.5},
+  "figure-8-sample-A.svg:0004": {"x": 345, "font_size": 10.5},
+  "figure-8-sample-B.svg:0002": {"x": 75, "font_size": 10.5},
+  "figure-8-sample-B.svg:0004": {"x": 345, "font_size": 10.5},
+  "figure-8-scheduling-chunked.svg:0001": {"align": "end", "x": 62},
+  "figure-8-scheduling-chunked.svg:0002": {"align": "end", "x": 62},
+  "figure-8-scheduling-chunked.svg:0003": {"align": "end", "x": 62},
+  "figure-8-scheduling-chunked.svg:0004": {"align": "end", "x": 62},
+  "figure-8-scheduling-continuous.svg:0001": {"align": "end", "x": 62},
+  "figure-8-scheduling-continuous.svg:0002": {"align": "end", "x": 62},
+  "figure-8-scheduling-continuous.svg:0003": {"align": "end", "x": 62},
+  "figure-8-scheduling-continuous.svg:0004": {"align": "end", "x": 62}
+}

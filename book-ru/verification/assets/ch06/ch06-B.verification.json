@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "pass": "source-verification",
+  "model_id": "gpt-5.6-sol",
+  "source_directory": ".tmp/ch06-source",
+  "file_pattern": "(?:figure-6-expert-load-2\\.svg|figure-6-initiator\\.svg|figure-6-parallel-map\\.svg|figure-6-pool-after\\.svg|figure-6-pp\\.svg|figure-6-resources-concurrent\\.svg|figure-6-ring-gather\\.svg|figure-6-rom-token-time\\.svg|figure-6-scale-cost-fault\\.svg|figure-6-session-capacity\\.svg|figure-6-session-tp2\\.svg|figure-6-session-tp4\\.svg|figure-6-session-tp8\\.svg|figure-6-sp\\.svg|figure-6-supernode-inference\\.svg|figure-6-topology-hops\\.svg|figure-6-topology-load\\.svg|figure-6-topology-patterns\\.svg|figure-6-topology-swing\\.svg|figure-6-torus-growth\\.svg|figure-6-tp-columns\\.svg|figure-6-tp-layer\\.svg|figure-6-tp-rows\\.svg|figure-6-ub-controller\\.svg|figure-6-ub-hosts\\.svg|figure-6-ub-layers\\.svg|figure-6-ub-setup\\.svg|figure-6-weight-placement\\.svg)",
+  "record_count": 238,
+  "metadata_only": false,
+  "source_records_sha256": "23bed46a07037ca1904fda152c6522435674029d65622ce32d0b36c4f57cfcc7",
+  "mapping_sha256": "892ca5eaba2f62d9029c9ccd4f99f442a2b59fa9415425880e31768aa26ce659",
+  "runtime": {
+    "requested_model": "gpt-5.6-sol",
+    "reported_model": "gpt-5.6-sol",
+    "provider": "openai",
+    "thread_id": "01a0e4e7-1a17-7cc2-99b0-4a88bd79a78a",
+    "turn_id": "01a0e4e7-1a87-72c0-818f-4dbd5da3ed4b",
+    "ephemeral": true,
+    "fallback_allowed": false,
+    "sandbox_type": "readOnly",
+    "completion_observed": true,
+    "usage_observed": true,
+    "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+    "prompt_sha256": "9956079a27ffb8db1ca50380c5886aa900a12deb9c00b7940f2c576b524f500c",
+    "response_sha256": "892ca5eaba2f62d9029c9ccd4f99f442a2b59fa9415425880e31768aa26ce659",
+    "stdout_sha256": "7e1457f07f9d50702adbb56acb8e14a8a08d13cf60eba987e630f3b28e132795",
+    "stderr_sha256": "cdaaa409db4b20ad11fcf6b70867521f7b2da7b93a9d96e59bd7276a5d3a5149"
+  },
+  "draft_mapping_sha256": "012492fb8cc3b3cf1761eef13c89fa1f9f076930aab8d49930517b14eddf500b"
+}

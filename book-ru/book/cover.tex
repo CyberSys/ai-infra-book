@@ -1,0 +1,27 @@
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[infranavy] (current page.north west) rectangle (current page.south east);
+  \fill[infrateal] (current page.north west) rectangle ([xshift=12mm]current page.south west);
+  \foreach \x in {0,...,7} {
+    \foreach \y in {0,...,5} {
+      \draw[white,opacity=.13,line width=.7pt]
+        ([xshift=78mm+\x*13mm,yshift=-125mm-\y*13mm]current page.north west)
+        rectangle ++(9mm,-9mm);
+    }
+  }
+  \node[anchor=north west,text width=14cm,align=left,text=white]
+    at ([xshift=27mm,yshift=-38mm]current page.north west)
+    {\fontsize{31}{39}\selectfont\sffamily\bfseries AI-инфраструктура\\[2mm]изнутри:};
+  \node[anchor=north west,text width=13cm,align=left,text=white]
+    at ([xshift=28mm,yshift=-78mm]current page.north west)
+    {\Large\sffamily количественный анализ и\\проектирование систем};
+  \node[anchor=south west,text=white]
+    at ([xshift=28mm,yshift=38mm]current page.south west)
+    {\Large\sffamily Боцзе Ли};
+  \node[anchor=south west,text=white,align=left]
+    at ([xshift=28mm,yshift=19mm]current page.south west)
+    {\small\sffamily Русский перевод · community edition\\\infraedition{}};
+\end{tikzpicture}
+\null
+\end{titlepage}

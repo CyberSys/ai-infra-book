@@ -1,0 +1,2297 @@
+{
+  "schema_version": 1,
+  "scope": "18 pilot SVG figures and same-stem vector PDFs",
+  "source_commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "provenance": {
+    "rsvg_convert_version": "rsvg-convert version 2.58.0",
+    "pdftotext_version": "pdftotext version 24.02.0",
+    "pillow_version": "12.3.0",
+    "font_file": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "font_sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+    "script_sha256": "7569341383950a4088656db219646323747ea18e177e624d63ccaa95f51cfd55",
+    "mapping_sha256": {
+      "pilot-A.verified.json": "912ddbf9e7cfd24830fca9c206b0bce6e4a1376417defa490b0430b477461fb7",
+      "pilot-B.verified.json": "026e1725bdd1b3b52f9cdd5741b83f85c959cf344deb19e1ddb306c145f71a23"
+    },
+    "layout_sha256": "b517a18b720d7644ab8c159d2872714c8f1a1e200a965c7c96a3abe1fd184879",
+    "source_manifest_sha256": "c9c3db63b9f54e83dad87128ac641e499cb190c44166f72e523451f043a7a863"
+  },
+  "pdf_embedding_assumption": {
+    "max_width_pt": 444,
+    "max_height_pt": 504,
+    "note": "Estimated from SVG viewBox and build caps; check actual final book PDF separately"
+  },
+  "counts": {
+    "figures": 18,
+    "labels": 125,
+    "off_canvas_label_estimates": 0,
+    "pdf_verified_labels_whitespace_normalized": 125
+  },
+  "minimum_effective_font_pt_estimate": 10.043,
+  "files": [
+    {
+      "file": "figure-1-1-panorama.svg",
+      "source_sha256": "24beb8b0bad523a789e36916bde3d0fdff225e53ed61b03bbce03a2e8283fdb5",
+      "svg_sha256": "1004a9ff26bffdbad31e60195561ac6ea9228bdacc58d14710c7b7f5dec5d306",
+      "pdf_sha256": "76093715a2444c5073d6bf644c8cc85848ac6d84e99b88f58b6e2f8157e04fe6",
+      "paths_preserved": true,
+      "path_count": 92,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        374.4
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-1-panorama.svg:0000",
+          "text": "Приложения и задачи",
+          "lines": [
+            "Приложения и задачи"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            148.658,
+            40.781,
+            271.34,
+            50.62
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0001",
+          "text": "Что и когда выполнить",
+          "lines": [
+            "Что и когда выполнить"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            145.488,
+            57.473,
+            274.512,
+            66.577
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0002",
+          "text": "Модели и нагрузки",
+          "lines": [
+            "Модели и нагрузки"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            156.659,
+            94.048,
+            263.339,
+            103.886
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0003",
+          "text": "Необходимые вычисления и данные",
+          "lines": [
+            "Необходимые вычисления и данные"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            108.942,
+            110.363,
+            311.057,
+            119.97
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0004",
+          "text": "Системы обучения и инференса",
+          "lines": [
+            "Системы обучения и инференса"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            120.67,
+            146.854,
+            299.328,
+            157.196
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0005",
+          "text": "Планирование запросов, batch и ускорителей",
+          "lines": [
+            "Планирование запросов, batch и ускорителей"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            82.541,
+            163.796,
+            337.46,
+            173.96
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0006",
+          "text": "Операторы, компилятор и среда выполнения",
+          "lines": [
+            "Операторы, компилятор и среда выполнения"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            83.646,
+            200.476,
+            336.35,
+            210.451
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0007",
+          "text": "Преобразование вычислений в исполняемую программу",
+          "lines": [
+            "Преобразование вычислений в исполняемую программу"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            52.93,
+            216.909,
+            367.069,
+            227.252
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0008",
+          "text": "Процессоры и память",
+          "lines": [
+            "Процессоры и память"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            149.571,
+            253.875,
+            270.426,
+            263.713
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0009",
+          "text": "Вычисление и хранение данных",
+          "lines": [
+            "Вычисление и хранение данных"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            120.416,
+            270.662,
+            299.588,
+            280.501
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0010",
+          "text": "Сеть и дата-центр",
+          "lines": [
+            "Сеть и дата-центр"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            158.559,
+            306.969,
+            261.438,
+            316.944
+          ]
+        },
+        {
+          "id": "figure-1-1-panorama.svg:0011",
+          "text": "Связь устройств, питание и охлаждение",
+          "lines": [
+            "Связь устройств, питание и охлаждение"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            96.643,
+            323.478,
+            323.359,
+            333.642
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-2-request.svg",
+      "source_sha256": "e7ae4ecfcb661b33a22874ec9ac6b15ebfda50b9f873396a0b3ff0a3739b4352",
+      "svg_sha256": "0efe50a824f7f3ddc5d7887a35b449a19a394ea3cb20ba09440a918e809d2f07",
+      "pdf_sha256": "ef1b4daf0faea499fc9c14b651e4103cc5d2bae3d575e4a8453e6ed606893d9d",
+      "paths_preserved": true,
+      "path_count": 65,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        411.84
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-2-request.svg:0000",
+          "text": "Приложение",
+          "lines": [
+            "Приложение"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            43.583,
+            51.21,
+            110.813,
+            60.58
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0001",
+          "text": "Подготовка входных данных",
+          "lines": [
+            "Подготовка",
+            "входных данных"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            33.043,
+            73.81,
+            121.353,
+            94.48
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0002",
+          "text": "Точка входа сервиса",
+          "lines": [
+            "Точка входа",
+            "сервиса"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            177.743,
+            45.21,
+            242.223,
+            66.58
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0003",
+          "text": "Приём запросов",
+          "lines": [
+            "Приём запросов"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            167.4,
+            79.52,
+            252.6,
+            89.18
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0004",
+          "text": "Маршрутизатор",
+          "lines": [
+            "Маршрутизатор"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            300.514,
+            51.21,
+            385.094,
+            60.58
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0005",
+          "text": "Выбор инстанса",
+          "lines": [
+            "Выбор инстанса"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            300.194,
+            79.33,
+            385.414,
+            89.18
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0006",
+          "text": "Выбранный инстанс инференса",
+          "lines": [
+            "Выбранный инстанс инференса"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            26.0,
+            192.077,
+            227.792,
+            203.897
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0007",
+          "text": "Планировщик инстанса",
+          "lines": [
+            "Планировщик",
+            "инстанса"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            48.311,
+            258.41,
+            121.701,
+            277.84
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0008",
+          "text": "Формирование batch",
+          "lines": [
+            "Формирование",
+            "batch"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            45.269,
+            297.41,
+            124.059,
+            316.84
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0009",
+          "text": "Отправка программы",
+          "lines": [
+            "Отправка",
+            "программы"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            180.142,
+            297.28,
+            239.862,
+            318.78
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0010",
+          "text": "Выполнение вычислений",
+          "lines": [
+            "Выполнение",
+            "вычислений"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            302.15,
+            297.41,
+            367.83,
+            316.84
+          ]
+        },
+        {
+          "id": "figure-1-2-request.svg:0011",
+          "text": "Запрос поступает в инстанс",
+          "lines": [
+            "Запрос поступает в инстанс"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            127.587,
+            146.147,
+            284.604,
+            156.122
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-3-datacenter.svg",
+      "source_sha256": "27a80380046246f0675d19639a5df9ff72788cc4992e3111129902a8ef24bc56",
+      "svg_sha256": "16eca0edebe127c2a7b4bbabe71a5940e103db0ed9e4fe4c895a858c5e49586c",
+      "pdf_sha256": "3a5671fc199eed255c967c39bf57d6969f9c36e639549d8061ec268aa8b49234",
+      "paths_preserved": true,
+      "path_count": 57,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        397.44
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-3-datacenter.svg:0000",
+          "text": "Вход и общее хранилище",
+          "lines": [
+            "Вход и общее хранилище"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            37.177,
+            64.625,
+            179.714,
+            74.968
+          ]
+        },
+        {
+          "id": "figure-1-3-datacenter.svg:0001",
+          "text": "Другие суперузлы",
+          "lines": [
+            "Другие суперузлы"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            262.511,
+            65.088,
+            364.508,
+            74.927
+          ]
+        },
+        {
+          "id": "figure-1-3-datacenter.svg:0002",
+          "text": "Сеть дата-центра",
+          "lines": [
+            "Сеть дата-центра"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            160.422,
+            151.888,
+            259.574,
+            161.863
+          ]
+        },
+        {
+          "id": "figure-1-3-datacenter.svg:0003",
+          "text": "Один суперузел крупным планом",
+          "lines": [
+            "Один суперузел крупным",
+            "планом"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            27.0,
+            213.896,
+            189.276,
+            237.368
+          ]
+        },
+        {
+          "id": "figure-1-3-datacenter.svg:0004",
+          "text": "CPU и основная память",
+          "lines": [
+            "CPU и основная",
+            "память"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            73.187,
+            254.563,
+            159.329,
+            275.101
+          ]
+        },
+        {
+          "id": "figure-1-3-datacenter.svg:0005",
+          "text": "Сетевая карта",
+          "lines": [
+            "Сетевая карта"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            273.191,
+            260.856,
+            353.831,
+            270.831
+          ]
+        },
+        {
+          "id": "figure-1-3-datacenter.svg:0006",
+          "text": "GPU и видеопамять",
+          "lines": [
+            "GPU и",
+            "видеопамять"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            69.992,
+            324.79,
+            142.988,
+            346.63
+          ]
+        },
+        {
+          "id": "figure-1-3-datacenter.svg:0007",
+          "text": "GPU и видеопамять",
+          "lines": [
+            "GPU и",
+            "видеопамять"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            277.01,
+            324.79,
+            350.006,
+            346.63
+          ]
+        },
+        {
+          "id": "figure-1-3-datacenter.svg:0008",
+          "text": "Внутреннее соединение",
+          "lines": [
+            "Внутреннее соединение"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            145.369,
+            294.161,
+            274.629,
+            303.531
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-4-numbers.svg",
+      "source_sha256": "b55db1783c8ce0661cee293ee4fde1d87b8d767577cfcfadab4b5d7391020ff9",
+      "svg_sha256": "c8542bbc661f123fbc891d9fa9df686542c80a02024c5e6955b9f2661bd1c32e",
+      "pdf_sha256": "8038d74d8498bc474efe32be65b38689073655336f4d2343ff3185eaacbfa240",
+      "paths_preserved": true,
+      "path_count": 50,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        244.8
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-4-numbers.svg:0000",
+          "text": "Время (ns, лог. шкала)",
+          "lines": [
+            "Время (ns, лог. шкала)"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            185.84,
+            219.952,
+            329.564,
+            231.556
+          ]
+        },
+        {
+          "id": "figure-1-4-numbers.svg:0001",
+          "text": "Доступ к основной памяти",
+          "lines": [
+            "Доступ к основной",
+            "памяти"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            10.4,
+            32.065,
+            114.801,
+            52.792
+          ]
+        },
+        {
+          "id": "figure-1-4-numbers.svg:0002",
+          "text": "Обмен туда-обратно в дата-центре",
+          "lines": [
+            "Обмен",
+            "туда-обратно в",
+            "дата-центре"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            30.056,
+            90.569,
+            114.804,
+            126.112
+          ]
+        },
+        {
+          "id": "figure-1-4-numbers.svg:0003",
+          "text": "Позиционирование диска",
+          "lines": [
+            "Позиционирование",
+            "диска"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            8.128,
+            162.357,
+            114.801,
+            184.06
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-5-budget.svg",
+      "source_sha256": "dad420305e9b50771e2325d90219cbbec6263fcd48878db5a0544dc2731533e7",
+      "svg_sha256": "be6fd636bebe661f67c88286d4b6151e647130348f93c64164c68ee78d5e061d",
+      "pdf_sha256": "87b9b5287e4a6f62c64e36ed14cc1a83a7e80907f600b4c1bfe567d54cc7809b",
+      "paths_preserved": true,
+      "path_count": 48,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        266.4
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-5-budget.svg:0000",
+          "text": "Нижняя граница времени ресурса (ms)",
+          "lines": [
+            "Нижняя граница времени ресурса (ms)"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            124.63,
+            236.572,
+            373.966,
+            248.176
+          ]
+        },
+        {
+          "id": "figure-1-5-budget.svg:0001",
+          "text": "Исходный ускоритель",
+          "lines": [
+            "Исходный",
+            "ускоритель"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            37.316,
+            39.387,
+            97.999,
+            61.067
+          ]
+        },
+        {
+          "id": "figure-1-5-budget.svg:0002",
+          "text": "Удвоенная вычислительная мощность",
+          "lines": [
+            "Удвоенная",
+            "вычислительная",
+            "мощность"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            10.47,
+            101.434,
+            98.0,
+            134.104
+          ]
+        },
+        {
+          "id": "figure-1-5-budget.svg:0003",
+          "text": "Удвоенная пропускная способность",
+          "lines": [
+            "Удвоенная",
+            "пропускная",
+            "способность"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            32.189,
+            169.171,
+            98.0,
+            200.601
+          ]
+        },
+        {
+          "id": "figure-1-5-budget.svg:0004",
+          "text": "Чтение весов",
+          "lines": [
+            "Чтение весов"
+          ],
+          "font_size_svg_pt": 9.5,
+          "effective_font_pt_estimate": 10.043,
+          "bbox_svg_estimate": [
+            345.1,
+            178.475,
+            412.322,
+            185.533
+          ]
+        },
+        {
+          "id": "figure-1-5-budget.svg:0005",
+          "text": "Матричные вычисления",
+          "lines": [
+            "Матричные",
+            "вычисления"
+          ],
+          "font_size_svg_pt": 9.5,
+          "effective_font_pt_estimate": 10.043,
+          "bbox_svg_estimate": [
+            345.1,
+            189.274,
+            405.226,
+            207.733
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-batch-reuse.svg",
+      "source_sha256": "0a43b481ba752b3ca6b10003a14d880fb17bdf6b3c7d42b19634ccfd5427af38",
+      "svg_sha256": "c8e2bfa68e3879b05268c8f984e89aa99c3cbaf62f7e6dc3c6d788e4781dc189",
+      "pdf_sha256": "62f04b5fdec6fd6a5de8f89bd17fe497945572f3bcccd8aca5787ca6271dcecc",
+      "paths_preserved": true,
+      "path_count": 81,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        252.0
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-batch-reuse.svg:0000",
+          "text": "Одни веса обслуживают восемь запросов",
+          "lines": [
+            "Одни веса обслуживают восемь запросов"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            30.0,
+            25.726,
+            295.356,
+            37.546
+          ]
+        },
+        {
+          "id": "figure-1-batch-reuse.svg:0001",
+          "text": "Одно чтение: 70 GB весов",
+          "lines": [
+            "Одно чтение: 70 GB весов"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            137.817,
+            72.352,
+            282.182,
+            81.592
+          ]
+        },
+        {
+          "id": "figure-1-batch-reuse.svg:0002",
+          "text": "Восемь входов вычисляются отдельно",
+          "lines": [
+            "Восемь входов вычисляются отдельно"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            102.759,
+            191.345,
+            317.243,
+            200.449
+          ]
+        },
+        {
+          "id": "figure-1-batch-reuse.svg:0003",
+          "text": "Весь пакет ≈ 20.90 ms; на выходной токен ≈ 2.61 ms",
+          "lines": [
+            "Весь пакет ≈ 20.90 ms; на выходной токен ≈ 2.61 ms"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            68.976,
+            216.254,
+            352.006,
+            225.234
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-batch-throughput.svg",
+      "source_sha256": "8e840b84d1d1aaa3b165cff72d03bf8936179165cc3a1484c180bed0215690bf",
+      "svg_sha256": "5730c7858126c97e15929eeee0938ec2791602383cb40709d143764e9cdef71e",
+      "pdf_sha256": "de7d990a90a7663354c962c3624d3ffe4af4ec5fbb7b23053817b6404e2e3ba9",
+      "paths_preserved": true,
+      "path_count": 44,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        244.8
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-batch-throughput.svg:0000",
+          "text": "Число запросов в пакете B",
+          "lines": [
+            "Число запросов в пакете B"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            149.582,
+            219.652,
+            319.538,
+            230.896
+          ]
+        },
+        {
+          "id": "figure-1-batch-throughput.svg:0001",
+          "text": "Пропускная способность вывода (токенов/с)",
+          "lines": [
+            "Пропускная способность вывода",
+            "(токенов/с)"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            21.23,
+            29.166,
+            31.08,
+            202.836
+          ]
+        },
+        {
+          "id": "figure-1-batch-throughput.svg:0002",
+          "text": "Начинают преобладать вычисления",
+          "lines": [
+            "Начинают преобладать вычисления"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            189.392,
+            64.23,
+            380.612,
+            74.08
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-batch-transition.svg",
+      "source_sha256": "2d0ef2d4afe7f989d9f16f365b18d35081d4ffae5991b5de8efa29fda0a24a61",
+      "svg_sha256": "a800a93bccac35170d81c0e0494b40dad360983a8f53c61bcbd310330d21422c",
+      "pdf_sha256": "e10d67baf1059a6e8eb06e788cace146692a781f9325316452829b61e06ce8fb",
+      "paths_preserved": true,
+      "path_count": 51,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        273.6
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-batch-transition.svg:0000",
+          "text": "Число запросов в пакете B",
+          "lines": [
+            "Число запросов в пакете B"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            149.582,
+            242.692,
+            319.538,
+            253.936
+          ]
+        },
+        {
+          "id": "figure-1-batch-transition.svg:0001",
+          "text": "Нижняя граница времени (ms)",
+          "lines": [
+            "Нижняя граница времени (ms)"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            26.41,
+            45.638,
+            36.08,
+            208.358
+          ]
+        },
+        {
+          "id": "figure-1-batch-transition.svg:0002",
+          "text": "≈ 148",
+          "lines": [
+            "≈ 148"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            170.133,
+            147.822,
+            206.901,
+            156.894
+          ]
+        },
+        {
+          "id": "figure-1-batch-transition.svg:0003",
+          "text": "Матричные вычисления",
+          "lines": [
+            "Матричные вычисления"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            232.1,
+            23.442,
+            358.49,
+            32.812
+          ]
+        },
+        {
+          "id": "figure-1-batch-transition.svg:0004",
+          "text": "Чтение весов",
+          "lines": [
+            "Чтение весов"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            232.1,
+            39.942,
+            302.86,
+            47.372
+          ]
+        },
+        {
+          "id": "figure-1-batch-transition.svg:0005",
+          "text": "Максимум из двух",
+          "lines": [
+            "Максимум из двух"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            232.1,
+            56.442,
+            328.72,
+            65.812
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-book-roadmap.svg",
+      "source_sha256": "dcb7b5860f761ff0a29b7749776c9a6272c3a4aafe994e436be4c0cff424dc09",
+      "svg_sha256": "0faab1ee9bcf3fb9b339374f3a396e046b13ff502ddac2c9d5ce53a912ee4f12",
+      "pdf_sha256": "af0972a41d392683f4fccbed545d91180b60ed4869d06f3697867787fdd78330",
+      "paths_preserved": true,
+      "path_count": 93,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        504.0
+      ],
+      "effective_scale_estimate": 1.0,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-book-roadmap.svg:0000",
+          "text": "Часть I. Модели и нагрузки",
+          "lines": [
+            "Часть I. Модели и нагрузки"
+          ],
+          "font_size_svg_pt": 13.0,
+          "effective_font_pt_estimate": 13.0,
+          "bbox_svg_estimate": [
+            16.0,
+            37.899,
+            203.577,
+            50.08
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0001",
+          "text": "1. Знакомство с AI Infra",
+          "lines": [
+            "1. Знакомство с AI Infra"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            18.0,
+            79.048,
+            152.981,
+            87.562
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0002",
+          "text": "2. Архитектура моделей",
+          "lines": [
+            "2. Архитектура моделей"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            218.0,
+            79.048,
+            360.461,
+            89.696
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0003",
+          "text": "3. Нагрузки инференса и обучения",
+          "lines": [
+            "3. Нагрузки инференса и",
+            "обучения"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            18.0,
+            105.046,
+            164.3,
+            128.696
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0004",
+          "text": "Часть II. Чипы и системы",
+          "lines": [
+            "Часть II. Чипы и системы"
+          ],
+          "font_size_svg_pt": 13.0,
+          "effective_font_pt_estimate": 13.0,
+          "bbox_svg_estimate": [
+            16.0,
+            196.299,
+            186.547,
+            205.958
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0005",
+          "text": "4. Архитектура ускорителей",
+          "lines": [
+            "4. Архитектура ускорителей"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            18.0,
+            237.448,
+            184.298,
+            248.096
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0006",
+          "text": "5. Операторы и среда выполнения",
+          "lines": [
+            "5. Операторы и среда",
+            "выполнения"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            218.0,
+            231.046,
+            345.424,
+            252.562
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0007",
+          "text": "6. Суперузлы",
+          "lines": [
+            "6. Суперузлы"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            18.0,
+            275.446,
+            95.198,
+            285.896
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0008",
+          "text": "7. Сети ЦОД",
+          "lines": [
+            "7. Сети ЦОД"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            218.0,
+            275.446,
+            289.291,
+            285.335
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0009",
+          "text": "Часть III. Системы инференса и обучения",
+          "lines": [
+            "Часть III. Системы инференса и обучения"
+          ],
+          "font_size_svg_pt": 13.0,
+          "effective_font_pt_estimate": 13.0,
+          "bbox_svg_estimate": [
+            16.0,
+            354.075,
+            300.362,
+            366.88
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0010",
+          "text": "8. Оптимизация инференса",
+          "lines": [
+            "8. Оптимизация инференса"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            18.0,
+            396.046,
+            178.435,
+            406.496
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0011",
+          "text": "9. Распределённый инференс",
+          "lines": [
+            "9. Распределённый инференс"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            218.0,
+            395.848,
+            391.745,
+            406.496
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0012",
+          "text": "10. Системы обучения",
+          "lines": [
+            "10. Системы обучения"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            18.0,
+            433.461,
+            147.767,
+            444.296
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0013",
+          "text": "11. Планирование ресурсов и среда выполнения",
+          "lines": [
+            "11. Планирование ресурсов и",
+            "среда выполнения"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            218.0,
+            427.389,
+            390.117,
+            450.896
+          ]
+        },
+        {
+          "id": "figure-1-book-roadmap.svg:0014",
+          "text": "12. Взаимодействие устройств, периферии и облака",
+          "lines": [
+            "12. Взаимодействие устройств,",
+            "периферии и облака"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.0,
+          "bbox_svg_estimate": [
+            18.0,
+            459.448,
+            201.436,
+            483.296
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-capacity-path.svg",
+      "source_sha256": "564c99324285677705857305569a348bd2c39727a75e433d033d5aa91dce6992",
+      "svg_sha256": "dde38147c9a670df8d2070c2d30a837d2bf89646f3f801ed898045d96996f285",
+      "pdf_sha256": "c2b1f574e2712d59ddd8ad25a66b9730a092be5c31b39654cd5b21fae9706d8f",
+      "paths_preserved": true,
+      "path_count": 46,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        252.0
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-capacity-path.svg:0000",
+          "text": "Веса и служебные данные квантования (GB)",
+          "lines": [
+            "Веса и служебные данные квантования (GB)"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            107.131,
+            224.836,
+            391.471,
+            236.656
+          ]
+        },
+        {
+          "id": "figure-1-capacity-path.svg:0001",
+          "text": "BF16, одна карта",
+          "lines": [
+            "BF16, одна карта"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            6.96,
+            57.051,
+            98.0,
+            66.551
+          ]
+        },
+        {
+          "id": "figure-1-capacity-path.svg:0002",
+          "text": "BF16, карта 0",
+          "lines": [
+            "BF16, карта 0"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            26.241,
+            97.042,
+            97.941,
+            106.542
+          ]
+        },
+        {
+          "id": "figure-1-capacity-path.svg:0003",
+          "text": "BF16, карта 1",
+          "lines": [
+            "BF16, карта 1"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            26.241,
+            137.033,
+            97.941,
+            146.533
+          ]
+        },
+        {
+          "id": "figure-1-capacity-path.svg:0004",
+          "text": "8 бит, одна карта",
+          "lines": [
+            "8 бит, одна карта"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            4.264,
+            176.675,
+            98.004,
+            186.525
+          ]
+        },
+        {
+          "id": "figure-1-capacity-path.svg:0005",
+          "text": "Ёмкость одной карты: 80 GB",
+          "lines": [
+            "Ёмкость одной карты: 80 GB"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            186.175,
+            3.957,
+            352.363,
+            16.288
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-design-smartnic.svg",
+      "source_sha256": "19e731be03d16728f308e64a2f55abcd513a55b16f26d65629ad1906e10af7cd",
+      "svg_sha256": "c871dfd38946cf417675bd12ea207b13da6ad80acaad9bf21f70b3b66e96859d",
+      "pdf_sha256": "5038bd9356fcd1e3ff2eb1a8e73327c77d0bf4d340b8c6d32f1b3b74aeef68ca",
+      "paths_preserved": true,
+      "path_count": 39,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        180.0
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-design-smartnic.svg:0000",
+          "text": "Обработка пакетов по пути данных",
+          "lines": [
+            "Обработка пакетов по пути данных"
+          ],
+          "font_size_svg_pt": 13.0,
+          "effective_font_pt_estimate": 13.743,
+          "bbox_svg_estimate": [
+            30.0,
+            19.899,
+            276.441,
+            32.704
+          ]
+        },
+        {
+          "id": "figure-1-design-smartnic.svg:0001",
+          "text": "Сетевые данные",
+          "lines": [
+            "Сетевые данные"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            30.531,
+            90.838,
+            127.771,
+            100.518
+          ]
+        },
+        {
+          "id": "figure-1-design-smartnic.svg:0002",
+          "text": "Программируемая сетевая карта",
+          "lines": [
+            "Программируемая",
+            "сетевая карта"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            161.296,
+            70.71,
+            258.706,
+            92.08
+          ]
+        },
+        {
+          "id": "figure-1-design-smartnic.svg:0003",
+          "text": "Обработка пакетов",
+          "lines": [
+            "Обработка пакетов"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            158.667,
+            102.23,
+            261.337,
+            112.08
+          ]
+        },
+        {
+          "id": "figure-1-design-smartnic.svg:0004",
+          "text": "CPU хоста",
+          "lines": [
+            "CPU хоста"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            311.701,
+            76.838,
+            370.001,
+            85.154
+          ]
+        },
+        {
+          "id": "figure-1-design-smartnic.svg:0005",
+          "text": "Выполнение приложений",
+          "lines": [
+            "Выполнение",
+            "приложений"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            304.224,
+            91.481,
+            377.473,
+            114.788
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-design-tpu.svg",
+      "source_sha256": "fb79398644f02d20a55546911fef62e778a14011003582a0840acc550162aa1b",
+      "svg_sha256": "7b4fbd67126d685c6aeba4ed73b7860851603ac55db9dfd4a328dda77f3f5529",
+      "pdf_sha256": "3646209ba9b8a9dd18e7df8b879f30ff47d0f200a3a1502e7dc6f58ee282d347",
+      "paths_preserved": true,
+      "path_count": 29,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        180.0
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-design-tpu.svg:0000",
+          "text": "Больше ресурсов для специализированных вычислений и переноса данных",
+          "lines": [
+            "Больше ресурсов для специализированных",
+            "вычислений и переноса данных"
+          ],
+          "font_size_svg_pt": 13.0,
+          "effective_font_pt_estimate": 13.743,
+          "bbox_svg_estimate": [
+            30.0,
+            12.523,
+            330.17,
+            40.704
+          ]
+        },
+        {
+          "id": "figure-1-design-tpu.svg:0001",
+          "text": "Входной буфер",
+          "lines": [
+            "Входной буфер"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            34.446,
+            90.453,
+            123.854,
+            101.288
+          ]
+        },
+        {
+          "id": "figure-1-design-tpu.svg:0002",
+          "text": "Матричный вычислительный массив",
+          "lines": [
+            "Матричный",
+            "вычислительный",
+            "массив"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            160.621,
+            73.64,
+            259.379,
+            108.154
+          ]
+        },
+        {
+          "id": "figure-1-design-tpu.svg:0003",
+          "text": "Выходной буфер",
+          "lines": [
+            "Выходной",
+            "буфер"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            311.776,
+            84.04,
+            369.922,
+            107.888
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-design-ub.svg",
+      "source_sha256": "8e301c09cb507512e49a99e9a2ad7251622bf8cca71a104999f184dc630b33dc",
+      "svg_sha256": "4568f86809525a7612b81f1c150404f24ac2fe6af646693545d4ac6f2a38acab",
+      "pdf_sha256": "be8990bf10e104d7f57a197280ad7257c7fdb93d474fe92e9a07cb8e837bc43b",
+      "paths_preserved": true,
+      "path_count": 35,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        180.0
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-design-ub.svg:0000",
+          "text": "Прямой обмен нужными данными между устройствами",
+          "lines": [
+            "Прямой обмен нужными данными между",
+            "устройствами"
+          ],
+          "font_size_svg_pt": 13.0,
+          "effective_font_pt_estimate": 13.743,
+          "bbox_svg_estimate": [
+            30.0,
+            11.899,
+            314.453,
+            40.704
+          ]
+        },
+        {
+          "id": "figure-1-design-ub.svg:0001",
+          "text": "Устройство 0",
+          "lines": [
+            "Устройство 0"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            41.058,
+            75.64,
+            117.244,
+            86.288
+          ]
+        },
+        {
+          "id": "figure-1-design-ub.svg:0002",
+          "text": "Вычисления и память",
+          "lines": [
+            "Вычисления и",
+            "память"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            38.485,
+            91.481,
+            119.819,
+            112.654
+          ]
+        },
+        {
+          "id": "figure-1-design-ub.svg:0003",
+          "text": "Единое соединение",
+          "lines": [
+            "Единое соединение"
+          ],
+          "font_size_svg_pt": 9.5,
+          "effective_font_pt_estimate": 10.043,
+          "bbox_svg_estimate": [
+            160.229,
+            77.075,
+            259.77,
+            85.311
+          ]
+        },
+        {
+          "id": "figure-1-design-ub.svg:0004",
+          "text": "Передача данных",
+          "lines": [
+            "Передача данных"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            162.82,
+            100.71,
+            257.18,
+            110.08
+          ]
+        },
+        {
+          "id": "figure-1-design-ub.svg:0005",
+          "text": "Устройство 1",
+          "lines": [
+            "Устройство 1"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            302.758,
+            75.64,
+            378.944,
+            86.288
+          ]
+        },
+        {
+          "id": "figure-1-design-ub.svg:0006",
+          "text": "Вычисления и память",
+          "lines": [
+            "Вычисления и",
+            "память"
+          ],
+          "font_size_svg_pt": 11.0,
+          "effective_font_pt_estimate": 11.629,
+          "bbox_svg_estimate": [
+            300.185,
+            91.481,
+            381.519,
+            112.654
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-measured-throughput.svg",
+      "source_sha256": "3c5fd2c005f81432105f77724e3851c60385c3a9df5ad4a5cd6d58df113a63f8",
+      "svg_sha256": "0fd4cedc1823f2f717361d9227f807632b3021944bf1c40fbe3bd12a681d8cdb",
+      "pdf_sha256": "1d6d2e6edd19076e83e8a619b7976853c4e8214484b9dfb6653c70f3a8dd283a",
+      "paths_preserved": true,
+      "path_count": 44,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        237.6
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-measured-throughput.svg:0000",
+          "text": "Одновременные запросы (категории с равным шагом)",
+          "lines": [
+            "Одновременные запросы (категории с равным шагом)"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            59.042,
+            213.532,
+            405.962,
+            225.136
+          ]
+        },
+        {
+          "id": "figure-1-measured-throughput.svg:0001",
+          "text": "Пропускная способность всего пакета (токенов/с)",
+          "lines": [
+            "Пропускная способность всего пакета",
+            "(токенов/с)"
+          ],
+          "font_size_svg_pt": 9.5,
+          "effective_font_pt_estimate": 10.043,
+          "bbox_svg_estimate": [
+            24.618,
+            17.522,
+            33.976,
+            211.075
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-measured-tpot.svg",
+      "source_sha256": "83c25940ad177a5ceb712ae8b98e06dde99ee88224205ae1668e52ed55aa8ff3",
+      "svg_sha256": "97c8033bd1f951f56529a625f3e140dcd530f605e48d3469075ce8af39999242",
+      "pdf_sha256": "3bbf852d3bf3901ea762d1dc91294bda8b83734527956d34c21137c93653c33e",
+      "paths_preserved": true,
+      "path_count": 39,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        237.6
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-measured-tpot.svg:0000",
+          "text": "Одновременные запросы (категории с равным шагом)",
+          "lines": [
+            "Одновременные запросы (категории с равным шагом)"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            59.042,
+            213.532,
+            405.962,
+            225.136
+          ]
+        },
+        {
+          "id": "figure-1-measured-tpot.svg:0001",
+          "text": "Интервал вывода для каждого запроса (ms)",
+          "lines": [
+            "Интервал вывода для каждого запроса",
+            "(ms)"
+          ],
+          "font_size_svg_pt": 9.5,
+          "effective_font_pt_estimate": 10.043,
+          "bbox_svg_estimate": [
+            35.79,
+            14.888,
+            44.976,
+            213.714
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-programmability.svg",
+      "source_sha256": "ec0be6ed231d5bcecee9086cc2b128acad21ea4363bfc71c8542959bf7504515",
+      "svg_sha256": "e34cc8f5fa45d50b25a0026e0926fa078fd38bfb76772ed73e281197ce88a90e",
+      "pdf_sha256": "de656dc922007da42e1739f4f190b5cd007a952155da8f971a493e7ce74e9bfd",
+      "paths_preserved": true,
+      "path_count": 79,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        411.84
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-programmability.svg:0000",
+          "text": "Традиционные приложения",
+          "lines": [
+            "Традиционные",
+            "приложения"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            65.187,
+            27.299,
+            159.483,
+            52.943
+          ]
+        },
+        {
+          "id": "figure-1-programmability.svg:0001",
+          "text": "Приложения на основе моделей",
+          "lines": [
+            "Приложения на основе",
+            "моделей"
+          ],
+          "font_size_svg_pt": 12.0,
+          "effective_font_pt_estimate": 12.686,
+          "bbox_svg_estimate": [
+            234.191,
+            27.299,
+            381.107,
+            52.103
+          ]
+        },
+        {
+          "id": "figure-1-programmability.svg:0002",
+          "text": "Код и данные",
+          "lines": [
+            "Код и данные"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            71.991,
+            92.195,
+            148.798,
+            101.298
+          ]
+        },
+        {
+          "id": "figure-1-programmability.svg:0003",
+          "text": "Компилятор и ОС",
+          "lines": [
+            "Компилятор и ОС"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            61.988,
+            161.04,
+            158.809,
+            171.015
+          ]
+        },
+        {
+          "id": "figure-1-programmability.svg:0004",
+          "text": "Выполнение программных инструкций",
+          "lines": [
+            "Выполнение программных",
+            "инструкций"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            36.354,
+            223.792,
+            184.446,
+            246.231
+          ]
+        },
+        {
+          "id": "figure-1-programmability.svg:0005",
+          "text": "Процессор, память и соединения",
+          "lines": [
+            "Процессор, память и",
+            "соединения"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            52.444,
+            292.682,
+            168.354,
+            314.385
+          ]
+        },
+        {
+          "id": "figure-1-programmability.svg:0006",
+          "text": "Интерфейс модели",
+          "lines": [
+            "Интерфейс модели"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            256.137,
+            160.811,
+            363.069,
+            170.975
+          ]
+        },
+        {
+          "id": "figure-1-programmability.svg:0007",
+          "text": "Вычисление вывода и сохранение состояния контекста",
+          "lines": [
+            "Вычисление вывода и",
+            "сохранение состояния",
+            "контекста"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            247.026,
+            217.533,
+            372.175,
+            250.534
+          ]
+        },
+        {
+          "id": "figure-1-programmability.svg:0008",
+          "text": "Ускоритель, память и соединения",
+          "lines": [
+            "Ускоритель, память и",
+            "соединения"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            249.312,
+            292.682,
+            369.894,
+            314.385
+          ]
+        },
+        {
+          "id": "figure-1-programmability.svg:0009",
+          "text": "Инструменты по-прежнему выполняет ОС",
+          "lines": [
+            "Инструменты по-прежнему выполняет ОС"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            92.513,
+            369.761,
+            327.482,
+            379.736
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-read-path.svg",
+      "source_sha256": "4c45d895614ba2f5d8b6ca88a692c821e80613d0da38143d4ca7a580c7eb15ca",
+      "svg_sha256": "c31d8a091e26fedc4c7fabf86e6df691d8e8137a72395c850308666b66e90322",
+      "pdf_sha256": "6f971c5a936b0d54f8313a42c507793a06b43a9b7deabe01f0361e887b88a859",
+      "paths_preserved": true,
+      "path_count": 50,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        216.0
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-read-path.svg:0000",
+          "text": "Видеопамять",
+          "lines": [
+            "Видеопамять"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            65.579,
+            56.335,
+            139.593,
+            65.439
+          ]
+        },
+        {
+          "id": "figure-1-read-path.svg:0001",
+          "text": "70 GB весов",
+          "lines": [
+            "70 GB весов"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            69.38,
+            72.963,
+            135.793,
+            80.901
+          ]
+        },
+        {
+          "id": "figure-1-read-path.svg:0002",
+          "text": "Вычислительный блок",
+          "lines": [
+            "Вычислительный блок"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            259.034,
+            49.841,
+            383.606,
+            58.147
+          ]
+        },
+        {
+          "id": "figure-1-read-path.svg:0003",
+          "text": "Умножение с накоплением",
+          "lines": [
+            "Умножение с",
+            "накоплением"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            284.235,
+            63.046,
+            358.407,
+            83.447
+          ]
+        },
+        {
+          "id": "figure-1-read-path.svg:0004",
+          "text": "Путь чтения: 3350 GB/s",
+          "lines": [
+            "Путь чтения: 3350 GB/s"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            145.582,
+            114.224,
+            275.404,
+            124.199
+          ]
+        },
+        {
+          "id": "figure-1-read-path.svg:0005",
+          "text": "Байт на параметр, полное чтение на каждом шаге",
+          "lines": [
+            "Байт на параметр, полное чтение на каждом шаге"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            68.011,
+            186.462,
+            351.984,
+            196.626
+          ]
+        }
+      ]
+    },
+    {
+      "file": "figure-1-weight-lifetime.svg",
+      "source_sha256": "268c087d0de75505d3aea471bb3682c2b70a341213e86de2ab8866b7fcba0605",
+      "svg_sha256": "0db3fcf01d433185ec3a6b3dd4c344d21b16ed120d96fd66cc99f8385810ebcf",
+      "pdf_sha256": "9aee9d7ab080204bc865a4844fc3c113fe188df49c10b7106a6639f15d8c370d",
+      "paths_preserved": true,
+      "path_count": 58,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        306.36
+      ],
+      "effective_scale_estimate": 1.057143,
+      "pdf_text_cyrillic_present": true,
+      "pdf_fonts_embedded": true,
+      "labels": [
+        {
+          "id": "figure-1-weight-lifetime.svg:0000",
+          "text": "Файл модели",
+          "lines": [
+            "Файл модели"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            49.988,
+            40.8,
+            123.929,
+            50.229
+          ]
+        },
+        {
+          "id": "figure-1-weight-lifetime.svg:0001",
+          "text": "Видеопамять: одна копия весов",
+          "lines": [
+            "Видеопамять: одна копия весов"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            120.824,
+            95.177,
+            299.177,
+            104.28
+          ]
+        },
+        {
+          "id": "figure-1-weight-lifetime.svg:0002",
+          "text": "Загрузка при запуске",
+          "lines": [
+            "Загрузка при запуске"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            161.565,
+            43.346,
+            282.189,
+            53.321
+          ]
+        },
+        {
+          "id": "figure-1-weight-lifetime.svg:0003",
+          "text": "Шаг 1",
+          "lines": [
+            "Шаг 1"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            68.409,
+            193.847,
+            101.61,
+            201.648
+          ]
+        },
+        {
+          "id": "figure-1-weight-lifetime.svg:0004",
+          "text": "Вычислительный блок",
+          "lines": [
+            "Вычислительный",
+            "блок"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            39.634,
+            208.35,
+            130.384,
+            228.09
+          ]
+        },
+        {
+          "id": "figure-1-weight-lifetime.svg:0005",
+          "text": "Шаг 2",
+          "lines": [
+            "Шаг 2"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            193.401,
+            193.71,
+            226.602,
+            201.648
+          ]
+        },
+        {
+          "id": "figure-1-weight-lifetime.svg:0006",
+          "text": "Вычислительный блок",
+          "lines": [
+            "Вычислительный",
+            "блок"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            164.626,
+            208.35,
+            255.376,
+            228.09
+          ]
+        },
+        {
+          "id": "figure-1-weight-lifetime.svg:0007",
+          "text": "Шаг 3",
+          "lines": [
+            "Шаг 3"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            318.393,
+            193.71,
+            351.594,
+            201.648
+          ]
+        },
+        {
+          "id": "figure-1-weight-lifetime.svg:0008",
+          "text": "Вычислительный блок",
+          "lines": [
+            "Вычислительный",
+            "блок"
+          ],
+          "font_size_svg_pt": 10.0,
+          "effective_font_pt_estimate": 10.571,
+          "bbox_svg_estimate": [
+            289.618,
+            208.35,
+            380.368,
+            228.09
+          ]
+        },
+        {
+          "id": "figure-1-weight-lifetime.svg:0009",
+          "text": "На каждом шаге нужные веса читаются из видеопамяти",
+          "lines": [
+            "На каждом шаге нужные веса читаются из видеопамяти"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            51.387,
+            249.946,
+            368.613,
+            259.784
+          ]
+        },
+        {
+          "id": "figure-1-weight-lifetime.svg:0010",
+          "text": "Выход предыдущего шага — вход следующего",
+          "lines": [
+            "Выход предыдущего шага — вход следующего"
+          ],
+          "font_size_svg_pt": 10.5,
+          "effective_font_pt_estimate": 11.1,
+          "bbox_svg_estimate": [
+            78.245,
+            270.42,
+            341.753,
+            280.258
+          ]
+        }
+      ]
+    }
+  ]
+}

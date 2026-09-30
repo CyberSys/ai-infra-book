@@ -1,0 +1,19 @@
+{
+  "figure-1-design-tpu.svg:0000": {"align": "start", "x": 30, "y": 30, "max_width": 360, "font_size": 13, "line_height": 16},
+  "figure-1-design-tpu.svg:0001": {"align": "center", "x": 79.15, "y": 99, "max_width": 98, "font_size": 11},
+  "figure-1-design-tpu.svg:0002": {"align": "center", "x": 210, "y": 95, "max_width": 100, "font_size": 11, "line_height": 13},
+  "figure-1-design-tpu.svg:0003": {"align": "center", "x": 340.85, "y": 99, "max_width": 98, "font_size": 11},
+  "figure-1-design-smartnic.svg:0000": {"align": "start", "x": 30, "y": 30, "max_width": 360, "font_size": 13, "line_height": 16},
+  "figure-1-design-smartnic.svg:0001": {"align": "center", "x": 79.15, "y": 99, "max_width": 100, "font_size": 11},
+  "figure-1-design-smartnic.svg:0002": {"align": "center", "x": 210, "y": 84, "max_width": 100, "font_size": 10, "line_height": 12},
+  "figure-1-design-smartnic.svg:0003": {"align": "center", "x": 210, "y": 110, "max_width": 104, "font_size": 10},
+  "figure-1-design-smartnic.svg:0004": {"align": "center", "x": 340.85, "y": 85, "max_width": 100, "font_size": 11},
+  "figure-1-design-smartnic.svg:0005": {"align": "center", "x": 340.85, "y": 106, "max_width": 100, "font_size": 11, "line_height": 13},
+  "figure-1-design-ub.svg:0000": {"align": "start", "x": 30, "y": 30, "max_width": 360, "font_size": 13, "line_height": 16},
+  "figure-1-design-ub.svg:0001": {"align": "center", "x": 79.15, "y": 84, "max_width": 100, "font_size": 11},
+  "figure-1-design-ub.svg:0002": {"align": "center", "x": 79.15, "y": 106, "max_width": 100, "font_size": 11, "line_height": 13},
+  "figure-1-design-ub.svg:0003": {"align": "center", "x": 210, "y": 84, "max_width": 101, "font_size": 9.5},
+  "figure-1-design-ub.svg:0004": {"align": "center", "x": 210, "y": 108, "max_width": 100, "font_size": 10},
+  "figure-1-design-ub.svg:0005": {"align": "center", "x": 340.85, "y": 84, "max_width": 100, "font_size": 11},
+  "figure-1-design-ub.svg:0006": {"align": "center", "x": 340.85, "y": 106, "max_width": 100, "font_size": 11, "line_height": 13}
+}

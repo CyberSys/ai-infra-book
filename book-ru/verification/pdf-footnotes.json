@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "pdf": "dist/AI-Infra-in-Depth-RU.pdf",
+  "pdf_sha256": "ae34114fe3f2ca7d2cb6d869a8eac82780d15a355ca46b046bdecddb7e545cc6",
+  "emitted_footnotes": 564,
+  "chapter_counts": [
+    0,
+    19,
+    35,
+    54,
+    88,
+    51,
+    47,
+    50,
+    42,
+    44,
+    44,
+    45,
+    45
+  ],
+  "chapter_order": [
+    "preface",
+    "chapter1",
+    "chapter2",
+    "chapter3",
+    "chapter4",
+    "chapter5",
+    "chapter6",
+    "chapter7",
+    "chapter8",
+    "chapter9",
+    "chapter10",
+    "chapter11",
+    "chapter12"
+  ],
+  "method": "Parse balanced-brace footnotes from full generated LaTeX; compare exact ordered whitespace-normalized contents with independent Pandoc --file-scope rendering of each prepared chapter using the same layout filter.",
+  "matches": true,
+  "duplicate_note_reference_warnings": 0
+}

@@ -1,0 +1,1022 @@
+{
+  "schema_version": 1,
+  "scope": "47 chapter 9 SVG figures and same-stem PDFs with vector labels; 46 are referenced by chapter9.md; one unused upstream asset and the original embedded raster are retained",
+  "source_commit": "56ecb425b07ea6d16e891cba87bf7db416927d09",
+  "provenance": {
+    "localizer_script_sha256": "b0fce04fee6321065f00230fae5a5f754b286cf18080621962d6d95da07b6f9d",
+    "audit_script_sha256": "0fc438bcd8cf0b0dc27c8802ab86d4eb028dd40f757a9b825b028aae05c04fa1",
+    "layout_sha256": "c604f80f9d19605ad50ff38d7ef6103748c443336385c15c4e741e18580a5734",
+    "mapping_sha256": {
+      "ch09-A.verified.json": "f4d723761a142b2231d046af832b82a9fa5724709eef5640fe5bf17f2986a348",
+      "ch09-B.verified.json": "5fac97860ebb148e60c8c665ae68d7aa3291ec38aa6105d4464625c308dc978c",
+      "ch09-C.verified.json": "e4c8309031d52edf7231acc1b8f7a89f6bcf99fdde9043ca29e0a628c52e9c6a"
+    },
+    "source_manifest_sha256": "312cf065b2ffb6257a7e25456d54073a9d4e21e9d1fff48cd496eeba1d9bd3ac",
+    "font_file": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "font_sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+    "rsvg_convert_version": "rsvg-convert version 2.58.0",
+    "pdftotext_version": "pdftotext version 24.02.0"
+  },
+  "pdf_embedding_assumption": {
+    "max_width_pt": 444,
+    "max_height_pt": 504,
+    "note": "Estimate only; verify actual assembled book PDF separately"
+  },
+  "counts": {
+    "figures": 47,
+    "labels": 246
+  },
+  "referenced_figures": 46,
+  "unused_upstream_assets": [
+    "figure-9-8-handoff.svg"
+  ],
+  "minimum_effective_font_pt_estimate": 9.025,
+  "preserved_upstream_rasters": [
+    {
+      "figure": "figure-9-3-pd.svg",
+      "png_sha256": "08fe0e2a5c931af9e0998c7f1cf6630f1ec32bd83b789a73d13e7e393af21042",
+      "note": "Unchanged embedded upstream heatmap; localized labels are vector text"
+    }
+  ],
+  "reproduction": "All 47 SVG files are byte-identical to a fresh render from the durable layout and verified mappings",
+  "visual_review": "All 47 figures were reviewed in contact sheets and full-size PNGs. Root independently reviewed all figures, requested layout-only corrections, and accepted v12 after rechecking the 15 changed figures; no translated-label intersections remained.",
+  "exact_model_evidence": {
+    "A": {
+      "records": 87,
+      "translation": {
+        "mapping_sha256": "858aca5bb100ade8e983b47624ec8c862b30fd0a660ade4e32d6821d0fa13ada",
+        "runtime": {
+          "requested_model": "gpt-5.6-sol",
+          "reported_model": "gpt-5.6-sol",
+          "provider": "openai",
+          "thread_id": "01a0e5a6-9de9-70b0-8a31-cad07060750b",
+          "turn_id": "01a0e5a6-9e57-7872-b9db-c5f963dbfe4f",
+          "ephemeral": true,
+          "fallback_allowed": false,
+          "sandbox_type": "readOnly",
+          "completion_observed": true,
+          "usage_observed": true,
+          "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+          "prompt_sha256": "1ea86a3450d93a5a0830a39f57e4362e64a0953959ef7ad760df1da57f4b85cf",
+          "response_sha256": "858aca5bb100ade8e983b47624ec8c862b30fd0a660ade4e32d6821d0fa13ada",
+          "stdout_sha256": "de7602685d39987b5bdafc470f0efbd5917a4f0aeef42dd2e2a4926dda58b9b2",
+          "stderr_sha256": "4466feab36fc2725957e0cc8bd641912d2332a19510b88480cf248a233487178"
+        }
+      },
+      "verification": {
+        "mapping_sha256": "488e6ffcd8f4095135391d5fadc81a1879dcc193c157ec43c816600cbd2d2909",
+        "runtime": {
+          "requested_model": "gpt-5.6-sol",
+          "reported_model": "gpt-5.6-sol",
+          "provider": "openai",
+          "thread_id": "01a0e5a7-dcee-72d0-af1b-d82c061ce8f2",
+          "turn_id": "01a0e5a7-dd64-7da2-942b-11acea6dd1ad",
+          "ephemeral": true,
+          "fallback_allowed": false,
+          "sandbox_type": "readOnly",
+          "completion_observed": true,
+          "usage_observed": true,
+          "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+          "prompt_sha256": "420bfa3afecde3745b963e39eabcaf16138565c8bf02981d053876847e65d5f8",
+          "response_sha256": "488e6ffcd8f4095135391d5fadc81a1879dcc193c157ec43c816600cbd2d2909",
+          "stdout_sha256": "d6c35b8b95081094b40068d15e91f2da44badcdb2fd9a94ccbb64fc678df296e",
+          "stderr_sha256": "fd629bc52f3acd2a9dc36cefe92566aa706cb877ca6d7f9fbb796b9da9c6f6bc"
+        }
+      }
+    },
+    "B": {
+      "records": 88,
+      "translation": {
+        "mapping_sha256": "54fdc5f4e209c4a230171ea6d878f5accd2b5dcba1c4b006497c6a1bebd15041",
+        "runtime": {
+          "requested_model": "gpt-5.6-sol",
+          "reported_model": "gpt-5.6-sol",
+          "provider": "openai",
+          "thread_id": "01a0e5a9-6aba-72d2-b107-747eff0356a4",
+          "turn_id": "01a0e5a9-6b25-7781-9da1-2171e0766c92",
+          "ephemeral": true,
+          "fallback_allowed": false,
+          "sandbox_type": "readOnly",
+          "completion_observed": true,
+          "usage_observed": true,
+          "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+          "prompt_sha256": "0c3bf9f6feb1678c567cc3e1670d568cdabff7c35172530184f9bed95db2218f",
+          "response_sha256": "54fdc5f4e209c4a230171ea6d878f5accd2b5dcba1c4b006497c6a1bebd15041",
+          "stdout_sha256": "d9468842997f7326ec8ccf4cbe128a21a4c317c049312dcc75e416ef182b2a3e",
+          "stderr_sha256": "4fc7e091fffb1fb159bb4bfbed82b54255a12b095add86919b42c75c63cd5647"
+        }
+      },
+      "verification": {
+        "mapping_sha256": "e58ba07e0a6bb0651070058e64e514d46cf262d0e9c26725197147833f498433",
+        "runtime": {
+          "requested_model": "gpt-5.6-sol",
+          "reported_model": "gpt-5.6-sol",
+          "provider": "openai",
+          "thread_id": "01a0e5ab-884b-7f02-84bd-b079589bd338",
+          "turn_id": "01a0e5ab-88b5-7733-94af-181dd1e905b0",
+          "ephemeral": true,
+          "fallback_allowed": false,
+          "sandbox_type": "readOnly",
+          "completion_observed": true,
+          "usage_observed": true,
+          "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+          "prompt_sha256": "9052ae28413822f4feb88c7e5a1ece5f34c3416840ade120c074feca8b0c888e",
+          "response_sha256": "e58ba07e0a6bb0651070058e64e514d46cf262d0e9c26725197147833f498433",
+          "stdout_sha256": "9c5c609c2f867c802ccc09d6dca852d83c81c8e24947cdfdcbd86e468485e5b9",
+          "stderr_sha256": "b84861bc6ddc36a98b7678df3c13d946f66afa678e19a993d255a6e2869b75b9"
+        }
+      }
+    },
+    "C": {
+      "records": 71,
+      "translation": {
+        "mapping_sha256": "214355e2dda1c82505c4c5769c54bda21137e1ce81f4e85af722d32434b1a816",
+        "runtime": {
+          "requested_model": "gpt-5.6-sol",
+          "reported_model": "gpt-5.6-sol",
+          "provider": "openai",
+          "thread_id": "01a0e5ac-cfd3-7650-83e1-fd66ae9a0f58",
+          "turn_id": "01a0e5ac-d03f-7282-879c-6bb0cb8ac144",
+          "ephemeral": true,
+          "fallback_allowed": false,
+          "sandbox_type": "readOnly",
+          "completion_observed": true,
+          "usage_observed": true,
+          "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+          "prompt_sha256": "17ff4a2f00bb02a7f23bde3a1d99790871b51326e5e492b4fbf957f322fb56bf",
+          "response_sha256": "214355e2dda1c82505c4c5769c54bda21137e1ce81f4e85af722d32434b1a816",
+          "stdout_sha256": "f31beb868c5569697dc215f14bc0754032625be1f046bac2ce8bc8eb9a9ec487",
+          "stderr_sha256": "2b569a7675602e739cc11a76699dd3425000958a82e41275819dd3bdc69a9d60"
+        }
+      },
+      "verification": {
+        "mapping_sha256": "ad79b12b725ed0a1e5db8993c4fb8ed0b2075b6db4917ebd0f06a06dd47e12a6",
+        "runtime": {
+          "requested_model": "gpt-5.6-sol",
+          "reported_model": "gpt-5.6-sol",
+          "provider": "openai",
+          "thread_id": "01a0e5ad-66a3-7940-b7fd-0dc59c9b84cf",
+          "turn_id": "01a0e5ad-6723-7c21-b569-8986f3d9ed43",
+          "ephemeral": true,
+          "fallback_allowed": false,
+          "sandbox_type": "readOnly",
+          "completion_observed": true,
+          "usage_observed": true,
+          "command_sha256": "326a0701f8d70a87fabf90543a2ff0f37b8d792d34688bd81479bb381ff6dadf",
+          "prompt_sha256": "928b0578e30832dd88f473d71355a9a078437c6398ed2d33197954dc40dee2c9",
+          "response_sha256": "ad79b12b725ed0a1e5db8993c4fb8ed0b2075b6db4917ebd0f06a06dd47e12a6",
+          "stdout_sha256": "14234bfbf6a1fceea6d68ba3dcd786e5d229bf0ac198aafb831d498619fc58b1",
+          "stderr_sha256": "dfa6f43e88a9c16149ea2e7085f8b208e85f771e23c00a7180696f9bcf034abe"
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "file": "figure-9-1-organization.svg",
+      "source_sha256": "be534d2256efbdb9e1ce790f3204d2cb49d2330fe94ba63fd20ced1d0bb2ad63",
+      "svg_sha256": "86fcc90eff8cd48071feee670594c713a037a0e853c6c027b8061d684de0fc87",
+      "pdf_sha256": "dd52e1f957bb94b9c6d828a7caaddaca9b857aa249b3625d98f9a0102a2a1f49",
+      "paths_preserved": true,
+      "path_count": 40,
+      "labels_verified_in_svg_and_pdf": 2,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        266.4
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-10-experts.svg",
+      "source_sha256": "21acd75519d78f4121617cd0868cc130023dcb8f225f674a4774188d25379286",
+      "svg_sha256": "44ecbec34361f89228f689f0c8dfd2a8494701e7758467cd13a1eb89ae402d66",
+      "pdf_sha256": "a8841249a3444751d0ac2f726413d14af1d89a4906ab6e3c9b1b17751085803d",
+      "paths_preserved": true,
+      "path_count": 60,
+      "labels_verified_in_svg_and_pdf": 4,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        259.2
+      ],
+      "minimum_effective_font_pt_estimate": 10.571
+    },
+    {
+      "file": "figure-9-11-overlap.svg",
+      "source_sha256": "73cd82b60e8b1276bb3fa863a687b26c41114a601ff97181df365205e5122421",
+      "svg_sha256": "2a4a82875d1c7eafe07e7ec7b66f5feded9d5ba3d24b4e9144bbead1b3096e5c",
+      "pdf_sha256": "2a70b1ea4241833be237aae8c770a536d36dc8e693b3708814e626e9fccfea45",
+      "paths_preserved": true,
+      "path_count": 35,
+      "labels_verified_in_svg_and_pdf": 4,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        252.0
+      ],
+      "minimum_effective_font_pt_estimate": 10.571
+    },
+    {
+      "file": "figure-9-12-cache.svg",
+      "source_sha256": "88258204d03657b4756b2d466054484ebc1c521f44d52bc3ee6dca91ff4b2dc8",
+      "svg_sha256": "9768eef2470d4fc22457488320f95f60a746d4d7dcbfd1e5dcd1a22a58b67918",
+      "pdf_sha256": "69bf23a33ca40df0e9df34383377dae8123860e7144d3f2127bdcdea81147e2b",
+      "paths_preserved": true,
+      "path_count": 100,
+      "labels_verified_in_svg_and_pdf": 2,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        324.0
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-13-route.svg",
+      "source_sha256": "6ceb2a524e8ee14496f54e2c30fe21b1c19fc375f3524e1ea9fa881d52b5c5ef",
+      "svg_sha256": "12ee6f260b9148ccc7671c6b4cd6b18affe17507d8b2569ffc69bdcf2a5811d1",
+      "pdf_sha256": "0c138b8fa1b7d7755b100a981c11bb9469ae703293d56255af6fbdef8bf9044d",
+      "paths_preserved": true,
+      "path_count": 30,
+      "labels_verified_in_svg_and_pdf": 2,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        216.0
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-14-migration.svg",
+      "source_sha256": "aba687631ea13eff15c05a650fbab8b381f71c96432279e02f83b4f0d50ce165",
+      "svg_sha256": "420d296fdf41ab5400c2203384d8ef4ba5deb065e80d7ce07a0d6e00a27250a5",
+      "pdf_sha256": "3e422418bb3b83c45ae6ed5582c783f36cffee9e781e5c4b0fbacaa5b051860f",
+      "paths_preserved": true,
+      "path_count": 46,
+      "labels_verified_in_svg_and_pdf": 5,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        266.4
+      ],
+      "minimum_effective_font_pt_estimate": 10.043
+    },
+    {
+      "file": "figure-9-15-recovery.svg",
+      "source_sha256": "143b3f3fcd619d06865715704c08df232460c91a6011af1ef669a10e5778b6e5",
+      "svg_sha256": "d65fa546da24e4f84c09963af58dd76ca8c1a81093e33586c8026f9430fe240d",
+      "pdf_sha256": "56410781611a9ed3c6fcbac069a936ad9465aaa3a5b1520246331017b232e576",
+      "paths_preserved": true,
+      "path_count": 58,
+      "labels_verified_in_svg_and_pdf": 12,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        345.6
+      ],
+      "minimum_effective_font_pt_estimate": 9.514
+    },
+    {
+      "file": "figure-9-16-composition.svg",
+      "source_sha256": "a3bf5301a92f3c6768186a6854b383da46cf8fb1099a21fe24c88bfe87e54278",
+      "svg_sha256": "229f40f82c64556f00375bcbe2c7bab76ec6ece9fd8f469880043b9e0943acd1",
+      "pdf_sha256": "f9b5c81808face3ee3e209ea41c96ff4e3e666101133394cac06195d2f22e8b9",
+      "paths_preserved": true,
+      "path_count": 24,
+      "labels_verified_in_svg_and_pdf": 1,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        259.2
+      ],
+      "minimum_effective_font_pt_estimate": 12.686
+    },
+    {
+      "file": "figure-9-17-service.svg",
+      "source_sha256": "44df9ef2410a3c180c93a40c5b603501713c84268ecbe3f663159ed16334ea8b",
+      "svg_sha256": "87f24899031935b6ade2f2c453fa3d41cc1eec225008b83ee62dac248781efd3",
+      "pdf_sha256": "65ef66e5a73ac46f6dfcfc8e1684e1a4ecb6bc7a935722873a05ef157814fb8d",
+      "paths_preserved": true,
+      "path_count": 54,
+      "labels_verified_in_svg_and_pdf": 5,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        345.6
+      ],
+      "minimum_effective_font_pt_estimate": 9.514
+    },
+    {
+      "file": "figure-9-2-state.svg",
+      "source_sha256": "afe5a1052e09c466906de1c78acde6d54183d3de8d8c3a8caee309edf2364c8d",
+      "svg_sha256": "627ce2374c47986c3ab6a75c63bbc97619340c1e5f34bda83607fc8482a3e677",
+      "pdf_sha256": "5466087126969d8f51869475ba3165bf4d5d7bcc22c8a94389b4e5950bd080fc",
+      "paths_preserved": true,
+      "path_count": 43,
+      "labels_verified_in_svg_and_pdf": 5,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        309.6
+      ],
+      "minimum_effective_font_pt_estimate": 9.091
+    },
+    {
+      "file": "figure-9-3-pd.svg",
+      "source_sha256": "5e97588b8e484a9857d7209149c6cb3036477a48ed1ce1bcd2bc2acab72ff3da",
+      "svg_sha256": "12dea81c3c80fa31eaf88aa41df85de85cd05f14b629a49926a1ebd2b8832aee",
+      "pdf_sha256": "74cdb31fe96d524bc5d768df976e2c5b801b6b657de38a72727dfddb78ddc78e",
+      "paths_preserved": true,
+      "path_count": 30,
+      "labels_verified_in_svg_and_pdf": 2,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        324.0
+      ],
+      "minimum_effective_font_pt_estimate": 12.686
+    },
+    {
+      "file": "figure-9-4-allocation.svg",
+      "source_sha256": "412538d6147500f25e7012ebe24d13b1318c13c8edd4e9051ee30ab76e04aebd",
+      "svg_sha256": "d83bc6e36f84e15b50c8c5e1fa673072738ace98fd94c60809e433201675027a",
+      "pdf_sha256": "a1a8fdc0cb16656506000b991468850f52694bc5845b5215b2a9f86cc3e9c557",
+      "paths_preserved": true,
+      "path_count": 66,
+      "labels_verified_in_svg_and_pdf": 6,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        352.8
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-5-local.svg",
+      "source_sha256": "a7ee04bde1ed12e361af0ab67cea8108398eef44a915c9f090991443795ef318",
+      "svg_sha256": "39ea075094362a6f364f4b64bc31959c8a252477d0fd841b756fce7182a53f42",
+      "pdf_sha256": "978f67e3046d367dd940d134a9f5dbcd573ca09b6a016e0c3acd4d45fb59da19",
+      "paths_preserved": true,
+      "path_count": 35,
+      "labels_verified_in_svg_and_pdf": 4,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        316.8
+      ],
+      "minimum_effective_font_pt_estimate": 10.571
+    },
+    {
+      "file": "figure-9-6-reuse.svg",
+      "source_sha256": "caece2441c3355401055617b9d9a974e4b05d91069376b35fbc8a6bfe9d822e2",
+      "svg_sha256": "3a9614813a2f1e53d3fd058219490fe33ef7cb210a223f9820d52901052f4c87",
+      "pdf_sha256": "48fad0592c9ebc226270bbad0e70183841f817206fd55a5c968c2f4301c276cc",
+      "paths_preserved": true,
+      "path_count": 61,
+      "labels_verified_in_svg_and_pdf": 3,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        280.8
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-8-handoff.svg",
+      "source_sha256": "2def883ca6bb1f3fe3bb5988d7ac38d1194b40ad32260e79a3886b4c65fd4ce3",
+      "svg_sha256": "dd030bb66c6c76021f9813f2041f106b97c6472b48ba6e304c424a7d658b3de2",
+      "pdf_sha256": "518f87dce88e1fd108e16aa118af514fc13fc2dc18b3142b31858af4fbbe4fd7",
+      "paths_preserved": true,
+      "path_count": 61,
+      "labels_verified_in_svg_and_pdf": 5,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        747.807344,
+        391.52
+      ],
+      "minimum_effective_font_pt_estimate": 9.025
+    },
+    {
+      "file": "figure-9-9-balance.svg",
+      "source_sha256": "283e03f8d3716a33ab1bfe28c909eae8096bcd2c5c58ad4adf4526d9339e85c3",
+      "svg_sha256": "b9fb0f8b4516b72c2740e0595b1272141d43f8ef40fd9b767c56fb94dd321280",
+      "pdf_sha256": "1726b12958408a4174deb41f0fbefea804b7ebf157a00bf7e99f50f5ed95ee5e",
+      "paths_preserved": true,
+      "path_count": 40,
+      "labels_verified_in_svg_and_pdf": 9,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        288.0
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-af-pingpong.svg",
+      "source_sha256": "51437a607d460e4df53d69233d9744f992c5409db6145fa2537269ff3e8e879d",
+      "svg_sha256": "4f1031d0c2cc81741e08880612323a21265f5b4edc96f5d7db48c8e21e7c3c74",
+      "pdf_sha256": "4fdd764761ce59fe4f73873ee3b7958615b7a254e17ffae3df43850194c18f66",
+      "paths_preserved": true,
+      "path_count": 91,
+      "labels_verified_in_svg_and_pdf": 7,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        259.2
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-balance-hotspot.svg",
+      "source_sha256": "b418e182e167d899969eee9a0de8430d29868eaa49a797d780f2a2d4c383cfde",
+      "svg_sha256": "acc37c59255b5969f0e43b98bcf337a078e1ad1e69f21b49ccab15ce8263347a",
+      "pdf_sha256": "b618eb82fafda09445323c6fad47ce761150e4c34090b2688415066f1e233861",
+      "paths_preserved": true,
+      "path_count": 40,
+      "labels_verified_in_svg_and_pdf": 9,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        288.0
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-cache-directory.svg",
+      "source_sha256": "c1daa3fb251ac6360c8dac068c543023bb19edf75974b4d035d61501ac5add01",
+      "svg_sha256": "0535ffb049ff36d1042eb89079303dff46ec93553f38a08cb9107d89c7749a8a",
+      "pdf_sha256": "d8bbd76f138b0439e277960c35041ada191d241cb6de125feedbcc09350a7866",
+      "paths_preserved": true,
+      "path_count": 41,
+      "labels_verified_in_svg_and_pdf": 5,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        273.6
+      ],
+      "minimum_effective_font_pt_estimate": 10.043
+    },
+    {
+      "file": "figure-9-composition-pool.svg",
+      "source_sha256": "06ee336bf6476d1dc3bd63649fb70ac815d2fc367dc3f9247c8f6ad454e4d371",
+      "svg_sha256": "22d8f5c084c781dc5342b82ecf053fbf0c38d9fc60d51559bf9084c85312d8db",
+      "pdf_sha256": "a253c7c5dadc3c4086ffca749227e4b3628b493371f8aebc65e395e0d8ccead5",
+      "paths_preserved": true,
+      "path_count": 33,
+      "labels_verified_in_svg_and_pdf": 2,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        259.2
+      ],
+      "minimum_effective_font_pt_estimate": 12.686
+    },
+    {
+      "file": "figure-9-cpu-bottleneck.svg",
+      "source_sha256": "981d2a19046d9d1aeae9710d91de821a62e7e740561f909c62fa9f4fae683f7b",
+      "svg_sha256": "0a7e3931d8e239ede0a8a7397bdc177baec37dc4f589b87661b36e508e4566f2",
+      "pdf_sha256": "225c518db0a092781691a053235d90085b22068da31ccbd00e663b1a60accc8b",
+      "paths_preserved": true,
+      "path_count": 84,
+      "labels_verified_in_svg_and_pdf": 5,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        237.6
+      ],
+      "minimum_effective_font_pt_estimate": 9.514
+    },
+    {
+      "file": "figure-9-ep-layer.svg",
+      "source_sha256": "a2e47da0350cbef071010b406a5a803e95525f6365b037f830682786e20a0026",
+      "svg_sha256": "a35043fe5e0fb96ad07d25d5e0417a8a255c2d0baa27f73cfff16c1eea859ded",
+      "pdf_sha256": "b73dcbdcd29149632169ae3e289282cdf828c71b4f68bf18656adf05f1849443",
+      "paths_preserved": true,
+      "path_count": 172,
+      "labels_verified_in_svg_and_pdf": 8,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        432.0
+      ],
+      "minimum_effective_font_pt_estimate": 10.571
+    },
+    {
+      "file": "figure-9-ep-scale-cards.svg",
+      "source_sha256": "50978bdb0c8f520904692d7718a88d7ea33ffad0884401ba9f813651ecca11ef",
+      "svg_sha256": "66476e88939c4672695dbec365f6c74df1967262355bb167a5d4fb9e83bb04d0",
+      "pdf_sha256": "d8cfa3c9b83667adbef34f6b8ecb3bcd16b77270a2469e0d8a0826d6443b054a",
+      "paths_preserved": true,
+      "path_count": 232,
+      "labels_verified_in_svg_and_pdf": 6,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        280.8
+      ],
+      "minimum_effective_font_pt_estimate": 10.571
+    },
+    {
+      "file": "figure-9-ep-scale-sweep.svg",
+      "source_sha256": "1e788466bdf759f628a484cb627af6e2db1b7d6a0ebf041d364c8b1ebd559f97",
+      "svg_sha256": "09a745cc1e7f15e4fd8c3d94af4b47976d4015c9ee8aef831edf4a20724dd397",
+      "pdf_sha256": "4726c32fbff91eb8a834e8d71de0875762e1f6ed6e99267d089d9eac6a9363c9",
+      "paths_preserved": true,
+      "path_count": 57,
+      "labels_verified_in_svg_and_pdf": 4,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        252.0
+      ],
+      "minimum_effective_font_pt_estimate": 11.1
+    },
+    {
+      "file": "figure-9-ep-skew.svg",
+      "source_sha256": "255f2262472b43475330e5cfd89c991d025795a0131eb6eb8b091c0c8dcce24b",
+      "svg_sha256": "4fbc13cb0545ad8f03a58c998af768572b9e0d38ef364153854de90ac7789f50",
+      "pdf_sha256": "79fd4c9c623b67d4f0fe5dac7303b56dd500c99fbc0cbaf497ba4ba105a27134",
+      "paths_preserved": true,
+      "path_count": 39,
+      "labels_verified_in_svg_and_pdf": 7,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        266.4
+      ],
+      "minimum_effective_font_pt_estimate": 11.1
+    },
+    {
+      "file": "figure-9-ep-tail.svg",
+      "source_sha256": "bbaabdd8f594072e9d8ff6d4bff9f38b7a5152f43485caff271b05bf5732678b",
+      "svg_sha256": "160696844b5be5f0b7dd43c85be295bfb59865378246c8ce2b5254459c160f4e",
+      "pdf_sha256": "43759b89cc23296ca9d66e2ec804d1b3f62ef9b1b28bcb561ca2b1229273d7d7",
+      "paths_preserved": true,
+      "path_count": 52,
+      "labels_verified_in_svg_and_pdf": 7,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        237.6
+      ],
+      "minimum_effective_font_pt_estimate": 10.043
+    },
+    {
+      "file": "figure-9-kv-capacity.svg",
+      "source_sha256": "c09d8d531d164236121dcc40691d9bd64b19d69c48ad12dc6ba5d5842308a1f3",
+      "svg_sha256": "5498e3da1f2b6abb4eae5978d135486416c92d51df0a5f379d20ce0fd6f8cf2e",
+      "pdf_sha256": "f3ae958efff7e9668930b1a85ca807c8c4b53d11ea89ab5b707e2fb7fe60f152",
+      "paths_preserved": true,
+      "path_count": 77,
+      "labels_verified_in_svg_and_pdf": 8,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        302.4
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-kv-hit.svg",
+      "source_sha256": "3a1e1433ad337ed3651e532105041fd9e5a94ab7b01eb5aa271902857034b53e",
+      "svg_sha256": "86cc40feb37d052875811e2bb6f8387718e12bac83dd56a8fcd7f9b50eaab9f8",
+      "pdf_sha256": "9d91f30b80da74a44477e24481c8e148ff7d5a0d801a07ba23943ceef0f76724",
+      "paths_preserved": true,
+      "path_count": 55,
+      "labels_verified_in_svg_and_pdf": 8,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        266.4
+      ],
+      "minimum_effective_font_pt_estimate": 10.571
+    },
+    {
+      "file": "figure-9-kv-load-layerwise.svg",
+      "source_sha256": "97cb22bb67799caf8fe1936b0a8376139cfd733d7f64af37fcbbbd6780e8c30b",
+      "svg_sha256": "0cae08c4233eeb58ded7f60072af4f7019ef5cc126f61237d5d3004e8d62eb5c",
+      "pdf_sha256": "83db110b0b17d5a8c30b8e24230db1c123a09815493cdf3336e9fa7deea9c948",
+      "paths_preserved": true,
+      "path_count": 114,
+      "labels_verified_in_svg_and_pdf": 3,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        180.0
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-kv-load-preload.svg",
+      "source_sha256": "6534a863be68b8ea0224eae08c5b18aed0e51a85763ec89ecbd2d2dc0a47f2bc",
+      "svg_sha256": "b6f7a3980bad4589ac2bcbc1ec68a307123b70556068679e870a11be1789bfa5",
+      "pdf_sha256": "d58c5846ea78180d270a0dc84a1cf53f160b5a986c240c90271e4df2c6db1a9e",
+      "paths_preserved": true,
+      "path_count": 119,
+      "labels_verified_in_svg_and_pdf": 4,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        180.0
+      ],
+      "minimum_effective_font_pt_estimate": 9.514
+    },
+    {
+      "file": "figure-9-kv-load-serial.svg",
+      "source_sha256": "a46c7e18357fb4e6ab47903fad1ea701949e9c1a8a4e8b19ad73a1c0819e5297",
+      "svg_sha256": "f717b5e9aa162c7f02d1fe8cef373e15cbcb5f3cec684e9bdab66624e88d844c",
+      "pdf_sha256": "9fa3b37d93dd4a00e53f3102ad28a5fb307d4430778ad541c4d6d06e6221762c",
+      "paths_preserved": true,
+      "path_count": 114,
+      "labels_verified_in_svg_and_pdf": 3,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        180.0
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-kv-prefetch.svg",
+      "source_sha256": "76a1557ece8a18aa507befc52e81e4ae9ea125fb86f7650ed43f3f40a1637053",
+      "svg_sha256": "29ef692cda4319de447c92382a9cc6f367a9c8ffa45ddd4549a91fc3a2554d70",
+      "pdf_sha256": "fdb42a9b347856618486863f495e9ff646a3dac3ebe8134d606062e8cffb89b9",
+      "paths_preserved": true,
+      "path_count": 60,
+      "labels_verified_in_svg_and_pdf": 9,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        288.0
+      ],
+      "minimum_effective_font_pt_estimate": 10.043
+    },
+    {
+      "file": "figure-9-kv-publish.svg",
+      "source_sha256": "9f053141c6ecbbf89784cfd6cc2fee2cbed459d916e5dfcd7157fb2bab58ca87",
+      "svg_sha256": "d50c06343316d2d1dc74b67ddbe1cf36f4e3ce0328cb45ed7739766678970114",
+      "pdf_sha256": "8c8545642781c27cafcdcbc7aefd32b98198885c0d826c1f39924d4c5189285e",
+      "paths_preserved": true,
+      "path_count": 38,
+      "labels_verified_in_svg_and_pdf": 4,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        280.8
+      ],
+      "minimum_effective_font_pt_estimate": 12.686
+    },
+    {
+      "file": "figure-9-kv-release.svg",
+      "source_sha256": "e20f8a6cef8a08fa917425e7c9f706fd7f44f536d5212f42c5d938a08f2fff74",
+      "svg_sha256": "e47d79ee5e6176d423e235545eb9bbb1721a49ab23e05afd0762d3c5c5e8c5df",
+      "pdf_sha256": "705d12437dc90ccf7d503a50a51dadb03de2603b7071c8046e9fe1855fd820a8",
+      "paths_preserved": true,
+      "path_count": 39,
+      "labels_verified_in_svg_and_pdf": 5,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        280.8
+      ],
+      "minimum_effective_font_pt_estimate": 12.686
+    },
+    {
+      "file": "figure-9-kv-residency.svg",
+      "source_sha256": "b051b770db88aa02e6617f4c6d074c3efea2fd079d1672d27e12601d00420aae",
+      "svg_sha256": "531e3c5c39649072625669023d13569e88a00ace36c9adb2557dd3232b88d30b",
+      "pdf_sha256": "d6413b60c7167aa35ea150f147d405a9b4c84a35c01766a83d72eb4d824c8903",
+      "paths_preserved": true,
+      "path_count": 70,
+      "labels_verified_in_svg_and_pdf": 7,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        331.2
+      ],
+      "minimum_effective_font_pt_estimate": 10.043
+    },
+    {
+      "file": "figure-9-kv-tiers.svg",
+      "source_sha256": "ec807742991bcafb731c0ceff35d686fbf9303252a9e7715e4a26f3460f87beb",
+      "svg_sha256": "fc0e4d168506f78a76e10178508de130a577d360962ed5e9455d01f82f17247b",
+      "pdf_sha256": "f230a6a7c68067dafb20ffff0cd2e108cf58259a14a7054f3cb77989cf2eae9a",
+      "paths_preserved": true,
+      "path_count": 92,
+      "labels_verified_in_svg_and_pdf": 13,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        331.2
+      ],
+      "minimum_effective_font_pt_estimate": 10.043
+    },
+    {
+      "file": "figure-9-local-cpu.svg",
+      "source_sha256": "53b46471c174b47a990f362ead4508b158f33b347bd6799794011a28acaf21f4",
+      "svg_sha256": "6367c3926210b4e23a61fc74847e1a22ecdf3f1cfea40d85ffda50ad2c996ceb",
+      "pdf_sha256": "5ebac3aeabde93265dbd0b80f23debc7a6ab29285d381babe05c2769af82a1da",
+      "paths_preserved": true,
+      "path_count": 43,
+      "labels_verified_in_svg_and_pdf": 5,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        316.8
+      ],
+      "minimum_effective_font_pt_estimate": 10.571
+    },
+    {
+      "file": "figure-9-mla-handoff.svg",
+      "source_sha256": "ad47a2dbdd23566e9d714c56e518439c1b3f49de4b5d0cd4e47105f7d94f0ae7",
+      "svg_sha256": "7167fa268876064ae423d44079675df23e8233c0bc6f951763a749e0e0445379",
+      "pdf_sha256": "1a8c4d4e2b26920c7ffcb5c22f3b1b2fd0064f9406f2bc3bda524bce25b83433",
+      "paths_preserved": true,
+      "path_count": 66,
+      "labels_verified_in_svg_and_pdf": 5,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        273.6
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-organization-1.svg",
+      "source_sha256": "9d2b1f5753c5bcad37fc094b1858e50334039247ac54da4c390925fcf9c3abc7",
+      "svg_sha256": "89642f3372fb3cdf8fe09500047f6fc349321e1d7d5baae3b95c3481c2d90fc3",
+      "pdf_sha256": "e9f861327f918afaae1a7a9834a6718fa7ca97b18dc85e9f12996ab6d2a30147",
+      "paths_preserved": true,
+      "path_count": 21,
+      "labels_verified_in_svg_and_pdf": 5,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        266.4
+      ],
+      "minimum_effective_font_pt_estimate": 12.686
+    },
+    {
+      "file": "figure-9-organization-2.svg",
+      "source_sha256": "068a2babe16038fbe3a61da8d208f92ae363b43d8c38c07348b3611e6f4ffdee",
+      "svg_sha256": "fb6744a4e8f7cd8bafe2fbe84fa2ed5b8bb462e65ca1890ff23eaf1a36743d58",
+      "pdf_sha256": "717ceb923b9021060b48e3dbcb84c587e76c63e537c2a8b2357433c3a737ec8a",
+      "paths_preserved": true,
+      "path_count": 29,
+      "labels_verified_in_svg_and_pdf": 4,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        266.4
+      ],
+      "minimum_effective_font_pt_estimate": 10.571
+    },
+    {
+      "file": "figure-9-organization-3.svg",
+      "source_sha256": "8dadadf481306f53ae300178865fdfd67ebecb776e283b77967401696a8d2385",
+      "svg_sha256": "13d21e33c0a31b707f02cba932023bad1f710a3f6163627832bc8aa488292562",
+      "pdf_sha256": "f9078996f769d4138c302a1e9554280832c6bcb63b445b0d205797046d6f8fa7",
+      "paths_preserved": true,
+      "path_count": 30,
+      "labels_verified_in_svg_and_pdf": 4,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        266.4
+      ],
+      "minimum_effective_font_pt_estimate": 12.686
+    },
+    {
+      "file": "figure-9-overlap-pipeline.svg",
+      "source_sha256": "3be0d1e5ef2cb6f201f2435b660cf51e5d2b4ee4bc6111b2f4eb72d879e28e9c",
+      "svg_sha256": "456146ad8f0a7bd8220d0aec83882a6bc1c5ce07bfd47bf42628cf032bc1a404",
+      "pdf_sha256": "a6353c74b230361a892b36f35eb18f2abf6d500c84cfab4642b1376ce5792e58",
+      "paths_preserved": true,
+      "path_count": 38,
+      "labels_verified_in_svg_and_pdf": 4,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        252.0
+      ],
+      "minimum_effective_font_pt_estimate": 10.571
+    },
+    {
+      "file": "figure-9-pd-layout.svg",
+      "source_sha256": "8066170e7b3512e6e969259f8374bea87b9a8f5769d8d3db3195be620fb9fd11",
+      "svg_sha256": "81dd7687a7ed64ae59e724f6e495aecfd847ed7f3ecb8160994ab8bc7a86b284",
+      "pdf_sha256": "96d1cb3082c71f9fe01209a16d102991f398fa3e7cc668c193ed78ab8d7804e1",
+      "paths_preserved": true,
+      "path_count": 33,
+      "labels_verified_in_svg_and_pdf": 12,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        316.8
+      ],
+      "minimum_effective_font_pt_estimate": 10.043
+    },
+    {
+      "file": "figure-9-route-1.svg",
+      "source_sha256": "771407654facda873840f8d3c4658ae8efbd7bde13b2c0caa14a685b1e76bb34",
+      "svg_sha256": "9a03c6940bac2c69bb3064915986be583c9a99290c8a374a57d58a1368b41b0f",
+      "pdf_sha256": "b998990e24dacd861a1f7cc6d242ed40daa34086a1ad64f970e7a960fa7faa07",
+      "paths_preserved": true,
+      "path_count": 30,
+      "labels_verified_in_svg_and_pdf": 2,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        216.0
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-route-2.svg",
+      "source_sha256": "333560a0f218901cb122be00db813207e03bc30cfdd870c2986751c7bc42c132",
+      "svg_sha256": "f97e443b852faebe40ee179ec7ffff5096b897b396b1be5c1922fd3ad5b6e688",
+      "pdf_sha256": "2a74c2624f4f6ef57ac6f3939bdfc0fad8286cb11c8dd409692e4637ed538e16",
+      "paths_preserved": true,
+      "path_count": 33,
+      "labels_verified_in_svg_and_pdf": 2,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        216.0
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-route-3.svg",
+      "source_sha256": "fa87a4e298f9304a8d915300058854789b97edfdf9bddd873c26353b1c651268",
+      "svg_sha256": "287b04ccd81ad1aea778bdc57f9a13407756219884498e6ed451347b43a2f2fd",
+      "pdf_sha256": "7e972b6537df54f53bbcf8f34aeb89844dcd4708599d924ad432e03dc1dc858e",
+      "paths_preserved": true,
+      "path_count": 33,
+      "labels_verified_in_svg_and_pdf": 2,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        216.0
+      ],
+      "minimum_effective_font_pt_estimate": 11.629
+    },
+    {
+      "file": "figure-9-v41-routing.svg",
+      "source_sha256": "639bc8ea5450a71f539d25acd75add92ed87f8fba6da965c2006eba297ab0114",
+      "svg_sha256": "c196b61f7c216cd5e408f677b126bcde7115f5d3b42528fe299744c1fcc1cbec",
+      "pdf_sha256": "5c284d7f6da89649daf91c87680b2da89f0b72137e22117881f33123d00bb7d4",
+      "paths_preserved": true,
+      "path_count": 53,
+      "labels_verified_in_svg_and_pdf": 6,
+      "pdf_fonts_embedded": true,
+      "pdf_text_within_canvas": true,
+      "view_box": [
+        0.0,
+        0.0,
+        420.0,
+        295.2
+      ],
+      "minimum_effective_font_pt_estimate": 9.514
+    }
+  ]
+}

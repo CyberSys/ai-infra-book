@@ -1,0 +1,3 @@
+# Keep this self-contained community edition available without an LFS download.
+# These overrides apply only inside book-ru; other editions retain their rules.
+*.pdf -filter -diff -merge
