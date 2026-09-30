@@ -2,7 +2,7 @@
 
 ## Количественный анализ и проектирование систем
 
-Русский перевод: community edition, [@ilkruglov](https://github.com/ilkruglov). Неофициальное издание сообщества книги Боцзе Ли (Bojie Li) **AI Infra in Depth: Quantitative Analysis and System Design**.
+Русский перевод: community edition, организованный [@ilkruglov](https://github.com/ilkruglov). Неофициальное издание сообщества книги Боцзе Ли (Bojie Li) **AI Infra in Depth: Quantitative Analysis and System Design**.
 
 [**Скачать полную книгу в PDF**](https://raw.githubusercontent.com/ilkruglov/ai-infra-book/main/book-ru/dist/AI-Infra-in-Depth-RU.pdf) · [Открыть PDF на GitHub](dist/AI-Infra-in-Depth-RU.pdf)
 
@@ -58,4 +58,4 @@ uv run pytest -q
 uv run python scripts/build_pdf.py --full
 ```
 
-Сборщик создаёт PDF и JSON-манифест в `.tmp/pdf-build/`; опубликованный файл в `dist/` автоматически не перезаписывается. Проверки качества перевода в `verification/` относятся к зафиксированному оригиналу из `upstream.json`. Для повторной проверки по оригиналу потребуется отдельно подготовить его исходники; обычная сборка PDF использует только файлы этого каталога. Русское издание пока не включено в общую CI-сборку, сайт и EPUB.
+Сборщик создаёт PDF и JSON-манифест в `.tmp/pdf-build/`; опубликованный файл в `dist/` автоматически не перезаписывается. Проверки качества перевода в `verification/` относятся к зафиксированному оригиналу из `upstream.json`. Для повторной проверки по оригиналу потребуется отдельно подготовить его исходники; обычная сборка PDF использует только файлы этого каталога. Русское издание подключено к общей CI-сборке: после обновления `main` рабочий процесс публикует русский PDF и EPUB в GitHub Release, а сайт доступен по адресу `/ru/`.

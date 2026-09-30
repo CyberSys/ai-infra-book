@@ -32,6 +32,7 @@ ROOT = HERE.parent
 MANUSCRIPTS = ROOT / 'manuscripts'
 BOOK_EN = ROOT / 'book-en'
 BOOK_ZH_TW = ROOT / 'book-zh-tw'
+BOOK_RU = ROOT / 'book-ru'
 REPO = 'https://github.com/bojieli/ai-infra-book'
 LFS_POINTER = b'version https://git-lfs.github.com/spec/v1'
 FIGURE_WIDTH = 1400  # pixels; sharp on a 300 ppi reader, small enough for phones
@@ -46,9 +47,12 @@ EDITIONS = {
     'zh-tw': dict(name='AI-Infra-Book-ZH-TW', lang='zh-Hant', author='李博杰',
                   title='深入理解 AI Infra', subtitle='量化分析與系統設計',
                   toc_title='目錄', footnotes_title='註釋'),
+    'ru': dict(name='AI-Infra-in-Depth-RU', lang='ru-RU', author='Боцзе Ли; русский перевод: community edition',
+               title='AI-инфраструктура изнутри', subtitle='Количественный анализ и проектирование систем',
+               toc_title='Содержание', footnotes_title='Примечания'),
 }
 # Translations keep their chapters in their own directory.
-HOMES = {'zh': HERE, 'en': BOOK_EN, 'zh-tw': BOOK_ZH_TW}
+HOMES = {'zh': HERE, 'en': BOOK_EN, 'zh-tw': BOOK_ZH_TW, 'ru': BOOK_RU / 'book'}
 
 
 def sources(edition):
@@ -56,6 +60,8 @@ def sources(edition):
     if edition == 'zh':
         return [(n, next(MANUSCRIPTS.glob(f'{n:02}-*.md'))) for n in range(13)]
     home = HOMES[edition]
+    if edition == 'ru':
+        return [(0, home / 'preface.md')] + [(n, home / f'chapter{n}.md') for n in range(1, 13)]
     return [(0, home / 'introduction.md')] + [(n, home / f'chapter{n:02}.md') for n in range(1, 13)]
 
 
@@ -91,6 +97,8 @@ def prepare(number, source, edition, source_ref, figures):
         text = re.sub(r'^# (.+?)\s*$', r'# \1 {#preface}', text, count=1, flags=re.M)
     elif edition in ('zh', 'zh-tw'):
         text = re.sub(r'^# (第\s*\d+\s*章.*?)\s*$', rf'# \1 {{#chapter-{number}}}', text, count=1, flags=re.M)
+    elif edition == 'ru':
+        text = re.sub(r'^# (Глава\s+\d+\.\s+.*?)\s*$', rf'# \1 {{#chapter-{number}}}', text, count=1, flags=re.M)
     else:
         text = re.sub(r'^# (.+?)\s*$', rf'# Chapter {number}  \1 {{#chapter-{number}}}', text, count=1, flags=re.M)
     text = re.sub(r'<a id="([^"]+)"></a>\s*\n+(#{1,6} [^\n]+)',
@@ -183,7 +191,7 @@ def main():
     }, ensure_ascii=False))
     output = output_dir / f'{meta["name"]}.epub'
     staged = output.with_suffix('.epub.tmp')
-    command = ['pandoc', *inputs, '--from=markdown+lists_without_preceding_blankline',
+    command = ['pandoc', *inputs, '--from=markdown+lists_without_preceding_blankline+header_attributes',
                '--file-scope', '--to=epub3', '--metadata-file=' + str(metadata), '--mathml',
                '--toc', '--toc-depth=2', '--split-level=1',
                '--css=' + str(HERE / 'epub.css'), '--highlight-style=kate',
