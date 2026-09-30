@@ -26,9 +26,13 @@ import json
 import re
 import shutil
 import subprocess
+import sys
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
+sys.path.insert(0, str(HERE))
+from publishing_links import inherited_target
+
 MANUSCRIPTS = ROOT / 'manuscripts'
 BOOK_EN = ROOT / 'book-en'
 BOOK_ZH_TW = ROOT / 'book-zh-tw'
@@ -137,11 +141,21 @@ def prepare(number, source, edition, source_ref, figures):
             resolved = (base / unquote(path)).resolve()
         if not resolved.is_relative_to(ROOT):
             return match[0]
+        if not resolved.exists():
+            inherited = inherited_target(ROOT, source, unquote(path))
+            if inherited is not None:
+                resolved = inherited
         # Links between chapters stay inside the book.
         # Pandoc's --file-scope resolves "file.md#id" across the input files.
         if resolved.parent == MANUSCRIPTS and resolved.name in anchors:
             other = quote(prepared_name(edition, int(resolved.name[:2])))
             return f'[{label}]({other}#{fragment or anchors[resolved.name]})'
+        translated_chapters = {p: n for n, p in sources(edition)}
+        if resolved in translated_chapters:
+            chapter_number = translated_chapters[resolved]
+            other = quote(prepared_name(edition, chapter_number))
+            anchor = f'chapter-{chapter_number}' if chapter_number else 'preface'
+            return f'[{label}]({other}#{fragment or anchor})'
         relative = quote(resolved.relative_to(ROOT).as_posix(), safe='/')
         suffix = f'#{fragment}' if fragment else ''
         return f'[{label}]({REPO}/blob/{ref}/{relative}{suffix})'
@@ -185,7 +199,7 @@ def main():
     metadata.write_text(json.dumps({
         'title': [{'type': 'main', 'text': meta['title']}, {'type': 'subtitle', 'text': meta['subtitle']}],
         'creator': [{'role': 'author', 'text': meta['author']}],
-        'lang': meta['lang'], 'date': today, 'rights': 'CC BY-NC-SA 4.0',
+        'lang': meta['lang'], 'date': today, 'rights': 'Apache-2.0',
         'identifier': [{'scheme': 'URI', 'text': f'{REPO}#{meta["name"]}'}],
         'toc-title': meta['toc_title'],
     }, ensure_ascii=False))
