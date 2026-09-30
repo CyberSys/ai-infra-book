@@ -12,7 +12,7 @@
 > - **简体中文**：[PDF](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book.pdf) · [EPUB](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book.epub) · [在线阅读](https://bojieli.github.io/ai-infra-book/)
 > - **English**: [PDF](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-EN.pdf) · [EPUB](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-EN.epub) · [Read online](https://bojieli.github.io/ai-infra-book/en/)
 > - **繁體中文**：[PDF](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-ZH-TW.pdf) · [EPUB](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-ZH-TW.epub) · [線上閱讀](https://bojieli.github.io/ai-infra-book/zh-tw/)
-> - **Русский — community edition**: [PDF](https://raw.githubusercontent.com/ilkruglov/ai-infra-book/main/book-ru/dist/AI-Infra-in-Depth-RU.pdf) · [О переводе](book-ru/)
+> - **Русский — community edition**: [PDF](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-in-Depth-RU.pdf) · [EPUB](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-in-Depth-RU.epub) · [Онлайн-чтение](https://bojieli.github.io/ai-infra-book/ru/) · [О переводе](book-ru/)
 
 《深入理解 AI Infra》是 GitHub 上获得 **45k+ Star** 的[《深入理解 AI Agent：设计原理与工程实践》](https://github.com/bojieli/ai-agent-book)的姊妹篇。
 
@@ -91,7 +91,7 @@ python scripts/check_site.py
 python scripts/build_site.py --serve
 ```
 
-预览地址为 <http://127.0.0.1:8000>，简体中文位于根目录，英文与繁體中文分别位于 `en/` 和 `zh-tw/`。生成文件位于 `build/`，详细说明见[网站构建与发布](website/README.md)。
+预览地址为 <http://127.0.0.1:8000>，简体中文位于根目录，英文、繁體中文和俄语分别位于 `en/`、`zh-tw/` 和 `ru/`。生成文件位于 `build/`，详细说明见[网站构建与发布](website/README.md)。
 
 **全书 PDF 与 EPUB**（另需 Pandoc、XeLaTeX 和字体）：
 
@@ -99,10 +99,10 @@ python scripts/build_site.py --serve
 bash book/build_pdf.sh                        # 简体中文 → book/AI-Infra-Book.pdf
 bash book-en/build_pdf.sh                     # English → book-en/AI-Infra-Book-EN.pdf
 bash book-zh-tw/build_pdf.sh                  # 繁體中文 → book-zh-tw/AI-Infra-Book-ZH-TW.pdf
-python3 book/build_epub.py --edition zh       # EPUB 只需 Pandoc 与 Poppler；--edition 可选 zh、en、zh-tw
+python3 book/build_epub.py --edition zh       # EPUB 只需 Pandoc 与 Poppler；--edition 可选 zh、en、zh-tw、ru
 ```
 
-译本配图存于 Git LFS，构建前先下载：`git lfs pull --include="book-en/images/**,book-zh-tw/images/**" --exclude=""`。依赖、字体及单章编译方法见 [PDF 编译说明](book/README.md)。GitHub Actions 会检查 Pull Request 的网站与三种语言的 PDF、EPUB 构建；推送到 `main` 后自动发布 Release（三种语言各含 PDF 与 EPUB）并部署三种语言的在线阅读网站。
+译本配图存于 Git LFS，构建前先下载：`git lfs pull --include="book-en/images/**,book-zh-tw/images/**" --exclude=""`。依赖、字体及单章编译方法见 [PDF 编译说明](book/README.md)。GitHub Actions 会检查 Pull Request 的网站与各语言的 PDF、EPUB 构建；推送到 `main` 后自动发布 Release（四种语言各含 PDF 与 EPUB）并部署四种语言的在线阅读网站。
 
 ## 仓库结构
 
@@ -171,4 +171,4 @@ python3 book/build_epub.py --edition zh       # EPUB 只需 Pandoc 与 Poppler�
 - **EPUB**：字号可调，版面随屏幕自动重排，适合手机和电子书阅读器。
 - **在线阅读**：[阅读网站](https://bojieli.github.io/ai-infra-book/)提供章节导航、全文搜索和深色模式，右上角可切换语言。
 - **自动发布**：每次更新 `main` 后自动构建全部格式并发布到 [Releases](https://github.com/bojieli/ai-infra-book/releases)，上方链接始终指向最新版。
-- **翻译版本**：简体中文为原版，正文位于 [`manuscripts/`](manuscripts/README.md)。英文版为社区翻译（by [@tg1482](https://github.com/tg1482)），位于 [`book-en/`](book-en/)，包含前言与十二章正文、重绘为英文标注的配图和独立的构建脚本。繁體中文版由社区贡献者 [@edward821220](https://github.com/edward821220) 翻译并整理，位于 [`book-zh-tw/`](book-zh-tw/)，包含前言与十二章正文、繁體配图和独立的构建脚本；两项已知配图例外见[繁體版说明](book-zh-tw/README.md)。两种译本都可能滞后于原版，数字、公式和引用以原版为准。
+- **翻译版本与译者**：简体中文为原版，作者为 [Bojie Li（李博杰）](https://github.com/bojieli)，正文位于 [`manuscripts/`](manuscripts/README.md)。英文版由社区译者 [@tg1482](https://github.com/tg1482) 翻译，位于 [`book-en/`](book-en/)，包含前言与十二章正文、重绘为英文标注的配图和独立的构建脚本。繁體中文版由社区贡献者 [@edward821220](https://github.com/edward821220) 翻译并整理，位于 [`book-zh-tw/`](book-zh-tw/)，包含前言与十二章正文、繁體配图和独立的构建脚本；两项已知配图例外见[繁體版说明](book-zh-tw/README.md)。俄语 community edition 由 [@ilkruglov](https://github.com/ilkruglov) 组织并完成翻译与校验，位于 [`book-ru/`](book-ru/)，依据固定版本的中文原稿制作，原作者仍为 [Bojie Li](https://github.com/bojieli)。各译本的译者、来源版本和许可证见对应目录说明；译本数字、公式和引用以原版为准。

@@ -40,6 +40,10 @@ EDITIONS = {
                   site_name='深入理解 AI Infra：量化分析與系統設計',
                   site_description='從資料搬移理解晶片、網路、推理與訓練系統',
                   labels=('首頁', '前言'), toggles=('切換深色模式', '切換淺色模式')),
+    'ru': dict(path='ru/', lang='ru', name='Русский', home=ROOT / 'book-ru', index='book-ru/README.md',
+               site_name='AI-инфраструктура изнутри: количественный анализ и проектирование систем',
+               site_description='Русское community edition книги Боцзе Ли об AI-инфраструктуре',
+               labels=('Главная', 'Предисловие'), toggles=('Тёмная тема', 'Светлая тема')),
 }
 
 
@@ -48,9 +52,12 @@ def chapters(edition):
     if edition == 'zh':
         found = [(int(p.name[:2]), p) for p in sorted((ROOT / 'manuscripts').glob('[0-9][0-9]-*.md'))]
         found = [(n, p) for n, p in found if n <= 12]
-    else:
+    elif edition in ('en', 'zh-tw'):
         home = EDITIONS[edition]['home']
         found = [(0, home / 'introduction.md')] + [(n, home / f'chapter{n:02}.md') for n in range(1, 13)]
+    else:
+        home = EDITIONS[edition]['home']
+        found = [(0, home / 'book' / 'preface.md')] + [(n, home / 'book' / f'chapter{n}.md') for n in range(1, 13)]
     if [n for n, _ in found] != list(range(13)):
         raise ValueError(f'Expected the preface and chapters 1–12 for {edition}')
     for _, path in found:
