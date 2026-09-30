@@ -2,7 +2,7 @@
 
 ## Количественный анализ и проектирование систем
 
-Русский перевод: community edition. Неофициальное издание сообщества книги Боцзе Ли (Bojie Li) **AI Infra in Depth: Quantitative Analysis and System Design**.
+Русский перевод: community edition, [@ilkruglov](https://github.com/ilkruglov). Неофициальное издание сообщества книги Боцзе Ли (Bojie Li) **AI Infra in Depth: Quantitative Analysis and System Design**.
 
 [**Скачать полную книгу в PDF**](https://raw.githubusercontent.com/ilkruglov/ai-infra-book/main/book-ru/dist/AI-Infra-in-Depth-RU.pdf) · [Открыть PDF на GitHub](dist/AI-Infra-in-Depth-RU.pdf)
 

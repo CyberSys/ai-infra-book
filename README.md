@@ -12,9 +12,9 @@
 > - **简体中文**：[PDF](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book.pdf) · [EPUB](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book.epub) · [在线阅读](https://bojieli.github.io/ai-infra-book/)
 > - **English**: [PDF](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-EN.pdf) · [EPUB](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-EN.epub) · [Read online](https://bojieli.github.io/ai-infra-book/en/)
 > - **繁體中文**：[PDF](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-ZH-TW.pdf) · [EPUB](https://github.com/bojieli/ai-infra-book/releases/latest/download/AI-Infra-Book-ZH-TW.epub) · [線上閱讀](https://bojieli.github.io/ai-infra-book/zh-tw/)
-> - **Русский — community edition**: [PDF](https://raw.githubusercontent.com/ilkruglov/ai-infra-book/main/book-ru/dist/AI-Infra-in-Depth-RU.pdf) · [О переводе](book-ru/)
+> - **Русский — community edition, [@ilkruglov](https://github.com/ilkruglov)**: [PDF](https://raw.githubusercontent.com/ilkruglov/ai-infra-book/main/book-ru/dist/AI-Infra-in-Depth-RU.pdf) · [О переводе](book-ru/)
 
-《深入理解 AI Infra》是 GitHub 上获得 **45k+ Star** 的[《深入理解 AI Agent：设计原理与工程实践》](https://github.com/bojieli/ai-agent-book)的姊妹篇。
+《深入理解 AI Infra》是 GitHub 上获得 **50k+ Star** 的[《深入理解 AI Agent：设计原理与工程实践》](https://github.com/bojieli/ai-agent-book)的姊妹篇。
 
 写完[《深入理解 AI Agent》](https://github.com/bojieli/ai-agent-book)后，在与读者交流的过程中，我越来越感到：要开发好基于模型的应用，还需要理解它赖以运行的基础设施。大多数软件工程师不必亲自开发操作系统、编译器和芯片，却仍要学习操作系统、编译原理和计算机体系结构，因为申请内存、读取文件、调用函数，背后都有资源与时间代价。基于模型开发应用也是如此。延迟相差几倍，产品体验就可能完全不同；成本相差一个数量级，能够支撑的商业模式也随之改变。
 
