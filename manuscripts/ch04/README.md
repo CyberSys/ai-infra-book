@@ -89,5 +89,7 @@ python3 -m venv /tmp/ch04-book-venv
 | 4-36 | 同一 Qwen3-8B 的两种阶段预算。单请求 decode 更直接反映读取带宽，4K prefill 的矩阵预算更直接反映匹配精度的矩阵速率。两图横轴分别标注所计算的时间。 | [SVG](figure-4-evolution-convergence.svg) | [PNG](figure-4-evolution-convergence.png) | [PDF](figure-4-evolution-convergence.pdf) |
 | 4-37 | RTX PRO 6000 的投影总耗时。每个条件测十一轮、每轮十六次调用，取每轮平均耗时的中位数；计时包含提交与同步。“复用”表示多次调用读取相同权重地址；“轮换”表示调用之间更换权重地址。 | [SVG](figure-4-14-performance.svg) | [PNG](figure-4-14-performance.png) | [PDF](figure-4-14-performance.pdf) |
 | 4-38 | 相同四个条件下另行采集的 DRAM 读取计数。单行均约 32 MiB，256 行复用为 256 bytes、轮换约 32.1 MiB。访问计数与常规计时分别测量。“复用”与“轮换”分别表示保持和更换权重地址。 | [SVG](figure-4-performance-traffic.svg) | [PNG](figure-4-performance-traffic.png) | [PDF](figure-4-performance-traffic.pdf) |
+| 4-43 | 面向注意力数据流的 DaVinci 概念路径。MTE/NDDMA、L1/UB、L0、Cube/AIC、Vector/AIV、CV 与 Scalar 的功能责任及交接方向。 | [SVG](figure-4-davinci-attention-path.svg) | [PNG](figure-4-davinci-attention-path.png) | [PDF](figure-4-davinci-attention-path.pdf) |
+| 4-44 | QK、Softmax、PV 在 MTE/NDDMA、Cube/AIC、CV/UB 和 Vector/AIV 上的概念时间线；分组和槽位使不同查询行组交错推进。 | [SVG](figure-4-davinci-attention-timeline.svg) | [PNG](figure-4-davinci-attention-timeline.png) | [PDF](figure-4-davinci-attention-timeline.pdf) |
 
 [2026-09-11 全章复核](../../research/ch04-whole-chapter-review-2026-09-11/README.md)：合并跨节重复，重排固定权重推导，补齐概念定义与交接算例参数。
