@@ -6,6 +6,19 @@ Chapters 2 and 3 introduced the model's computation graph and the computation re
 
 This chapter is organized around three questions: how much computation, storage, and transfer a task requires; why compute units wait for data or for the results of a previous step; and, once one part's performance is improved, which part becomes the new bottleneck. Understanding these three questions makes it possible to analyze GPUs, Ascend, Apple chips, and more specialized designs using the same method.
 
+### Synchronizing the Chapter 4 architecture conclusion
+
+Transformer layers repeatedly alternate between matrix multiplication and vector operations. The matrix unit computes QK and PV, while the vector unit applies Softmax, normalization, scaling, and other element-wise transformations. Ascend DaVinci therefore connects Cube and Vector through a dedicated on-chip handoff path: QK results can flow directly into Softmax, and the resulting probabilities can flow into PV without a full round trip through external memory. This path improves data locality and keeps the two units busy, while requiring the compiler and kernel author to make layouts, buffers, dependencies, and synchronization explicit.
+
+![DaVinci attention data path. The upper path shows the execution order; the lower path shows the compute units, on-chip storage, and handoff path.](images/figure-4-davinci-attention-path.pdf)
+
+*Figure 4-3. DaVinci attention data path.*
+
+![Two-slot execution timeline for QK, Softmax, and PV.](images/figure-4-davinci-attention-timeline.pdf)
+
+*Figure 4-23. Two-slot execution timeline for QK, Softmax, and PV.*
+
+
 ## 4.1 Understanding Accelerators Through Model Computation
 
 To analyze an operator, we first need to determine what operations it performs and what data it reads and writes. This section starts from these two requirements to understand the composition of an accelerator, and gives a preliminary analysis of the trade-offs among compute units, storage, and interfaces.
@@ -225,7 +238,7 @@ The light gray portions in Figures 4-9 and 4-10 represent computation from zero-
 
 This explains why libraries prepare multiple kernels for different shapes: large matrices exploit array reuse, small matrices need a more suitable execution granularity, and multiple small tasks can also be grouped to reduce scheduling gaps. Tensor Core and Ascend's Cube unit are dedicated to executing regular matrix operations, while general-purpose execution units retain the ability to handle other shapes; the two work together to handle the mix of matrix sizes in real workloads.[^nvidia]
 
-### 4.2.2 What the Vector and Control Units Handle
+### 4.2.2 Vector operations and control between matrix computations
 
 Beyond matrix multiplication, a Transformer layer also includes normalization, positional encoding, and activation functions; expert models additionally need routing. These steps include elementwise operations as well as dependencies among multiple elements.
 
@@ -249,7 +262,7 @@ For Qwen3-8B's 32 Q heads and 8 K heads in one layer, each head rotating 128 dim
 
 Precomputation converts repeated trigonometric evaluations into coefficient lookups; the rotation itself is still executed per token. The pressure thus shifts from special-function computation to table access and vector operations.
 
-### 4.2.3 How NVIDIA, Ascend, and Apple Execute Attention Computation
+### 4.2.3 How QK, Softmax, and PV Form a Pipeline
 
 Attention connects the matrix computation and vector computation of the previous two sections: $Z=QK^{\mathsf T}$ produces scores, $P=\operatorname{Softmax}(Z)$ produces probabilities, and $O=PV$ forms the output. The same block of data must pass through these three steps in sequence; multiple blocks, however, can advance on different resources in an interleaved fashion.
 
