@@ -137,7 +137,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Fetch Russian edition figures
-        run: git lfs pull --include="book-ru/book/**/*.pdf,book-ru/book/**/*.svg" --exclude=""
+        run: git lfs pull --include="book-ru/book/**/*.pdf,book-ru/book/**/*.svg,manuscripts/figure_style/fonts/SourceHanSansCN-Regular.otf" --exclude=""
       - name: Install Russian PDF fonts and dependencies
         run: |
           brew install --cask font-dejavu font-noto-sans
@@ -160,7 +160,7 @@ jobs:
           \documentclass{article}
           \usepackage{fontspec}
           \setmainfont{PT Serif}
-          \setsansfont{Noto Sans}
+          \setsansfont[BoldFont=NotoSans-Bold,ItalicFont=NotoSans-Italic,BoldItalicFont=NotoSans-BoldItalic]{NotoSans-Regular}
           \setmonofont{DejaVu Sans Mono}
           \newfontfamily\symbols{DejaVu Sans}
           \begin{document}

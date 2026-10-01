@@ -185,6 +185,17 @@ def _fonts(pdf: Path) -> tuple[dict[str, dict[str, str]], list[str]]:
             if line.split()
         }
     )
+    # The Da Vinci figures embed the repository-pinned font for their labels.
+    if "SourceHanSansCN-Regular" in embedded:
+        diagram_font = PROJECT.parent / "manuscripts/figure_style/fonts/SourceHanSansCN-Regular.otf"
+        if not diagram_font.is_file() or diagram_font.read_bytes().startswith(b"version https://git-lfs"):
+            raise BuildError(f"Не найден шрифт иллюстраций: {diagram_font}")
+        fonts["diagram_labels"] = {
+            "family": "Source Han Sans CN",
+            "pdf_name": "SourceHanSansCN-Regular",
+            "path": str(diagram_font),
+            "sha256": _sha256(diagram_font),
+        }
     unknown = set(embedded) - {font["pdf_name"] for font in fonts.values()}
     if unknown:
         raise BuildError("В PDF встроены неучтённые шрифты: " + ", ".join(sorted(unknown)))
