@@ -165,9 +165,9 @@ def test_prepare_preserves_html_section_anchor_in_latex(tmp_path: Path) -> None:
     tex = subprocess.check_output(
         ["pandoc", str(chapter), "--file-scope", "--to=latex"], text=True
     )
-    target = re.search(r"\\hyperlink\{([^}]+)\}", tex)
+    target = re.search(r"\\hyperref\[([^\]]+)\]", tex)
     assert target is not None
-    assert f"\\hypertarget{{{target[1]}}}" in tex
+    assert f"\\label{{{target[1]}}}" in tex
 
 
 def test_preview_can_include_second_chapter(tmp_path: Path) -> None:
