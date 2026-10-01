@@ -138,8 +138,9 @@ jobs:
           python-version: '3.12'
       - name: Fetch Russian edition figures
         run: git lfs pull --include="book-ru/book/**/*.pdf,book-ru/book/**/*.svg" --exclude=""
-      - name: Install Russian PDF and EPUB dependencies
+      - name: Install Russian PDF fonts and dependencies
         run: |
+          brew install --cask font-noto-sans font-pt-serif font-dejavu
           brew install texlive poppler ghostscript epubcheck
           curl --fail --location --retry 3 --output "$RUNNER_TEMP/pandoc.pkg" "https://github.com/jgm/pandoc/releases/download/3.7.0.2/pandoc-3.7.0.2-$(uname -m)-macOS.pkg"
           sudo installer -pkg "$RUNNER_TEMP/pandoc.pkg" -target /
