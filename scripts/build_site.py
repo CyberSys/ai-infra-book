@@ -19,6 +19,9 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'book'))
+from publishing_links import inherited_target
+
 DOCS = ROOT / 'build/docs'
 SITE = ROOT / 'build/site'
 FIGURE_CACHE = ROOT / 'build/site-figures'
@@ -106,9 +109,15 @@ def stage(edition, ref):
         target = (source.parent / unquote(parsed.path)).resolve()
         if not target.is_relative_to(ROOT):
             raise ValueError(f'Link escapes repository: {source}: {url}')
-        if not target.exists():
+        inherited = None
+        if not image and not target.exists():
+            inherited = inherited_target(ROOT, source, unquote(parsed.path))
+            if inherited is not None:
+                target = inherited
+        if not target.exists() and inherited is None:
             raise FileNotFoundError(f'{source.relative_to(ROOT)}: {url}')
-        fragment = ('#' + parsed.fragment) if parsed.fragment else ''
+        fragment = (('?' + parsed.query) if parsed.query else '')
+        fragment += ('#' + parsed.fragment) if parsed.fragment else ''
         if target in sources:
             return quote(os.path.relpath(sources[target], output.parent), safe='/.-') + fragment
         if image:
