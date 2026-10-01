@@ -54,6 +54,13 @@ def prepare_markdown(
         text = re.sub(r"^# Глава\s+\d+\.\s+", "# ", text, count=1, flags=re.MULTILINE)
         text = re.sub(r"^(#{2,6}) \d+(?:\.\d+)*\s+", r"\1 ", text, flags=re.MULTILINE)
 
+    # Pandoc drops raw HTML in LaTeX output; preserve section link targets.
+    text = re.sub(
+        r'<a id="([^"]+)"></a>\s*\n+(#{1,6} [^\n]+)',
+        lambda match: match[2] + " {#" + match[1] + "}",
+        text,
+    )
+
     def replace_image(match: re.Match[str]) -> str:
         svg = (source.parent / unquote(match[2])).resolve()
         if svg.suffix.lower() != ".svg":
